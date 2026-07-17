@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.6 — 2026-07-18
+
+### 字体基线（中英混排视觉对齐）
+
+- 修复 `export_font.py`：全档 `ascii_drop = drop`（12→1、24→2、48→4 名义 px）
+- 用户反馈"MCC 着陆场 里 MCC 顶部偏上"根因：CJK 已 drop 后视觉在 rect 里居中，ASCII 未 drop 相对 rect 偏上 3.2 屏幕像素（不是相对 CJK）
+- 修复后实机验证：`Sanchez 列兵`、`Raven 小队`、`传入 通讯` 中英混排完全齐平；HUD 数字（8/14/100/50）无裁切
+- 该修复覆盖所有 UI 家族的 24/48 号（chain/marine/lowpixel/profont/r_strogg），受益场景：loading 地名标签、准星名牌、无线电两行、切枪武器名、菜单标题
+
 ## v1.0.5 — 2026-07-17
 
 ### CJK 字体质量

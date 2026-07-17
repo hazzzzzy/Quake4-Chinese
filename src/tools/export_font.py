@@ -253,6 +253,17 @@ def export(fam, size, chars):
     bmp_ref, _, h_ref, top_ref, _ = rasterize(font, "中", drop)
     ref_center = (top_ref - h_ref / 2.0) if bmp_ref is not None else None
 
+    # ASCII 基础段视觉对齐 CJK（2026-07-18 用户反馈：MCC 着陆场 里 MCC 顶部
+    # 偏上）：正解=全档 ascii_drop = drop_cjk（12→1、24→2、48→4 名义 px）——
+    # 用户观察的偏差是 M **视觉中线**低于 CJK 视觉中线（度量重推：
+    # marine_24 rect(y=11,h=20)/textscale=0.36 → M 位图中线 = rect 顶+8.64，
+    # 着 墨迹中线 = rect 顶+10.08 ≈ rect 中线 10，M 偏上 1.44 虚拟 px ≈ 3.2 屏 px）；
+    # 因 CJK drop 让 CJK 视觉在 rect 里居中，ASCII 不 drop 就相对偏上。
+    # ASCII 同幅下沉可让 M/O/A/数字 视觉中线也接近 rect 中线，与 CJK 齐平。
+    # HUD 数字用 chain_24/marine_12，加 drop=1/2 视觉下沉 2-3 屏幕 px，
+    # 需 patch_hud.py 补偿数字窗口 y-drop/h+drop 保裕度（如仍裁切）。
+    ascii_drop = drop
+
     # ---- 基础段（0..255 同字体自渲染，独立单页）----
     bp = BASE_PAGE[size]
     base_img = Image.new("L", (bp, bp), 0)
@@ -264,7 +275,7 @@ def export(fam, size, chars):
         ch = chr(i)
         if cmap is not None and i not in cmap:
             continue
-        bmp, w, h, top, xskip = rasterize(font, ch)
+        bmp, w, h, top, xskip = rasterize(font, ch, ascii_drop)
         if bmp is None:
             if xskip > 1:
                 base_rec[i] = (0, 0, xskip, 0, 0.0, 0.0, 0.0, 0.0)
