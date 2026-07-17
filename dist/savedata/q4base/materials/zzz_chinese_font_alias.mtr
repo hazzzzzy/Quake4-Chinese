@@ -1,0 +1,587 @@
+// 自动生成（export_font.py）：同源字体家族共享贴图的材质别名
+// 引擎按 fontName 拼材质名（fonts/chinese/<家族>_<页>.tga），
+// 显式 decl 优先于隐式生成，map 指向本尊家族贴图 → 显存/磁盘只留一份
+
+fonts/chinese/chain_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_1_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_1_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_2_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_3_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_3_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_4_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_4_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_1_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/chain_2_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_1_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_1_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_2_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_3_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_3_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_4_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_4_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_1_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/marine_2_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_1_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_1_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_2_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_3_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_3_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_4_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_4_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_1_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/lowpixel_2_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_1_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_1_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_2_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_3_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_3_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_4_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_4_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_1_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/profont_2_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/strogg_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/strogg_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/strogg_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/strogg_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/strogg_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/strogg_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_1_12.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_12.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_1_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_2_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_3_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_3_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_4_24.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_4_24.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_1_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_1_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}
+fonts/chinese/r_strogg_2_48.tga
+{
+	{
+		blend blend
+		colored
+		map "fonts/chinese/chain_2_48.tga"
+		clamp
+		nopicmip
+		forceHighQuality
+	}
+}

@@ -1,0 +1,200 @@
+diff --git a/Q3E/src/main/jni/doom3/neo/CMakeLists.txt b/Q3E/src/main/jni/doom3/neo/CMakeLists.txt
+index dadf7c489..40e43dceb 100644
+--- a/Q3E/src/main/jni/doom3/neo/CMakeLists.txt
++++ b/Q3E/src/main/jni/doom3/neo/CMakeLists.txt
+@@ -391,6 +391,10 @@ include_directories(${OPENAL_INCLUDE_DIR})]]
+ 
+ 
+ if(WIN32)
++	# GLES/KHR 等厂商头文件（纯头文件，游戏 DLL 也需要）
++	include_directories("${CMAKE_CURRENT_SOURCE_DIR}/externlibs/include")
++endif()
++if(WIN32 AND (CORE OR RAVEN OR HUMANHEAD OR SPLASHDAMAGE))
+ 	# skip SDL2main
+ 	if(APPLE OR WIN32)
+ 		set(SDL2_BUILDING_LIBRARY TRUE)
+@@ -399,7 +403,6 @@ if(WIN32)
+ 	include_directories(${SDL2_INCLUDE_DIR})
+ 	set(SDLx_LIBRARY ${SDL2_LIBRARIES})
+ 	add_definitions(-D_SDL)
+-	include_directories("${CMAKE_CURRENT_SOURCE_DIR}/externlibs/include")
+ 	set(sys_libs ${sys_libs} ${SDLx_LIBRARY})
+ endif()
+ 
+@@ -1230,6 +1233,7 @@ list(REMOVE_ITEM base_q4game_src
+ list(APPEND base_q4game_src
+ 		Effect.cpp
+ 		FreeView.cpp
++		Subtitles.cpp
+ 		Game_Debug.cpp
+ 		Game_Log.cpp
+ 		Healing_Station.cpp
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp
+index fbb6731ab..3e70a73c7 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp
++++ b/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp
+@@ -1,6 +1,8 @@
+-#include "../idlib/precompiled.h"
++﻿#include "../idlib/precompiled.h"
+ #pragma hdrstop
+ 
++#include "Subtitles.h"
++
+ #include "Game_local.h"
+ 
+ // RAVEN BEGIN
+@@ -4013,6 +4015,9 @@ bool idGameLocal::Draw( int clientNum ) {
+ 	gameDebug.DrawHud( );
+ // RAVEN END
+ 
++	// karin: 汉化项目 —— 语音字幕（含过场，始终绘制在最上层）
++	gameSubtitles.Draw();
++
+ 	return true;
+ }
+ 
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp b/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp
+index 2854fcf06..a3bd62c3e 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp
++++ b/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp
+@@ -1,7 +1,8 @@
+-#include "../idlib/precompiled.h"
++﻿#include "../idlib/precompiled.h"
+ #pragma hdrstop
+ 
+ #include "Game_local.h"
++#include "Subtitles.h"
+ 
+ // 1	normal
+ // 2	scared
+@@ -386,9 +387,13 @@ int idAFAttachment::StartLipSyncing( const char *speechDecl )
+ 		}
+ 
+ 		// Start the associated sound
+-		refSound.diversity = 0.0f; 
++		refSound.diversity = 0.0f;
+ 		renderEntity.referenceSoundHandle = refSound.referenceSoundHandle;
+-		StartSoundShader( declManager->FindSound( lipSync->GetName() ), SND_CHANNEL_VOICE, refSound.parms.soundShaderFlags | SSF_IS_VO, false, &length );
++		const idSoundShader *voShader = declManager->FindSound( lipSync->GetName() );
++		StartSoundShader( voShader, SND_CHANNEL_VOICE, refSound.parms.soundShaderFlags | SSF_IS_VO, false, &length );
++
++		// karin: 汉化项目 —— 语音字幕（文本经 GetTranscribeText 自动本地化，按声音衰减做可听性门控）
++		gameSubtitles.AddFromEntity( GetBody(), lipSync->GetTranscribeText(), length, voShader );
+ 
+ 		// Start the default emotion
+ 		anim = "emotion_";
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp
+index 5c4464026..02958f6cf 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp
++++ b/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp
+@@ -1,4 +1,4 @@
+-/*
++﻿/*
+ 
+ Various utility objects and functions.
+ 
+@@ -16,6 +16,7 @@ Various utility objects and functions.
+ #endif
+ #include "ai/AI.h"
+ // RAVEN END
++#include "Subtitles.h"
+ 
+ /*
+ ===============================================================================
+@@ -4026,6 +4027,17 @@ void idFuncRadioChatter::Event_Activate( idEntity *activator ) {
+ 		}
+ 		player->StartSoundShader( shader, SND_CHANNEL_RADIO, SSF_GLOBAL, false, &length );
+ 		time = MS2SEC( length + 150 );
++
++		// karin: 汉化项目 —— 无线电通讯字幕（shader 与 lipsync decl 同名，全局声不做可听性门控）
++		// 注意：部分纯无线电台词原版无口型需求，Raven 未建 lipsync decl（如 airdefense1 的 vo_1_1_1_68_1），
++		// 此类台词无文本来源，字幕缺失属资产缺口而非代码缺陷
++		const rvDeclLipSync *radioLipSync = declManager->FindLipSync( sound, false );
++		if ( radioLipSync ) {
++			// 来源前缀"无线电"（UTF-8 转义，2026-07-18 用户要求字幕都有来源）
++			gameSubtitles.Add( "\xE6\x97\xA0\xE7\xBA\xBF\xE7\x94\xB5", radioLipSync->GetTranscribeText(), length );
++		} else if ( harm_g_subtitleDebug.GetBool() ) {
++			gameLocal.Printf( "[SUB] radio: no lipsync decl for '%s'\n", sound );
++		}
+ 	}
+ 
+ 	if ( player && player->GetHud() ) {
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp
+index 5c9d2262c..051cc1010 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp
++++ b/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp
+@@ -1,8 +1,9 @@
+-
++﻿
+ #include "../idlib/precompiled.h"
+ #pragma hdrstop
+ 
+ #include "Game_local.h"
++#include "Subtitles.h"
+ 
+ /*
+ ===============================================================================
+@@ -251,6 +252,25 @@ idSound::DoSound
+ void idSound::DoSound( bool play ) {
+ 	if ( play ) {
+ 		StartSoundShader( refSound.shader, SND_CHANNEL_ANY, refSound.parms.soundShaderFlags, true, &playingUntilTime );
++
++		// karin: 汉化项目 —— speaker 实体播报字幕（基地广播 PA 等，2026-07-17
++		// 用户反馈开场女声广播缺字幕）。同无线电：按 sound shader 名找 lipsync
++		// decl（兼容 vo_* 直名与 aiSpeak 的 lipsync_ 前缀名），无 decl 的环境音
++		// speaker 自然不受影响；可听性门控走 AddFromEntity（距离/过场规则）
++		if ( refSound.shader && playingUntilTime > 0 ) {
++			const char *sndName = refSound.shader->GetName();
++			const rvDeclLipSync *ls = declManager->FindLipSync( sndName, false );
++			if ( !ls ) {
++				ls = declManager->FindLipSync( va( "lipsync_%s", sndName ), false );
++			}
++			if ( ls ) {
++				// 兜底来源前缀"广播"（UTF-8 转义，2026-07-18 用户要求字幕都有来源）
++				gameSubtitles.AddFromEntity( this, ls->GetTranscribeText(), playingUntilTime, refSound.shader, "\xE5\xB9\xBF\xE6\x92\xAD" );
++			} else if ( harm_g_subtitleDebug.GetBool() ) {
++				gameLocal.Printf( "[SUB] speaker: no lipsync decl for '%s'\n", sndName );
++			}
++		}
++
+ 		playingUntilTime += gameLocal.time;
+ 	} else {
+ 		StopSound( SND_CHANNEL_ANY, true );
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp b/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp
+index 8fce0d71e..fc0d2cccd 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp
++++ b/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp
+@@ -1,4 +1,4 @@
+-/*
++﻿/*
+ ================
+ 
+ AI.cpp
+@@ -17,6 +17,7 @@ AI.cpp
+ #include "../Projectile.h"
+ #include "../spawner.h"
+ #include "AI_Tactical.h"
++#include "../Subtitles.h"
+ 
+ const char* aiTalkMessageString [ ] = {
+ 	"None",
+@@ -4511,8 +4512,17 @@ bool idAI::Speak( const char *lipsync, bool random ){
+ 	if ( head ) {
+ 		speakTime = head->StartLipSyncing( lipsync );
+ 	} else {
+-		speakTime = 0;		
+-		StartSoundShader (declManager->FindSound ( lipsync ), SND_CHANNEL_VOICE, SSF_IS_VO, false, &speakTime );
++		speakTime = 0;
++		const idSoundShader *voShader = declManager->FindSound ( lipsync );
++		StartSoundShader ( voShader, SND_CHANNEL_VOICE, SSF_IS_VO, false, &speakTime );
++
++		// karin: 汉化项目 —— 无头模型 AI 不走 StartLipSyncing，字幕在此注入
++		const rvDeclLipSync *voLipSync = declManager->FindLipSync( lipsync, false );
++		if ( voLipSync ) {
++			gameSubtitles.AddFromEntity( this, voLipSync->GetTranscribeText(), speakTime, voShader );
++		} else if ( harm_g_subtitleDebug.GetBool() ) {
++			gameLocal.Printf( "[SUB] headless: no lipsync decl for '%s'\n", lipsync );
++		}
+ 	}
+ 
+ 	speakTime += gameLocal.time;

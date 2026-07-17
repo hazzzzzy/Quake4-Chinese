@@ -1,0 +1,727 @@
+str_id	sound	map	english	chinese	source
+str_385000	vo_1_1_12_0001	building_b	What the hell? They got to main power!	搞什么鬼？它们把主电源弄断了！	sndshd
+str_385001	vo_1_1_12_0003	building_b	Watch the ceilings.	注意天花板。	sndshd
+str_385002	vo_1_1_12_0005	building_b	Gimme a second.	等我一下。	sndshd
+str_385003	vo_1_1_12_0006	building_b	Scanner reads clear. They're gone.	扫描仪显示无异常。它们走了。	sndshd
+str_385004	vo_1_1_13_20_1	building_b	Corporal Kane, Voss wanted me to give you this Strogg nailgun. I bet it can sure rip the shit out of a squib.	Kane 下士，Voss 让我把这把 Strogg 钉枪交给你。我敢说这玩意儿准能把杂碎撕个稀烂。	sndshd
+str_385005	vo_1_1_1_140_1	airdefense1	This is no place to let your guard down. C'mon, let's see if we can't find my group up ahead - Badger squad.	这地方可不敢放松警惕。走，看看能不能在前头找到我的队伍——猛獾小队。	sndshd
+str_385006	vo_1_1_1_150_1	airdefense1	I heard the dropship you Rhinos were on took a direct hit. You're lucky to still be breathing.	听说你们犀牛小队坐的运输船被直接命中了。你还能喘气，算是走大运了。	sndshd
+str_385007	vo_1_1_1_150_2	airdefense1	We lost a lot of drop ships during the initial landing. The Strogg air defense cannons ripped us apart.	首轮登陆我们损失了不少运输船。Strogg 的防空炮把我们打得七零八落。	sndshd
+str_385008	vo_1_1_1_150_3	airdefense1	But now it our turn right? It's time to kick some Strogg ass.	不过现在轮到我们了，对吧？是时候去揍扁那帮 Strogg 了。	sndshd
+str_385009	vo_1_1_1_170_1	airdefense1	My legs... I can't move 'em.	我的腿……动不了了。	sndshd
+str_385010	vo_1_1_1_170_4	airdefense1	Sorry, Sarge. I had a run-in with a Strogg. And I met this Marine from Rhino squad.	抱歉，中士。我半路跟一个 Strogg 干了一架，还碰上了这位犀牛小队的陆战队员。	sndshd
+str_385011	vo_1_1_1_43_1	airdefense	Come on!	快跟上！	sndshd
+str_385012	vo_1_1_1_44_1	airdefense	We're clear. Why don't you go find your squad.	安全了。你去找你的小队吧。	sndshd
+str_385013	vo_1_1_1_45_1	airdefense	Kane, we're done here. Go find Lt. Voss.	Kane，这边完事了。去找 Voss 中尉吧。	sndshd
+str_385014	vo_1_1_2_0001	building_b	Ahhh... aaaaah... uuuuh...	啊……啊……呃……	sndshd
+str_385015	vo_1_1_2_50_2	airdefense+airdefense1	My legs... they're numb.	我的腿……没知觉了。	sndshd
+str_385016	vo_1_1_2_50_6	airdefense	You're Rhino squad? Take that door and it'll get you to your squad.	{puzzled}你是犀牛小队的？{idle}走那扇门，就能找到你的小队。	sndshd
+str_385017	vo_1_1_3_0002	building_b	Seal it! Seal the damn window now!	封上！马上把那扇该死的窗户封上！	sndshd
+str_385018	vo_1_1_3_0003	building_b	Where the hell did that come from?	{confused}那玩意儿到底是从哪儿冒出来的？	sndshd
+str_385019	vo_1_1_3_0004	building_b	Don't know. But we better inform the Sarge.	不知道。不过最好向中士报告一声。	sndshd
+str_385020	vo_1_1_3_40_1	airdefense	Come on! Come on!!	来啊！来啊！！	sndshd
+str_385021	vo_1_1_4_0001	building_b	Sarge, we got movement on the scanner.	中士，扫描仪上有动静。	sndshd
+str_385022	vo_1_1_4_0006	building_b	Scanner's clean. Whatever it was, it's gone.	扫描仪没有异常。不管刚才是什么，已经不见了。	sndshd
+str_385023	vo_1_1_8_0005	building_b	Wait here. Jones, you take point.	在这儿等着。Jones，你打头。	sndshd
+str_385024	vo_1_1_8_5_0002	building_b	Primary lock is cut.	主锁已切开。	sndshd
+str_385025	vo_1_1_8_5_0003	building_b	Secondary lock is cut.	副锁已切开。	sndshd
+str_385026	vo_1_1_8_5_0004	building_b	Cutting final interlock.	正在切最后一道联锁。	sndshd
+str_385027	vo_1_1_8_5_0005	building_b	Done.	搞定。	sndshd
+str_385028	vo_1_2_0_20_1	convoy1	Hey! Hey, Corporal Kane! Get over here on the double!	嘿！嘿，Kane 下士！跑步过来，快点！	sndshd
+str_385029	vo_1_2_0_30_1	convoy1	Corporal Kane, Lieutenant Voss said you'd be riding with us. Hop on up and we'll get going.	Kane 下士，Voss 中尉说了你搭我们的车。上来吧，这就出发。	sndshd
+str_385030	vo_1_2_0_40_1	convoy1	All right, Doyle. Get this shit heap moving.	好了，Doyle，把这堆破铜烂铁开起来。	sndshd
+str_385031	vo_1_2_0_40_2	convoy1	Roger that. Let's move out.	收到。出发。	sndshd
+str_385032	vo_1_2_0_42_1	convoy1	You got any idea how far into Strogg territory these convoys are goin?	你知道这些车队要往 Strogg 的地盘里开多深吗？	sndshd
+str_385033	vo_1_2_0_42_2	convoy1	Far enough that youre gonna have to be fluent in Strogg if you wanna ask for directions.	深到你要是想问个路，就得会说一口流利的 Strogg 语。	sndshd
+str_385034	vo_1_2_0_42_3	convoy1	Guess we better not get lost, huh?	看来咱们最好别迷路，是吧？	sndshd
+str_385035	vo_1_2_0_42_4	convoy1	You got that right.	说得没错。	sndshd
+str_385036	vo_1_2_0_43_1	convoy1	Kane here was with the squad that took that cannon out.	这位 Kane，就是端掉那门炮的小队里的人。	sndshd
+str_385037	vo_1_2_0_43_2	convoy1	No shit? Nice work, soldier.	真的假的？干得漂亮，士兵。	sndshd
+str_385038	vo_1_2_0_44_1	convoy1	We got nothin to worry about  Rhino squad is here. Right, Kane?	咱们没啥好担心的——犀牛小队在这儿呢。对吧，Kane？	sndshd
+str_385039	vo_1_2_0_44_2	convoy1	Yeah, you boys have pulled off all sorts of impossible shit, havent you?	是啊，你们这帮小子什么不可能的破事都干成过，不是吗？	sndshd
+str_385040	vo_1_2_0_44_3	convoy1	Theyre still talkin about what Rhino did in Dallas, during the Earth invasion.	大伙儿到现在还在念叨地球入侵战那会儿，犀牛小队在 Dallas 干的那一票。	sndshd
+str_385041	vo_1_2_0_45_1	convoy1	Cut the chatter, gentlemen, and keep your eyes wide. Theres reports of Strogg in this area.	少闲聊，各位，眼睛都放亮点。有报告说这一带有 Strogg 出没。	sndshd
+str_385042	vo_1_2_0_46_1	convoy1	Have you heard how things are going along the front?	你听说前线的战况了吗？	sndshd
+str_385043	vo_1_2_0_46_2	convoy1	Same as usual. Soldiers are fightin and dyin and neither sides winnin.	老样子。弟兄们打着、死着，两边谁也赢不了。	sndshd
+str_385044	vo_1_2_0_46_3	convoy1	The thing is though, we cant keep this battle up much longer. Weve got to win it soon or were just gonna run out of men.	可问题是，这场仗我们撑不了多久了。必须尽快赢下来，不然人手就要打光了。	sndshd
+str_385045	vo_1_2_0_46_4	convoy1	And thats exactly why these convoys are going out - to tip the scales in our favor.	而这正是派出这些车队的原因——把天平扳向我们这边。	sndshd
+str_385046	vo_1_2_0_49_1	convoy1	Our guys are really cleaning up the fliers since you blew up the hangars, Kane.	{happy}自打你把机库炸了，咱们的人收拾起飞行器来那叫一个痛快，Kane。	sndshd
+str_385047	vo_1_2_0_64_1	convoy1	This is Walker 12 of Bison squad. Got a bogie at 6 oclock.	这里是野牛小队 Walker 12。六点钟方向发现不明目标。	sndshd
+str_385048	vo_1_2_0_70_10	convoy1	You can get off, Kane. This is your stop.	可以下车了，Kane。你到站了。	sndshd
+str_385049	vo_1_2_0_80_10	convoy1	See you around.	回头见。	sndshd
+str_385050	vo_1_2_14_40_3	hub1	Kane, youre assigned to Strauss. Voss out.	Kane，你被派给 Strauss 了。Voss 完毕。	sndshd
+str_385051	vo_1_2_14_80_1	hub1	All right. Convoy, move forward. Kane, get Strauss to the controls for Door 2.	好了。车队，前进。Kane，带 Strauss 去 2 号门的控制台。	sndshd
+str_385052	vo_1_2_15_10_1	hub1	Lt. Voss, uh...what should we do?	Voss 中尉，呃……我们该怎么办？	sndshd
+str_385053	vo_1_2_15_10_2	hub1	Leave them alone, these repair bots are harmless.	别理它们，这些维修机器人没有危害。	sndshd
+str_385054	vo_1_2_15_10_3	hub1	Harmless, huh? Get ready, we got company!	没有危害是吧？准备好，有敌人来了！	sndshd
+str_385055	vo_1_2_15_20_1	hub1	Lieutenant, I can force this door open, but it will set off alarms.	中尉，我可以强行打开这扇门，但那样会触发警报。	sndshd
+str_385056	vo_1_2_15_20_2	hub1	Can you bypass security?	你能绕过安保系统吗？	sndshd
+str_385057	vo_1_2_15_20_3	hub1	Ja, but I will need access to a wiring junction.	Ja，不过我需要接入一处接线箱。	sndshd
+str_385058	vo_1_2_15_20_4	hub1	Kane, help Strauss locate a wiring junction. Voss, out.	Kane，帮 Strauss 找一处接线箱。Voss 完毕。	sndshd
+str_385059	vo_1_2_15_20_5	hub1	Yes, let us walk around. All by ourselves. I am certain the Strogg won't mind.	好啊，那我们就四处转转嘛。就我们俩。我敢肯定 Strogg 不会介意的。	sndshd
+str_385060	vo_1_2_16_10_1	hub1	Ja, this is what I need.	Ja，这正是我需要的。	sndshd
+str_385061	vo_1_2_16_20_1	hub1	Mist! What was that?	Mist！刚才那是什么？	sndshd
+str_385062	vo_1_2_16_30_1	hub1	That's it! I just need a few minutes.	成了！我只需要几分钟。	sndshd
+str_385063	vo_1_2_16_40_1	hub1	I've located the security wiring to Door 2.	我找到通往 2 号门的安保线路了。	sndshd
+str_385064	vo_1_2_16_40_2	hub1	I've located the security wiring to Door 1.	我找到通往 1 号门的安保线路了。	sndshd
+str_385065	vo_1_2_16_40_3	hub1	Now, I merely switch Door 2 security to look at Door 1.	现在，我只要把 2 号门的安保切换去监视 1 号门就行了。	sndshd
+str_385066	vo_1_2_16_40_4	hub1	There, I'm done. Let's get back to the convoy.	好了，完工。我们回车队吧。	sndshd
+str_385067	vo_1_2_16_60_1	hub1	All clear. Those repair bots must have warned the Strogg we were here. Kane, open the door 2. If there's anything on the other side, I want Strauss out of harm's way.	安全。一定是那些维修机器人向 Strogg 报了信。Kane，去开 2 号门。万一那边有什么东西，我可不想让 Strauss 涉险。	sndshd
+str_385068	vo_1_2_16_80_1	hub1	Let's move it out, convoy. Strauss, stay on this side of the door in case we run into trouble.	车队，出发。Strauss，你留在门这一边，免得我们碰上麻烦。	sndshd
+str_385069	vo_1_2_17_10_10	hub1	You're not gonna be able to. I'm sure security locked it.	你打不开的。肯定是安保系统把它锁死了。	sndshd
+str_385070	vo_1_2_17_10_8	hub1	The sons of bitches knew we were coming.	这帮混蛋早就知道我们要来。	sndshd
+str_385071	vo_1_2_1_109_2	convoy1	Dont sweat it. Kane wont let me die . . . right, ol buddy?	别担心。Kane 不会让我死的……对吧，老伙计？	sndshd
+str_385072	vo_1_2_8_100_4	building_b	Take positions! This zone is hot!	各就各位！这里是交战区！	sndshd
+str_385073	vo_1_2_8_100_5	building_b	Hey, Kane!	嘿，Kane！	sndshd
+str_385074	vo_1_2_8_102_1	building_b	You go ahead and get Newberry to the door they need opened.	你先走，把 Newberry 带到那扇要开的门那儿去。	sndshd
+str_385075	vo_1_2_8_102_2	building_b	Don't worry about us. We're stayin' right here.	别担心我们，我们就守在这儿。	sndshd
+str_385076	vo_1_2_8_102_3	building_b	Really, kid. Get going.	真的，小子，快走吧。	sndshd
+str_385077	vo_1_2_8_15_1	building_b	Rhino Squad, huh? You guys are supposed to be pretty badass.	犀牛小队？听说你们都是狠角色。	sndshd
+str_385078	vo_1_2_8_15_2	building_b	Yeah, did Rhino really save Austin, back when the Strogg attacked Earth?	{puzzled}对了，当年 Strogg 打地球的时候，奥斯汀真是犀牛小队救下来的？	sndshd
+str_385079	vo_1_2_8_30_1	building_b	Just got orders from Lt.Voss. We're accompanying you to Sub-Entrance 1.	刚接到 Voss 中尉的命令。我们陪你一起去 1 号副入口。	sndshd
+str_385080	vo_1_2_8_30_2	building_b	About damn time we get to frag some squibs.	妈的，可算能宰几个杂碎了。	sndshd
+str_385081	vo_1_2_8_30_5	building_b	Okay, Strauss. Open the door.	好了，Strauss，开门吧。	sndshd
+str_385082	vo_1_2_8_31_1	building_b	Let's get a move on. We're in Strogg territory.	抓紧走吧，这里可是 Strogg 的地盘。	sndshd
+str_385083	vo_1_2_8_31_2	building_b	Come on. We've got orders to get to Sub-entrance 1.	走吧。我们奉命前往 1 号副入口。	sndshd
+str_385084	vo_1_2_8_31_3	building_b	Let's go. Those engineers in Sub-Entrance 1 are waiting for us.	出发。1 号副入口的工程兵还等着我们呢。	sndshd
+str_385085	vo_1_2_8_32_1	building_b	Stay quiet or the Strogg will hear us.	保持安静，不然会被 Strogg 听见。	sndshd
+str_385086	vo_1_2_8_32_2	building_b	Let's get down to Sub-entrance 1 pronto.	麻利点，赶紧下到 1 号副入口去。	sndshd
+str_385087	vo_1_2_8_32_3	building_b	We got our orders. Keep moving toward Sub-entrance 1.	命令已经下了。继续朝 1 号副入口前进。	sndshd
+str_385088	vo_1_2_8_40_1	building_b	Hit that console and get the elevator up here now!	快按那个控制台，把电梯升上来！	sndshd
+str_385089	vo_1_2_8_50_1	building_b	Damn. It's locked. Strauss, can you open this door?	该死，锁住了。Strauss，这扇门你能打开吗？	sndshd
+str_385090	vo_1_2_8_51_1	building_b	This door's open. Let's go.	这扇门开了，走。	sndshd
+str_385091	vo_1_2_9_42_1	building_b	Shit, did you see that? I thought I was dead meat.	{scared}妈的，你看见没？{idle}我还以为自己死定了。	sndshd
+str_385092	vo_1_2_9_42_2	building_b	The squibs are tryin' to psyche us out - and it's starting to work.	那帮杂碎想吓垮我们——而且还真开始起作用了。	sndshd
+str_385093	vo_1_2_9_42_3	building_b	You can't take three steps around here without checkin' over your shoulder.	在这地方走三步就得回头看一眼。	sndshd
+str_385094	vo_1_2_9_53_1	building_b	This hit and run bullshit by the freaks is getting to be real annoying.	这帮怪胎打了就跑的把戏，真是越来越烦人了。	sndshd
+str_385095	vo_3_1_2_100_1	storage	Just when I think the Strogg can't sink any lower I see shit like this.	每次我以为 Strogg 已经烂到底了，就会看见这种玩意儿。	sndshd
+str_385096	vo_3_1_2_110_1	storage	Is this what the Strogg have planned for all of us if they take over the Earth?	要是 Strogg 占领了地球，这就是他们给我们所有人准备的下场吗？	sndshd
+str_385097	vo_3_1_2_120_1	storage	Why? Why would the Strogg do this?	为什么？Strogg 为什么要干出这种事？	sndshd
+str_385098	vo_3_1_2_160_2	storage	Something about that gives me the creeps. Don't touch it.	那东西看着就让我发毛。别碰。	sndshd
+str_385099	vo_3_1_2_190_1	storage	Wish all our missions were this easy. Hey, what's that?	要是每次任务都这么轻松就好了。嘿，那是什么？	sndshd
+str_385100	vo_3_1_2_85_1	storage	I know a little about Strogg weaponry. Mind if I take a look at your rail gun?	我对 Strogg 的武器略知一二。介意我看看你的轨道炮吗？	sndshd
+str_385101	vo_3_1_2_85_2	storage	I just upped the field output by 300%. Now that rail gun is gonna really kick ass.  You'll be able to shoot straight through guys.	我刚把力场输出调高了 300%。现在这把轨道炮可真有得瞧了——你能一枪把那些家伙打个对穿。	sndshd
+str_385102	vo_3_2_9_30_10	monster_makron	laugh	哈哈哈哈……	sndshd
+str_385103	vo_3_2_9_30_9	monster_makron	laugh	哈哈哈哈……	sndshd
+str_385104	vo_9_10_130_1_h	persona	Thanks, Marine. I would have died.	谢了，弟兄。差点就没命了。	sndshd
+str_385105	vo_9_10_130_2_h	persona	I should have seen that one comin'.	我早该防着那一手的。	sndshd
+str_385106	vo_9_10_130_3_h	persona	Thanks for the assistance. He had me dead in his sights.	多谢支援。刚才它已经死死瞄住我了。	sndshd
+str_385107	vo_9_10_140_1_h	persona	Nice job, soldier!	干得好，士兵！	sndshd
+str_385108	vo_9_10_140_2_h	persona	Way to go!	就是这样！	sndshd
+str_385109	vo_9_10_140_3_h	persona	Good shot, Marine!	好枪法，弟兄！	sndshd
+str_385110	vo_9_10_140_4_h	persona	Keep it up, soldier!	保持下去，士兵！	sndshd
+str_385111	vo_9_10_140_5_h	persona	You're gettin' good at this!	你越打越顺手了！	sndshd
+str_385112	vo_9_10_140_6_h	persona	All right! Good one.	不错！这下漂亮。	sndshd
+str_385113	vo_9_10_140_7_h	persona	Ha, ha! Nice shot!	哈哈！好枪法！	sndshd
+str_385114	vo_9_10_140_8_h	persona	Rip 'em up, Marine!	把他们撕碎，弟兄！	sndshd
+str_385115	vo_9_10_150_1_h	persona	Check your targets!	{furrow}看清目标再打！	sndshd
+str_385116	vo_9_10_150_2_h	persona	Dammit, you just hit me!	{furrow}该死，你打到我了！	sndshd
+str_385117	vo_9_10_150_3_h	persona	Watch the friendly fire!	{furrow}注意别误伤自己人！	sndshd
+str_385118	vo_9_10_150_4_h	persona	Soldier, who's side are you on?	{furrow}士兵，你到底站哪边的？	sndshd
+str_385119	vo_9_10_150_5_h	persona	Check your fire!	{furrow}管好你的火力！	sndshd
+str_385120	vo_9_10_160_1_h	persona	Do you know you just killed a Marine?	{furrow}你知道你刚杀了一名陆战队员吗？	sndshd
+str_385121	vo_9_10_160_2_h	persona	You just fragged someone on our side!	{furrow}你刚干掉了一个自己人！	sndshd
+str_385122	vo_9_10_160_3_h	persona	Stop shooting at soldiers!	{furrow}别再朝自己的士兵开枪了！	sndshd
+str_385123	vo_9_10_200_1_h	persona	Look behind you!	看你身后！	sndshd
+str_385124	vo_9_10_200_2_h	persona	In back of you!	就在你背后！	sndshd
+str_385125	vo_9_10_200_3_h	persona	Behind you!	小心背后！	sndshd
+str_385126	vo_9_10_210_1_h	persona	Strogg to the left side!	左边有 Strogg！	sndshd
+str_385127	vo_9_10_210_2_h	persona	Look left!	看左边！	sndshd
+str_385128	vo_9_10_210_3_h	persona	Target on your left!	目标在你左侧！	sndshd
+str_385129	vo_9_10_220_1_h	persona	Strogg to the right!	右边有 Strogg！	sndshd
+str_385130	vo_9_10_220_2_h	persona	They're flanking right!	他们在从右翼包抄！	sndshd
+str_385131	vo_9_10_230_1_h	persona	There's Strogg up there!	上面有 Strogg！	sndshd
+str_385132	vo_9_10_230_2_h	persona	Enemy's above us!	敌人在上面！	sndshd
+str_385133	vo_9_10_230_3_h	persona	Look up above!	看上面！	sndshd
+str_385134	vo_9_10_240_1_h	persona	This Strogg's mine!	这个 Strogg 归我！	sndshd
+str_385135	vo_9_10_240_2_h	persona	Got a squib over here!	这边有个杂碎！	sndshd
+str_385136	vo_9_10_240_3_h	persona	Time to die!	受死吧！	sndshd
+str_385137	vo_9_10_240_4_h	persona	Bring it on, Strogg!	放马过来，Strogg！	sndshd
+str_385138	vo_9_10_240_5_h	persona	I'm ready for ya!	我等着你呢！	sndshd
+str_385139	vo_9_10_240_6_h	persona	Target acquired!	锁定目标！	sndshd
+str_385140	vo_9_10_250_1_h	persona	Did you want something soldier?	有事吗，士兵？	sndshd
+str_385141	vo_9_10_250_2_h	persona	Haven't you got something better to do?	你就没点正事可干吗？	sndshd
+str_385142	vo_9_10_250_3_h	persona	You better move along.	你最好赶紧走开。	sndshd
+str_385143	vo_9_10_260_1_h	persona	(pain grunt)	呃……	sndshd
+str_385144	vo_9_10_260_2_h	persona	(pain grunt)	呃啊……	sndshd
+str_385145	vo_9_10_260_3_h	persona	(pain grunt)	唔……	sndshd
+str_385146	vo_9_10_260_4_h	persona	(pain grunt)	嗯啊……	sndshd
+str_385147	vo_9_10_270_1_h	persona	(death yell)	啊——！	sndshd
+str_385148	vo_9_10_270_2_h	persona	(death yell)	啊啊——！	sndshd
+str_385149	vo_9_10_270_3_h	persona	(death yell)	呃啊——！	sndshd
+str_385150	vo_9_10_290_1_h	persona	Hold up, Marine. I'm a medic.	站住别动，弟兄。我是医疗兵。	sndshd
+str_385151	vo_9_10_290_2_h	persona	Stay right there. I'll give you a medpack.	待在原地。我给你上个医疗包。	sndshd
+str_385152	vo_9_10_290_3_h	persona	Don't move from there. I'll heal you.	别乱动，我来给你治疗。	sndshd
+str_385153	vo_9_10_300_1_h	persona	Stay there, Kane. I'm a medic!	待在那儿，Kane。我是医疗兵！	sndshd
+str_385154	vo_9_10_300_2_h	persona	Don't move from there, Kane. I'll fix you up.	别动，Kane。我来给你包扎。	sndshd
+str_385155	vo_9_10_300_3_h	persona	I'm comin' over to patch you up, Kane.	我这就过来给你包扎，Kane。	sndshd
+str_385156	vo_9_10_300_4_h	persona	Kane, I'm a medic! Stay right where you are!	Kane，我是医疗兵！待在原地别动！	sndshd
+str_385157	vo_9_10_30_1_h	persona	Sorry. Can't talk right now.	抱歉，现在没空说话。	sndshd
+str_385158	vo_9_10_30_2_h	persona	I can't talk right now.	{furrow}我现在没空说话。	sndshd
+str_385159	vo_9_10_310_1_h	persona	Stop movin' around.	别乱动了。	sndshd
+str_385160	vo_9_10_310_2_h	persona	This won't hurt.	不会疼的。	sndshd
+str_385161	vo_9_10_310_3_h	persona	Stop fidgetin'!	别扭来扭去的！	sndshd
+str_385162	vo_9_10_310_4_h	persona	I only need a couple of seconds to patch you up.	给我几秒钟就能把你包扎好。	sndshd
+str_385163	vo_9_10_310_5_h	persona	Dammit, hold still.	该死，别动。	sndshd
+str_385164	vo_9_10_320_1_h	persona	All done. Go give 'em hell. Marine.	搞定。去让他们好看吧，弟兄。	sndshd
+str_385165	vo_9_10_320_2_h	persona	There, you're fixed.	好了，治好了。	sndshd
+str_385166	vo_9_10_320_3_h	persona	Finished! Now go kill some Strogg.	完事了！去多杀几个 Strogg 吧。	sndshd
+str_385167	vo_9_10_320_4_h	persona	That's it. Get goin'!	就这样。走吧！	sndshd
+str_385168	vo_9_10_360_1_h	persona	Wait there, Kane. Ill fix your armor.	在那儿等着，Kane。我来修你的护甲。	sndshd
+str_385169	vo_9_10_360_2_h	persona	Hold up a second, Kane. I can repair your body armor.	稍等一下，Kane。我能修好你的护甲。	sndshd
+str_385170	vo_9_10_360_3_h	persona	If you wait there, I can fix your armor, Corporal Kane.	你在那儿等着，我就能给你修护甲，Kane 下士。	sndshd
+str_385171	vo_9_10_370_1_h	persona	Hold still while I fix this for you.	我给你修的时候别乱动。	sndshd
+str_385172	vo_9_10_370_2_h	persona	If you stop moving, Ill fix your body armor.	你停下别动，我就帮你修好护甲。	sndshd
+str_385173	vo_9_10_370_3_h	persona	Stop moving around while I repair your armor.	我修护甲的时候你别来回晃。	sndshd
+str_385174	vo_9_10_380_1_h	persona	Go on. Ive done all I can.	去吧，我能做的都做了。	sndshd
+str_385175	vo_9_10_380_2_h	persona	There you are. Get back in the battle.	好了，回去接着打吧。	sndshd
+str_385176	vo_9_10_380_3_h	persona	Thats it. Im done. 	好了，弄完了。	sndshd
+str_385177	vo_9_10_80_1_h	persona	Man down!	有人中弹！	sndshd
+str_385178	vo_9_10_80_2_h	persona	There's a casualty here!	这边有人伤亡！	sndshd
+str_385179	vo_9_10_80_3_h	persona	Marine down!	有队员倒下了！	sndshd
+str_385180	vo_9_10_80_4_h	persona	There's a soldier down here!	这儿有个士兵倒下了！	sndshd
+str_385181	vo_9_10_90_1_h	persona	Got 'em!	干掉了！	sndshd
+str_385182	vo_9_10_90_2_h	persona	That one was mine!	那个算我的！	sndshd
+str_385183	vo_9_10_90_3_h	persona	Yeah!	爽！	sndshd
+str_385184	vo_9_10_90_4_h	persona	Ha ha haaaa!	哈哈哈——！	sndshd
+str_385185	vo_9_10_90_5_h	persona	One Marine's worth ten of you Strogg!	一个陆战队员顶你们十个 Strogg！	sndshd
+str_385186	vo_9_10_90_6_h	persona	Didn't expect that, did ya?	没想到吧，啊？	sndshd
+str_385187	vo_9_10_90_7_h	persona	Who's next?	下一个是谁？	sndshd
+str_385188	vo_9_10_90_8_h	persona	Sleep tight, squib.	睡个好觉吧，杂碎。	sndshd
+str_385189	vo_9_11_130_1_h	persona	Thanks, soldier. You saved my hide.	谢了，士兵。你救了我一条命。	sndshd
+str_385190	vo_9_11_130_2_h	persona	Another second and that Strogg woulda killed me. Thanks.	再晚一秒，那 Strogg 就把我干掉了。多谢。	sndshd
+str_385191	vo_9_11_130_3_h	persona	Thanks for the assist, Corporal.	多谢帮忙，下士。	sndshd
+str_385192	vo_9_11_140_1_h	persona	Yes! That's what I like to see!	好！我就爱看这个！	sndshd
+str_385193	vo_9_11_140_2_h	persona	Good one!	漂亮！	sndshd
+str_385194	vo_9_11_140_3_h	persona	That was a beautiful shot!	这一枪太漂亮了！	sndshd
+str_385195	vo_9_11_140_4_h	persona	Keep tearin' 'em up!	接着把他们撕碎！	sndshd
+str_385196	vo_9_11_140_5_h	persona	Nice!	漂亮！	sndshd
+str_385197	vo_9_11_140_6_h	persona	Well done, Marine!	干得好，弟兄！	sndshd
+str_385198	vo_9_11_140_7_h	persona	Ha ha! He's not getting' up again!	哈哈！他再也爬不起来了！	sndshd
+str_385199	vo_9_11_140_8_h	persona	You nailed him!	你一枪撂倒他了！	sndshd
+str_385200	vo_9_11_150_1_h	persona	Check your fire, soldier!	{furrow}管好你的火力，士兵！	sndshd
+str_385201	vo_9_11_150_2_h	persona	You just shot me!	{furrow}你刚打中我了！	sndshd
+str_385202	vo_9_11_150_3_h	persona	Confirm your target before pulling that trigger!	{furrow}扣扳机前先确认目标！	sndshd
+str_385203	vo_9_11_150_4_h	persona	Point that weapon away from me!	{furrow}把枪口从我身上挪开！	sndshd
+str_385204	vo_9_11_150_5_h	persona	Are you fully trained in the operation of that weapon, soldier?	{furrow}你那把枪的操作训练合格了吗，士兵？	sndshd
+str_385205	vo_9_11_160_1_h	persona	You just iced a Marine!	{furrow}你刚干掉了一名陆战队员！	sndshd
+str_385206	vo_9_11_160_2_h	persona	What the hell are you doing shooting one of us?	{furrow}你他妈怎么朝自己人开枪？	sndshd
+str_385207	vo_9_11_160_3_h	persona	Stop killing our soldiers!	{furrow}别再残杀自己的士兵了！	sndshd
+str_385208	vo_9_11_200_1_h	persona	Turn around!	转身！	sndshd
+str_385209	vo_9_11_200_2_h	persona	Enemy to the rear!	后方有敌人！	sndshd
+str_385210	vo_9_11_200_3_h	persona	There's Strogg at your back!	你背后有 Strogg！	sndshd
+str_385211	vo_9_11_210_1_h	persona	They're flanking left!	他们在从左翼包抄！	sndshd
+str_385212	vo_9_11_210_2_h	persona	Keep an eye to the left!	留神左边！	sndshd
+str_385213	vo_9_11_210_3_h	persona	They're on your left!	他们在你左边！	sndshd
+str_385214	vo_9_11_220_1_h	persona	We've got hostiles to the right!	右边有敌人！	sndshd
+str_385215	vo_9_11_220_2_h	persona	Squib on the right!	右边有杂碎！	sndshd
+str_385216	vo_9_11_230_1_h	persona	There's Strogg up top!	顶上有 Strogg！	sndshd
+str_385217	vo_9_11_230_2_h	persona	Up above!	在上面！	sndshd
+str_385218	vo_9_11_230_3_h	persona	I've got a contact above us!	上方发现敌情！	sndshd
+str_385219	vo_9_11_240_1_h	persona	Got a Strogg right here!	这儿就有个 Strogg！	sndshd
+str_385220	vo_9_11_240_2_h	persona	Gimme your best, squib!	使出你的绝活来，杂碎！	sndshd
+str_385221	vo_9_11_240_3_h	persona	Feeling strong, freak?	觉得自己挺能打是吧，怪胎？	sndshd
+str_385222	vo_9_11_240_4_h	persona	You're in the wrong place, squib!	你来错地方了，杂碎！	sndshd
+str_385223	vo_9_11_240_5_h	persona	You've had it, squib!	你完蛋了，杂碎！	sndshd
+str_385224	vo_9_11_240_6_h	persona	Just you and me, Strogg!	咱俩单挑，Strogg！	sndshd
+str_385225	vo_9_11_250_1_h	persona	Something troubling you, Marine?	有什么心事吗，大兵？	sndshd
+str_385226	vo_9_11_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385227	vo_9_11_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385228	vo_9_11_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385229	vo_9_11_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385230	vo_9_11_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385231	vo_9_11_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385232	vo_9_11_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385233	vo_9_11_290_1_h	persona	Soldier, stay there! I'll fix you up.	士兵，待在那儿！我来给你包扎。	sndshd
+str_385234	vo_9_11_290_2_h	persona	Don't move, Marine! You're hurt!	别动，弟兄！你受伤了！	sndshd
+str_385235	vo_9_11_290_3_h	persona	Stay down! I'm a medic!	趴着别动！我是医疗兵！	sndshd
+str_385236	vo_9_11_300_1_h	persona	Kane, hold up! Let me give you a medkit!	Kane，停一下！让我给你上个医疗包！	sndshd
+str_385237	vo_9_11_300_2_h	persona	Stay there, Kane. I'm a medic!	待在那儿，Kane。我是医疗兵！	sndshd
+str_385238	vo_9_11_300_3_h	persona	Kane, I'll be right there to fix you up!	Kane，我马上过去给你包扎！	sndshd
+str_385239	vo_9_11_300_4_h	persona	Wait a minute, Kane! I'll heal you.	等一下，Kane！我来治你。	sndshd
+str_385240	vo_9_11_30_1_h	persona	Corporal, I'm a little preoccupied at the moment.	{furrow}下士，我这会儿有点忙。	sndshd
+str_385241	vo_9_11_30_2_h	persona	Move along. I'm busy.	{furrow}走开，我忙着呢。	sndshd
+str_385242	vo_9_11_310_1_h	persona	Would you be still?	你能不能别动？	sndshd
+str_385243	vo_9_11_310_2_h	persona	The more you move, the longer this takes.	你越乱动，我弄得越慢。	sndshd
+str_385244	vo_9_11_310_3_h	persona	Don't move.	不要动。	sndshd
+str_385245	vo_9_11_310_4_h	persona	Just give me a few seconds here.	就给我几秒钟。	sndshd
+str_385246	vo_9_11_310_5_h	persona	You're a lousy patient.	你这病人可真难伺候。	sndshd
+str_385247	vo_9_11_320_1_h	persona	Done! Move out, Marine.	好了！出发吧，弟兄。	sndshd
+str_385248	vo_9_11_320_2_h	persona	That's as much as I can do.	我只能帮你到这儿了。	sndshd
+str_385249	vo_9_11_320_3_h	persona	Go on, I'm done.	走吧，我这边完事了。	sndshd
+str_385250	vo_9_11_320_4_h	persona	That's as good as it gets.	这已经是最好的效果了。	sndshd
+str_385251	vo_9_11_80_1_h	persona	Man down! Man down!	有人中弹！有人中弹！	sndshd
+str_385252	vo_9_11_80_2_h	persona	We just lost a Marine!	我们刚损失了一名队员！	sndshd
+str_385253	vo_9_11_80_3_h	persona	We've got a casualty here!	这边有人伤亡！	sndshd
+str_385254	vo_9_11_80_4_h	persona	We're dropping like flies!	我们的人一个接一个地倒！	sndshd
+str_385255	vo_9_11_90_1_h	persona	Yeah! I nailed 'em!	爽！被我撂倒了！	sndshd
+str_385256	vo_9_11_90_2_h	persona	And I'm getting' paid to do this!	干这活儿居然还有钱拿！	sndshd
+str_385257	vo_9_11_90_3_h	persona	Bring on another one!	再来一个！	sndshd
+str_385258	vo_9_11_90_4_h	persona	Ha, ha!	哈哈！	sndshd
+str_385259	vo_9_11_90_5_h	persona	Don't mess with a Marine!	别惹陆战队员！	sndshd
+str_385260	vo_9_11_90_6_h	persona	Yeeeah!	爽——！	sndshd
+str_385261	vo_9_11_90_7_h	persona	Squib is down!	杂碎倒下了！	sndshd
+str_385262	vo_9_11_90_8_h	persona	Burn forever, freak.	下地狱慢慢烧吧，怪胎。	sndshd
+str_385263	vo_9_12_130_1_h	persona	Hey, nice shot. You sure saved my ass.	嘿，好枪法。你可真救了我一条命。	sndshd
+str_385264	vo_9_12_130_2_h	persona	Thanks for savin' me. Guess this makes you my guardian angel.	多谢救命。看来你成我的守护天使了。	sndshd
+str_385265	vo_9_12_130_3_h	persona	Thanks, Marine. I hope I can return the favor.	谢了，弟兄。希望我能还你这个人情。	sndshd
+str_385266	vo_9_12_140_1_h	persona	Yeah! That's the way to do it, Marine!	爽！就得这么干，弟兄！	sndshd
+str_385267	vo_9_12_140_2_h	persona	Ha, ha, ha, haaaa!	哈哈哈哈——！	sndshd
+str_385268	vo_9_12_140_3_h	persona	That was freakin' beautiful! 	刚才那下简直绝了！	sndshd
+str_385269	vo_9_12_140_4_h	persona	Shit, that was great!	妈的，太漂亮了！	sndshd
+str_385270	vo_9_12_140_5_h	persona	Niiiice!	漂——亮！	sndshd
+str_385271	vo_9_12_140_6_h	persona	Marine, you got some talents.	弟兄，你是真有两下子。	sndshd
+str_385272	vo_9_12_140_7_h	persona	It's a pleasure to watch you work, Soldier.	看你干活真是种享受，士兵。	sndshd
+str_385273	vo_9_12_140_8_h	persona	You freakin' nailed his ass!	你把他崩得漂漂亮亮！	sndshd
+str_385274	vo_9_12_150_1_h	persona	Don't pull that trigger unless you're sure of your target!	{furrow}没看准目标就别扣扳机！	sndshd
+str_385275	vo_9_12_150_2_h	persona	You just freakin' shot me!	{furrow}你他妈刚打中我了！	sndshd
+str_385276	vo_9_12_150_3_h	persona	Are you blind?	{furrow}你瞎了吗？	sndshd
+str_385277	vo_9_12_150_4_h	persona	Are you some squib sympathizer?	{furrow}你是不是心疼那帮杂碎？	sndshd
+str_385278	vo_9_12_150_5_h	persona	Do not fire at me, Soldier!	{furrow}不许朝我开火，士兵！	sndshd
+str_385279	vo_9_12_160_1_h	persona	You just fragged a human!	{furrow}你刚干掉了一个人类！	sndshd
+str_385280	vo_9_12_160_2_h	persona	Hey, moron, you just killed a Marine!	{furrow}嘿，蠢货，你刚杀了一名陆战队员！	sndshd
+str_385281	vo_9_12_160_3_h	persona	I should have you thrown in the brig for that!	{furrow}就凭这个，我该把你扔进禁闭室！	sndshd
+str_385282	vo_9_12_200_1_h	persona	We got enemies behind us!	敌人在我们后面！	sndshd
+str_385283	vo_9_12_200_2_h	persona	Freaks are in back!	怪胎在后面！	sndshd
+str_385284	vo_9_12_200_3_h	persona	There's Strogg behind you!	你背后有 Strogg！	sndshd
+str_385285	vo_9_12_210_1_h	persona	There's Strogg to the left!	左边有 Strogg！	sndshd
+str_385286	vo_9_12_210_2_h	persona	Contact to the left!	左侧发现敌人！	sndshd
+str_385287	vo_9_12_210_3_h	persona	They're flanking left!	他们在从左翼包抄！	sndshd
+str_385288	vo_9_12_220_1_h	persona	Enemy on the right.	右边有敌人。	sndshd
+str_385289	vo_9_12_220_2_h	persona	There's one to your right!	你右边有一个！	sndshd
+str_385290	vo_9_12_230_1_h	persona	There's Strogg up there!	上面有 Strogg！	sndshd
+str_385291	vo_9_12_230_2_h	persona	There's a squib up high!	高处有个杂碎！	sndshd
+str_385292	vo_9_12_230_3_h	persona	Look, we got Strogg above us!	看，上面有 Strogg！	sndshd
+str_385293	vo_9_12_240_1_h	persona	You're already dead.	你已经是个死人了。	sndshd
+str_385294	vo_9_12_240_2_h	persona	I'm gonna mess you up, freak!	我要把你拆了，怪胎！	sndshd
+str_385295	vo_9_12_240_3_h	persona	It's ass kickin' time!	揍人时间到！	sndshd
+str_385296	vo_9_12_240_4_h	persona	Bring it on!	放马过来！	sndshd
+str_385297	vo_9_12_240_5_h	persona	Come on, freak!	来啊，怪胎！	sndshd
+str_385298	vo_9_12_240_6_h	persona	You eyeballin' me, squib?	你瞅我干嘛，杂碎？	sndshd
+str_385299	vo_9_12_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385300	vo_9_12_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385301	vo_9_12_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385302	vo_9_12_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385303	vo_9_12_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385304	vo_9_12_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385305	vo_9_12_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385306	vo_9_12_290_1_h	persona	Wait a minute! I'm a medic!	等等！我是医疗兵！	sndshd
+str_385307	vo_9_12_290_2_h	persona	Don't go anywhere! I'll heal you up.	哪儿也别去！我来给你治伤。	sndshd
+str_385308	vo_9_12_290_3_h	persona	Stay there! I've got a medpack for you!	待在那儿！我这有医疗包！	sndshd
+str_385309	vo_9_12_300_1_h	persona	Kane, I'm a medic! Wait there!	Kane，我是医疗兵！在那儿等着！	sndshd
+str_385310	vo_9_12_300_2_h	persona	I'm on my way, Kane! I've got a medpack for you!	我这就来，Kane！医疗包给你备着呢！	sndshd
+str_385311	vo_9_12_300_3_h	persona	Kane, stay put. I'll patch you up!	Kane，别动。我来给你包扎！	sndshd
+str_385312	vo_9_12_300_4_h	persona	Wait right there, Kane! I'll try to fix you up.	就在那儿等着，Kane！我来想办法治好你。	sndshd
+str_385313	vo_9_12_310_1_h	persona	Damn it, hold still.	该死，别乱动。	sndshd
+str_385314	vo_9_12_310_2_h	persona	This won't hurt a bit.	一点都不疼的。	sndshd
+str_385315	vo_9_12_310_3_h	persona	Gimme a few seconds and you'll be okay.	给我几秒钟，你就没事了。	sndshd
+str_385316	vo_9_12_310_4_h	persona	Here's a medpack.	给，医疗包。	sndshd
+str_385317	vo_9_12_310_5_h	persona	This is just what the doctor ordered.	这就叫对症下药。	sndshd
+str_385318	vo_9_12_320_1_h	persona	I've done what I can. Go get 'em soldier.	我能做的都做了。上吧，大兵。	sndshd
+str_385319	vo_9_12_320_2_h	persona	All done. Now try and keep low, would ya?	全好了。以后记得放低身子，成不？	sndshd
+str_385320	vo_9_12_320_3_h	persona	That's it! Go frag some Strogg!	好了！去痛宰 Strogg 吧！	sndshd
+str_385321	vo_9_12_320_4_h	persona	You're good to go.	你没问题了，上吧。	sndshd
+str_385322	vo_9_12_360_1_h	persona	Wait up, Kane, and I'll fix your body armor.	等等，Kane，我来修你的护甲。	sndshd
+str_385323	vo_9_12_370_1_h	persona	Just wait a second and I'll be done.	稍等一下，马上就好。	sndshd
+str_385324	vo_9_12_370_2_h	persona	One minute and you'll be back in the battle.	一分钟后你就能重返战场。	sndshd
+str_385325	vo_9_12_370_3_h	persona	Hold still. I'll fix your armor.	别动。我来修护甲。	sndshd
+str_385326	vo_9_12_380_1_h	persona	There you go. Try to be a little more careful, all right?	好了。下回当心着点，行吗？	sndshd
+str_385327	vo_9_12_380_2_h	persona	That's all I can do. See you around, marine.	我只能修成这样了。回见，陆战队员。	sndshd
+str_385328	vo_9_12_380_3_h	persona	Finihed. Back into the war, marine. 	完工。回战场去吧，陆战队员。	sndshd
+str_385329	vo_9_12_80_1_h	persona	Marine down! I repeat, Marine down!	陆战队员倒下了！重复，陆战队员倒下了！	sndshd
+str_385330	vo_9_12_80_2_h	persona	They're picking us apart!	我们正被他们逐个点名！	sndshd
+str_385331	vo_9_12_80_3_h	persona	They just iced a Marine!	他们刚干掉了一名队员！	sndshd
+str_385332	vo_9_12_80_4_h	persona	We're taking casualties!	我们出现伤亡了！	sndshd
+str_385333	vo_9_12_90_1_h	persona	Hell yeah!	太他妈爽了！	sndshd
+str_385334	vo_9_12_90_2_h	persona	Oooorah!	呜——啦！	sndshd
+str_385335	vo_9_12_90_3_h	persona	Where's my next victim?	下一个送死的在哪儿？	sndshd
+str_385336	vo_9_12_90_4_h	persona	Ha, ha, ha, ha!	哈哈哈哈！	sndshd
+str_385337	vo_9_12_90_5_h	persona	Fear me, freak!	怕了吧，怪胎！	sndshd
+str_385338	vo_9_12_90_6_h	persona	You're not so tough now!	现在不嚣张了吧！	sndshd
+str_385339	vo_9_12_90_7_h	persona	I just kicked your ass, freak!	你被我揍趴下了，怪胎！	sndshd
+str_385340	vo_9_12_90_8_h	persona	You Strogg ain't worth shit!	你们 Strogg 屁都不值！	sndshd
+str_385341	vo_9_13_130_1_h	persona	I should be dead right now. Thanks, Corporal.	按理说我这会儿已经死了。谢了，下士。	sndshd
+str_385342	vo_9_13_130_2_h	persona	I owe you, Marine.	我欠你个人情，陆战队员。	sndshd
+str_385343	vo_9_13_130_3_h	persona	You saved me. Thanks, buddy.	你救了我。谢了，伙计。	sndshd
+str_385344	vo_9_13_140_1_h	persona	Oh, that was beautiful!	哦，太漂亮了！	sndshd
+str_385345	vo_9_13_140_2_h	persona	Ha, ha, ha, haaaa!	哈哈哈哈——！	sndshd
+str_385346	vo_9_13_140_3_h	persona	You do the Marine's proud, Soldier!	你给陆战队长脸了，大兵！	sndshd
+str_385347	vo_9_13_140_4_h	persona	Damn, Corporal. You got some skill with that weapon.	好家伙，下士。你这枪法真有两下子。	sndshd
+str_385348	vo_9_13_140_5_h	persona	Did you do that?	那是你干的？	sndshd
+str_385349	vo_9_13_140_6_h	persona	You truly are a terror!	你可真是个煞星！	sndshd
+str_385350	vo_9_13_140_7_h	persona	Oh yeah!	爽！	sndshd
+str_385351	vo_9_13_140_8_h	persona	Shit! That was great!	妈的！太漂亮了！	sndshd
+str_385352	vo_9_13_150_1_h	persona	Check your freakin' line of fire!	{furrow}看清你那该死的射界！	sndshd
+str_385353	vo_9_13_150_2_h	persona	Damn it! You just shot me!	{furrow}该死！你打到我了！	sndshd
+str_385354	vo_9_13_150_3_h	persona	Watch the friendly fire Corporal!	{furrow}当心误伤友军，下士！	sndshd
+str_385355	vo_9_13_150_4_h	persona	You coulda killed me!	{furrow}你差点把我打死！	sndshd
+str_385356	vo_9_13_150_5_h	persona	Check your fire, damn it!	{furrow}看着点打，该死的！	sndshd
+str_385357	vo_9_13_160_1_h	persona	You just iced one of us!	{furrow}你刚干掉了一个自己人！	sndshd
+str_385358	vo_9_13_160_2_h	persona	Your friendly fire just killed a Marine!	{furrow}你的误伤刚打死了一个陆战队员！	sndshd
+str_385359	vo_9_13_160_3_h	persona	You just killed a freakin' soldier!	{furrow}你刚打死了一个自家大兵！	sndshd
+str_385360	vo_9_13_200_1_h	persona	Look behind you!	看你身后！	sndshd
+str_385361	vo_9_13_200_2_h	persona	There in back!	后面！就在那儿！	sndshd
+str_385362	vo_9_13_200_3_h	persona	We've got weapons fire in back!	后方有交火！	sndshd
+str_385363	vo_9_13_210_1_h	persona	Strogg on the left!	左边有 Strogg！	sndshd
+str_385364	vo_9_13_210_2_h	persona	Look to your left!	看你左边！	sndshd
+str_385365	vo_9_13_210_3_h	persona	On the left flank!	左翼！	sndshd
+str_385366	vo_9_13_220_1_h	persona	Aim to the right!	瞄准右边！	sndshd
+str_385367	vo_9_13_220_2_h	persona	There's squibs to the right!	右边有杂碎！	sndshd
+str_385368	vo_9_13_230_1_h	persona	There's Strogg up there!	上面有 Strogg！	sndshd
+str_385369	vo_9_13_230_2_h	persona	Look up!	往上看！	sndshd
+str_385370	vo_9_13_230_3_h	persona	Aim above us!	瞄准上面！	sndshd
+str_385371	vo_9_13_240_1_h	persona	I own you, freak!	你归我了，怪胎！	sndshd
+str_385372	vo_9_13_240_2_h	persona	Got a squib right here!	这儿就有个杂碎！	sndshd
+str_385373	vo_9_13_240_3_h	persona	Let's dance!	来过过招吧！	sndshd
+str_385374	vo_9_13_240_4_h	persona	Bring it!	放马过来！	sndshd
+str_385375	vo_9_13_240_5_h	persona	It's go time!	开干了！	sndshd
+str_385376	vo_9_13_240_6_h	persona	You're dead meat, squib!	你死定了，杂碎！	sndshd
+str_385377	vo_9_13_250_1_h	persona	Hmmm?	嗯……？	sndshd
+str_385378	vo_9_13_250_2_h	persona	Yeah?	干嘛？	sndshd
+str_385379	vo_9_13_250_3_h	persona	What?	干嘛？	sndshd
+str_385380	vo_9_13_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385381	vo_9_13_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385382	vo_9_13_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385383	vo_9_13_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385384	vo_9_13_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385385	vo_9_13_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385386	vo_9_13_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385387	vo_9_13_290_1_h	persona	Stay right there! I'll heal you!	就待在那儿！我来治你！	sndshd
+str_385388	vo_9_13_290_2_h	persona	Keep down! I'll be right there to patch you up!	趴低点！我马上过来给你包扎！	sndshd
+str_385389	vo_9_13_290_3_h	persona	Don't move! I'm a medic!	别动！我是医疗兵！	sndshd
+str_385390	vo_9_13_300_1_h	persona	Corporal Kane, don't move! I'll heal you up!	Kane 下士，别动！我来给你治伤！	sndshd
+str_385391	vo_9_13_300_2_h	persona	I'm a medic, Kane. Stay there - I'll fix you up!	我是医疗兵，Kane。待着别动——我这就来治你！	sndshd
+str_385392	vo_9_13_300_3_h	persona	Hold up, Corporal Kane. I'm a medic!	停一下，Kane 下士。我是医疗兵！	sndshd
+str_385393	vo_9_13_300_4_h	persona	Stay at your position, Kane. I'll heal you.	待在原地，Kane。我来治你。	sndshd
+str_385394	vo_9_13_30_1_h	persona	Sorry, buddy. I'm a little busy.	{furrow}抱歉，伙计。我这儿有点忙。	sndshd
+str_385395	vo_9_13_30_2_h	persona	Excuse me, but I'm busy.	{furrow}不好意思，我正忙着呢。	sndshd
+str_385396	vo_9_13_310_1_h	persona	This doesn't look so bad.	伤得不算重嘛。	sndshd
+str_385397	vo_9_13_310_2_h	persona	Looks like you need a medpack.	看样子你需要个医疗包。	sndshd
+str_385398	vo_9_13_310_3_h	persona	Stop fidgeting.	别扭来扭去的。	sndshd
+str_385399	vo_9_13_310_4_h	persona	Just stay put for a minute longer.	再多待一会儿别动。	sndshd
+str_385400	vo_9_13_310_5_h	persona	This won't take long.	用不了多久。	sndshd
+str_385401	vo_9_13_320_1_h	persona	See? That didn't hurt a bit.	瞧见没？一点都不疼吧。	sndshd
+str_385402	vo_9_13_320_2_h	persona	Go on. That's the best I can do.	去吧。我只能治到这份上了。	sndshd
+str_385403	vo_9_13_320_3_h	persona	Done. Now go ice some freaks, Marine!	好了。去干翻几个怪胎吧，陆战队员！	sndshd
+str_385404	vo_9_13_320_4_h	persona	That's it. You're back in action.	行了。你可以重返战斗了。	sndshd
+str_385405	vo_9_13_360_1_h	persona	Kane, wait. Your armor's damaged.	Kane，等等。你的护甲坏了。	sndshd
+str_385406	vo_9_13_360_2_h	persona	Corporal Kane. Wait, and I'll repair your armor.	Kane 下士。等一下，我来修你的护甲。	sndshd
+str_385407	vo_9_13_360_3_h	persona	I can fix your armor, Kane.	我能修好你的护甲，Kane。	sndshd
+str_385408	vo_9_13_370_1_h	persona	I'l have you patched up in no time.	马上就给你修得妥妥的。	sndshd
+str_385409	vo_9_13_370_2_h	persona	This won't take long.	用不了多久。	sndshd
+str_385410	vo_9_13_370_3_h	persona	Just a few seconds and you'll be right back into the fight.	就几秒钟，你马上就能重回战斗。	sndshd
+str_385411	vo_9_13_380_1_h	persona	You're good to go, marine.	好了，上吧，大兵。	sndshd
+str_385412	vo_9_13_380_2_h	persona	That's all I can do. Good luck.	我只能做到这一步了。祝你好运。	sndshd
+str_385413	vo_9_13_380_3_h	persona	There, finished. Now try to be more careful. 	好，修好了。以后多加小心。	sndshd
+str_385414	vo_9_13_80_1_h	persona	A Marine was just iced!	刚有个陆战队员被干掉了！	sndshd
+str_385415	vo_9_13_80_2_h	persona	The damn Strogg are wearin' us down!	这帮该死的 Strogg 快把我们耗干了！	sndshd
+str_385416	vo_9_13_80_3_h	persona	Shit, we just lost a man!	妈的，我们又折了一个人！	sndshd
+str_385417	vo_9_13_80_4_h	persona	They fragged another soldier!	他们又干掉了一个弟兄！	sndshd
+str_385418	vo_9_13_90_1_h	persona	Oh yeah I liked that!	哦耶，太带劲了！	sndshd
+str_385419	vo_9_13_90_2_h	persona	Oooorah!	呜——啦！	sndshd
+str_385420	vo_9_13_90_3_h	persona	You're lookin' mighty dead, freak!	瞧你这死相，怪胎！	sndshd
+str_385421	vo_9_13_90_4_h	persona	Ha, ha!	哈哈！	sndshd
+str_385422	vo_9_13_90_5_h	persona	That rocked!	真带劲！	sndshd
+str_385423	vo_9_13_90_6_h	persona	Now I gotta scrape you off my boots.	完了我还得把你从靴底刮下来。	sndshd
+str_385424	vo_9_13_90_7_h	persona	Ain't war hell? Ha, ha!	都说战争是地狱，哈哈！	sndshd
+str_385425	vo_9_13_90_8_h	persona	Is it any wonder I love the Corps?	你说我能不爱陆战队吗？	sndshd
+str_385426	vo_9_14_130_1_h	persona	Thanks, buddy.	谢了，伙计。	sndshd
+str_385427	vo_9_14_130_2_h	persona	Damn, you saved my life!	好家伙，你救了我一命！	sndshd
+str_385428	vo_9_14_130_3_h	persona	Looks like you handle Strogg better than me. Thanks for helpin' me out.	看来你对付 Strogg 比我在行。多谢帮我解围。	sndshd
+str_385429	vo_9_14_140_1_h	persona	I bet he didn't like that at all.	我敢打赌他可一点都不好受。	sndshd
+str_385430	vo_9_14_140_2_h	persona	That was freakin' great!	真他妈漂亮！	sndshd
+str_385431	vo_9_14_140_3_h	persona	Wow! Nice!	哇哦！漂亮！	sndshd
+str_385432	vo_9_14_140_4_h	persona	Good job!	干得好！	sndshd
+str_385433	vo_9_14_140_5_h	persona	Shit. He ain't gettin' up from that.	妈的，这下他别想爬起来了。	sndshd
+str_385434	vo_9_14_140_6_h	persona	He looks pretty dead to me.	要我看，他是死透了。	sndshd
+str_385435	vo_9_14_140_7_h	persona	Not bad! 	不赖嘛！	sndshd
+str_385436	vo_9_14_140_8_h	persona	You really busted him up!	你把他轰了个稀烂！	sndshd
+str_385437	vo_9_14_150_1_h	persona	Always check your line of fire!	{furrow}开火前先看清射界！	sndshd
+str_385438	vo_9_14_150_2_h	persona	Watch your freakin' target!	{furrow}看清你那该死的目标！	sndshd
+str_385439	vo_9_14_150_3_h	persona	You just hit me!	{furrow}你打到我了！	sndshd
+str_385440	vo_9_14_150_4_h	persona	Stop shooting! I'm on your side!	{furrow}别开枪了！我是自己人！	sndshd
+str_385441	vo_9_14_150_5_h	persona	Hey! Watch the friendly fire!	{furrow}嘿！当心误伤友军！	sndshd
+str_385442	vo_9_14_160_1_h	persona	You just fragged a soldier!	{furrow}你刚干掉了一个自己人！	sndshd
+str_385443	vo_9_14_160_2_h	persona	Calm down, and stop shooting marines!	{furrow}冷静点，别再朝陆战队员开枪了！	sndshd
+str_385444	vo_9_14_160_3_h	persona	Check your target, Marine!	{furrow}看清目标，陆战队员！	sndshd
+str_385445	vo_9_14_200_1_h	persona	Look out behind you!	当心身后！	sndshd
+str_385446	vo_9_14_200_2_h	persona	In back!	后面！	sndshd
+str_385447	vo_9_14_200_3_h	persona	Strogg are behind you!	Strogg 在你身后！	sndshd
+str_385448	vo_9_14_210_1_h	persona	We got Strogg on the left!	左边有 Strogg！	sndshd
+str_385449	vo_9_14_210_2_h	persona	They're trying to flank left!	他们想从左边包抄！	sndshd
+str_385450	vo_9_14_210_3_h	persona	They're on your left!	他们在你左边！	sndshd
+str_385451	vo_9_14_220_1_h	persona	They're flanking right!	他们在从右翼包抄！	sndshd
+str_385452	vo_9_14_220_2_h	persona	Aim to the right!	瞄准右边！	sndshd
+str_385453	vo_9_14_230_1_h	persona	There's Strogg above us!	上面有 Strogg！	sndshd
+str_385454	vo_9_14_230_2_h	persona	Look up!	往上看！	sndshd
+str_385455	vo_9_14_230_3_h	persona	Strogg are up there!	Strogg 在上头！	sndshd
+str_385456	vo_9_14_240_1_h	persona	Bring it, freak!	放马过来，怪胎！	sndshd
+str_385457	vo_9_14_240_2_h	persona	Gimme your best shot!	使出你的看家本事来！	sndshd
+str_385458	vo_9_14_240_3_h	persona	Got a freak right here!	这儿有个怪胎！	sndshd
+str_385459	vo_9_14_240_4_h	persona	What do ya got, squib?	你有几斤几两，杂碎？	sndshd
+str_385460	vo_9_14_240_5_h	persona	You're all mine!	你是我的了！	sndshd
+str_385461	vo_9_14_240_6_h	persona	I hope you like pain, freak!	但愿你喜欢吃苦头，怪胎！	sndshd
+str_385462	vo_9_14_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385463	vo_9_14_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385464	vo_9_14_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385465	vo_9_14_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385466	vo_9_14_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385467	vo_9_14_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385468	vo_9_14_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385469	vo_9_14_290_1_h	persona	Remain there, soldier! I've got a medpack!	待在那儿，大兵！我有医疗包！	sndshd
+str_385470	vo_9_14_290_2_h	persona	Stay put! I'll fix you up!	别动！我来治好你！	sndshd
+str_385471	vo_9_14_290_3_h	persona	Marine! Hold up!	陆战队员！停一下！	sndshd
+str_385472	vo_9_14_300_1_h	persona	Corporal Kane, remain there! I'm a medic!	Kane 下士，待在那儿！我是医疗兵！	sndshd
+str_385473	vo_9_14_300_2_h	persona	I've got a medpack for you, Corporal Kane.	Kane 下士，我这有医疗包给你。	sndshd
+str_385474	vo_9_14_300_3_h	persona	Stay where you are, Kane. I'll heal you.	待在原地，Kane。我来治你。	sndshd
+str_385475	vo_9_14_300_4_h	persona	Corporal Kane, don't move. I'll be there with a medpack in a second.	Kane 下士，别动。我马上带医疗包过去。	sndshd
+str_385476	vo_9_14_30_1_h	persona	Can't talk right now.	现在没空说话。	sndshd
+str_385477	vo_9_14_30_2_h	persona	Can't you find someone else to annoy?	{furrow}你就不能去烦别人吗？	sndshd
+str_385478	vo_9_14_310_1_h	persona	Marine, you gotta remember to duck once in a while.	陆战队员，你得记着时不时低头躲一躲。	sndshd
+str_385479	vo_9_14_310_2_h	persona	Here, this should help.	来，这个应该管用。	sndshd
+str_385480	vo_9_14_310_3_h	persona	One minute and you'll be fine.	一分钟就好，你会没事的。	sndshd
+str_385481	vo_9_14_310_4_h	persona	Would you hold still?	你能不能别乱动？	sndshd
+str_385482	vo_9_14_310_5_h	persona	One medpack, comin' up.	医疗包一份，这就来。	sndshd
+str_385483	vo_9_14_320_1_h	persona	You're done. Move out Marine.	好了。出发吧，陆战队员。	sndshd
+str_385484	vo_9_14_320_2_h	persona	Okay, that's it.	行，搞定了。	sndshd
+str_385485	vo_9_14_320_3_h	persona	Finished. You're back in the war Marine.	搞定。回战场去吧，陆战队员。	sndshd
+str_385486	vo_9_14_320_4_h	persona	There you go. See you around.	好了。回头见。	sndshd
+str_385487	vo_9_14_80_1_h	persona	Marine down!	有队员倒下了！	sndshd
+str_385488	vo_9_14_80_2_h	persona	We've just taken a casualty.	我们刚折了一个人。	sndshd
+str_385489	vo_9_14_80_3_h	persona	There's not gonna be many of us left at this rate.	照这么打下去，我们剩不了几个人。	sndshd
+str_385490	vo_9_14_80_4_h	persona	The bastards fragged one of us!	那帮混蛋干掉了我们一个弟兄！	sndshd
+str_385491	vo_9_14_90_1_h	persona	Ha, ha! This is gettin' fun!	哈哈！越来越有意思了！	sndshd
+str_385492	vo_9_14_90_2_h	persona	Eat it, Strogg!	吃我一枪，Strogg！	sndshd
+str_385493	vo_9_14_90_3_h	persona	Yeah!	爽！	sndshd
+str_385494	vo_9_14_90_4_h	persona	Ha, ha, ha, haaaaa!	哈哈哈哈——！	sndshd
+str_385495	vo_9_14_90_5_h	persona	Oooorah!	呜——啦！	sndshd
+str_385496	vo_9_14_90_6_h	persona	A shame you didn't live a little longer.	可惜你没能多活一会儿。	sndshd
+str_385497	vo_9_14_90_7_h	persona	Look at you all busted up, freak!	瞧瞧你这稀巴烂的德行，怪胎！	sndshd
+str_385498	vo_9_14_90_8_h	persona	Score one for the marines.	陆战队再添一分。	sndshd
+str_385499	vo_9_15_130_2_h	persona	Thanks, Corporal. You're a regular hero.	谢了，下士。你真是个正儿八经的英雄。	sndshd
+str_385500	vo_9_15_130_3_h	persona	That Strogg woulda fragged me if it weren't for you.	要不是你，那 Strogg 早把我干掉了。	sndshd
+str_385501	vo_9_15_140_1_h	persona	That Strogg didn't know what hit 'em!	那 Strogg 到死都不知道自己怎么死的！	sndshd
+str_385502	vo_9_15_140_2_h	persona	Nice work!	干得漂亮！	sndshd
+str_385503	vo_9_15_140_3_h	persona	That was great!	太漂亮了！	sndshd
+str_385504	vo_9_15_140_4_h	persona	You're quite a shot!	你这枪法真了得！	sndshd
+str_385505	vo_9_15_140_5_h	persona	That Strogg's outta commission.	那 Strogg 彻底报废了。	sndshd
+str_385506	vo_9_15_140_6_h	persona	That was sweet!	太漂亮了！	sndshd
+str_385507	vo_9_15_140_7_h	persona	Great kill!	杀得漂亮！	sndshd
+str_385508	vo_9_15_140_8_h	persona	Smoooth!	干净利落！	sndshd
+str_385509	vo_9_15_150_1_h	persona	Check your freakin' fire!	{furrow}你他妈看着点打！	sndshd
+str_385510	vo_9_15_150_2_h	persona	Damn it! Watch your target!	{furrow}该死！看清目标！	sndshd
+str_385511	vo_9_15_150_3_h	persona	Check your line of fire.	{furrow}看清你的射界。	sndshd
+str_385512	vo_9_15_150_4_h	persona	Knock that shit off!	把那破玩意儿关了！	sndshd
+str_385513	vo_9_15_150_5_h	persona	What in hell are you doin'?	{furrow}你到底在搞什么鬼？	sndshd
+str_385514	vo_9_15_160_1_h	persona	Stand down! That was a marine!	{furrow}住手！那是个陆战队员！	sndshd
+str_385515	vo_9_15_160_2_h	persona	That was a human you iced!	{furrow}你干掉的可是个人类！	sndshd
+str_385516	vo_9_15_160_3_h	persona	You just killed a soldier!	{furrow}你刚打死了一个士兵！	sndshd
+str_385517	vo_9_15_200_1_h	persona	Behind you!	小心背后！	sndshd
+str_385518	vo_9_15_200_2_h	persona	Look to the back!	看后面！	sndshd
+str_385519	vo_9_15_200_3_h	persona	There's Strogg are behind you!	你身后有 Strogg！	sndshd
+str_385520	vo_9_15_210_1_h	persona	Strogg to the left!	左边有 Strogg！	sndshd
+str_385521	vo_9_15_210_2_h	persona	Hostiles on the left flank!	左翼有敌人！	sndshd
+str_385522	vo_9_15_210_3_h	persona	Weapons to the left!	枪口朝左！	sndshd
+str_385523	vo_9_15_220_1_h	persona	Look right!	看右边！	sndshd
+str_385524	vo_9_15_220_2_h	persona	Hostiles on the right flank!	右翼有敌人！	sndshd
+str_385525	vo_9_15_230_1_h	persona	There's Strogg up there!	上面有 Strogg！	sndshd
+str_385526	vo_9_15_230_2_h	persona	Look up!	往上看！	sndshd
+str_385527	vo_9_15_230_3_h	persona	Strogg are up above!	Strogg 在上面！	sndshd
+str_385528	vo_9_15_240_1_h	persona	It's go time, freak!	开干了，怪胎！	sndshd
+str_385529	vo_9_15_240_2_h	persona	Target acquired!	锁定目标！	sndshd
+str_385530	vo_9_15_240_3_h	persona	Come on, freak!	来啊，怪胎！	sndshd
+str_385531	vo_9_15_240_4_h	persona	I'm gonna bust you up!	我要把你拆成零件！	sndshd
+str_385532	vo_9_15_240_5_h	persona	You're dead!	你死定了！	sndshd
+str_385533	vo_9_15_240_6_h	persona	Got a squib right here!	这儿就有个杂碎！	sndshd
+str_385534	vo_9_15_250_1_h	persona	You want something?	想干嘛？	sndshd
+str_385535	vo_9_15_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385536	vo_9_15_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385537	vo_9_15_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385538	vo_9_15_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385539	vo_9_15_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385540	vo_9_15_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385541	vo_9_15_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385542	vo_9_15_290_1_h	persona	Stay at your position! I'm a medic!	待在原地！我是医疗兵！	sndshd
+str_385543	vo_9_15_290_2_h	persona	I've got a medpack for you!	我这有医疗包给你！	sndshd
+str_385544	vo_9_15_290_3_h	persona	Don't move, Marine! I'll fix you up!	别动，陆战队员！我来治好你！	sndshd
+str_385545	vo_9_15_300_1_h	persona	Corporal Kane, I have a medpack for you!	Kane 下士，我这有医疗包给你！	sndshd
+str_385546	vo_9_15_300_2_h	persona	I'll heal you, Corporal Kane.	我来治你，Kane 下士。	sndshd
+str_385547	vo_9_15_300_3_h	persona	Stay put, Kane. I'm on my way!	别动，Kane。我这就来！	sndshd
+str_385548	vo_9_15_300_4_h	persona	Corporal Kane, remain there. I'll be there in a second.	Kane 下士，待在那儿。我马上就到。	sndshd
+str_385549	vo_9_15_30_1_h	persona	Sorry, I'm a kinda occupied right now.	抱歉，我这会儿有点脱不开身。	sndshd
+str_385550	vo_9_15_30_2_h	persona	I can't talk right now. I'm busy.	{furrow}现在没空聊。我忙着呢。	sndshd
+str_385551	vo_9_15_30_3_h	persona	I wish I could help you, but I can't.	{furrow}我也想帮你，可实在帮不上。	sndshd
+str_385552	vo_9_15_310_1_h	persona	You're lucky I got here when I did.	算你走运，我来得及时。	sndshd
+str_385553	vo_9_15_310_2_h	persona	Here's a medpack.	给，医疗包。	sndshd
+str_385554	vo_9_15_310_3_h	persona	Just gimme a second.	给我几秒钟就好。	sndshd
+str_385555	vo_9_15_310_5_h	persona	This oughta help.	这个应该管用。	sndshd
+str_385556	vo_9_15_320_1_h	persona	There. Back into the battle, Marine.	好了。回战场去吧，陆战队员。	sndshd
+str_385557	vo_9_15_320_2_h	persona	I'm done.	处理完了。	sndshd
+str_385558	vo_9_15_320_3_h	persona	There, good as new.	好了，跟新的一样。	sndshd
+str_385559	vo_9_15_320_4_h	persona	Enough loungin' around, Marine. Back into the fight!	别歇着了，陆战队员。回去接着打！	sndshd
+str_385560	vo_9_15_80_1_h	persona	We just lost a Marine!	我们刚损失了一名队员！	sndshd
+str_385561	vo_9_15_80_2_h	persona	There's a soldier down!	有士兵倒下了！	sndshd
+str_385562	vo_9_15_80_3_h	persona	Dammit! They fragged a Marine!	该死！他们干掉了一个陆战队员！	sndshd
+str_385563	vo_9_15_80_4_h	persona	Man down! Man down!	有人中弹！有人中弹！	sndshd
+str_385564	vo_9_15_90_1_h	persona	Ha, ha! I liked that!	哈哈！这我喜欢！	sndshd
+str_385565	vo_9_15_90_2_h	persona	Ha! And they said the Strogg were tough!	哈！还有人说 Strogg 难对付呢！	sndshd
+str_385566	vo_9_15_90_3_h	persona	Ooooyeah!	哦——耶！	sndshd
+str_385567	vo_9_15_90_4_h	persona	Ha, ha!	哈哈！	sndshd
+str_385568	vo_9_15_90_5_h	persona	That freak's dead!	那怪胎死透了！	sndshd
+str_385569	vo_9_15_90_6_h	persona	Oooorah.	呜——啦。	sndshd
+str_385570	vo_9_15_90_7_h	persona	Gimme another Strogg to shoot!	再给我来个 Strogg 练练枪！	sndshd
+str_385571	vo_9_15_90_8_h	persona	Don't mess with the Marines, Strogg.	别惹陆战队，Strogg。	sndshd
+str_385572	vo_9_16_130_1_h	persona	Thanks, Corporal. That was a close one.	谢了，下士。刚才真悬。	sndshd
+str_385573	vo_9_16_130_2_h	persona	Damn, that Strogg had me dead in his sights.	好家伙，那 Strogg 的准星都咬死我了。	sndshd
+str_385574	vo_9_16_130_3_h	persona	Guess I owe you one. Thanks.	看来我欠你个人情。谢了。	sndshd
+str_385575	vo_9_16_140_1_h	persona	Damn, that was sweet!	好家伙，太漂亮了！	sndshd
+str_385576	vo_9_16_140_2_h	persona	All right!	好样的！	sndshd
+str_385577	vo_9_16_140_3_h	persona	That Strogg was yours!	那个 Strogg 算你的战果！	sndshd
+str_385578	vo_9_16_140_4_h	persona	Couldn't a done better myself!	换我上也打不了这么漂亮！	sndshd
+str_385579	vo_9_16_140_5_h	persona	That was freakin' amazing!	简直神了！	sndshd
+str_385580	vo_9_16_140_6_h	persona	Ooo, nice!	哦，漂亮！	sndshd
+str_385581	vo_9_16_140_7_h	persona	Good one!	漂亮！	sndshd
+str_385582	vo_9_16_140_8_h	persona	You're deadly, Marine!	你真是个狠角色，陆战队员！	sndshd
+str_385583	vo_9_16_150_1_h	persona	Hey! Check your line of fire!	{furrow}嘿！看清你的射界！	sndshd
+str_385584	vo_9_16_150_2_h	persona	Watch your targets!	{furrow}看清目标！	sndshd
+str_385585	vo_9_16_150_3_h	persona	You just shot me!	{furrow}你刚打中我了！	sndshd
+str_385586	vo_9_16_150_4_h	persona	Do I look like a Strogg to you?	{furrow}你看我长得像 Strogg 吗？	sndshd
+str_385587	vo_9_16_150_5_h	persona	Whose side are you on?	{furrow}你到底是哪边的？	sndshd
+str_385588	vo_9_16_160_1_h	persona	Shit! You iced a Marine!	{furrow}妈的！你干掉了一个陆战队员！	sndshd
+str_385589	vo_9_16_160_2_h	persona	Stop shootin' guys on our side!	{furrow}别再朝自己人开枪了！	sndshd
+str_385590	vo_9_16_160_3_h	persona	Dammit! You killed a Marine!	{furrow}该死！你打死了一个陆战队员！	sndshd
+str_385591	vo_9_16_200_1_h	persona	Look behind you!	看你身后！	sndshd
+str_385592	vo_9_16_200_2_h	persona	There's Strogg in back!	后面有 Strogg！	sndshd
+str_385593	vo_9_16_200_3_h	persona	There's freaks behind you!	你背后有怪胎！	sndshd
+str_385594	vo_9_16_210_1_h	persona	Strogg on the left!	左边有 Strogg！	sndshd
+str_385595	vo_9_16_210_2_h	persona	They're flanking left!	他们在从左翼包抄！	sndshd
+str_385596	vo_9_16_210_3_h	persona	Aim left!	瞄准左边！	sndshd
+str_385597	vo_9_16_220_1_h	persona	Look right!	看右边！	sndshd
+str_385598	vo_9_16_220_2_h	persona	To the right!	右边！	sndshd
+str_385599	vo_9_16_230_1_h	persona	There's Strogg up top!	顶上有 Strogg！	sndshd
+str_385600	vo_9_16_230_2_h	persona	Look up!	往上看！	sndshd
+str_385601	vo_9_16_230_3_h	persona	Strogg up above!	上面有 Strogg！	sndshd
+str_385602	vo_9_16_240_1_h	persona	C'mon squib.	来啊，杂碎。	sndshd
+str_385603	vo_9_16_240_2_h	persona	Target sighted!	发现目标！	sndshd
+str_385604	vo_9_16_240_3_h	persona	Bring it, Strogg!	放马过来，Strogg！	sndshd
+str_385605	vo_9_16_240_4_h	persona	This one's mine!	这个归我！	sndshd
+str_385606	vo_9_16_240_5_h	persona	You're dead meat, freak!	你死定了，怪胎！	sndshd
+str_385607	vo_9_16_240_6_h	persona	I got this one!	这个我来搞定！	sndshd
+str_385608	vo_9_16_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385609	vo_9_16_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385610	vo_9_16_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385611	vo_9_16_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385612	vo_9_16_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385613	vo_9_16_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385614	vo_9_16_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385615	vo_9_16_290_1_h	persona	Stay put, Soldier! I'll patch you up.	别动，大兵！我来给你包扎。	sndshd
+str_385616	vo_9_16_290_2_h	persona	Don't move. I'm on my way!	别动。我这就来！	sndshd
+str_385617	vo_9_16_290_3_h	persona	Hold up. I've got medpacks!	停一下。我有医疗包！	sndshd
+str_385618	vo_9_16_300_1_h	persona	Corporal Kane, hold up! I'm a medic!	Kane 下士，停一下！我是医疗兵！	sndshd
+str_385619	vo_9_16_300_2_h	persona	I've got a medpack for you, Corporal Kane.	Kane 下士，我这有医疗包给你。	sndshd
+str_385620	vo_9_16_300_3_h	persona	Stay at your position, Kane. I'll heal you!	待在原地，Kane。我来治你！	sndshd
+str_385621	vo_9_16_300_4_h	persona	Stay there, Corporal Kane. I'll have you fixed up in no time!	待在那儿，Kane 下士。我马上就能把你治好！	sndshd
+str_385622	vo_9_16_30_1_h	persona	I'm a little busy right now.	{furrow}我现在有点忙。	sndshd
+str_385623	vo_9_16_310_1_h	persona	This doesn't look so bad.	伤得不算重嘛。	sndshd
+str_385624	vo_9_16_310_2_h	persona	Stop movin' around, would ya?	别来回乱动了，行不？	sndshd
+str_385625	vo_9_16_310_3_h	persona	Now for a little medpack magic.	下面轮到医疗包大显神通了。	sndshd
+str_385626	vo_9_16_310_4_h	persona	Here you go.	来，好了。	sndshd
+str_385627	vo_9_16_310_5_h	persona	Now just hold still a minute.	现在稳住，别动一会儿。	sndshd
+str_385628	vo_9_16_320_1_h	persona	That's it. Time to kill more Strogg Marine.	好了。该去多杀几个 Strogg 了，陆战队员。	sndshd
+str_385629	vo_9_16_320_2_h	persona	You're finished. Move out soldier.	治好了。出发吧，大兵。	sndshd
+str_385630	vo_9_16_320_3_h	persona	You're healed. Back at it, Marine.	治好了。接着干吧，陆战队员。	sndshd
+str_385631	vo_9_16_320_4_h	persona	That should do it.	这样应该就行了。	sndshd
+str_385632	vo_9_16_80_1_h	persona	Man down!	有人中弹！	sndshd
+str_385633	vo_9_16_80_2_h	persona	We've got a Marine down!	有陆战队员倒下了！	sndshd
+str_385634	vo_9_16_80_3_h	persona	We're taking casualties!	我们出现伤亡了！	sndshd
+str_385635	vo_9_16_80_4_h	persona	They got a Marine!	他们干掉了一个陆战队员！	sndshd
+str_385636	vo_9_16_90_1_h	persona	That was all mine!	这个全算我的！	sndshd
+str_385637	vo_9_16_90_2_h	persona	Scratch one freak!	报销一个怪胎！	sndshd
+str_385638	vo_9_16_90_3_h	persona	Gotcha!	逮到你了！	sndshd
+str_385639	vo_9_16_90_4_h	persona	Yesss!	爽——！	sndshd
+str_385640	vo_9_16_90_5_h	persona	Eat it!	吃我一发！	sndshd
+str_385641	vo_9_16_90_6_h	persona	This is gettin' fun!	越打越有意思了！	sndshd
+str_385642	vo_9_16_90_7_h	persona	Squib's down!	杂碎倒了！	sndshd
+str_385643	vo_9_16_90_8_h	persona	Ha! That was easy!	哈！太轻松了！	sndshd
+str_385644	vo_9_17_130_1_h	persona	Whew, I almost bought it that time.	呼，刚才差点交代了。	sndshd
+str_385645	vo_9_17_130_2_h	persona	Hey, thanks for the assist.	嘿，多谢搭把手。	sndshd
+str_385646	vo_9_17_130_3_h	persona	I thought I was dead. Thanks.	我以为自己死定了。谢了。	sndshd
+str_385647	vo_9_17_140_1_h	persona	That was pretty damn nice!	干得真他妈漂亮！	sndshd
+str_385648	vo_9_17_140_2_h	persona	Not bad.	不赖。	sndshd
+str_385649	vo_9_17_140_3_h	persona	You sure showed that Strogg!	你可给那 Strogg 好好上了一课！	sndshd
+str_385650	vo_9_17_140_4_h	persona	Hey, that was sweet!	嘿，这下真带劲！	sndshd
+str_385651	vo_9_17_140_5_h	persona	That was freakin' great!	真他妈漂亮！	sndshd
+str_385652	vo_9_17_140_6_h	persona	You got 'em, Marine!	干掉他了，好样的！	sndshd
+str_385653	vo_9_17_140_7_h	persona	Great shot!	好枪法！	sndshd
+str_385654	vo_9_17_140_8_h	persona	Nice one, Soldier!	漂亮，士兵！	sndshd
+str_385655	vo_9_17_150_1_h	persona	Watch your damn line of fire!	{furrow}看好你他妈的射界！	sndshd
+str_385656	vo_9_17_150_2_h	persona	Hey! I'm not your target!	{furrow}嘿！我不是你的目标！	sndshd
+str_385657	vo_9_17_150_3_h	persona	What the hell are you doin'?	{furrow}你到底在干什么？	sndshd
+str_385658	vo_9_17_150_4_h	persona	Stop shooting me!	{furrow}别朝我开枪！	sndshd
+str_385659	vo_9_17_150_5_h	persona	Why the hell are you shootin' at me?	{furrow}你他妈为什么朝我开枪？	sndshd
+str_385660	vo_9_17_160_1_h	persona	Dammit! You iced a soldier!	{furrow}该死！你干掉了一名士兵！	sndshd
+str_385661	vo_9_17_160_2_h	persona	Shoot the Strogg, not our guys!	{furrow}打 Strogg，别打自己人！	sndshd
+str_385662	vo_9_17_160_3_h	persona	You just fragged a Marine!	{furrow}你刚干掉了一个陆战队员！	sndshd
+str_385663	vo_9_17_200_1_h	persona	Behind you!	小心背后！	sndshd
+str_385664	vo_9_17_200_2_h	persona	The Strogg are in back!	Strogg 在后面！	sndshd
+str_385665	vo_9_17_200_3_h	persona	You got company behind you!	小心，你背后有敌人！	sndshd
+str_385666	vo_9_17_210_1_h	persona	They're on the left flank!	他们在左翼！	sndshd
+str_385667	vo_9_17_210_2_h	persona	We got Strogg to the left!	左边有 Strogg！	sndshd
+str_385668	vo_9_17_210_3_h	persona	Look left!	看左边！	sndshd
+str_385669	vo_9_17_220_1_h	persona	Look to right!	看右边！	sndshd
+str_385670	vo_9_17_220_2_h	persona	On the right flank!	在右翼！	sndshd
+str_385671	vo_9_17_230_1_h	persona	Strogg up high!	上面有 Strogg！	sndshd
+str_385672	vo_9_17_230_2_h	persona	Look up there!	看上面！	sndshd
+str_385673	vo_9_17_230_3_h	persona	Freak's above us!	怪胎在我们头顶！	sndshd
+str_385674	vo_9_17_240_1_h	persona	It's game time, freak!	好戏开场了，怪胎！	sndshd
+str_385675	vo_9_17_240_2_h	persona	Target acquired!	锁定目标！	sndshd
+str_385676	vo_9_17_240_3_h	persona	This freak's mine!	这只怪胎归我！	sndshd
+str_385677	vo_9_17_240_4_h	persona	Got a Strogg in my sights!	一只 Strogg 进我准星了！	sndshd
+str_385678	vo_9_17_240_5_h	persona	Die, squib!	去死吧，杂碎！	sndshd
+str_385679	vo_9_17_240_6_h	persona	Stand back, this one's mine!	都让开，这只是我的！	sndshd
+str_385680	vo_9_17_260_1_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385681	vo_9_17_260_2_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385682	vo_9_17_260_3_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385683	vo_9_17_260_4_h	persona	(pain grunt)	（痛苦闷哼）	sndshd
+str_385684	vo_9_17_270_1_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385685	vo_9_17_270_2_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385686	vo_9_17_270_3_h	persona	(death yell)	（死亡惨叫）	sndshd
+str_385687	vo_9_17_290_1_h	persona	I'm on my way, Marine!	我这就过来，坚持住！	sndshd
+str_385688	vo_9_17_290_2_h	persona	Stay down! I'm a medic!	趴着别动！我是医疗兵！	sndshd
+str_385689	vo_9_17_290_3_h	persona	Remain there. I'll fix you up!	待在原地，我来给你处理！	sndshd
+str_385690	vo_9_17_300_1_h	persona	Corporal Kane, remain there! I'll heal you!	Kane 下士，待在原地！我来治疗你！	sndshd
+str_385691	vo_9_17_300_2_h	persona	Wait there, Kane. I'm a medic!	在那儿等着，Kane。我是医疗兵！	sndshd
+str_385692	vo_9_17_300_3_h	persona	Don't move Corporal Kane. I've got a medpack for you!	别动，Kane 下士，我这儿有医疗包！	sndshd
+str_385693	vo_9_17_300_4_h	persona	I'm on my way, Corporal Kane!	我这就过来，Kane 下士！	sndshd
+str_385694	vo_9_17_30_1_h	persona	I've got no time for talkin'.	{furrow}我没工夫闲聊。	sndshd
+str_385695	vo_9_17_30_2_h	persona	Don't you have something else to do?	{furrow}你就没别的事可干了吗？	sndshd
+str_385696	vo_9_17_310_1_h	persona	Here ya go.	好了，给你。	sndshd
+str_385697	vo_9_17_310_2_h	persona	You've gotta stay out of the line of fire, Marine.	你得离火线远点，士兵。	sndshd
+str_385698	vo_9_17_310_3_h	persona	Here's a medpack.	给，医疗包。	sndshd
+str_385699	vo_9_17_310_4_h	persona	Okay, now don't move.	好，现在别动。	sndshd
+str_385700	vo_9_17_310_5_h	persona	This won't take long.	用不了多久。	sndshd
+str_385701	vo_9_17_320_1_h	persona	Okay, I'm done. Go frag some squibs.	好了，处理完了。去多宰几只杂碎吧。	sndshd
+str_385702	vo_9_17_320_2_h	persona	That's it. See you around.	搞定。回头见。	sndshd
+str_385703	vo_9_17_320_3_h	persona	I'm done, Marine. Remember to keep low.	好了，士兵。记得放低身子。	sndshd
+str_385704	vo_9_17_320_4_h	persona	That's as much as I can do. Watch yourself, Marine.	我只能帮你到这儿了。自己当心，士兵。	sndshd
+str_385705	vo_9_17_360_1_h	persona	Kane, wait. Your armors damaged.	Kane，等等。你的护甲受损了。	sndshd
+str_385706	vo_9_17_360_2_h	persona	Corporal Kane. Wait and Ill repair your armor	Kane 下士，等一下，我来修你的护甲。	sndshd
+str_385707	vo_9_17_360_3_h	persona	I can fix your armor, Kane.	我能修好你的护甲，Kane。	sndshd
+str_385708	vo_9_17_370_1_h	persona	Ill have you patched up in no time.	我马上就把你修补好。	sndshd
+str_385709	vo_9_17_370_2_h	persona	This wont take long.	用不了多久。	sndshd
+str_385710	vo_9_17_370_3_h	persona	Just a few seconds and youll right back into the fight.	就几秒钟，你马上就能重返战斗。	sndshd
+str_385711	vo_9_17_380_1_h	persona	Youre good to go, Marine.	可以出发了，陆战队员。	sndshd
+str_385712	vo_9_17_380_2_h	persona	Thats all I can do. Good luck.	我只能做到这儿了。祝你好运。	sndshd
+str_385713	vo_9_17_380_3_h	persona	There. Finished. Now try to be more careful.	好了。完工。以后小心着点。	sndshd
+str_385714	vo_9_17_80_1_h	persona	We got a Marine down!	有陆战队员倒下了！	sndshd
+str_385715	vo_9_17_80_2_h	persona	Dammit! They fragged another Marine!	该死！他们又干掉了一个弟兄！	sndshd
+str_385716	vo_9_17_80_3_h	persona	We got a casualty!	我们有人伤亡！	sndshd
+str_385717	vo_9_17_80_4_h	persona	There's a Marine down!	有队员倒下了！	sndshd
+str_385718	vo_9_17_90_1_h	persona	That Squib is out of commission.	那杂碎报废了。	sndshd
+str_385719	vo_9_17_90_2_h	persona	Ooooorah!	呜——啦！	sndshd
+str_385720	vo_9_17_90_3_h	persona	Feel the burn!	尝尝灼烧的滋味！	sndshd
+str_385721	vo_9_17_90_4_h	persona	Target destroyed!	目标已消灭！	sndshd
+str_385722	vo_9_17_90_5_h	persona	Enjoy hell, freak.	地狱里好好待着吧，怪胎。	sndshd
+str_385723	vo_9_17_90_6_h	persona	Fear me, Strogg!	怕了吧，Strogg！	sndshd
+str_385724	vo_9_17_90_7_h	persona	One less freak in this world.	世上又少了个怪胎。	sndshd
+str_385725	vo_9_17_90_8_h	persona	Ha, ha, haaaa!	哈哈，哈——！	sndshd

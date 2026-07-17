@@ -1,0 +1,696 @@
+id	en	zh	context	status
+#str_100625	Your system specifications allow for %d player(s) total.	根据您的系统配置，最多可支持 %d 名玩家。		review
+#str_100626	Warning	警告		review
+#str_101991	Team	队伍		review
+#str_102047	Server	服务器		review
+#str_102087	Loading...	载入中……		review
+#str_102911	Unidentified	未识别		review
+#str_102916	Game Saved...	游戏已保存……		review
+#str_104137	These changes will take effect the next time you run Quake 4.	这些更改将在下次运行 Quake 4 时生效。		review
+#str_104141	UNABLE TO LOCATE 3D AUDIO	无法找到 3D 音频		review
+#str_104142	Surround speakers not found.\nMake sure the speaker settings are configured properly in the Windows Control Panel.	未找到环绕声扬声器。\n请确保已在 Windows 控制面板中正确配置扬声器设置。		review
+#str_104247	Ready	已准备		review
+#str_104248	Not Ready	未准备		review
+#str_104249	Enter the game	进入游戏		review
+#str_104250	Spectate	观战		review
+#str_104253	Find the exit	找到出口		review
+#str_104254	Allow Spectators	允许观战		review
+#str_104255	No Spectators	禁止观战		review
+#str_104256	Change map to %s	将地图更换为 %s		review
+#str_104257	Can't kick the server host	无法踢出服务器主机		review
+#str_104258	Change Game type to %s	将游戏类型更改为 %s		review
+#str_104259	Already at the voted Game Type	当前已是所投票的游戏类型		review
+#str_104260	Tourney Limit value is out of range	锦标赛限制值超出范围		review
+#str_104261	Already at the voted Tourney Limit	当前已是所投票的锦标赛限制		review
+#str_104265	Frag Limit	击杀上限		review
+#str_104266	Frag Limit value is out of range	击杀上限值超出范围		review
+#str_104267	Already at the voted Frag Limit	当前已是所投票的击杀上限		review
+#str_104268	Set Time Limit to %d	将时间限制设为 %d		review
+#str_104269	Time Limit value is out of range	时间限制值超出范围		review
+#str_104270	Already at the voted Time Limit	当前已是所投票的时间限制		review
+#str_104271	Restart Map	重新开始地图		review
+#str_104272	Next Map	下一张地图		review
+#str_104273	There is already a vote in progress	已有一项投票正在进行		review
+#str_104274	Already voted or not allowed to vote	已投过票或无权投票		review
+#str_104275	No vote in progress	当前没有正在进行的投票		review
+#str_104276	Vote aborted	投票已中止		review
+#str_104277	Vote passed	投票通过		review
+#str_104278	Vote failed	投票未通过		review
+#str_104279	%s^0 called a vote!	%s^0 发起了投票！		review
+#str_104280	%s^0 joined %s team	%s^0 加入了 %s 队		review
+#str_104281	%s^0 has reached the frag limit	%s^0 已达到击杀上限		review
+#str_104284	Time limit hit	已达到时间限制		review
+#str_104285	%s^0 joined the spectators	%s^0 加入了观战		review
+#str_104286	Server forced %s^0 to ready up	服务器强制 %s^0 进入准备状态		review
+#str_104287	Sudden Death!	骤死赛！		review
+#str_104288	Vote now!	立即投票！		review
+#str_104289	%s^0 died	%s^0 死亡		review
+#str_104290	%s^0 was telefragged by %s	%s^0 被 %s 传送击杀		review
+#str_104291	%s^0 was killed by teammate %s	%s^0 被队友 %s 击杀		review
+#str_104292	%s^0 was killed by %s	%s^0 被 %s 击杀		review
+#str_104293	%s^0 committed suicide	%s^0 自杀		review
+#str_104294	No map cycle defined in g_mapCycle, next map command aborted\n	g_mapCycle 中未定义地图循环，下一张地图命令已中止\n		review
+#str_104295	Already running the voted map %s	当前已在运行所投票的地图 %s		review
+#str_104296	Map not found: %s	未找到地图：%s		review
+#str_104297	Unknown vote index %s	未知的投票索引 %s		review
+#str_104299	Changing %s too fast. Wait %d seconds	更改 %s 过于频繁，请等待 %d 秒		review
+#str_104300	ready	已准备		review
+#str_104301	not ready	未准备		review
+#str_104302	Kick player %d ( %s^0 )	踢出玩家 %d（%s^0）		review
+#str_104303	Set %s to %d	将 %s 设为 %d		review
+#str_104304	The CD Key you entered is missing or incomplete. The CD Key is located on your CD jewel case.	您输入的 CD Key 缺失或不完整。CD Key 位于 CD 包装盒上。		review
+#str_104305	CD Key	CD Key		review
+#str_104307	The CD Key you entered appears to be valid. Activision will never ask you for your CD key.  Don't tell it to anyone!  Don't lose your CD Key!	您输入的 CD Key 似乎有效。Activision 绝不会向您索要 CD Key。请勿告诉任何人！请勿丢失您的 CD Key！		review
+#str_104308	Please enter your CD key - see your CD jewel case or game manual	请输入您的 CD Key——参见 CD 包装盒或游戏手册		review
+#str_104310	CD Key is invalid	CD Key 无效		review
+#str_104311	You must be alive to save the game.	必须存活才能保存游戏。		review
+#str_104312	Unable to save	无法保存		review
+#str_104313	Not enough drive space to save the game.	磁盘空间不足，无法保存游戏。		review
+#str_104314	Warning	警告		review
+#str_104315	Your connection settings allow for %d player(s) total.	根据您的连接设置，最多可支持 %d 名玩家。		review
+#str_104316	Lowered the number of players	已下调玩家数量		review
+#str_104317	Server is loading next map	服务器正在载入下一张地图		review
+#str_104318	Please wait...	请稍候……		review
+#str_104319	Disconnected from server	已与服务器断开连接		review
+#str_104321	Please enter the password to join this server	请输入密码以加入此服务器		review
+#str_104322	Sending password	正在发送密码		review
+#str_104323	Connection denied	连接被拒绝		review
+#str_104325	CD Key is invalid or missing	CD Key 无效或缺失		review
+#str_104327	CD Key is invalid	CD Key 无效		review
+#str_104328	Lost connection with the server	与服务器失去连接		review
+#str_104329	Timed out	连接超时		review
+#str_104330	New version available	有可用的新版本		review
+#str_104331	Execute update now?	是否立即执行更新？		review
+#str_104332	Download successful	下载成功		review
+#str_104333	The file has been downloaded to %s	文件已下载至 %s		review
+#str_104334	Download successful	下载成功		review
+#str_104335	The download failed or was aborted	下载失败或已中止		review
+#str_104336	Download failed	下载失败		review
+#str_104337	The configuration of this server doesn't allow pure mode	此服务器的配置不允许纯净模式		review
+#str_104338	Can't start pure server	无法启动纯净服务器		review
+#str_104339	OK	确定		review
+#str_104340	Cancel	取消		review
+#str_104341	YES	是		review
+#str_104342	NO	否		review
+#str_104343	LOADING...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104346	INITIALIZING SOUND...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104347	INITIALIZING NETWORK...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104348	INITIALIZING RENDER SYSTEM...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104349	INITIALIZING USER INTERFACE...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104350	LOADING GAME...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104351	INITIALIZING MENUS...			en-only: 引擎启动屏按字节绘制不支持 UTF-8
+#str_104400	No vote parameters changed, no vote called.\n	投票参数未更改，未发起投票。\n		review
+#str_104401	Already at the voted Capture Limit.\n	当前已是所投票的夺旗上限。\n		review
+#str_104402	Capture Limit value is out of range.\n	夺旗上限值超出范围。\n		review
+#str_104403	Already at the voted Balance Teams value.\n	当前已是所投票的队伍平衡设置。\n		review
+#str_104404	USAGE: clientcallvote <type> <value>\n	用法：clientcallvote <type> <value>\n		review
+#str_104405	\tvalid types are:  restart, timelimit, fraglimit, gametype, kick, map, spectators, capturelimit, autobalance, controlTime\n	\t有效类型：restart、timelimit、fraglimit、gametype、kick、map、spectators、capturelimit、autobalance、controlTime\n		review
+#str_104406	USAGE: clientcallvote timelimit <value>\n	用法：clientcallvote timelimit <value>\n		review
+#str_104407	USAGE: clientcallvote fraglimit <value>\n	用法：clientcallvote fraglimit <value>\n		review
+#str_104408	USAGE: clientcallvote gametype <gametype>\n	用法：clientcallvote gametype <gametype>\n		review
+#str_104409	\tvalid gametypes are DM, Tourney, Team DM, CTF, Arena CTF, and DeadZone\n	\t有效游戏类型：DM、Tourney、Team DM、CTF、Arena CTF、DeadZone\n		review
+#str_104410	USAGE: clientcallvote gametype <gametype>\n	用法：clientcallvote gametype <gametype>\n		review
+#str_104412	USAGE: clientcallvote kick <playername>\n	用法：clientcallvote kick <playername>\n		review
+#str_104413	USAGE: clientcallvote map <mapname>\n	用法：clientcallvote map <mapname>\n		review
+#str_104414	USAGE: clientcallvote minplayers [2-16]\n	用法：clientcallvote minplayers [2-16]\n		review
+#str_104415	USAGE: clientcallvote capturelimit <value>\n	用法：clientcallvote capturelimit <value>\n		review
+#str_104416	USAGE: clientcallvote autobalance <0, 1>\n	用法：clientcallvote autobalance <0, 1>\n		review
+#str_104417	USAGE: clientcallvote <type> <value>\n	用法：clientcallvote <type> <value>\n		review
+#str_104418	USAGE: clientvote <yes, no>\n	用法：clientvote <yes, no>\n		review
+#str_104419	YOU HAVE THE ENEMY FLAG	你已夺得敌方旗帜		review
+#str_104420	YOUR TEAM HAS DROPPED THE FLAG	你的队伍掉落了旗帜		review
+#str_104421	Already at the voted Spectators value.\n	当前已是所投票的观战设置。\n		review
+#str_104422	KICK PLAYER %s	踢出玩家 %s		review
+#str_104423	RESTART MAP	重新开始地图		review
+#str_104424	MIN PLAYERS %d	最少玩家数 %d		review
+#str_104425	ALLOWED	允许		review
+#str_104426	NOT ALLOWED	不允许		review
+#str_104427	AUTO BALANCE TEAMS %s	自动平衡队伍 %s		review
+#str_104428	NEXT MAP	下一张地图		review
+#str_104429	MAP %s	地图 %s		review
+#str_104430	GAMETYPE %s	游戏类型 %s		review
+#str_104431	TIME LIMIT %d	时间限制 %d		review
+#str_104432	TOURNEY LIMIT %d	锦标赛限制 %d		review
+#str_104433	CAPTURE LIMIT %d	夺旗上限 %d		review
+#str_104434	FRAG LIMIT %d	击杀上限 %d		review
+#str_104435	%d YES VOTES, %d NO VOTES	%d 票赞成，%d 票反对		review
+#str_104837	UPDATES	更新		review
+#str_104839	Quake 4 is up to date, no update is required.	Quake 4 已是最新版本，无需更新。		review
+#str_104840	Bad challenge.\n	验证请求无效。\n		review
+#str_104842	Data not in sync with server data.\n	数据与服务器数据不同步。\n		review
+#str_104843	This server only accepts LAN clients.\n	此服务器仅接受局域网客户端。\n		review
+#str_104844	Data not in sync with server data (pure server).\n	数据与服务器数据不同步（纯净服务器）。\n		review
+#str_104845	Server is full.\n	服务器已满。\n		review
+#str_104846	No rcon available.\n	rcon 不可用。\n		review
+#str_104847	Bad rcon password.\n	rcon 密码错误。\n		review
+#str_104848	rcon command successful.\n	rcon 命令执行成功。\n		review
+#str_104849	No map running.\n	当前没有运行中的地图。\n		review
+#str_104852	Precaching...	正在预缓存……		review
+#str_104853	There was an error in your video settings - safe defaults have been selected.	您的视频设置存在错误，已改用安全的默认设置。		review
+#str_106732	Players got even at the last second!	双方在最后一刻打成平手！		review
+#str_106733	No server selected\n	未选择服务器\n		review
+#str_106734	Couldn't resolve server name \"%s\"\n	无法解析服务器名称“%s”\n		review
+#str_106735	Connect Failed\n	连接失败\n		review
+#str_106737	Ready Status	准备状态		review
+#str_106738	Spectator Mode	观战模式		review
+#str_106747	Spectating is disabled on this server.\n	此服务器已禁用观战。\n		review
+#str_106749	Connecting to %s	正在连接 %s		review
+#str_106750	Missing game code pak file: 0x%x\n	缺少游戏代码 pak 文件：0x%x\n		review
+#str_106751	Missing %d media pak files: %s\n	缺少 %d 个媒体 pak 文件：%s\n		review
+#str_106780	The current video card / driver combination does not support the necessary features.	当前的显卡 / 驱动组合不支持所需特性。		review
+#str_106781	You may experience poor performance on this server due to a high number of maximum players. Continue?	此服务器最大玩家数较多，您可能会遇到性能不佳。是否继续？		review
+#str_107000	Press any key...	请按任意键……		review
+#str_107001	Invalid bind info	无效的绑定信息		review
+#str_107018	TAB	Tab		review
+#str_107019	ENTER	回车		review
+#str_107020	ESCAPE	Esc		review
+#str_107021	SPACE	空格		review
+#str_107022	BACKSPACE	退格		review
+#str_107023	UPARROW	上箭头		review
+#str_107024	DOWNARROW	下箭头		review
+#str_107025	LEFTARROW	左箭头		review
+#str_107026	RIGHTARROW	右箭头		review
+#str_107027	LEFT ALT	左 Alt		review
+#str_107028	LEFT CTRL	左 Ctrl		review
+#str_107029	LEFT SHIFT	左 Shift		review
+#str_107030	LWIN	左 Win		review
+#str_107031	RWIN	右 Win		review
+#str_107032	MENU	菜单键		review
+#str_107033	COMMAND	Command		review
+#str_107034	CAPSLOCK	大写锁定		review
+#str_107035	SCROLL	滚动锁定		review
+#str_107036	F1	F1		review
+#str_107037	F2	F2		review
+#str_107038	F3	F3		review
+#str_107039	F4	F4		review
+#str_107040	F5	F5		review
+#str_107041	F6	F6		review
+#str_107042	F7	F7		review
+#str_107043	F8	F8		review
+#str_107044	F9	F9		review
+#str_107045	F10	F10		review
+#str_107046	F11	F11		review
+#str_107047	F12	F12		review
+#str_107048	INS	Insert		review
+#str_107049	DEL	Delete		review
+#str_107050	PGDN	Page Down		review
+#str_107051	PGUP	Page Up		review
+#str_107052	HOME	Home		review
+#str_107053	END	End		review
+#str_107054	MOUSE1	鼠标 1		review
+#str_107055	MOUSE2	鼠标 2		review
+#str_107056	MOUSE3	鼠标 3		review
+#str_107057	MOUSE4	鼠标 4		review
+#str_107058	MOUSE5	鼠标 5		review
+#str_107059	MOUSE6	鼠标 6		review
+#str_107060	MOUSE7	鼠标 7		review
+#str_107061	MOUSE8	鼠标 8		review
+#str_107062	JOY1	手柄 1		review
+#str_107063	JOY2	手柄 2		review
+#str_107064	JOY3	手柄 3		review
+#str_107065	JOY4	手柄 4		review
+#str_107066	JOY5	手柄 5		review
+#str_107067	JOY6	手柄 6		review
+#str_107068	JOY7	手柄 7		review
+#str_107069	JOY8	手柄 8		review
+#str_107070	JOY9	手柄 9		review
+#str_107071	JOY10	手柄 10		review
+#str_107072	JOY11	手柄 11		review
+#str_107073	JOY12	手柄 12		review
+#str_107074	JOY13	手柄 13		review
+#str_107075	JOY14	手柄 14		review
+#str_107076	JOY15	手柄 15		review
+#str_107077	JOY16	手柄 16		review
+#str_107078	JOY17	手柄 17		review
+#str_107079	JOY18	手柄 18		review
+#str_107080	JOY19	手柄 19		review
+#str_107081	JOY20	手柄 20		review
+#str_107082	JOY21	手柄 21		review
+#str_107083	JOY22	手柄 22		review
+#str_107084	JOY23	手柄 23		review
+#str_107085	JOY24	手柄 24		review
+#str_107086	JOY25	手柄 25		review
+#str_107087	JOY26	手柄 26		review
+#str_107088	JOY27	手柄 27		review
+#str_107089	JOY28	手柄 28		review
+#str_107090	JOY29	手柄 29		review
+#str_107091	JOY30	手柄 30		review
+#str_107092	JOY31	手柄 31		review
+#str_107093	JOY32	手柄 32		review
+#str_107094	AUX1	辅助 1		review
+#str_107095	AUX2	辅助 2		review
+#str_107096	AUX3	辅助 3		review
+#str_107097	AUX4	辅助 4		review
+#str_107098	AUX5	辅助 5		review
+#str_107099	AUX6	辅助 6		review
+#str_107100	AUX7	辅助 7		review
+#str_107101	AUX8	辅助 8		review
+#str_107102	AUX9	辅助 9		review
+#str_107103	AUX10	辅助 10		review
+#str_107104	AUX11	辅助 11		review
+#str_107105	AUX12	辅助 12		review
+#str_107106	AUX13	辅助 13		review
+#str_107107	AUX14	辅助 14		review
+#str_107108	AUX15	辅助 15		review
+#str_107109	AUX16	辅助 16		review
+#str_107110	HOME	Home		review
+#str_107111	UPARROW	上箭头		review
+#str_107112	PGUP	Page Up		review
+#str_107113	LEFTARROW	左箭头		review
+#str_107114	5	5		review
+#str_107115	RIGHTARROW	右箭头		review
+#str_107116	END	End		review
+#str_107117	DOWNARROW	下箭头		review
+#str_107118	PGDN	Page Down		review
+#str_107119	ENTER	回车		review
+#str_107120	INS	Insert		review
+#str_107121	DEL	Delete		review
+#str_107122	SLASH	斜杠		review
+#str_107123	MINUS	减号		review
+#str_107124	PLUS	加号		review
+#str_107125	NUMLOCK	数字锁定		review
+#str_107126	STAR	星号		review
+#str_107127	EQUALS	等号		review
+#str_107128	PAUSE	Pause		review
+#str_107129	SEMICOLON	分号		review
+#str_107130	APOSTROPHE	单引号		review
+#str_107131	MWHEELUP	滚轮向上		review
+#str_107132	MWHEELDOWN	滚轮向下		review
+#str_107133	<empty>	<空>		review
+#str_107134	Kicked from server.	已被踢出服务器。		review
+#str_107135	Server has shut down.	服务器已关闭。		review
+#str_107136	Reliable messages overflow.	可靠消息溢出。		review
+#str_107137	Timed out.	连接超时。		review
+#str_107138	disconnected.	已断开连接。		review
+#str_107139	Pure server is spawning. Please hold.\n	纯净服务器正在启动，请稍候。\n		review
+#str_107140	Server is spawning. Please hold.\n	服务器正在启动，请稍候。\n		review
+#str_107141	Server is full.\n	服务器已满。\n		review
+#str_107142	Server is misconfigured.\n	服务器配置有误。\n		review
+#str_107143	Invalid password.\n	密码无效。\n		review
+#str_107144	MAX_PURE_PAKS exceeded.\n	已超出 MAX_PURE_PAKS 上限。\n		review
+#str_107145	Invalid game code pak.\n	无效的游戏代码 pak。\n		review
+#str_107177	%s^0 joined the game.	%s^0 加入了游戏。		review
+#str_107178	^5QuickSave	^5快速存档		review
+#str_107179	PRINTSCREEN	Print Screen		review
+#str_107180	%s^0 is %s!\n	%s^0 %s！\n		review
+#str_107183	 or 	 或 		review
+#str_107186	Unknown	未知		review
+#str_107187	Invalid	无效		review
+#str_107188	OK	确定		review
+#str_107189	Checking	检查中		review
+#str_107190	N/A	不适用		review
+#str_107191	Logging in to authorization server	正在登录授权服务器		review
+#str_107194	Quake 4 CD Key is invalid	Quake 4 CD Key 无效		review
+#str_107196	This Quake 4 CD Key is banned	此 Quake 4 CD Key 已被封禁		review
+#str_107198	Quake 4 CD Key is in use	Quake 4 CD Key 正在使用中		review
+#str_107204	Waiting for authorization	正在等待授权		review
+#str_107205	Client unknown to auth	授权服务器无法识别该客户端		review
+#str_107206	Access denied - CD Key in use	拒绝访问——CD Key 正在使用中		review
+#str_107207	Auth message	授权消息		review
+#str_107208	Authorize Server - Waiting for client	授权服务器——正在等待客户端		review
+#str_107210	Can't connect to the pure server at %s:\n	无法连接位于 %s 的纯净服务器：\n		review
+#str_107211	The pure server at %s didn't provide a reference to executable code\n	位于 %s 的纯净服务器未提供可执行代码的引用\n		review
+#str_107212	Quake 4	Quake 4		review
+#str_107214	pak is corrupted ( checksum 0x%x, expected 0x%x )	pak 文件已损坏（校验和 0x%x，应为 0x%x）		review
+#str_107215	The download failed or was cancelled	下载失败或已被取消		review
+#str_107216	Download failed	下载失败		review
+#str_107217	You are missing required pak files to connect to this server.\nThe server gave a web page though:\n%s\nDo you want to go there now?	你缺少连接此服务器所需的 pak 文件。\n不过服务器提供了一个网页：\n%s\n现在要前往吗？		review
+#str_107218	Missing required files	缺少所需文件		review
+#str_107219	Can't connect to the pure server: no downloads offered	无法连接纯净服务器：未提供任何下载		review
+#str_107220	You need to download game code to connect to this server. Are you sure? You should only answer yes if you trust the server administrators.	连接此服务器需要下载游戏代码。确定吗？仅当你信任服务器管理员时才应选择「是」。		review
+#str_107221	Missing game binaries	缺少游戏程序文件		review
+#str_107222	The server only offers to download some of the files required to connect ( %s ). Download anyway?	服务器仅提供连接所需文件中的一部分（%s）。仍要下载吗？		review
+#str_107223	You are missing some files to connect to this server, and the server doesn't provide downloads.	你缺少连接此服务器所需的部分文件，且该服务器不提供下载。		review
+#str_107224	You need to download some files to connect to this server ( %s ), proceed?	连接此服务器需要下载部分文件（%s），要继续吗？		review
+#str_107230	Surround speakers not found.\nMake sure the speaker settings are configured properly.	未检测到环绕声扬声器。\n请确认扬声器设置已正确配置。		review
+#str_107231	EAX	EAX		review
+#str_107232	EAX Reverb	EAX 混响		review
+#str_107233	EAX Reverb	EAX 混响		review
+#str_107237	PunkBuster must be enabled.	必须启用 PunkBuster。		review
+#str_107238	%d FRIENDS ONLINE	%d 位好友在线		review
+#str_107239	You have been banned from this server.	你已被此服务器封禁。		review
+#str_107240	Map Start	地图开始		review
+#str_107241	Quicksave	快速存档		review
+#str_107242	Vote Called:\n %s (YES) %s (NO)	已发起投票：\n %s（是） %s（否）		review
+#str_107243	You Voted %s:\n %s (YES) %s (NO)	你投了 %s：\n %s（是） %s（否）		review
+#str_107250	rcon verified\n	rcon 验证通过\n		review
+#str_107260	Lemming Award	旅鼠奖		review
+#str_107261	Rail Master	轨道炮大师		review
+#str_107262	Rocket Sauce	火箭狂人		review
+#str_107263	Brawler	格斗家		review
+#str_107264	Sniper	狙击手		review
+#str_107265	Critical Failure	重大失误		review
+#str_107266	Team Player	最佳队友		review
+#str_107267	Accuracy	命中率		review
+#str_107268	Frags	击杀数		review
+#str_107269	Perfect	完美		review
+#str_107270	You have joined Arena %d	你已加入 %d 号竞技场		review
+#str_107271	You have joined the waiting arena	你已加入等候竞技场		review
+#str_107272	Favorites %s Regular	收藏 %s 普通		review
+#str_107273	Regular %s Favorites	普通 %s 收藏		review
+#str_107274	Locked %s Unlocked	已锁定 %s 未锁定		review
+#str_107275	Unlocked %s Locked	未锁定 %s 已锁定		review
+#str_107276	Dedicated %s Listen	专用 %s 监听		review
+#str_107277	Listen %s Dedicated	监听 %s 专用		review
+#str_107278	PunkBuster %s Regular	PunkBuster %s 普通		review
+#str_107279	Regular %s PunkBuster	普通 %s PunkBuster		review
+#str_107280	Server name A %s Z	服务器名 A %s Z		review
+#str_107281	Server name Z %s A	服务器名 Z %s A		review
+#str_107282	Ping Low %s High	延迟 低 %s 高		review
+#str_107283	Ping High %s Low	延迟 高 %s 低		review
+#str_107284	Players Low %s High	玩家数 少 %s 多		review
+#str_107285	Players High %s Low	玩家数 多 %s 少		review
+#str_107286	Players High %s Low (non-full)	玩家数 多 %s 少（未满）		review
+#str_107287	Map CTF1 %s DM9	地图 CTF1 %s DM9		review
+#str_107288	Map DM9 %s CTF1	地图 DM9 %s CTF1		review
+#str_107289	Tournament	锦标赛		review
+#str_107290	CTF	夺旗		review
+#str_107291	Arena CTF	竞技场夺旗		review
+#str_107292	Unsorted	未排序		review
+#str_107293	Scanning for LAN servers...	正在扫描局域网服务器……		review
+#str_107294	Scanned %d Quake 4 Servers	已扫描 %d 个 Quake 4 服务器		review
+#str_107295	You fragged %s	你击杀了 %s		review
+#str_107296	You were fragged by %s	你被 %s 击杀		review
+#str_107297	Scanning %d/%d: %s	正在扫描 %d/%d：%s		review
+#str_107298	Scanning - Found: %s	正在扫描——已找到：%s		review
+#str_107299	Quake 4 is out of date, please visit www.Quake4Game.com for updates.	Quake 4 版本过旧，请访问 www.Quake4Game.com 获取更新。		review
+#str_107300	if set to 1, show item acquisition gui when picked up	设为 1 时，拾取物品会显示获取界面		review
+#str_107301	name referenced for triggers etc.. requiring this to be in inventory to work	供触发器等引用的名称，需此物品位于物品栏中才能生效		review
+#str_107302	icon name for hud graphics	HUD 图形所用的图标名称		review
+#str_107303	if set to 1, is carried as opposed to instant use	设为 1 时为随身携带，而非立即使用		review
+#str_107304	trigger to give to player instead of picking up	替代直接拾取、给予玩家的触发器		review
+#str_107305	visual model	显示模型		review
+#str_107306	sound to make when acquired	获得时播放的音效		review
+#str_107307	amount to expand the pickup trigger by	拾取触发区的扩展量		review
+#str_107308	id number as defined in guis/itemdefs.h	guis/itemdefs.h 中定义的 ID 编号		review
+#str_107309	set to 1 and item will not spawn in easy mode	设为 1 后物品不会在简单难度生成		review
+#str_107310	set to 1 and item will not spawn in medium mode	设为 1 后物品不会在中等难度生成		review
+#str_107311	set to 1 and item will not spawn in hard mode	设为 1 后物品不会在困难难度生成		review
+#str_107312	Gives the player an objective, trigger it to give the objective.	给予玩家一个任务目标，触发后即下达该目标。		review
+#str_107313	1 means show objective window	为 1 时显示任务目标窗口		review
+#str_107314	objective description	任务目标描述		review
+#str_107315	objective title	任务目标标题		review
+#str_107316	name of inventory/objective item used for requirements	用作前置条件的物品栏/任务目标物品名称		review
+#str_107317	Completes a named objective, trigger it to complete the objective.	完成指定名称的任务目标，触发后即完成该目标。		review
+#str_107318	Fails a named objective, trigger it to fail the objective	使指定名称的任务目标失败，触发后该目标即告失败		review
+#str_107319	Objective to fail	要判定失败的任务目标		review
+#str_107320	Health Shard	生命碎片		review
+#str_107321	Small Health Pack	小型医疗包		review
+#str_107322	Large Health Pack	大型医疗包		review
+#str_107323	Mega Health	超级生命		review
+#str_107324	Armor Shard	护甲碎片		review
+#str_107325	Small Armor Vest	小型护甲背心		review
+#str_107326	Large Armor Vest	大型护甲背心		review
+#str_107327	The Moderator	调停者		review
+#str_107328	Small Armor Vest	小型护甲背心		review
+#str_107329	Large Armor Vest	大型护甲背心		review
+#str_107400	Blaster	爆能手枪		review
+#str_107401	Dark Matter Gun	暗物质炮		review
+#str_107402	Gauntlet	战斗手套		review
+#str_107403	Grenade Launcher	榴弹发射器		review
+#str_107404	HyperBlaster	速射爆能枪		review
+#str_107405	Lightning Gun	闪电枪		review
+#str_107406	Machinegun	机枪		review
+#str_107407	Nailgun	钉枪		review
+#str_107408	Railgun	轨道炮		review
+#str_107409	Rocket Launcher	火箭发射器		review
+#str_107410	Shotgun	霰弹枪		review
+#str_107411	Clips	弹匣		review
+#str_107412	Nails	钉弹		review
+#str_107413	Slugs	弹芯		review
+#str_107414	Shells	霰弹		review
+#str_107415	Batteries	电池		review
+#str_107416	Rockets	火箭弹		review
+#str_107417	Grenades	榴弹		review
+#str_107418	Lightning Coils	闪电线圈		review
+#str_107419	Dark Matter Cores	暗物质核心		review
+#str_107420	Item	物品		review
+#str_107421	Marine Flag	陆战队旗帜		review
+#str_107422	Strogg Flag	Strogg 旗帜		review
+#str_107423	Quad Damage	四倍伤害		review
+#str_107424	Haste	加速		review
+#str_107425	Regeneration	再生		review
+#str_107426	Invisibility	隐身		review
+#str_107427	Guard	守护		review
+#str_107428	Doubler	倍增		review
+#str_107429	Ammo Regen	弹药再生		review
+#str_107430	Scout	斥候		review
+#str_107431	Extended Clip Mod	扩容弹匣改装		review
+#str_107432	Bounce Shot Mod	反弹射击改装		review
+#str_107434	Chain Lightning Mod	连锁闪电改装		review
+#str_107435	Extended Clip Mod	扩容弹匣改装		review
+#str_107436	Firepower Mod	火力增强改装		review
+#str_107438	Nail Seeker Mod	追踪钉弹改装		review
+#str_107439	Rail Penetration Mod	轨道贯穿改装		review
+#str_107440	Rocket Homing Mod	火箭追踪改装		review
+#str_107500	PERSONA TEST	角色测试		review
+#str_107501	PERSONA DESCRIPTION	角色描述		review
+#str_107502	Rhino Squad	Rhino 小队		review
+#str_107503	Badger Squad	Badger 小队		review
+#str_107504	Wolf Squad	Wolf 小队		review
+#str_107505	Kodiak Squad	Kodiak 小队		review
+#str_107506	Eagle Squad	Eagle 小队		review
+#str_107507	Raven Squad	Raven 小队		review
+#str_107508	Warthog Squad	Warthog 小队		review
+#str_107509	Viper Squad	Viper 小队		review
+#str_107510	Cobra Squad	Cobra 小队		review
+#str_107511	Medic Anderson	医疗兵 Anderson		review
+#str_107512	SGT Bidwell	中士 Bidwell		review
+#str_107513	CPL Cortez	下士 Cortez		review
+#str_107514	SGT Morris	中士 Morris		review
+#str_107515	2LT Morris	少尉 Morris		review
+#str_107516	CPL Rhodes	下士 Rhodes		review
+#str_107517	LCPL 'Sledge'	准下士「Sledge」		review
+#str_107518	SGT 'Sledge'	中士「Sledge」		review
+#str_107519	Tech Strauss	技术兵 Strauss		review
+#str_107520	LT Voss	中尉 Voss		review
+#str_107521	Unnamed	未命名		review
+#str_107600	THE FRAGGING YARD	击杀场		review
+#str_107601	SANDSTORM	沙暴		review
+#str_107602	THE LOST FLEET	失落舰队		review
+#str_107603	Q4DM4	Q4DM4		review
+#str_107604	BLOODWORK	血色工场		review
+#str_107605	THE ROSE	玫瑰		review
+#str_107606	NO DOCTORS	没有医生		review
+#str_107607	OVER THE EDGE	越过边缘		review
+#str_107608	Q4TOURNEY1	Q4TOURNEY1		review
+#str_107609	Q4TOURNEY6	Q4TOURNEY6		review
+#str_107610	HEARTLESS	无情		review
+#str_107611	DEATH BEFORE DISHONOR	宁死不屈		review
+#str_107612	SPEED TRAP	速度陷阱		review
+#str_107613	AIR DEFENSE BUNKER	防空掩体		review
+#str_107614	AIR DEFENSE TRENCHES	防空战壕		review
+#str_107615	PERIMETER DEFENSE STATION	外围防御站		review
+#str_107616	CANYON	峡谷		review
+#str_107617	AQUEDUCTS	输水道		review
+#str_107618	AQUEDUCTS ANNEX	输水道附属区		review
+#str_107619	NEXUS CORE	Nexus 核心		review
+#str_107620	DISPERSAL FACILITY	疏散设施		review
+#str_107621	INTERIOR DISPERSAL FACILITY	疏散设施内部		review
+#str_107622	HANGAR PERIMETER	机库外围		review
+#str_107623	INTERIOR HANGAR	机库内部		review
+#str_107624	NEXUS HUB TUNNELS	Nexus 枢纽隧道		review
+#str_107625	NEXUS HUB	Nexus 枢纽		review
+#str_107626	OPERATION: ADVANTAGE	「优势」行动		review
+#str_107627	MCC LANDING SITE	MCC 着陆场		review
+#str_107628	STROGG MEDICAL FACILITIES	Strogg 医疗设施		review
+#str_107629	DATA NETWORKING TERMINAL	数据网络终端		review
+#str_107630	DATA NETWORKING SECURITY	数据网络安保区		review
+#str_107631	DATA PROCESSING TERMINAL	数据处理终端		review
+#str_107632	DATA PROCESSING SECURITY	数据处理安保区		review
+#str_107633	PUTRIFICATION CENTER	腐化中心		review
+#str_107634	RECOMPOSITION CENTER	再造中心		review
+#str_107635	DATA STORAGE TERMINAL	数据存储终端		review
+#str_107636	DATA STORAGE SECURITY	数据存储安保区		review
+#str_107637	TRAM HUB STATION	轨道车枢纽站		review
+#str_107638	TRAM RAIL	轨道车线路		review
+#str_107639	FUEL STATION	燃料站		review
+#str_107640	CONSTRUCTION ZONE	施工区		review
+#str_107641	WASTE PROCESSING FACILITY	废料处理厂		review
+#str_107642	OPERATION: LAST HOPE	「最后希望」行动		review
+#str_107643	DATA PROCESSING TERMINAL	数据处理终端		review
+#str_107644	PUTRIFICATION CENTER	腐化中心		review
+#str_107645	DATA STORAGE TERMINAL	数据存储终端		review
+#str_107646	RELATIVITY	相对论		review
+#str_107647	THE LONGEST DAY	最长的一天		review
+#str_107648	THE FRAGGING YARD 1v1	击杀场 1v1		review
+#str_107649	XAERO GRAVITY	Xaero 重力		review
+#str_107650	BACKSLASH	反斜线		review
+#str_107651	RIGHT ALT	右 ALT		review
+#str_107652	RIGHT CTRL	右 CTRL		review
+#str_107653	RIGHT SHIFT	右 SHIFT		review
+#str_107654	Can't save after failed mission	任务失败后无法存档		review
+#str_107655	No response from %s after %d challenges. Disconnecting.	对 %s 发出 %d 次质询后仍无响应。正在断开连接。		review
+#str_107656	Checkpoint	检查点		review
+#str_107657	Searching for available servers.	正在搜索可用服务器。		review
+#str_107658	THE NEXUS	Nexus		review
+#str_107659	Time Limit	时间限制		review
+#str_107660	Frag Limit	击杀上限		review
+#str_107661	Capture Limit	夺旗上限		review
+#str_107662	Pure	纯净		review
+#str_107663	Max Players	最大玩家数		review
+#str_107664	Team Damage	队友伤害		review
+#str_107665	%s^0 team reached the frag limit	%s^0 队达到了击杀上限		review
+#str_107666	Auto Balance Teams	自动平衡队伍		review
+#str_107667	Loading... 	载入中…… 		review
+#str_107668	collision map	碰撞地图		review
+#str_107669	game media	游戏媒体资源		review
+#str_107670	Press %s/%s to cycle through players and arenas	按 %s/%s 在玩家与竞技场间切换		review
+#str_107671	STARTING GAME IN %d	游戏将在 %d 秒后开始		review
+#str_107672	SPECTATING - FOLLOWING %s	观战中——正在跟随 %s		review
+#str_107673	SPECTATING	观战中		review
+#str_107674	WAITING ON ONE MORE PLAYER	正在等待 1 名玩家加入		review
+#str_107675	WAITING ON ONE PLAYER ON EACH TEAM	正在等待每队各 1 名玩家		review
+#str_107676	Tourney	锦标赛		review
+#str_107677	Team Deathmatch	团队死亡竞赛		review
+#str_107678	Capture the Flag	夺旗		review
+#str_107679	Deathmatch	死亡竞赛		review
+#str_107680	One Flag Capture the Flag	单旗夺旗		review
+#str_107681	Arena Capture the Flag	竞技场夺旗		review
+#str_107682	Arena One Flag Capture the Flag	竞技场单旗夺旗		review
+#str_107683	Checking for Quake 4 updates.	正在检查 Quake 4 更新。		review
+#str_107684	You will be seeded when the tournament begins.	锦标赛开始时你将被编入对阵表。		review
+#str_107685	You will spectate the tournament.	你将观战本届锦标赛。		review
+#str_107686	You are in the waiting room	你正在等候室中		review
+#str_107687	You are eliminated; waiting for next tournament	你已被淘汰；正在等待下一届锦标赛		review
+#str_107688	Advanced to next round; waiting for arenas to finish	已晋级下一轮；正在等待各竞技场比赛结束		review
+#str_107689	1st^0 place with	第 1^0 名，成绩为		review
+#str_107690	2nd^0 place with	第 2^0 名，成绩为		review
+#str_107691	3rd^0 place with	第 3^0 名，成绩为		review
+#str_107692	th^0 place with	^0 名，成绩为		review
+#str_107693	Tied for	并列		review
+#str_107694	Use the ESC Menu/Leave Tournament option to spectate the tournament	使用 ESC 菜单中的「退出锦标赛」选项即可观战锦标赛		review
+#str_107695	Use the ESC Menu/Join Tournament option to be seeded in the next tournament	使用 ESC 菜单中的「加入锦标赛」选项即可编入下届锦标赛对阵		review
+#str_107696	Press %s to enter waiting arena	按 %s 进入等候竞技场		review
+#str_107697	Press %s to watch the tournament	按 %s 观看锦标赛		review
+#str_107698	Press %s to cycle players, %s to exit follow mode	按 %s 切换玩家，按 %s 退出跟随模式		review
+#str_107699	Join the tournament	加入锦标赛		review
+#str_107700	Leave the tournament	退出锦标赛		review
+#str_107701	SPECTATORS	观察者		review
+#str_107702	Map	地图		review
+#str_107703	Yes	是		review
+#str_107704	No	否		review
+#str_107705	- BYE -	- 轮空 -		review
+#str_107706	Warmup	热身		review
+#str_107707	Unpure client detected. Invalid PK4 file referenced!	检测到非纯净客户端。引用了无效的 PK4 文件！		review
+#str_107708	Unpure client	非纯净客户端		review
+#str_107709	You have a BYE to the next round	你轮空晋级下一轮		review
+#str_107710	Waiting on everybody to ready up;  Not Ready:\nPress %s to ready	正在等待所有玩家准备就绪；未准备：\n按 %s 准备		review
+#str_107711	Waiting on everybody to ready up;  Ready:\nPress %s to un-ready	正在等待所有玩家准备就绪；已准备：\n按 %s 取消准备		review
+#str_107712	1 frag to win a round	击杀 1 次即可赢得一轮		review
+#str_107713	Playing tournament %d of %d	正在进行第 %d 场锦标赛（共 %d 场）		review
+#str_107714	Tourney Limit	锦标赛上限		review
+#str_107715	%d frags to win a round	击杀 %d 次即可赢得一轮		review
+#str_107717	Preliminaries	预赛		review
+#str_107718	Quarter Finals	四分之一决赛		review
+#str_107719	Semi-Finals	半决赛		review
+#str_107720	Final Match	决赛		review
+#str_107721	Pre-game	赛前		review
+#str_107722	THE ENEMY HAS YOUR FLAG	敌方拿到了你方旗帜		review
+#str_107723	THE ENEMY DROPPED YOUR FLAG	敌方丢下了你方旗帜		review
+#str_107724	Vote Status:	投票状态：		review
+#str_107725	Server Name	服务器名称		review
+#str_107726	Server IP	服务器 IP		review
+#str_107727	Game Type	游戏类型		review
+#str_107728	PLAYING	比赛中		review
+#str_107729	ELIMINATED	已淘汰		review
+#str_107730	Map Name:	地图名称：		review
+#str_107731	No Choices Defined	未定义任何选项		review
+#str_107732	WAITING FOR %d MORE PLAYERS	还需等待 %d 名玩家		review
+#str_107733	Already at the voted Min Players	已达到投票设定的最少玩家数		review
+#str_107734	Min Players value is out of range	最少玩家数超出取值范围		review
+#str_107735	Set Min Players to %d	已将最低玩家数设为 %d		review
+#str_107736	Getting list of servers...	正在获取服务器列表……		review
+#str_107737	Settling world	正在稳定世界		review
+#str_107738	Waiting for initial server message	正在等待服务器初始消息		review
+#str_107739	WAITING TO PLAY	等待进入游戏		review
+#str_107740	ADVANCED	高级		review
+#str_108000	Failed Transfer	失败改造体		review
+#str_108001	Slimy Transfer	黏液改造体		review
+#str_108002	Corpse	尸体		review
+#str_108003	Kane	Kane		review
+#str_108004	Morris	Morris		review
+#str_108005	Voss	Voss		review
+#str_108006	Cortez	Cortez		review
+#str_108007	Dynerman	Dynerman		review
+#str_108008	Strauss	Strauss		review
+#str_108009	Anderson	Anderson		review
+#str_108010	Harper	Harper		review
+#str_108011	Bidwell	Bidwell		review
+#str_108012	Fuchs	Fuchs		review
+#str_108013	Tactical Transfer	战术改造体		review
+#str_108014	Stroggified Kane	Strogg 化的 Kane		review
+#str_108015	Alternate Failed Transfer	失败改造体（备选）		review
+#str_108016	Alternate Slimy Transfer	黏液改造体（备选）		review
+#str_108017	Tactical Elite	精英战术兵		review
+#str_108018	Tactical Command	战术指挥官		review
+#str_108019	Alternate Corpse 1	尸体（备选 1）		review
+#str_108020	Alternate Corpse 2	尸体（备选 2）		review
+#str_108021	Alternate Corpse 3	尸体（备选 3）		review
+#str_108022	killed client	已击杀客户端		review
+#str_108023	Voting disabled on server	服务器已禁用投票		review
+#str_108024	Press %s to enter follow mode	按 %s 进入跟随模式		review
+#str_110000	Unsorted	未排序		review
+#str_110001	Only Favorite Servers	仅显示收藏的服务器		review
+#str_110002	Only Non-Favorite Servers	仅显示未收藏的服务器		review
+#str_110003	Only Locked Servers	仅显示加锁的服务器		review
+#str_110004	Only Unlocked Servers	仅显示未加锁的服务器		review
+#str_110005	Only Dedicated Servers	仅显示专用服务器		review
+#str_110006	Only Listen Servers	仅显示监听服务器		review
+#str_110007	Only PB-Enabled	仅显示启用 PB 的服务器		review
+#str_110008	Only PB-Disabled	仅显示禁用 PB 的服务器		review
+#str_107213	Downloading %s	正在下载 %s		review
+#str_108025	Strogg	Strogg		review
+#str_108026	Marine	陆战队员		review
+#str_108027	%s team hit the capture limit.	%s 队已达到夺旗上限。		review
+#str_110010	SHUFFLE TEAMS	随机分配队伍		review
+#str_110011	DM	死亡竞赛		review
+#str_110012	Tourney	锦标赛		review
+#str_110013	Team DM	团队死亡竞赛		review
+#str_110014	CTF	夺旗		review
+#str_110015	Arena CTF	竞技场夺旗		review
+#str_110016	Players Low %s High (non-empty)	玩家数下限 %s 上限（非空）		review
+#str_110017	Waiting on everybody to ready up;  Not Ready: Press %s to ready	等待所有玩家准备就绪；未准备：按 %s 准备		review
+#str_110018	Waiting on everybody to ready up;  Ready: Press %s to un-ready	等待所有玩家准备就绪；已准备：按 %s 取消准备		review
+#str_110019				todo
+#str_110020	Do you wish to report anonymous usage statistics to the developer?  Information sent will be of the type: Presence of DVD drive, type of video card, amount of system RAM, etc	是否向开发商报告匿名使用统计信息？发送的信息类型包括：是否装有 DVD 光驱、显卡类型、系统内存大小等		review
+#str_110021	Do you wish to be prompted each time anonymous statistics are reported?	是否在每次报告匿名统计信息时都进行提示？		review
+#str_110023	Showing %d out of %d servers	正在显示 %d 个服务器（共 %d 个）		review
+#str_110024	Offline	离线		review
+#str_110100	Pro Marine	职业陆战队员		review
+#str_110101	Pro Strogg	职业 Strogg		review
+#str_122000	Get to the Dead Zone!	前往死亡地带！		review
+#str_122001	DeadZone	死亡地带		review
+#str_122002	USAGE: clientcallvote controlTime <value>\n	用法：clientcallvote controlTime <数值>\n		review
+#str_122003	DeadZone Powerup	死亡地带强化道具		review
+#str_122004	Team Ammo Regen	团队弹药再生		review
+#str_122005	Team Health Regen	团队生命再生		review
+#str_122006	Team Doubler	团队双倍伤害		review
+#str_122007	FC Armor Regen	旗手护甲再生		review
+#str_122008	Control Time	控制时间		review
+#str_122009	CONTROL TIME %d	控制时间 %d		review
+#str_122010	ALLOW BUYING	允许购买		review
+#str_122011	ALLOW BUYING %s	允许购买 %s		review
+#str_122012	USAGE: clientcallvote buying [0-1]\n	用法：clientcallvote buying [0-1]\n		review
+#str_122013	Already at the voted Buying Mode	当前已处于所投票的购买模式		review
+#str_122014	Set Buy Mode to %d	已将购买模式设为 %d		review
+#str_122015	Credits:	信用点：		review
+#str_122016	(Buy Zone)	（购买区）		review
+#str_122017	Already at the voted Control Time.\n	当前已处于所投票的控制时间。\n		review
+#str_122018	Control time value is out of range.\n	控制时间数值超出范围。\n		review
+#str_122900	CAVERNOUS CRYONICS	冷冻洞窟		review
+#str_122901	CENTRAL INDUSTRIAL	中央工业区		review
+#str_122902	WARFORGED	战争锻造场		review
+#str_122903	STROYENT RED	Stroyent 红		review
+#str_122904	RETROPHOBOPOLIS	复古恐惧之城		review
+#str_122905	FIREWALL	防火墙		review
+#str_122906	STROGGENOMENON	Strogg 异象		review
+#str_122907	VERTICON	垂直之城		review
+#str_123000	Insufficient viewer slots	观众席位不足		review
+#str_123003	Q4TV broadcast server can only connect to a Q4TV server	Q4TV 转播服务器只能连接到 Q4TV 服务器		review
+#str_123004	No Q4TV broadcasts	不含 Q4TV 转播		review
+#str_123005	Only Q4TV broadcasts	仅 Q4TV 转播		review
+#str_123006	Filter by Mod	按 Mod 筛选		review
+#str_123007	Game	游戏		review
+#str_123008	all	全部		review
+#str_123009	Tickrate	Tick 率		review

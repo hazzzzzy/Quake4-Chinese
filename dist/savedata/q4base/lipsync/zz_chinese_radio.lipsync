@@ -1,0 +1,1508 @@
+// 汉化项目自建：无线电台词最小 lipsync decl（原版缺失，仅供字幕取文本）
+// 由 tools/gen_radio_decls.py 生成，勿手改
+
+lipSync vo_1_1_1_68_1
+{
+	description	"This is Sgt. Miller. I'm takin' Condor Squad in to clear out the facility."
+	text		"#str_380000"
+}
+
+lipSync vo_1_1_2_06_1
+{
+	description	"We're a lost cause! Do not attempt to evac us."
+	text		"#str_380001"
+}
+
+lipSync vo_1_1_3_51_1
+{
+	description	"Armadillo Squad, you have to flank left. Flank left, damn it!"
+	text		"#str_380002"
+}
+
+lipSync vo_1_1_3_56_2
+{
+	description	"Comm uplink has been established and systems are in the green. Proceed to your first target Bison squad."
+	text		"#str_380003"
+}
+
+lipSync vo_1_1_3_58_1
+{
+	description	"Viper squad, this is H Q. Mantis squad is M I A and unresponsive. Fall back to rally point alpha niner four."
+	text		"#str_380004"
+}
+
+lipSync vo_1_1_1_70_1
+{
+	description	"Mayday! Mayday! This is the U.S.S. Patton - we have sustained heavy damage..."
+	text		"#str_380005"
+}
+
+lipSync vo_1_1_1_72_1
+{
+	description	"... aircraft loss of 65%. We're taking a lot of heat from the air defense cannon. Ground based troops..."
+	text		"#str_380006"
+}
+
+lipSync vo_1_1_2_02_1
+{
+	description	"HQ, we can't advance. Dust is clogging the intakes of the hover tanks."
+	text		"#str_380007"
+}
+
+lipSync vo_1_1_2_04_1
+{
+	description	"We're being overrun! Launch an air strike on my position now!"
+	text		"#str_380008"
+}
+
+lipSync vo_1_1_3_01_1
+{
+	description	"Kane! This is Sgt. Bidwell. We need you here ASAP. We've gotta bring the air defense cannon down."
+	text		"#str_380009"
+}
+
+lipSync vo_1_1_3_04_1
+{
+	description	"What's the hold up, Kane? Find us immediately."
+	text		"#str_380010"
+}
+
+lipSync vo_1_1_3_04_2
+{
+	description	"Kane, this is Sgt. Bidwell. Stop pissin' around and hook up with us."
+	text		"#str_380011"
+}
+
+lipSync vo_1_1_3_04_3
+{
+	description	"Kane, this is Bidwell. Don't make me come lookin' for you."
+	text		"#str_380012"
+}
+
+lipSync vo_1_1_3_30_1
+{
+	description	"Walker Squad Bison, advance. Fire at will."
+	text		"#str_380013"
+}
+
+lipSync vo_1_1_3_63_2
+{
+	description	"We copy that, bison squad. You are cleared to aid the foot soldiers."
+	text		"#str_380014"
+}
+
+lipSync vo_1_1_3_65_5
+{
+	description	"H Q, this is Bison Squad. The situation is under control."
+	text		"#str_380015"
+}
+
+lipSync vo_1_1_3_80_4
+{
+	description	"Sgt. Bidwell, this is Voss. I think I've found a way to get at that cannon. Can you reach Kane?"
+	text		"#str_380016"
+}
+
+lipSync vo_1_1_3_80_6
+{
+	description	"Good. Kane, go to the Strogg hangars. Viper squad will rendezvous with you there. If you can take out the launching bays, the fliers won't be a problem. Voss out."
+	text		"#str_380017"
+}
+
+lipSync vo_002_bravoteam
+{
+	description	"Bravo Team here! We've got a situaton in alpha niner. Requesting backup for the  . . . Oh, God, just send backup now!"
+	text		"#str_380018"
+}
+
+lipSync vo_002_headsup
+{
+	description	"Heads up. The Strogg are breaking through our perimiter. They'll be on us in 3...2...1"
+	text		"#str_380019"
+}
+
+lipSync vo_1_1_13_2_0001
+{
+	description	"HQ, this is Fox Squad in sector 6A. We have engaged the Strogg."
+	text		"#str_380020"
+}
+
+lipSync vo_1_1_13_2_0002
+{
+	description	"Do you require assistance?"
+	text		"#str_380021"
+}
+
+lipSync vo_1_1_13_2_0003
+{
+	description	"Affirmative. Send an additional squad immediately."
+	text		"#str_380022"
+}
+
+lipSync vo_1_1_13_4_0001
+{
+	description	"HQ, HQ, our squad's pinned down and meeting heavy resistance. We've run out of... aaaah!"
+	text		"#str_380023"
+}
+
+lipSync vo_1_1_13_5_0001
+{
+	description	"Sarge. We got movement - at bearing 221. I count six signals."
+	text		"#str_380024"
+}
+
+lipSync vo_1_1_13_5_0002
+{
+	description	"I want a straight V formation. Holtz, you take point."
+	text		"#str_380025"
+}
+
+lipSync vo_1_1_13_5_0003
+{
+	description	"Got it."
+	text		"#str_380026"
+}
+
+lipSync vo_1_1_13_5_0004
+{
+	description	"Don't bunch up and remember to check the ceilings."
+	text		"#str_380027"
+}
+
+lipSync vo_1_1_13_6_0001
+{
+	description	"Destroyer, U.S.S. Madison, has achieved sub-orbital position. Com-links established with primary tactical operation HQs. All company commanders transmit sit-reps immediately."
+	text		"#str_380028"
+}
+
+lipSync vo_1_1_13_7_0000
+{
+	description	"HQ, we have engaged the Strogg."
+	text		"#str_380029"
+}
+
+lipSync vo_1_1_13_7_0001
+{
+	description	"Roger that. We read you at sector 25 L."
+	text		"#str_380030"
+}
+
+lipSync vo_1_1_13_7_0002
+{
+	description	"Affirmative, HQ. We're meeting heavy resistance."
+	text		"#str_380031"
+}
+
+lipSync vo_1_1_13_7_0003
+{
+	description	"Watch the left flank!"
+	text		"#str_380032"
+}
+
+lipSync vo_1_1_13_7_0004
+{
+	description	"Over here!"
+	text		"#str_380033"
+}
+
+lipSync vo_1_1_13_7_0005
+{
+	description	"Throw a charge!"
+	text		"#str_380034"
+}
+
+lipSync vo_1_1_13_7_0006
+{
+	description	"Get down!"
+	text		"#str_380035"
+}
+
+lipSync vo_1_1_13_7_0007
+{
+	description	"Do you require reinforcements? Silence."
+	text		"#str_380036"
+}
+
+lipSync vo_1_1_13_7_0008
+{
+	description	"I repeat. Do you require reinforcements?"
+	text		"#str_380037"
+}
+
+lipSync vo_1_1_13_7_0009
+{
+	description	"Negative. The situation is under control."
+	text		"#str_380038"
+}
+
+lipSync vo_1_1_7_0001
+{
+	description	"This is Famine Convoy, grid is down."
+	text		"#str_380039"
+}
+
+lipSync vo_1_1_7_0002
+{
+	description	"This is Pestilence Convoy, grid is down."
+	text		"#str_380040"
+}
+
+lipSync vo_1_1_7_0003
+{
+	description	"This is War. The Defense Grid is fully deactivated."
+	text		"#str_380041"
+}
+
+lipSync vo_1_1_7_0004
+{
+	description	"Shit! We've been spotted by Strogg fliers! They're coming in for a..."
+	text		"#str_380042"
+}
+
+lipSync vo_1_1_7_0005
+{
+	description	"War. Come in. War, please respond."
+	text		"#str_380043"
+}
+
+lipSync vo_1_1_7_0006
+{
+	description	"Kane, we're movin' out before the Strogg finds our convoy. We've left a hover tank for you. Grab it and you'll be able to rendezvous with us in no time. Bidwell, out."
+	text		"#str_380044"
+}
+
+lipSync vo_1_2_8_100_1
+{
+	description	"Hang on, we got Strogg moving in for the kill!"
+	text		"#str_380045"
+}
+
+lipSync vo_1_2_8_100_2
+{
+	description	"Ramming speed!"
+	text		"#str_380046"
+}
+
+lipSync vo_1_2_8_100_3
+{
+	description	"Keep back! We're coming in fast!"
+	text		"#str_380047"
+}
+
+lipSync vo_1_2_8_100_6
+{
+	description	"You must be my escort. Nice of you to show up. Take me back to the door they want opened."
+	text		"#str_380048"
+}
+
+lipSync vo_1_2_8_20_2
+{
+	description	"Rodger that."
+	text		"#str_380049"
+}
+
+lipSync vo_1_2_8_30_6
+{
+	description	"I will be locking the door behind you."
+	text		"#str_380050"
+}
+
+lipSync vo_1_2_8_61_1
+{
+	description	"Kane, what's the hold up? It's imperative you get to Sub-Entrance 1 ASAP."
+	text		"#str_380051"
+}
+
+lipSync vo_1_2_8_70_1
+{
+	description	"To continue you must find the console that manually primes the door to sub-entrance 2.."
+	text		"#str_380052"
+}
+
+lipSync vo_1_2_8_70_2
+{
+	description	"Very good. Now activating the door."
+	text		"#str_380053"
+}
+
+lipSync vo_1_2_8_80_1
+{
+	description	"Just got word the Engineering team has seen Strogg in their vicinity. Step it up, Kane."
+	text		"#str_380054"
+}
+
+lipSync vo_1_2_8_90_1
+{
+	description	"Yes, I see where you are - I cannot open that door from here. Find the console that allows you to manually prime it."
+	text		"#str_380055"
+}
+
+lipSync vo_1_2_8_90_2
+{
+	description	"Ah, much better."
+	text		"#str_380056"
+}
+
+lipSync vo_3_2_1_10_1
+{
+	description	"Corporal Kane, can you hear me? Hopefully the shielding around the Core will not completely block my signal."
+	text		"#str_380057"
+}
+
+lipSync vo_3_2_1_10_6
+{
+	description	"Remember your primary goal is to locate and destroy the Nexus. That will disable the Strogg communication network."
+	text		"#str_380058"
+}
+
+lipSync vo_3_2_1_40_1
+{
+	description	"I must admit to being envious of you, Corporal Kane. The technology you are witnessing must be truly spectacular."
+	text		"#str_380059"
+}
+
+lipSync vo_3_2_9_10_1
+{
+	description	"You are about to enter the room that houses the Nexus, Corporal Kane. Watch yourself, no doubt it will be heavily guarded."
+	text		"#str_380060"
+}
+
+lipSync vo_3_2_9_20_1
+{
+	description	"You did it, Kane! You are now looking at a sight only the Makron has ever laid eyes on. The Nexus is the backbone of the Strogg war machine. Destroy it, and you save Earth."
+	text		"#str_380061"
+}
+
+lipSync vo_2_2_3_25_1
+{
+	description	"To any Marines... Head to the Waste Facility. Just outside is your extraction point."
+	text		"#str_380062"
+}
+
+lipSync vo_1_1_5_100_1
+{
+	description	"Viper Squad, this is Morris. HQ�s finally located a demolitionist for the hangars. He should be there soon."
+	text		"#str_380063"
+}
+
+lipSync vo_1_1_5_120_1
+{
+	description	"The demolitionist is waiting for the all clear before advancing."
+	text		"#str_380064"
+}
+
+lipSync vo_1_1_5_140_1
+{
+	description	"Kane, this is Morris. The demolitionist should be near the top of the elevator."
+	text		"#str_380065"
+}
+
+lipSync vo_1_1_5_150_4
+{
+	description	"Rhodes, if you're done with Viper squad, send 'em on down to my position."
+	text		"#str_380066"
+}
+
+lipSync vo_1_1_6_70_2
+{
+	description	"Detonation in 3... 2... 1"
+	text		"#str_380067"
+}
+
+lipSync vo_1_1_6_80_1
+{
+	description	"Hey, Rhodes. If you kids are done playin' around, why don't you send Kane down my way? Voss wants us back at the air defense cannon on the double."
+	text		"#str_380068"
+}
+
+lipSync vo_1_1_6_80_3
+{
+	description	"Sorry, big boy. Voss wants you to stay put. Another team may need your services. Morris, out."
+	text		"#str_380069"
+}
+
+lipSync vo_1_2_14_10_1
+{
+	description	"All right, Marines. Listen up. The Strogg have taken out the other convoys, we're all that's left. This mission's too big for any screw-ups. No one take any chances, no one try to be the hero. Voss out."
+	text		"#str_380070"
+}
+
+lipSync vo_1_2_14_72_5
+{
+	description	"You�ll be fine, Strauss. Kane, get out here on the double. Voss, out."
+	text		"#str_380071"
+}
+
+lipSync vo_1_2_16_120_1
+{
+	description	"Good job. The forcefield's down, Kane. Return to the squad immediately."
+	text		"#str_380072"
+}
+
+lipSync vo_1_2_17_10_13
+{
+	description	"Yes, sir."
+	text		"#str_380073"
+}
+
+lipSync vo_1_2_17_10_7
+{
+	description	"Lieutenant Voss, this is Strauss. What has happened?"
+	text		"#str_380074"
+}
+
+lipSync vo_1_2_18_10_3
+{
+	description	"Ja. But it means I have to go directly to the Tetranode."
+	text		"#str_380075"
+}
+
+lipSync vo_1_2_18_10_5
+{
+	description	"If my memory of the building schematics is correct, Kane must take a crawlway out. I will meet him at the other end."
+	text		"#str_380076"
+}
+
+lipSync vo_1_2_18_20_1
+{
+	description	"Corporal Kane, this is Strauss. I am in great danger. Rendezvous with me immediately!"
+	text		"#str_380077"
+}
+
+lipSync vo_1_2_20_30_1
+{
+	description	"The area you are in stretches between all facilities in this complex."
+	text		"#str_380078"
+}
+
+lipSync vo_1_2_20_40_1
+{
+	description	"Nearby is a maintenance platform. Get onboard."
+	text		"#str_380079"
+}
+
+lipSync vo_1_2_22_20_1
+{
+	description	"There should be a console in the center of the room, Corporal Kane. Activate that and the coolant pumps will shut down. In a matter of minutes, the Tetranode will overheat and destroy itself. And this will render the Nexus useless to the Strogg."
+	text		"#str_380080"
+}
+
+lipSync vo_1_2_22_30_1
+{
+	description	"Ah, excellent. Corporal Kane, the Tertanode will soon be destroyed and the Nexus will become inoperative."
+	text		"#str_380081"
+}
+
+lipSync vo_1_2_22_40_1
+{
+	description	"Corporal Kane, this is Strauss. I have detected a tremendously large life form in your vicinity. You must get out of there quickly."
+	text		"#str_380082"
+}
+
+lipSync vo_1_2_22_40_2
+{
+	description	"Kane... It can't be! ... It's the Makron!!"
+	text		"#str_380083"
+}
+
+lipSync vo_1_2_22_40_3
+{
+	description	"Get out of there, Kane! Get out!! Suddenly a loud thud can be heard over the comlink."
+	text		"#str_380084"
+}
+
+lipSync vo_1_2_22_40_4
+{
+	description	"... who is there?"
+	text		"#str_380085"
+}
+
+lipSync vo_1_1_11_100_2
+{
+	description	"Flooding chamber with trichlorite and septazine. After a few seconds."
+	text		"#str_380086"
+}
+
+lipSync vo_1_1_11_100_3
+{
+	description	"Chamber at maximum saturation."
+	text		"#str_380087"
+}
+
+lipSync vo_1_1_11_100_4
+{
+	description	"Purging chamber."
+	text		"#str_380088"
+}
+
+lipSync vo_1_1_11_100_5
+{
+	description	"Decontamination cycle complete."
+	text		"#str_380089"
+}
+
+lipSync vo_1_1_11_360_2
+{
+	description	"But a Strogg unit is headed directly for Cougar squad."
+	text		"#str_380090"
+}
+
+lipSync vo_1_1_11_360_4
+{
+	description	"Then they're all dead men. Richards out."
+	text		"#str_380091"
+}
+
+lipSync vo_2_2_10_253_0
+{
+	description	"Kane, I would remind you the existence of all humanity rests on your shoulders - but I wouldn't want you to feel any pressure. So all I will say, is don't get yourself killed, my friend."
+	text		"#str_380092"
+}
+
+lipSync vo_2_2_10_253_1
+{
+	description	"Good luck, sir. Automated navigation will take you right to the Data Storage Terminal. Have a safe flight."
+	text		"#str_380093"
+}
+
+lipSync vo_2_2_10_254_1
+{
+	description	"My turret�s been hit . . . aaaah, I'm on fire. Heeeelp meeee!"
+	text		"#str_380094"
+}
+
+lipSync vo_2_2_10_255_1
+{
+	description	"Harvesters approaching on the left flank.  We need walkers over there ASAP!"
+	text		"#str_380095"
+}
+
+lipSync vo_2_2_10_256_1
+{
+	description	"Walker Bison 5 is on fire!  Get Banks out of there!"
+	text		"#str_380096"
+}
+
+lipSync vo_2_2_10_257_1
+{
+	description	"HQ, this Bison commander. Get us some air support right now or we�re all dead men."
+	text		"#str_380097"
+}
+
+lipSync vo_2_2_10_258_1
+{
+	description	"Badger squad, this is HQ. Set up a defensive position at coordinates 43,82. Render assistance to Bison squad."
+	text		"#str_380098"
+}
+
+lipSync vo_2_2_10_258_2
+{
+	description	"Roger that, HQ. Advancing to coordinates 43, 82."
+	text		"#str_380099"
+}
+
+lipSync vo_2_2_10_259_1
+{
+	description	"Where the hell is that air support?"
+	text		"#str_380100"
+}
+
+lipSync vo_2_2_10_259_2
+{
+	description	"ETA is 3 minutes."
+	text		"#str_380101"
+}
+
+lipSync vo_2_2_10_259_3
+{
+	description	"We aren�t gonna last that long."
+	text		"#str_380102"
+}
+
+lipSync vo_2_2_10_260_1
+{
+	description	"Another Strogg transport just landed! Where the hell are they all coming from?"
+	text		"#str_380103"
+}
+
+lipSync vo_2_2_10_261_1
+{
+	description	"Strogg flyers approaching at 3 O�clock."
+	text		"#str_380104"
+}
+
+lipSync vo_2_2_10_261_2
+{
+	description	"I�m on �em."
+	text		"#str_380105"
+}
+
+lipSync vo_2_2_10_262_1
+{
+	description	"Damn!  They just keep coming."
+	text		"#str_380106"
+}
+
+lipSync vo_2_2_10_262_2
+{
+	description	"Aaahhhh!  Yeah! Take that you freaking Squibs!"
+	text		"#str_380107"
+}
+
+lipSync vo_2_2_10_262_3
+{
+	description	"They�re trying to take engineering!"
+	text		"#str_380108"
+}
+
+lipSync vo_2_2_10_262_4
+{
+	description	"They�re all over the place!  I can�t stop them!"
+	text		"#str_380109"
+}
+
+lipSync vo_2_2_10_262_5
+{
+	description	"There�s too many!  There�s just too damn many!"
+	text		"#str_380110"
+}
+
+lipSync vo_2_2_10_263_1
+{
+	description	"Crap. I can�t get a lock on the flyers. They�re comin� in too low!"
+	text		"#str_380111"
+}
+
+lipSync vo_2_2_10_263_2
+{
+	description	"Forget the damn computer. Target them visually."
+	text		"#str_380112"
+}
+
+lipSync vo_2_2_19_120_1
+{
+	description	"We have Strogg boarding parties on decks 2 and 3!"
+	text		"#str_380113"
+}
+
+lipSync vo_2_2_19_140_1
+{
+	description	"Security, report to hangar, deck 2. Strogg boarding parties have been reported."
+	text		"#str_380114"
+}
+
+lipSync vo_2_2_20_310_1
+{
+	description	"Welcome, Corporal Matthew Kane. Navigation online."
+	text		"#str_380115"
+}
+
+lipSync vo_2_2_20_310_2
+{
+	description	"Engine prep cycle complete."
+	text		"#str_380116"
+}
+
+lipSync vo_2_2_20_310_3
+{
+	description	"Prepare for launch."
+	text		"#str_380117"
+}
+
+lipSync vo_2_2_20_310_4
+{
+	description	"5... 4... 3... 2... 1"
+	text		"#str_380118"
+}
+
+lipSync vo_1_1_7_100_1
+{
+	description	"Kane, this is Morris. I'm not getting any younger. Get a move on."
+	text		"#str_380119"
+}
+
+lipSync vo_1_1_7_10_1
+{
+	description	"Research team Owl has arrived at the hangars and begun deploying equipment."
+	text		"#str_380120"
+}
+
+lipSync vo_1_1_7_120_1
+{
+	description	"Kane, I'm getting tired of coolin' my heels. Get down here before I leave without you!"
+	text		"#str_380121"
+}
+
+lipSync vo_1_1_7_20_1
+{
+	description	"Look! We've got fliers to study!"
+	text		"#str_380122"
+}
+
+lipSync vo_1_1_7_50_1
+{
+	description	"Kane, this is Morris. Where the hell are you? Get down here quick - we've got a war to win, remember?"
+	text		"#str_380123"
+}
+
+lipSync vo_1_2_10_20_1
+{
+	description	"The Hannibal is passing through the mesosphere. Heat shield is fully operational."
+	text		"#str_380124"
+}
+
+lipSync vo_1_2_10_30_1
+{
+	description	"Now passing through the stratosphere. Breaking procedure has begun."
+	text		"#str_380125"
+}
+
+lipSync vo_1_2_10_40_1
+{
+	description	"The Hannibal is now in the troposphere - landing zone in sight."
+	text		"#str_380126"
+}
+
+lipSync vo_1_2_10_45_3
+{
+	description	"We copy that."
+	text		"#str_380127"
+}
+
+lipSync vo_1_2_10_45_5
+{
+	description	"Our pleasure."
+	text		"#str_380128"
+}
+
+lipSync vo_1_2_10_60_1
+{
+	description	"The U.S.S. Hannibal has landed. I repeat, the Hannibal has landed. Welcome aboard, Marines."
+	text		"#str_380129"
+}
+
+lipSync vo_1_2_9_20_3
+{
+	description	"Affirmative, Lieutenant. The Hannibal is now in geosynchronous orbit and beginning descent."
+	text		"#str_380130"
+}
+
+lipSync vo_1_2_9_40_3
+{
+	description	"Yes, sir"
+	text		"#str_380131"
+}
+
+lipSync vo_1_2_9_66_1
+{
+	description	"Clear the cannon for detonation!"
+	text		"#str_380132"
+}
+
+lipSync vo_1_2_9_68_2
+{
+	description	"Woo! Ha, haaa! Do I love my job!"
+	text		"#str_380133"
+}
+
+lipSync vo_2_1_1_67_3
+{
+	description	"Anderson, this is Lt.Voss. Things are looking seriously fubared. Rendezvous back with us at the medlab storage facility - we'll head to the primary extraction point."
+	text		"#str_380134"
+}
+
+lipSync vo_2_1_2_220_1
+{
+	description	"All right, Marines, haul ass. The clock is ticking and this is one flight we don�t wanna miss."
+	text		"#str_380135"
+}
+
+lipSync vo_2_1_2_300_1
+{
+	description	"This is command HQ to all units. A full retreat has been ordered. All squads are to meet at Waste Facility for immediate evac."
+	text		"#str_380136"
+}
+
+lipSync vo_3_1_20_100_1
+{
+	description	"Corporal Kane, I am very busy so I will make this brief."
+	text		"#str_380137"
+}
+
+lipSync vo_3_1_20_100_2
+{
+	description	"This is the time you must deactivate the Core security interface. Once you have completed that objective, you will be taking the teleporter into the Core. There you must destroy the Nexus."
+	text		"#str_380138"
+}
+
+lipSync vo_3_1_20_100_3
+{
+	description	"For the moment, concern yourself with getting to the top of this tower. I will step you through the rest of this mission as you go."
+	text		"#str_380139"
+}
+
+lipSync vo_3_1_20_10_1
+{
+	description	"Private Strauss, it looks like Corporal Kane has arrived."
+	text		"#str_380140"
+}
+
+lipSync vo_3_1_20_60_1
+{
+	description	"This is Falcon 6 making a run on the Networking Tower. Anti-aircraft is heavy."
+	text		"#str_380141"
+}
+
+lipSync vo_3_1_20_60_2
+{
+	description	"I'm hit! Energizers are off line attempting to..."
+	text		"#str_380142"
+}
+
+lipSync vo_3_1_22_10_1
+{
+	description	"Eagle 10 making our run on the Networking Tower. Damn. The air defenses are strong."
+	text		"#str_380143"
+}
+
+lipSync vo_3_1_22_10_2
+{
+	description	"I'm hit! I have to abort."
+	text		"#str_380144"
+}
+
+lipSync vo_3_1_22_40_1
+{
+	description	"Aaaaaaaah! Aaaaaaaaaaaaaaah!"
+	text		"#str_380145"
+}
+
+lipSync vo_3_1_22_40_2
+{
+	description	"Shit. Get a medic up here ASAP! We were trying to demo a door and the charge misfired. Lt.Leonard was hurt."
+	text		"#str_380146"
+}
+
+lipSync vo_3_1_22_40_3
+{
+	description	"A medic has been dispatched."
+	text		"#str_380147"
+}
+
+lipSync vo_3_1_22_50_1
+{
+	description	"Do something!"
+	text		"#str_380148"
+}
+
+lipSync vo_3_1_22_50_2
+{
+	description	"It's too late. He's dead."
+	text		"#str_380149"
+}
+
+lipSync vo_3_1_22_50_3
+{
+	description	"No, damn it. No."
+	text		"#str_380150"
+}
+
+lipSync vo_3_1_22_50_4
+{
+	description	"Sorry, I did what I could. But I'm not a medic."
+	text		"#str_380151"
+}
+
+lipSync vo_3_1_22_70_1
+{
+	description	"No time for grieving. Looks like we've got a fight on our hands."
+	text		"#str_380152"
+}
+
+lipSync vo_3_1_24_10_1
+{
+	description	"Corporal Kane, I have bypassed security for the floor you are on. Take the door that is now opening."
+	text		"#str_380153"
+}
+
+lipSync vo_3_1_24_20_1
+{
+	description	"We don't dare risk landing pods on the roof until the anti-aircraft guns are taken out."
+	text		"#str_380154"
+}
+
+lipSync vo_3_1_24_30_1
+{
+	description	"Preparing to make a bombing run on the air defenses."
+	text		"#str_380155"
+}
+
+lipSync vo_3_1_24_30_2
+{
+	description	"Roger that. I'm following you in."
+	text		"#str_380156"
+}
+
+lipSync vo_3_1_24_30_3
+{
+	description	"I can barely see the target through all the..."
+	text		"#str_380157"
+}
+
+lipSync vo_3_1_24_30_4
+{
+	description	"Eagle 12's been hit!"
+	text		"#str_380158"
+}
+
+lipSync vo_3_1_24_40_1
+{
+	description	"Corporal Kane, leave one of your squad in the control room you're passing now."
+	text		"#str_380159"
+}
+
+lipSync vo_3_1_24_42_1
+{
+	description	"Radar shows something large headed this way."
+	text		"#str_380160"
+}
+
+lipSync vo_3_1_24_44_1
+{
+	description	"We have a visual. The Guardian creature is headed our way. Damn is it fast."
+	text		"#str_380161"
+}
+
+lipSync vo_3_1_24_50_1
+{
+	description	"Kane, use the teleporter in front of you now. It will take you to the floor directly below the rooftop. There, you will have access to the security  station."
+	text		"#str_380162"
+}
+
+lipSync vo_3_1_32_30_1
+{
+	description	"The Guardian has landed on the side of the tower."
+	text		"#str_380163"
+}
+
+lipSync vo_3_1_34_10_1
+{
+	description	"Ah, the Core security station is finally deactivated. I won't bother asking what took you so long. Quickly make your way to the Core Teleporter."
+	text		"#str_380164"
+}
+
+lipSync vo_3_1_34_20_3
+{
+	description	"HQ, we have a Marine down at the Core teleporter."
+	text		"#str_380165"
+}
+
+lipSync vo_3_1_34_20_4
+{
+	description	"Perhaps he should have listened to me rather than trying to play the hero."
+	text		"#str_380166"
+}
+
+lipSync vo_3_1_34_20_5
+{
+	description	"He just wanted to get in there and battle the Strogg."
+	text		"#str_380167"
+}
+
+lipSync vo_3_1_34_20_6
+{
+	description	"That proved to be a mistake, didn't it?"
+	text		"#str_380168"
+}
+
+lipSync vo_3_1_34_20_7
+{
+	description	"Kane, ignore the unfortunate soul laying dead on the ground. Because of your Strogg physiology you will be able to use the teleporter. Go now, it is the only way into the Core, and that houses the Nexus."
+	text		"#str_380169"
+}
+
+lipSync vo_3_1_34_30_1
+{
+	description	"Corporal Kane, why do you hesitate to use the teleporter? Trust me when I say it is completely safe for you."
+	text		"#str_380170"
+}
+
+lipSync vo_3_1_34_30_2
+{
+	description	"Please, Corporal - use the teleporter. Men are dying as you hesitate to enter the Core."
+	text		"#str_380171"
+}
+
+lipSync vo_3_1_34_30_3
+{
+	description	"Corporal Kane, it is imperative you use the teleporter now. The Nexus must be destroyed."
+	text		"#str_380172"
+}
+
+lipSync vo_3_1_14_10_1
+{
+	description	"Kane, this is Morris. Data Processing Tower's shut down. Looks like the Strogg are trying to stop us from reaching the core. You'll have to find  a way to bring it back online. Sledge is on his way. He should rendezvous with you shortly. Good luck. Morris out."
+	text		"#str_380173"
+}
+
+lipSync vo_3_1_14_20_1
+{
+	description	"Good job, Kane. The building's back online."
+	text		"#str_380174"
+}
+
+lipSync vo_3_1_14_30_1
+{
+	description	"Kane, this is Morris. Sledge just arrived at the Processing Tower. Hook up with him as soon as you can."
+	text		"#str_380175"
+}
+
+lipSync vo_3_1_14_60_1
+{
+	description	"Gentlemen, Strauss's finally arrived at the Data Networking Tower. Your mission is gonna become more technical so I'm handing over communications to him. Good luck, guys. Get this mission done. Morris out."
+	text		"#str_380176"
+}
+
+lipSync vo_3_1_14_6_1
+{
+	description	"Cortez, this is Morris. Are you and Kane at the Processing Tower yet?"
+	text		"#str_380177"
+}
+
+lipSync vo_3_1_14_6_3
+{
+	description	"Okay, drop off Kane. You're needed at the Networking Tower right away. Another tramcar will be sent for Kane once he's taken care of the security station at the top of the Processing Tower."
+	text		"#str_380178"
+}
+
+lipSync vo_3_1_14_6_5
+{
+	description	"No can do, Alex. Sledge will be here soon enough to lend Kane a hand."
+	text		"#str_380179"
+}
+
+lipSync vo_3_1_14_70_1
+{
+	description	"Greetings, Corporals, this is Strauss. I have finally being to hack into the Nexus. Soon I will know all there is to know about the tower you are in."
+	text		"#str_380180"
+}
+
+lipSync vo_3_1_14_80_1
+{
+	description	"The large machines in the area you have just entered are data pumps. They move information from the Networking Tower to the Storage Tower. This is a vital area to the Strogg so expect to meet strong resistance."
+	text		"#str_380181"
+}
+
+lipSync vo_3_1_14_110_2
+{
+	description	"They are information routers... but they appear to be out of alignment. Kane should be able use the consoles to correct this problem."
+	text		"#str_380182"
+}
+
+lipSync vo_3_1_14_110_3
+{
+	description	"That data stream you see will act as a guide. Once it�s path is corrected, the stream will lead you to the top floors of the processing tower."
+	text		"#str_380183"
+}
+
+lipSync vo_3_1_14_135_3
+{
+	description	"We�re almost to the Processing Tower but we�ve been intercepted by a squadron of fliers!"
+	text		"#str_380184"
+}
+
+lipSync vo_3_1_14_140_1
+{
+	description	"Maybe, mayday! My pod�s been hit! I�m going down! I�m going down!!"
+	text		"#str_380185"
+}
+
+lipSync vo_3_1_14_140_6
+{
+	description	"Navigation�s out . . . . propulsion�s damaged. I�m coming in like a rock!"
+	text		"#str_380186"
+}
+
+lipSync vo_3_1_14_175_2
+{
+	description	"There is nothing I can do for you in that section. Kane will have to find a solution."
+	text		"#str_380187"
+}
+
+lipSync vo_3_1_15_50_1
+{
+	description	"The Core security interlock from the Processing Tower is now active. Well done, Corporal Kane. Sergeant Slidjonovitch, I would ask you to remain there and not allow the Strogg to reset that console."
+	text		"#str_380188"
+}
+
+lipSync vo_3_1_15_50_3
+{
+	description	"Kane, you must now take the elevator down to the tram station and then take a tram to the Data Networking tower. I will meet you there. Strauss, out."
+	text		"#str_380189"
+}
+
+lipSync vo_2_2_4_120_1
+{
+	description	"You're in the sterilization control room. There should be a way to turn on the system."
+	text		"#str_380190"
+}
+
+lipSync vo_2_2_4_125_1
+{
+	description	"Hey! You did it! The sterilization system is online."
+	text		"#str_380191"
+}
+
+lipSync vo_2_2_4_90_1
+{
+	description	"Great. Looks like the whole system needs to be rebooted. You're gonna have to locate and restart both the sterilization and assembly subsystems."
+	text		"#str_380192"
+}
+
+lipSync vo_3_1_0_10_1
+{
+	description	"First wave has launched. All Pods are in the green."
+	text		"#str_380193"
+}
+
+lipSync vo_3_1_0_20_1
+{
+	description	"Funny, the Hannibal doesn't look as damaged from here."
+	text		"#str_380194"
+}
+
+lipSync vo_3_1_0_30_1
+{
+	description	"Crap! There's anti-aircraft coming from all directions."
+	text		"#str_380195"
+}
+
+lipSync vo_3_1_0_40_1
+{
+	description	"Do not deviate from assigned flight plans."
+	text		"#str_380196"
+}
+
+lipSync vo_3_1_0_50_1
+{
+	description	"Mayday! Mayday! I'm hit! I'm goin' down!"
+	text		"#str_380197"
+}
+
+lipSync vo_3_1_0_60_1
+{
+	description	"The shields around the terminals are affecting navigation. Watch your landing vectors."
+	text		"#str_380198"
+}
+
+lipSync vo_3_1_0_70_1
+{
+	description	"There's a fire in my pod! I can't get fire suppression to activate!"
+	text		"#str_380199"
+}
+
+lipSync vo_3_1_0_80_1
+{
+	description	"Dammit! Navigation is down. I'm flyin' blind!"
+	text		"#str_380200"
+}
+
+lipSync vo_3_1_1_120_1
+{
+	description	"This is Private Terrance Garr. My pod crashed. I need a medic. I... I think my left leg's been severed."
+	text		"#str_380201"
+}
+
+lipSync vo_3_1_1_135_1
+{
+	description	"Cobra squad, I'm in the level below you. I could use a hand here."
+	text		"#str_380202"
+}
+
+lipSync vo_3_1_1_135_2
+{
+	description	"We're on our way."
+	text		"#str_380203"
+}
+
+lipSync vo_3_1_1_140_1
+{
+	description	"I hate flying in those freakin' pods. They're big metal coffins."
+	text		"#str_380204"
+}
+
+lipSync vo_3_1_1_145_1
+{
+	description	"We've done it, HQ! We've broken into the main armory!"
+	text		"#str_380205"
+}
+
+lipSync vo_3_1_1_30_1
+{
+	description	"Shit! My nav computer is screwed up! I'm gonna crash! I'm gonna...."
+	text		"#str_380206"
+}
+
+lipSync vo_3_1_1_35_1
+{
+	description	"My pod landed in a lower floor and it's pitch black in here. Somebody tell me where I am."
+	text		"#str_380207"
+}
+
+lipSync vo_3_1_1_50_1
+{
+	description	"Someone get me out of this pod! Heeelp meee."
+	text		"#str_380208"
+}
+
+lipSync vo_3_1_1_55_1
+{
+	description	"We just located the pod containing Captain Marin's body. I think I'm gonna be sick."
+	text		"#str_380209"
+}
+
+lipSync vo_3_1_1_70_1
+{
+	description	"To all Marines at the Storage Tower. This is Lt.Hollenbeck. Regroup at my position ASAP."
+	text		"#str_380210"
+}
+
+lipSync vo_3_1_1_80_1
+{
+	description	"Aaaah! My pod! It's on fire!!!"
+	text		"#str_380211"
+}
+
+lipSync vo_3_1_1_85_1
+{
+	description	"HQ, this is Cobra Squad. We have assembled and are advancing."
+	text		"#str_380212"
+}
+
+lipSync vo_3_1_2_35_1
+{
+	description	"HQ, this is Kodiak squad and we're in deep shit. Send... aaahh!"
+	text		"#str_380213"
+}
+
+lipSync vo_3_1_2_50_1
+{
+	description	"Rutger and Mills, accompany Kane down to distribution."
+	text		"#str_380214"
+}
+
+lipSync vo_3_1_2_50_2
+{
+	description	"Will do."
+	text		"#str_380215"
+}
+
+lipSync vo_3_1_2_55_1
+{
+	description	"Somebody help me! I'm trapped down in level 8. They're gonna be coming through any second!"
+	text		"#str_380216"
+}
+
+lipSync vo_3_1_3_170_1
+{
+	description	"Kane. This is Rhodes. Find me, we gotta get moving."
+	text		"#str_380217"
+}
+
+lipSync vo_3_1_3_170_2
+{
+	description	"Kane, where are you? Find me so we can get the hell out of here."
+	text		"#str_380218"
+}
+
+lipSync vo_3_1_3_170_3
+{
+	description	"Kane, this is Rhodes. What are you doin'? Find me so we can get on with our mission."
+	text		"#str_380219"
+}
+
+lipSync vo_3_1_3_180_2
+{
+	description	"Greetings, Corporal Rhodes. You must locate the security interfaces. There is one at the top of each tower that must be disabled to gain access to the Core. But be careful, only Corporal Kane can access them."
+	text		"#str_380220"
+}
+
+lipSync vo_3_1_3_50_1
+{
+	description	"This is Falcon 1, awaiting activation of the hangar doors."
+	text		"#str_380221"
+}
+
+lipSync vo_3_1_3_50_2
+{
+	description	"This is Falcon 1. We're burning up fuel here. I need those hangar doors opened."
+	text		"#str_380222"
+}
+
+lipSync vo_3_1_3_50_3
+{
+	description	"This is Falcon 1, what's the hold up? This zone is hot and I need to land!"
+	text		"#str_380223"
+}
+
+lipSync vo_3_1_3_55_1
+{
+	description	"That heat source in the center of the building is moving rapidly towards the hangar. Whatever it is, you can bet it isn't friendly."
+	text		"#str_380224"
+}
+
+lipSync vo_3_1_3_57_1
+{
+	description	"Hot damn, the hangar doors are open! Falcon 1 to commence landing procedure."
+	text		"#str_380225"
+}
+
+lipSync vo_3_1_3_60_1
+{
+	description	"Falcon 1 has landed. Troops are being deployed. Shit, something's under the hangar floor."
+	text		"#str_380226"
+}
+
+lipSync vo_3_1_3_60_2
+{
+	description	"Shit. It's trying to beat it's way through. Immediate dust off in..."
+	text		"#str_380227"
+}
+
+lipSync vo_3_1_3_70_1
+{
+	description	"A Strogg creature just tore through the hangar floor like it was wet cardboard. It's huge - I estimate 30 feet tall. We're taking heavy casualties."
+	text		"#str_380228"
+}
+
+lipSync vo_3_1_3_80_1
+{
+	description	"The creature... is almost impervious... to light weapons fire!"
+	text		"#str_380229"
+}
+
+lipSync vo_3_1_3_90_1
+{
+	description	"Nothing's slowing it down!"
+	text		"#str_380230"
+}
+
+lipSync vo_3_1_4_80_1
+{
+	description	"Well done, Corporal Kane! The Core security interface from Data Storage is disabled. Corporal Rhodes, you should remain there and guard the console in case the Strogg should attempt to reactivate it. Corporal Kane should locate the tram and take it to the Data Processing Tower. There he will have to deactivate the second security station at the top. Strauss out."
+	text		"#str_380231"
+}
+
+lipSync vo_3_1_2_125_1
+{
+	description	"HQ, this Cobra squad. We've just taken level five and we are continuing to advance."
+	text		"#str_380232"
+}
+
+lipSync vo_3_1_2_180_1
+{
+	description	"Kane, this is Hollenbeck. Good job, the TSD's are being redeployed. Now get back up here on the double."
+	text		"#str_380233"
+}
+
+lipSync vo_3_1_5_1_1
+{
+	description	"HQ, this is Scorpion squad. We�ve taken heavy casualties and need an evac at the bridge extraction point."
+	text		"#str_380234"
+}
+
+lipSync vo_3_1_5_1_2
+{
+	description	"Scorpion, no evac units are in your immediate area. Secure the bridge control room and sit tight."
+	text		"#str_380235"
+}
+
+lipSync vo_3_1_5_1_3
+{
+	description	"Secure the bridge? What the hell with? There�s only two of us left."
+	text		"#str_380236"
+}
+
+lipSync vo_3_1_5_1_4
+{
+	description	"Do the best you can, Scorpion. An evac unit is en route. HQ, out."
+	text		"#str_380237"
+}
+
+lipSync vo_2_1_2_230_1
+{
+	description	"H Q, this is Viper squad! Our Lieutenant is severely wounded. Request immediate evac."
+	text		"#str_380239"
+}
+
+lipSync vo_2_1_2_230_2
+{
+	description	"I wish we could help but evac from your current location is impossible. That zone is too hot."
+	text		"#str_380240"
+}
+
+lipSync vo_2_1_2_230_3
+{
+	description	"Shit. All right, thanks HQ. We�ll get out of here somehow."
+	text		"#str_380241"
+}
+
+lipSync vo_2_1_2_240_1
+{
+	description	"This is Eagle 17, preparing to make a strafing run."
+	text		"#str_380242"
+}
+
+lipSync vo_2_1_2_320_1
+{
+	description	"H Q! H Q! This is Kodiak squad. Strogg have overrun our position. I request an immediate artillery barrage on our location!"
+	text		"#str_380244"
+}
+
+lipSync vo_2_1_2_330_1
+{
+	description	"Walker Squad Bison, you are directed to take up a defensive position at your current location."
+	text		"#str_380245"
+}
+
+lipSync vo_2_1_2_330_2
+{
+	description	"H Q, there�s a shitload of Strogg on our tail."
+	text		"#str_380246"
+}
+
+lipSync vo_2_1_2_330_4
+{
+	description	"Understood. Bison Squad, full halt and deploy weapons. We�re buying the evac some time."
+	text		"#str_380247"
+}
+
+lipSync vo_2_1_2_340_1
+{
+	description	"Eagle 2, Eagle 9, this is Eagle 12. Form up on me.  Let�s see if we can�t offer Bison squad some assistance."
+	text		"#str_380248"
+}
+
+lipSync vo_2_2_7_50_1
+{
+	description	"There are freakin' zombies down here. I just killed one, but it bit me. Shit, I need the medic."
+	text		"#str_380249"
+}
+
+lipSync vo_2_2_7_60_1
+{
+	description	"Where the hell is everyone? I can't get readings on any medchips. We gotta regroup or they're gonna pick us apart."
+	text		"#str_380250"
+}
+
+lipSync vo_1_1_0_01_2
+{
+	description	"Warning!  Incoming attack!"
+	text		"#str_380251"
+}
+
+lipSync vo_1_1_0_01_21
+{
+	description	"We're hit! Another missile's locked on. Firing counter measures."
+	text		"#str_380254"
+}

@@ -1,0 +1,4010 @@
+// 汉化项目自建：AI 对话缺失 decl（原版 aiSpeak/talk 台词无 lipsync，仅供字幕取文本）
+// 由本轮 ai_vo_gap.tsv 生成；纯音效指示条目已过滤
+
+lipSync vo_1_1_12_0001
+{
+	description	"What the hell? They got to main power!"
+	text		"#str_385000"
+}
+
+lipSync vo_1_1_12_0003
+{
+	description	"Watch the ceilings."
+	text		"#str_385001"
+}
+
+lipSync vo_1_1_12_0005
+{
+	description	"Gimme a second."
+	text		"#str_385002"
+}
+
+lipSync vo_1_1_12_0006
+{
+	description	"Scanner reads clear. They're gone."
+	text		"#str_385003"
+}
+
+lipSync vo_1_1_13_20_1
+{
+	description	"Corporal Kane, Voss wanted me to give you this Strogg nailgun. I bet it can sure rip the shit out of a squib."
+	text		"#str_385004"
+}
+
+lipSync vo_1_1_1_140_1
+{
+	description	"This is no place to let your guard down. C'mon, let's see if we can't find my group up ahead - Badger squad."
+	text		"#str_385005"
+}
+
+lipSync vo_1_1_1_150_1
+{
+	description	"I heard the dropship you Rhinos were on took a direct hit. You're lucky to still be breathing."
+	text		"#str_385006"
+}
+
+lipSync vo_1_1_1_150_2
+{
+	description	"We lost a lot of drop ships during the initial landing. The Strogg air defense cannons ripped us apart."
+	text		"#str_385007"
+}
+
+lipSync vo_1_1_1_150_3
+{
+	description	"But now it our turn right? It's time to kick some Strogg ass."
+	text		"#str_385008"
+}
+
+lipSync vo_1_1_1_170_1
+{
+	description	"My legs... I can't move 'em."
+	text		"#str_385009"
+}
+
+lipSync vo_1_1_1_170_4
+{
+	description	"Sorry, Sarge. I had a run-in with a Strogg. And I met this Marine from Rhino squad."
+	text		"#str_385010"
+}
+
+lipSync vo_1_1_1_43_1
+{
+	description	"Come on!"
+	text		"#str_385011"
+}
+
+lipSync vo_1_1_1_44_1
+{
+	description	"We're clear. Why don't you go find your squad."
+	text		"#str_385012"
+}
+
+lipSync vo_1_1_1_45_1
+{
+	description	"Kane, we're done here. Go find Lt. Voss."
+	text		"#str_385013"
+}
+
+lipSync vo_1_1_2_0001
+{
+	description	"Ahhh... aaaaah... uuuuh..."
+	text		"#str_385014"
+}
+
+lipSync vo_1_1_2_50_2
+{
+	description	"My legs... they're numb."
+	text		"#str_385015"
+}
+
+lipSync vo_1_1_2_50_6
+{
+	description	"You're Rhino squad? Take that door and it'll get you to your squad."
+	text		"#str_385016"
+}
+
+lipSync vo_1_1_3_0002
+{
+	description	"Seal it! Seal the damn window now!"
+	text		"#str_385017"
+}
+
+lipSync vo_1_1_3_0003
+{
+	description	"Where the hell did that come from?"
+	text		"#str_385018"
+}
+
+lipSync vo_1_1_3_0004
+{
+	description	"Don't know. But we better inform the Sarge."
+	text		"#str_385019"
+}
+
+lipSync vo_1_1_3_40_1
+{
+	description	"Come on! Come on!!"
+	text		"#str_385020"
+}
+
+lipSync vo_1_1_4_0001
+{
+	description	"Sarge, we got movement on the scanner."
+	text		"#str_385021"
+}
+
+lipSync vo_1_1_4_0006
+{
+	description	"Scanner's clean. Whatever it was, it's gone."
+	text		"#str_385022"
+}
+
+lipSync vo_1_1_8_0005
+{
+	description	"Wait here. Jones, you take point."
+	text		"#str_385023"
+}
+
+lipSync vo_1_1_8_5_0002
+{
+	description	"Primary lock is cut."
+	text		"#str_385024"
+}
+
+lipSync vo_1_1_8_5_0003
+{
+	description	"Secondary lock is cut."
+	text		"#str_385025"
+}
+
+lipSync vo_1_1_8_5_0004
+{
+	description	"Cutting final interlock."
+	text		"#str_385026"
+}
+
+lipSync vo_1_1_8_5_0005
+{
+	description	"Done."
+	text		"#str_385027"
+}
+
+lipSync vo_1_2_0_20_1
+{
+	description	"Hey! Hey, Corporal Kane! Get over here on the double!"
+	text		"#str_385028"
+}
+
+lipSync vo_1_2_0_30_1
+{
+	description	"Corporal Kane, Lieutenant Voss said you'd be riding with us. Hop on up and we'll get going."
+	text		"#str_385029"
+}
+
+lipSync vo_1_2_0_40_1
+{
+	description	"All right, Doyle. Get this shit heap moving."
+	text		"#str_385030"
+}
+
+lipSync vo_1_2_0_40_2
+{
+	description	"Roger that. Let's move out."
+	text		"#str_385031"
+}
+
+lipSync vo_1_2_0_42_1
+{
+	description	"You got any idea how far into Strogg territory these convoys are goin?"
+	text		"#str_385032"
+}
+
+lipSync vo_1_2_0_42_2
+{
+	description	"Far enough that youre gonna have to be fluent in Strogg if you wanna ask for directions."
+	text		"#str_385033"
+}
+
+lipSync vo_1_2_0_42_3
+{
+	description	"Guess we better not get lost, huh?"
+	text		"#str_385034"
+}
+
+lipSync vo_1_2_0_42_4
+{
+	description	"You got that right."
+	text		"#str_385035"
+}
+
+lipSync vo_1_2_0_43_1
+{
+	description	"Kane here was with the squad that took that cannon out."
+	text		"#str_385036"
+}
+
+lipSync vo_1_2_0_43_2
+{
+	description	"No shit? Nice work, soldier."
+	text		"#str_385037"
+}
+
+lipSync vo_1_2_0_44_1
+{
+	description	"We got nothin to worry about  Rhino squad is here. Right, Kane?"
+	text		"#str_385038"
+}
+
+lipSync vo_1_2_0_44_2
+{
+	description	"Yeah, you boys have pulled off all sorts of impossible shit, havent you?"
+	text		"#str_385039"
+}
+
+lipSync vo_1_2_0_44_3
+{
+	description	"Theyre still talkin about what Rhino did in Dallas, during the Earth invasion."
+	text		"#str_385040"
+}
+
+lipSync vo_1_2_0_45_1
+{
+	description	"Cut the chatter, gentlemen, and keep your eyes wide. Theres reports of Strogg in this area."
+	text		"#str_385041"
+}
+
+lipSync vo_1_2_0_46_1
+{
+	description	"Have you heard how things are going along the front?"
+	text		"#str_385042"
+}
+
+lipSync vo_1_2_0_46_2
+{
+	description	"Same as usual. Soldiers are fightin and dyin and neither sides winnin."
+	text		"#str_385043"
+}
+
+lipSync vo_1_2_0_46_3
+{
+	description	"The thing is though, we cant keep this battle up much longer. Weve got to win it soon or were just gonna run out of men."
+	text		"#str_385044"
+}
+
+lipSync vo_1_2_0_46_4
+{
+	description	"And thats exactly why these convoys are going out - to tip the scales in our favor."
+	text		"#str_385045"
+}
+
+lipSync vo_1_2_0_49_1
+{
+	description	"Our guys are really cleaning up the fliers since you blew up the hangars, Kane."
+	text		"#str_385046"
+}
+
+lipSync vo_1_2_0_64_1
+{
+	description	"This is Walker 12 of Bison squad. Got a bogie at 6 oclock."
+	text		"#str_385047"
+}
+
+lipSync vo_1_2_0_70_10
+{
+	description	"You can get off, Kane. This is your stop."
+	text		"#str_385048"
+}
+
+lipSync vo_1_2_0_80_10
+{
+	description	"See you around."
+	text		"#str_385049"
+}
+
+lipSync vo_1_2_14_40_3
+{
+	description	"Kane, youre assigned to Strauss. Voss out."
+	text		"#str_385050"
+}
+
+lipSync vo_1_2_14_80_1
+{
+	description	"All right. Convoy, move forward. Kane, get Strauss to the controls for Door 2."
+	text		"#str_385051"
+}
+
+lipSync vo_1_2_15_10_1
+{
+	description	"Lt. Voss, uh...what should we do?"
+	text		"#str_385052"
+}
+
+lipSync vo_1_2_15_10_2
+{
+	description	"Leave them alone, these repair bots are harmless."
+	text		"#str_385053"
+}
+
+lipSync vo_1_2_15_10_3
+{
+	description	"Harmless, huh? Get ready, we got company!"
+	text		"#str_385054"
+}
+
+lipSync vo_1_2_15_20_1
+{
+	description	"Lieutenant, I can force this door open, but it will set off alarms."
+	text		"#str_385055"
+}
+
+lipSync vo_1_2_15_20_2
+{
+	description	"Can you bypass security?"
+	text		"#str_385056"
+}
+
+lipSync vo_1_2_15_20_3
+{
+	description	"Ja, but I will need access to a wiring junction."
+	text		"#str_385057"
+}
+
+lipSync vo_1_2_15_20_4
+{
+	description	"Kane, help Strauss locate a wiring junction. Voss, out."
+	text		"#str_385058"
+}
+
+lipSync vo_1_2_15_20_5
+{
+	description	"Yes, let us walk around. All by ourselves. I am certain the Strogg won't mind."
+	text		"#str_385059"
+}
+
+lipSync vo_1_2_16_10_1
+{
+	description	"Ja, this is what I need."
+	text		"#str_385060"
+}
+
+lipSync vo_1_2_16_20_1
+{
+	description	"Mist! What was that?"
+	text		"#str_385061"
+}
+
+lipSync vo_1_2_16_30_1
+{
+	description	"That's it! I just need a few minutes."
+	text		"#str_385062"
+}
+
+lipSync vo_1_2_16_40_1
+{
+	description	"I've located the security wiring to Door 2."
+	text		"#str_385063"
+}
+
+lipSync vo_1_2_16_40_2
+{
+	description	"I've located the security wiring to Door 1."
+	text		"#str_385064"
+}
+
+lipSync vo_1_2_16_40_3
+{
+	description	"Now, I merely switch Door 2 security to look at Door 1."
+	text		"#str_385065"
+}
+
+lipSync vo_1_2_16_40_4
+{
+	description	"There, I'm done. Let's get back to the convoy."
+	text		"#str_385066"
+}
+
+lipSync vo_1_2_16_60_1
+{
+	description	"All clear. Those repair bots must have warned the Strogg we were here. Kane, open the door 2. If there's anything on the other side, I want Strauss out of harm's way."
+	text		"#str_385067"
+}
+
+lipSync vo_1_2_16_80_1
+{
+	description	"Let's move it out, convoy. Strauss, stay on this side of the door in case we run into trouble."
+	text		"#str_385068"
+}
+
+lipSync vo_1_2_17_10_10
+{
+	description	"You're not gonna be able to. I'm sure security locked it."
+	text		"#str_385069"
+}
+
+lipSync vo_1_2_17_10_8
+{
+	description	"The sons of bitches knew we were coming."
+	text		"#str_385070"
+}
+
+lipSync vo_1_2_1_109_2
+{
+	description	"Dont sweat it. Kane wont let me die . . . right, ol buddy?"
+	text		"#str_385071"
+}
+
+lipSync vo_1_2_8_100_4
+{
+	description	"Take positions! This zone is hot!"
+	text		"#str_385072"
+}
+
+lipSync vo_1_2_8_100_5
+{
+	description	"Hey, Kane!"
+	text		"#str_385073"
+}
+
+lipSync vo_1_2_8_102_1
+{
+	description	"You go ahead and get Newberry to the door they need opened."
+	text		"#str_385074"
+}
+
+lipSync vo_1_2_8_102_2
+{
+	description	"Don't worry about us. We're stayin' right here."
+	text		"#str_385075"
+}
+
+lipSync vo_1_2_8_102_3
+{
+	description	"Really, kid. Get going."
+	text		"#str_385076"
+}
+
+lipSync vo_1_2_8_15_1
+{
+	description	"Rhino Squad, huh? You guys are supposed to be pretty badass."
+	text		"#str_385077"
+}
+
+lipSync vo_1_2_8_15_2
+{
+	description	"Yeah, did Rhino really save Austin, back when the Strogg attacked Earth?"
+	text		"#str_385078"
+}
+
+lipSync vo_1_2_8_30_1
+{
+	description	"Just got orders from Lt.Voss. We're accompanying you to Sub-Entrance 1."
+	text		"#str_385079"
+}
+
+lipSync vo_1_2_8_30_2
+{
+	description	"About damn time we get to frag some squibs."
+	text		"#str_385080"
+}
+
+lipSync vo_1_2_8_30_5
+{
+	description	"Okay, Strauss. Open the door."
+	text		"#str_385081"
+}
+
+lipSync vo_1_2_8_31_1
+{
+	description	"Let's get a move on. We're in Strogg territory."
+	text		"#str_385082"
+}
+
+lipSync vo_1_2_8_31_2
+{
+	description	"Come on. We've got orders to get to Sub-entrance 1."
+	text		"#str_385083"
+}
+
+lipSync vo_1_2_8_31_3
+{
+	description	"Let's go. Those engineers in Sub-Entrance 1 are waiting for us."
+	text		"#str_385084"
+}
+
+lipSync vo_1_2_8_32_1
+{
+	description	"Stay quiet or the Strogg will hear us."
+	text		"#str_385085"
+}
+
+lipSync vo_1_2_8_32_2
+{
+	description	"Let's get down to Sub-entrance 1 pronto."
+	text		"#str_385086"
+}
+
+lipSync vo_1_2_8_32_3
+{
+	description	"We got our orders. Keep moving toward Sub-entrance 1."
+	text		"#str_385087"
+}
+
+lipSync vo_1_2_8_40_1
+{
+	description	"Hit that console and get the elevator up here now!"
+	text		"#str_385088"
+}
+
+lipSync vo_1_2_8_50_1
+{
+	description	"Damn. It's locked. Strauss, can you open this door?"
+	text		"#str_385089"
+}
+
+lipSync vo_1_2_8_51_1
+{
+	description	"This door's open. Let's go."
+	text		"#str_385090"
+}
+
+lipSync vo_1_2_9_42_1
+{
+	description	"Shit, did you see that? I thought I was dead meat."
+	text		"#str_385091"
+}
+
+lipSync vo_1_2_9_42_2
+{
+	description	"The squibs are tryin' to psyche us out - and it's starting to work."
+	text		"#str_385092"
+}
+
+lipSync vo_1_2_9_42_3
+{
+	description	"You can't take three steps around here without checkin' over your shoulder."
+	text		"#str_385093"
+}
+
+lipSync vo_1_2_9_53_1
+{
+	description	"This hit and run bullshit by the freaks is getting to be real annoying."
+	text		"#str_385094"
+}
+
+lipSync vo_3_1_2_100_1
+{
+	description	"Just when I think the Strogg can't sink any lower I see shit like this."
+	text		"#str_385095"
+}
+
+lipSync vo_3_1_2_110_1
+{
+	description	"Is this what the Strogg have planned for all of us if they take over the Earth?"
+	text		"#str_385096"
+}
+
+lipSync vo_3_1_2_120_1
+{
+	description	"Why? Why would the Strogg do this?"
+	text		"#str_385097"
+}
+
+lipSync vo_3_1_2_160_2
+{
+	description	"Something about that gives me the creeps. Don't touch it."
+	text		"#str_385098"
+}
+
+lipSync vo_3_1_2_190_1
+{
+	description	"Wish all our missions were this easy. Hey, what's that?"
+	text		"#str_385099"
+}
+
+lipSync vo_3_1_2_85_1
+{
+	description	"I know a little about Strogg weaponry. Mind if I take a look at your rail gun?"
+	text		"#str_385100"
+}
+
+lipSync vo_3_1_2_85_2
+{
+	description	"I just upped the field output by 300%. Now that rail gun is gonna really kick ass.  You'll be able to shoot straight through guys."
+	text		"#str_385101"
+}
+
+lipSync vo_9_10_130_1_h
+{
+	description	"Thanks, Marine. I would have died."
+	text		"#str_385104"
+}
+
+lipSync vo_9_10_130_2_h
+{
+	description	"I should have seen that one comin'."
+	text		"#str_385105"
+}
+
+lipSync vo_9_10_130_3_h
+{
+	description	"Thanks for the assistance. He had me dead in his sights."
+	text		"#str_385106"
+}
+
+lipSync vo_9_10_140_1_h
+{
+	description	"Nice job, soldier!"
+	text		"#str_385107"
+}
+
+lipSync vo_9_10_140_2_h
+{
+	description	"Way to go!"
+	text		"#str_385108"
+}
+
+lipSync vo_9_10_140_3_h
+{
+	description	"Good shot, Marine!"
+	text		"#str_385109"
+}
+
+lipSync vo_9_10_140_4_h
+{
+	description	"Keep it up, soldier!"
+	text		"#str_385110"
+}
+
+lipSync vo_9_10_140_5_h
+{
+	description	"You're gettin' good at this!"
+	text		"#str_385111"
+}
+
+lipSync vo_9_10_140_6_h
+{
+	description	"All right! Good one."
+	text		"#str_385112"
+}
+
+lipSync vo_9_10_140_7_h
+{
+	description	"Ha, ha! Nice shot!"
+	text		"#str_385113"
+}
+
+lipSync vo_9_10_140_8_h
+{
+	description	"Rip 'em up, Marine!"
+	text		"#str_385114"
+}
+
+lipSync vo_9_10_150_1_h
+{
+	description	"Check your targets!"
+	text		"#str_385115"
+}
+
+lipSync vo_9_10_150_2_h
+{
+	description	"Dammit, you just hit me!"
+	text		"#str_385116"
+}
+
+lipSync vo_9_10_150_3_h
+{
+	description	"Watch the friendly fire!"
+	text		"#str_385117"
+}
+
+lipSync vo_9_10_150_4_h
+{
+	description	"Soldier, who's side are you on?"
+	text		"#str_385118"
+}
+
+lipSync vo_9_10_150_5_h
+{
+	description	"Check your fire!"
+	text		"#str_385119"
+}
+
+lipSync vo_9_10_160_1_h
+{
+	description	"Do you know you just killed a Marine?"
+	text		"#str_385120"
+}
+
+lipSync vo_9_10_160_2_h
+{
+	description	"You just fragged someone on our side!"
+	text		"#str_385121"
+}
+
+lipSync vo_9_10_160_3_h
+{
+	description	"Stop shooting at soldiers!"
+	text		"#str_385122"
+}
+
+lipSync vo_9_10_200_1_h
+{
+	description	"Look behind you!"
+	text		"#str_385123"
+}
+
+lipSync vo_9_10_200_2_h
+{
+	description	"In back of you!"
+	text		"#str_385124"
+}
+
+lipSync vo_9_10_200_3_h
+{
+	description	"Behind you!"
+	text		"#str_385125"
+}
+
+lipSync vo_9_10_210_1_h
+{
+	description	"Strogg to the left side!"
+	text		"#str_385126"
+}
+
+lipSync vo_9_10_210_2_h
+{
+	description	"Look left!"
+	text		"#str_385127"
+}
+
+lipSync vo_9_10_210_3_h
+{
+	description	"Target on your left!"
+	text		"#str_385128"
+}
+
+lipSync vo_9_10_220_1_h
+{
+	description	"Strogg to the right!"
+	text		"#str_385129"
+}
+
+lipSync vo_9_10_220_2_h
+{
+	description	"They're flanking right!"
+	text		"#str_385130"
+}
+
+lipSync vo_9_10_230_1_h
+{
+	description	"There's Strogg up there!"
+	text		"#str_385131"
+}
+
+lipSync vo_9_10_230_2_h
+{
+	description	"Enemy's above us!"
+	text		"#str_385132"
+}
+
+lipSync vo_9_10_230_3_h
+{
+	description	"Look up above!"
+	text		"#str_385133"
+}
+
+lipSync vo_9_10_240_1_h
+{
+	description	"This Strogg's mine!"
+	text		"#str_385134"
+}
+
+lipSync vo_9_10_240_2_h
+{
+	description	"Got a squib over here!"
+	text		"#str_385135"
+}
+
+lipSync vo_9_10_240_3_h
+{
+	description	"Time to die!"
+	text		"#str_385136"
+}
+
+lipSync vo_9_10_240_4_h
+{
+	description	"Bring it on, Strogg!"
+	text		"#str_385137"
+}
+
+lipSync vo_9_10_240_5_h
+{
+	description	"I'm ready for ya!"
+	text		"#str_385138"
+}
+
+lipSync vo_9_10_240_6_h
+{
+	description	"Target acquired!"
+	text		"#str_385139"
+}
+
+lipSync vo_9_10_250_1_h
+{
+	description	"Did you want something soldier?"
+	text		"#str_385140"
+}
+
+lipSync vo_9_10_250_2_h
+{
+	description	"Haven't you got something better to do?"
+	text		"#str_385141"
+}
+
+lipSync vo_9_10_250_3_h
+{
+	description	"You better move along."
+	text		"#str_385142"
+}
+
+lipSync vo_9_10_290_1_h
+{
+	description	"Hold up, Marine. I'm a medic."
+	text		"#str_385150"
+}
+
+lipSync vo_9_10_290_2_h
+{
+	description	"Stay right there. I'll give you a medpack."
+	text		"#str_385151"
+}
+
+lipSync vo_9_10_290_3_h
+{
+	description	"Don't move from there. I'll heal you."
+	text		"#str_385152"
+}
+
+lipSync vo_9_10_300_1_h
+{
+	description	"Stay there, Kane. I'm a medic!"
+	text		"#str_385153"
+}
+
+lipSync vo_9_10_300_2_h
+{
+	description	"Don't move from there, Kane. I'll fix you up."
+	text		"#str_385154"
+}
+
+lipSync vo_9_10_300_3_h
+{
+	description	"I'm comin' over to patch you up, Kane."
+	text		"#str_385155"
+}
+
+lipSync vo_9_10_300_4_h
+{
+	description	"Kane, I'm a medic! Stay right where you are!"
+	text		"#str_385156"
+}
+
+lipSync vo_9_10_30_1_h
+{
+	description	"Sorry. Can't talk right now."
+	text		"#str_385157"
+}
+
+lipSync vo_9_10_30_2_h
+{
+	description	"I can't talk right now."
+	text		"#str_385158"
+}
+
+lipSync vo_9_10_310_1_h
+{
+	description	"Stop movin' around."
+	text		"#str_385159"
+}
+
+lipSync vo_9_10_310_2_h
+{
+	description	"This won't hurt."
+	text		"#str_385160"
+}
+
+lipSync vo_9_10_310_3_h
+{
+	description	"Stop fidgetin'!"
+	text		"#str_385161"
+}
+
+lipSync vo_9_10_310_4_h
+{
+	description	"I only need a couple of seconds to patch you up."
+	text		"#str_385162"
+}
+
+lipSync vo_9_10_310_5_h
+{
+	description	"Dammit, hold still."
+	text		"#str_385163"
+}
+
+lipSync vo_9_10_320_1_h
+{
+	description	"All done. Go give 'em hell. Marine."
+	text		"#str_385164"
+}
+
+lipSync vo_9_10_320_2_h
+{
+	description	"There, you're fixed."
+	text		"#str_385165"
+}
+
+lipSync vo_9_10_320_3_h
+{
+	description	"Finished! Now go kill some Strogg."
+	text		"#str_385166"
+}
+
+lipSync vo_9_10_320_4_h
+{
+	description	"That's it. Get goin'!"
+	text		"#str_385167"
+}
+
+lipSync vo_9_10_360_1_h
+{
+	description	"Wait there, Kane. Ill fix your armor."
+	text		"#str_385168"
+}
+
+lipSync vo_9_10_360_2_h
+{
+	description	"Hold up a second, Kane. I can repair your body armor."
+	text		"#str_385169"
+}
+
+lipSync vo_9_10_360_3_h
+{
+	description	"If you wait there, I can fix your armor, Corporal Kane."
+	text		"#str_385170"
+}
+
+lipSync vo_9_10_370_1_h
+{
+	description	"Hold still while I fix this for you."
+	text		"#str_385171"
+}
+
+lipSync vo_9_10_370_2_h
+{
+	description	"If you stop moving, Ill fix your body armor."
+	text		"#str_385172"
+}
+
+lipSync vo_9_10_370_3_h
+{
+	description	"Stop moving around while I repair your armor."
+	text		"#str_385173"
+}
+
+lipSync vo_9_10_380_1_h
+{
+	description	"Go on. Ive done all I can."
+	text		"#str_385174"
+}
+
+lipSync vo_9_10_380_2_h
+{
+	description	"There you are. Get back in the battle."
+	text		"#str_385175"
+}
+
+lipSync vo_9_10_380_3_h
+{
+	description	"Thats it. Im done. "
+	text		"#str_385176"
+}
+
+lipSync vo_9_10_80_1_h
+{
+	description	"Man down!"
+	text		"#str_385177"
+}
+
+lipSync vo_9_10_80_2_h
+{
+	description	"There's a casualty here!"
+	text		"#str_385178"
+}
+
+lipSync vo_9_10_80_3_h
+{
+	description	"Marine down!"
+	text		"#str_385179"
+}
+
+lipSync vo_9_10_80_4_h
+{
+	description	"There's a soldier down here!"
+	text		"#str_385180"
+}
+
+lipSync vo_9_10_90_1_h
+{
+	description	"Got 'em!"
+	text		"#str_385181"
+}
+
+lipSync vo_9_10_90_2_h
+{
+	description	"That one was mine!"
+	text		"#str_385182"
+}
+
+lipSync vo_9_10_90_3_h
+{
+	description	"Yeah!"
+	text		"#str_385183"
+}
+
+lipSync vo_9_10_90_4_h
+{
+	description	"Ha ha haaaa!"
+	text		"#str_385184"
+}
+
+lipSync vo_9_10_90_5_h
+{
+	description	"One Marine's worth ten of you Strogg!"
+	text		"#str_385185"
+}
+
+lipSync vo_9_10_90_6_h
+{
+	description	"Didn't expect that, did ya?"
+	text		"#str_385186"
+}
+
+lipSync vo_9_10_90_7_h
+{
+	description	"Who's next?"
+	text		"#str_385187"
+}
+
+lipSync vo_9_10_90_8_h
+{
+	description	"Sleep tight, squib."
+	text		"#str_385188"
+}
+
+lipSync vo_9_11_130_1_h
+{
+	description	"Thanks, soldier. You saved my hide."
+	text		"#str_385189"
+}
+
+lipSync vo_9_11_130_2_h
+{
+	description	"Another second and that Strogg woulda killed me. Thanks."
+	text		"#str_385190"
+}
+
+lipSync vo_9_11_130_3_h
+{
+	description	"Thanks for the assist, Corporal."
+	text		"#str_385191"
+}
+
+lipSync vo_9_11_140_1_h
+{
+	description	"Yes! That's what I like to see!"
+	text		"#str_385192"
+}
+
+lipSync vo_9_11_140_2_h
+{
+	description	"Good one!"
+	text		"#str_385193"
+}
+
+lipSync vo_9_11_140_3_h
+{
+	description	"That was a beautiful shot!"
+	text		"#str_385194"
+}
+
+lipSync vo_9_11_140_4_h
+{
+	description	"Keep tearin' 'em up!"
+	text		"#str_385195"
+}
+
+lipSync vo_9_11_140_5_h
+{
+	description	"Nice!"
+	text		"#str_385196"
+}
+
+lipSync vo_9_11_140_6_h
+{
+	description	"Well done, Marine!"
+	text		"#str_385197"
+}
+
+lipSync vo_9_11_140_7_h
+{
+	description	"Ha ha! He's not getting' up again!"
+	text		"#str_385198"
+}
+
+lipSync vo_9_11_140_8_h
+{
+	description	"You nailed him!"
+	text		"#str_385199"
+}
+
+lipSync vo_9_11_150_1_h
+{
+	description	"Check your fire, soldier!"
+	text		"#str_385200"
+}
+
+lipSync vo_9_11_150_2_h
+{
+	description	"You just shot me!"
+	text		"#str_385201"
+}
+
+lipSync vo_9_11_150_3_h
+{
+	description	"Confirm your target before pulling that trigger!"
+	text		"#str_385202"
+}
+
+lipSync vo_9_11_150_4_h
+{
+	description	"Point that weapon away from me!"
+	text		"#str_385203"
+}
+
+lipSync vo_9_11_150_5_h
+{
+	description	"Are you fully trained in the operation of that weapon, soldier?"
+	text		"#str_385204"
+}
+
+lipSync vo_9_11_160_1_h
+{
+	description	"You just iced a Marine!"
+	text		"#str_385205"
+}
+
+lipSync vo_9_11_160_2_h
+{
+	description	"What the hell are you doing shooting one of us?"
+	text		"#str_385206"
+}
+
+lipSync vo_9_11_160_3_h
+{
+	description	"Stop killing our soldiers!"
+	text		"#str_385207"
+}
+
+lipSync vo_9_11_200_1_h
+{
+	description	"Turn around!"
+	text		"#str_385208"
+}
+
+lipSync vo_9_11_200_2_h
+{
+	description	"Enemy to the rear!"
+	text		"#str_385209"
+}
+
+lipSync vo_9_11_200_3_h
+{
+	description	"There's Strogg at your back!"
+	text		"#str_385210"
+}
+
+lipSync vo_9_11_210_1_h
+{
+	description	"They're flanking left!"
+	text		"#str_385211"
+}
+
+lipSync vo_9_11_210_2_h
+{
+	description	"Keep an eye to the left!"
+	text		"#str_385212"
+}
+
+lipSync vo_9_11_210_3_h
+{
+	description	"They're on your left!"
+	text		"#str_385213"
+}
+
+lipSync vo_9_11_220_1_h
+{
+	description	"We've got hostiles to the right!"
+	text		"#str_385214"
+}
+
+lipSync vo_9_11_220_2_h
+{
+	description	"Squib on the right!"
+	text		"#str_385215"
+}
+
+lipSync vo_9_11_230_1_h
+{
+	description	"There's Strogg up top!"
+	text		"#str_385216"
+}
+
+lipSync vo_9_11_230_2_h
+{
+	description	"Up above!"
+	text		"#str_385217"
+}
+
+lipSync vo_9_11_230_3_h
+{
+	description	"I've got a contact above us!"
+	text		"#str_385218"
+}
+
+lipSync vo_9_11_240_1_h
+{
+	description	"Got a Strogg right here!"
+	text		"#str_385219"
+}
+
+lipSync vo_9_11_240_2_h
+{
+	description	"Gimme your best, squib!"
+	text		"#str_385220"
+}
+
+lipSync vo_9_11_240_3_h
+{
+	description	"Feeling strong, freak?"
+	text		"#str_385221"
+}
+
+lipSync vo_9_11_240_4_h
+{
+	description	"You're in the wrong place, squib!"
+	text		"#str_385222"
+}
+
+lipSync vo_9_11_240_5_h
+{
+	description	"You've had it, squib!"
+	text		"#str_385223"
+}
+
+lipSync vo_9_11_240_6_h
+{
+	description	"Just you and me, Strogg!"
+	text		"#str_385224"
+}
+
+lipSync vo_9_11_250_1_h
+{
+	description	"Something troubling you, Marine?"
+	text		"#str_385225"
+}
+
+lipSync vo_9_11_290_1_h
+{
+	description	"Soldier, stay there! I'll fix you up."
+	text		"#str_385233"
+}
+
+lipSync vo_9_11_290_2_h
+{
+	description	"Don't move, Marine! You're hurt!"
+	text		"#str_385234"
+}
+
+lipSync vo_9_11_290_3_h
+{
+	description	"Stay down! I'm a medic!"
+	text		"#str_385235"
+}
+
+lipSync vo_9_11_300_1_h
+{
+	description	"Kane, hold up! Let me give you a medkit!"
+	text		"#str_385236"
+}
+
+lipSync vo_9_11_300_2_h
+{
+	description	"Stay there, Kane. I'm a medic!"
+	text		"#str_385237"
+}
+
+lipSync vo_9_11_300_3_h
+{
+	description	"Kane, I'll be right there to fix you up!"
+	text		"#str_385238"
+}
+
+lipSync vo_9_11_300_4_h
+{
+	description	"Wait a minute, Kane! I'll heal you."
+	text		"#str_385239"
+}
+
+lipSync vo_9_11_30_1_h
+{
+	description	"Corporal, I'm a little preoccupied at the moment."
+	text		"#str_385240"
+}
+
+lipSync vo_9_11_30_2_h
+{
+	description	"Move along. I'm busy."
+	text		"#str_385241"
+}
+
+lipSync vo_9_11_310_1_h
+{
+	description	"Would you be still?"
+	text		"#str_385242"
+}
+
+lipSync vo_9_11_310_2_h
+{
+	description	"The more you move, the longer this takes."
+	text		"#str_385243"
+}
+
+lipSync vo_9_11_310_3_h
+{
+	description	"Don't move."
+	text		"#str_385244"
+}
+
+lipSync vo_9_11_310_4_h
+{
+	description	"Just give me a few seconds here."
+	text		"#str_385245"
+}
+
+lipSync vo_9_11_310_5_h
+{
+	description	"You're a lousy patient."
+	text		"#str_385246"
+}
+
+lipSync vo_9_11_320_1_h
+{
+	description	"Done! Move out, Marine."
+	text		"#str_385247"
+}
+
+lipSync vo_9_11_320_2_h
+{
+	description	"That's as much as I can do."
+	text		"#str_385248"
+}
+
+lipSync vo_9_11_320_3_h
+{
+	description	"Go on, I'm done."
+	text		"#str_385249"
+}
+
+lipSync vo_9_11_320_4_h
+{
+	description	"That's as good as it gets."
+	text		"#str_385250"
+}
+
+lipSync vo_9_11_80_1_h
+{
+	description	"Man down! Man down!"
+	text		"#str_385251"
+}
+
+lipSync vo_9_11_80_2_h
+{
+	description	"We just lost a Marine!"
+	text		"#str_385252"
+}
+
+lipSync vo_9_11_80_3_h
+{
+	description	"We've got a casualty here!"
+	text		"#str_385253"
+}
+
+lipSync vo_9_11_80_4_h
+{
+	description	"We're dropping like flies!"
+	text		"#str_385254"
+}
+
+lipSync vo_9_11_90_1_h
+{
+	description	"Yeah! I nailed 'em!"
+	text		"#str_385255"
+}
+
+lipSync vo_9_11_90_2_h
+{
+	description	"And I'm getting' paid to do this!"
+	text		"#str_385256"
+}
+
+lipSync vo_9_11_90_3_h
+{
+	description	"Bring on another one!"
+	text		"#str_385257"
+}
+
+lipSync vo_9_11_90_4_h
+{
+	description	"Ha, ha!"
+	text		"#str_385258"
+}
+
+lipSync vo_9_11_90_5_h
+{
+	description	"Don't mess with a Marine!"
+	text		"#str_385259"
+}
+
+lipSync vo_9_11_90_6_h
+{
+	description	"Yeeeah!"
+	text		"#str_385260"
+}
+
+lipSync vo_9_11_90_7_h
+{
+	description	"Squib is down!"
+	text		"#str_385261"
+}
+
+lipSync vo_9_11_90_8_h
+{
+	description	"Burn forever, freak."
+	text		"#str_385262"
+}
+
+lipSync vo_9_12_130_1_h
+{
+	description	"Hey, nice shot. You sure saved my ass."
+	text		"#str_385263"
+}
+
+lipSync vo_9_12_130_2_h
+{
+	description	"Thanks for savin' me. Guess this makes you my guardian angel."
+	text		"#str_385264"
+}
+
+lipSync vo_9_12_130_3_h
+{
+	description	"Thanks, Marine. I hope I can return the favor."
+	text		"#str_385265"
+}
+
+lipSync vo_9_12_140_1_h
+{
+	description	"Yeah! That's the way to do it, Marine!"
+	text		"#str_385266"
+}
+
+lipSync vo_9_12_140_2_h
+{
+	description	"Ha, ha, ha, haaaa!"
+	text		"#str_385267"
+}
+
+lipSync vo_9_12_140_3_h
+{
+	description	"That was freakin' beautiful! "
+	text		"#str_385268"
+}
+
+lipSync vo_9_12_140_4_h
+{
+	description	"Shit, that was great!"
+	text		"#str_385269"
+}
+
+lipSync vo_9_12_140_5_h
+{
+	description	"Niiiice!"
+	text		"#str_385270"
+}
+
+lipSync vo_9_12_140_6_h
+{
+	description	"Marine, you got some talents."
+	text		"#str_385271"
+}
+
+lipSync vo_9_12_140_7_h
+{
+	description	"It's a pleasure to watch you work, Soldier."
+	text		"#str_385272"
+}
+
+lipSync vo_9_12_140_8_h
+{
+	description	"You freakin' nailed his ass!"
+	text		"#str_385273"
+}
+
+lipSync vo_9_12_150_1_h
+{
+	description	"Don't pull that trigger unless you're sure of your target!"
+	text		"#str_385274"
+}
+
+lipSync vo_9_12_150_2_h
+{
+	description	"You just freakin' shot me!"
+	text		"#str_385275"
+}
+
+lipSync vo_9_12_150_3_h
+{
+	description	"Are you blind?"
+	text		"#str_385276"
+}
+
+lipSync vo_9_12_150_4_h
+{
+	description	"Are you some squib sympathizer?"
+	text		"#str_385277"
+}
+
+lipSync vo_9_12_150_5_h
+{
+	description	"Do not fire at me, Soldier!"
+	text		"#str_385278"
+}
+
+lipSync vo_9_12_160_1_h
+{
+	description	"You just fragged a human!"
+	text		"#str_385279"
+}
+
+lipSync vo_9_12_160_2_h
+{
+	description	"Hey, moron, you just killed a Marine!"
+	text		"#str_385280"
+}
+
+lipSync vo_9_12_160_3_h
+{
+	description	"I should have you thrown in the brig for that!"
+	text		"#str_385281"
+}
+
+lipSync vo_9_12_200_1_h
+{
+	description	"We got enemies behind us!"
+	text		"#str_385282"
+}
+
+lipSync vo_9_12_200_2_h
+{
+	description	"Freaks are in back!"
+	text		"#str_385283"
+}
+
+lipSync vo_9_12_200_3_h
+{
+	description	"There's Strogg behind you!"
+	text		"#str_385284"
+}
+
+lipSync vo_9_12_210_1_h
+{
+	description	"There's Strogg to the left!"
+	text		"#str_385285"
+}
+
+lipSync vo_9_12_210_2_h
+{
+	description	"Contact to the left!"
+	text		"#str_385286"
+}
+
+lipSync vo_9_12_210_3_h
+{
+	description	"They're flanking left!"
+	text		"#str_385287"
+}
+
+lipSync vo_9_12_220_1_h
+{
+	description	"Enemy on the right."
+	text		"#str_385288"
+}
+
+lipSync vo_9_12_220_2_h
+{
+	description	"There's one to your right!"
+	text		"#str_385289"
+}
+
+lipSync vo_9_12_230_1_h
+{
+	description	"There's Strogg up there!"
+	text		"#str_385290"
+}
+
+lipSync vo_9_12_230_2_h
+{
+	description	"There's a squib up high!"
+	text		"#str_385291"
+}
+
+lipSync vo_9_12_230_3_h
+{
+	description	"Look, we got Strogg above us!"
+	text		"#str_385292"
+}
+
+lipSync vo_9_12_240_1_h
+{
+	description	"You're already dead."
+	text		"#str_385293"
+}
+
+lipSync vo_9_12_240_2_h
+{
+	description	"I'm gonna mess you up, freak!"
+	text		"#str_385294"
+}
+
+lipSync vo_9_12_240_3_h
+{
+	description	"It's ass kickin' time!"
+	text		"#str_385295"
+}
+
+lipSync vo_9_12_240_4_h
+{
+	description	"Bring it on!"
+	text		"#str_385296"
+}
+
+lipSync vo_9_12_240_5_h
+{
+	description	"Come on, freak!"
+	text		"#str_385297"
+}
+
+lipSync vo_9_12_240_6_h
+{
+	description	"You eyeballin' me, squib?"
+	text		"#str_385298"
+}
+
+lipSync vo_9_12_290_1_h
+{
+	description	"Wait a minute! I'm a medic!"
+	text		"#str_385306"
+}
+
+lipSync vo_9_12_290_2_h
+{
+	description	"Don't go anywhere! I'll heal you up."
+	text		"#str_385307"
+}
+
+lipSync vo_9_12_290_3_h
+{
+	description	"Stay there! I've got a medpack for you!"
+	text		"#str_385308"
+}
+
+lipSync vo_9_12_300_1_h
+{
+	description	"Kane, I'm a medic! Wait there!"
+	text		"#str_385309"
+}
+
+lipSync vo_9_12_300_2_h
+{
+	description	"I'm on my way, Kane! I've got a medpack for you!"
+	text		"#str_385310"
+}
+
+lipSync vo_9_12_300_3_h
+{
+	description	"Kane, stay put. I'll patch you up!"
+	text		"#str_385311"
+}
+
+lipSync vo_9_12_300_4_h
+{
+	description	"Wait right there, Kane! I'll try to fix you up."
+	text		"#str_385312"
+}
+
+lipSync vo_9_12_310_1_h
+{
+	description	"Damn it, hold still."
+	text		"#str_385313"
+}
+
+lipSync vo_9_12_310_2_h
+{
+	description	"This won't hurt a bit."
+	text		"#str_385314"
+}
+
+lipSync vo_9_12_310_3_h
+{
+	description	"Gimme a few seconds and you'll be okay."
+	text		"#str_385315"
+}
+
+lipSync vo_9_12_310_4_h
+{
+	description	"Here's a medpack."
+	text		"#str_385316"
+}
+
+lipSync vo_9_12_310_5_h
+{
+	description	"This is just what the doctor ordered."
+	text		"#str_385317"
+}
+
+lipSync vo_9_12_320_1_h
+{
+	description	"I've done what I can. Go get 'em soldier."
+	text		"#str_385318"
+}
+
+lipSync vo_9_12_320_2_h
+{
+	description	"All done. Now try and keep low, would ya?"
+	text		"#str_385319"
+}
+
+lipSync vo_9_12_320_3_h
+{
+	description	"That's it! Go frag some Strogg!"
+	text		"#str_385320"
+}
+
+lipSync vo_9_12_320_4_h
+{
+	description	"You're good to go."
+	text		"#str_385321"
+}
+
+lipSync vo_9_12_360_1_h
+{
+	description	"Wait up, Kane, and I'll fix your body armor."
+	text		"#str_385322"
+}
+
+lipSync vo_9_12_370_1_h
+{
+	description	"Just wait a second and I'll be done."
+	text		"#str_385323"
+}
+
+lipSync vo_9_12_370_2_h
+{
+	description	"One minute and you'll be back in the battle."
+	text		"#str_385324"
+}
+
+lipSync vo_9_12_370_3_h
+{
+	description	"Hold still. I'll fix your armor."
+	text		"#str_385325"
+}
+
+lipSync vo_9_12_380_1_h
+{
+	description	"There you go. Try to be a little more careful, all right?"
+	text		"#str_385326"
+}
+
+lipSync vo_9_12_380_2_h
+{
+	description	"That's all I can do. See you around, marine."
+	text		"#str_385327"
+}
+
+lipSync vo_9_12_380_3_h
+{
+	description	"Finihed. Back into the war, marine. "
+	text		"#str_385328"
+}
+
+lipSync vo_9_12_80_1_h
+{
+	description	"Marine down! I repeat, Marine down!"
+	text		"#str_385329"
+}
+
+lipSync vo_9_12_80_2_h
+{
+	description	"They're picking us apart!"
+	text		"#str_385330"
+}
+
+lipSync vo_9_12_80_3_h
+{
+	description	"They just iced a Marine!"
+	text		"#str_385331"
+}
+
+lipSync vo_9_12_80_4_h
+{
+	description	"We're taking casualties!"
+	text		"#str_385332"
+}
+
+lipSync vo_9_12_90_1_h
+{
+	description	"Hell yeah!"
+	text		"#str_385333"
+}
+
+lipSync vo_9_12_90_2_h
+{
+	description	"Oooorah!"
+	text		"#str_385334"
+}
+
+lipSync vo_9_12_90_3_h
+{
+	description	"Where's my next victim?"
+	text		"#str_385335"
+}
+
+lipSync vo_9_12_90_4_h
+{
+	description	"Ha, ha, ha, ha!"
+	text		"#str_385336"
+}
+
+lipSync vo_9_12_90_5_h
+{
+	description	"Fear me, freak!"
+	text		"#str_385337"
+}
+
+lipSync vo_9_12_90_6_h
+{
+	description	"You're not so tough now!"
+	text		"#str_385338"
+}
+
+lipSync vo_9_12_90_7_h
+{
+	description	"I just kicked your ass, freak!"
+	text		"#str_385339"
+}
+
+lipSync vo_9_12_90_8_h
+{
+	description	"You Strogg ain't worth shit!"
+	text		"#str_385340"
+}
+
+lipSync vo_9_13_130_1_h
+{
+	description	"I should be dead right now. Thanks, Corporal."
+	text		"#str_385341"
+}
+
+lipSync vo_9_13_130_2_h
+{
+	description	"I owe you, Marine."
+	text		"#str_385342"
+}
+
+lipSync vo_9_13_130_3_h
+{
+	description	"You saved me. Thanks, buddy."
+	text		"#str_385343"
+}
+
+lipSync vo_9_13_140_1_h
+{
+	description	"Oh, that was beautiful!"
+	text		"#str_385344"
+}
+
+lipSync vo_9_13_140_2_h
+{
+	description	"Ha, ha, ha, haaaa!"
+	text		"#str_385345"
+}
+
+lipSync vo_9_13_140_3_h
+{
+	description	"You do the Marine's proud, Soldier!"
+	text		"#str_385346"
+}
+
+lipSync vo_9_13_140_4_h
+{
+	description	"Damn, Corporal. You got some skill with that weapon."
+	text		"#str_385347"
+}
+
+lipSync vo_9_13_140_5_h
+{
+	description	"Did you do that?"
+	text		"#str_385348"
+}
+
+lipSync vo_9_13_140_6_h
+{
+	description	"You truly are a terror!"
+	text		"#str_385349"
+}
+
+lipSync vo_9_13_140_7_h
+{
+	description	"Oh yeah!"
+	text		"#str_385350"
+}
+
+lipSync vo_9_13_140_8_h
+{
+	description	"Shit! That was great!"
+	text		"#str_385351"
+}
+
+lipSync vo_9_13_150_1_h
+{
+	description	"Check your freakin' line of fire!"
+	text		"#str_385352"
+}
+
+lipSync vo_9_13_150_2_h
+{
+	description	"Damn it! You just shot me!"
+	text		"#str_385353"
+}
+
+lipSync vo_9_13_150_3_h
+{
+	description	"Watch the friendly fire Corporal!"
+	text		"#str_385354"
+}
+
+lipSync vo_9_13_150_4_h
+{
+	description	"You coulda killed me!"
+	text		"#str_385355"
+}
+
+lipSync vo_9_13_150_5_h
+{
+	description	"Check your fire, damn it!"
+	text		"#str_385356"
+}
+
+lipSync vo_9_13_160_1_h
+{
+	description	"You just iced one of us!"
+	text		"#str_385357"
+}
+
+lipSync vo_9_13_160_2_h
+{
+	description	"Your friendly fire just killed a Marine!"
+	text		"#str_385358"
+}
+
+lipSync vo_9_13_160_3_h
+{
+	description	"You just killed a freakin' soldier!"
+	text		"#str_385359"
+}
+
+lipSync vo_9_13_200_1_h
+{
+	description	"Look behind you!"
+	text		"#str_385360"
+}
+
+lipSync vo_9_13_200_2_h
+{
+	description	"There in back!"
+	text		"#str_385361"
+}
+
+lipSync vo_9_13_200_3_h
+{
+	description	"We've got weapons fire in back!"
+	text		"#str_385362"
+}
+
+lipSync vo_9_13_210_1_h
+{
+	description	"Strogg on the left!"
+	text		"#str_385363"
+}
+
+lipSync vo_9_13_210_2_h
+{
+	description	"Look to your left!"
+	text		"#str_385364"
+}
+
+lipSync vo_9_13_210_3_h
+{
+	description	"On the left flank!"
+	text		"#str_385365"
+}
+
+lipSync vo_9_13_220_1_h
+{
+	description	"Aim to the right!"
+	text		"#str_385366"
+}
+
+lipSync vo_9_13_220_2_h
+{
+	description	"There's squibs to the right!"
+	text		"#str_385367"
+}
+
+lipSync vo_9_13_230_1_h
+{
+	description	"There's Strogg up there!"
+	text		"#str_385368"
+}
+
+lipSync vo_9_13_230_2_h
+{
+	description	"Look up!"
+	text		"#str_385369"
+}
+
+lipSync vo_9_13_230_3_h
+{
+	description	"Aim above us!"
+	text		"#str_385370"
+}
+
+lipSync vo_9_13_240_1_h
+{
+	description	"I own you, freak!"
+	text		"#str_385371"
+}
+
+lipSync vo_9_13_240_2_h
+{
+	description	"Got a squib right here!"
+	text		"#str_385372"
+}
+
+lipSync vo_9_13_240_3_h
+{
+	description	"Let's dance!"
+	text		"#str_385373"
+}
+
+lipSync vo_9_13_240_4_h
+{
+	description	"Bring it!"
+	text		"#str_385374"
+}
+
+lipSync vo_9_13_240_5_h
+{
+	description	"It's go time!"
+	text		"#str_385375"
+}
+
+lipSync vo_9_13_240_6_h
+{
+	description	"You're dead meat, squib!"
+	text		"#str_385376"
+}
+
+lipSync vo_9_13_250_1_h
+{
+	description	"Hmmm?"
+	text		"#str_385377"
+}
+
+lipSync vo_9_13_250_2_h
+{
+	description	"Yeah?"
+	text		"#str_385378"
+}
+
+lipSync vo_9_13_250_3_h
+{
+	description	"What?"
+	text		"#str_385379"
+}
+
+lipSync vo_9_13_290_1_h
+{
+	description	"Stay right there! I'll heal you!"
+	text		"#str_385387"
+}
+
+lipSync vo_9_13_290_2_h
+{
+	description	"Keep down! I'll be right there to patch you up!"
+	text		"#str_385388"
+}
+
+lipSync vo_9_13_290_3_h
+{
+	description	"Don't move! I'm a medic!"
+	text		"#str_385389"
+}
+
+lipSync vo_9_13_300_1_h
+{
+	description	"Corporal Kane, don't move! I'll heal you up!"
+	text		"#str_385390"
+}
+
+lipSync vo_9_13_300_2_h
+{
+	description	"I'm a medic, Kane. Stay there - I'll fix you up!"
+	text		"#str_385391"
+}
+
+lipSync vo_9_13_300_3_h
+{
+	description	"Hold up, Corporal Kane. I'm a medic!"
+	text		"#str_385392"
+}
+
+lipSync vo_9_13_300_4_h
+{
+	description	"Stay at your position, Kane. I'll heal you."
+	text		"#str_385393"
+}
+
+lipSync vo_9_13_30_1_h
+{
+	description	"Sorry, buddy. I'm a little busy."
+	text		"#str_385394"
+}
+
+lipSync vo_9_13_30_2_h
+{
+	description	"Excuse me, but I'm busy."
+	text		"#str_385395"
+}
+
+lipSync vo_9_13_310_1_h
+{
+	description	"This doesn't look so bad."
+	text		"#str_385396"
+}
+
+lipSync vo_9_13_310_2_h
+{
+	description	"Looks like you need a medpack."
+	text		"#str_385397"
+}
+
+lipSync vo_9_13_310_3_h
+{
+	description	"Stop fidgeting."
+	text		"#str_385398"
+}
+
+lipSync vo_9_13_310_4_h
+{
+	description	"Just stay put for a minute longer."
+	text		"#str_385399"
+}
+
+lipSync vo_9_13_310_5_h
+{
+	description	"This won't take long."
+	text		"#str_385400"
+}
+
+lipSync vo_9_13_320_1_h
+{
+	description	"See? That didn't hurt a bit."
+	text		"#str_385401"
+}
+
+lipSync vo_9_13_320_2_h
+{
+	description	"Go on. That's the best I can do."
+	text		"#str_385402"
+}
+
+lipSync vo_9_13_320_3_h
+{
+	description	"Done. Now go ice some freaks, Marine!"
+	text		"#str_385403"
+}
+
+lipSync vo_9_13_320_4_h
+{
+	description	"That's it. You're back in action."
+	text		"#str_385404"
+}
+
+lipSync vo_9_13_360_1_h
+{
+	description	"Kane, wait. Your armor's damaged."
+	text		"#str_385405"
+}
+
+lipSync vo_9_13_360_2_h
+{
+	description	"Corporal Kane. Wait, and I'll repair your armor."
+	text		"#str_385406"
+}
+
+lipSync vo_9_13_360_3_h
+{
+	description	"I can fix your armor, Kane."
+	text		"#str_385407"
+}
+
+lipSync vo_9_13_370_1_h
+{
+	description	"I'l have you patched up in no time."
+	text		"#str_385408"
+}
+
+lipSync vo_9_13_370_2_h
+{
+	description	"This won't take long."
+	text		"#str_385409"
+}
+
+lipSync vo_9_13_370_3_h
+{
+	description	"Just a few seconds and you'll be right back into the fight."
+	text		"#str_385410"
+}
+
+lipSync vo_9_13_380_1_h
+{
+	description	"You're good to go, marine."
+	text		"#str_385411"
+}
+
+lipSync vo_9_13_380_2_h
+{
+	description	"That's all I can do. Good luck."
+	text		"#str_385412"
+}
+
+lipSync vo_9_13_380_3_h
+{
+	description	"There, finished. Now try to be more careful. "
+	text		"#str_385413"
+}
+
+lipSync vo_9_13_80_1_h
+{
+	description	"A Marine was just iced!"
+	text		"#str_385414"
+}
+
+lipSync vo_9_13_80_2_h
+{
+	description	"The damn Strogg are wearin' us down!"
+	text		"#str_385415"
+}
+
+lipSync vo_9_13_80_3_h
+{
+	description	"Shit, we just lost a man!"
+	text		"#str_385416"
+}
+
+lipSync vo_9_13_80_4_h
+{
+	description	"They fragged another soldier!"
+	text		"#str_385417"
+}
+
+lipSync vo_9_13_90_1_h
+{
+	description	"Oh yeah I liked that!"
+	text		"#str_385418"
+}
+
+lipSync vo_9_13_90_2_h
+{
+	description	"Oooorah!"
+	text		"#str_385419"
+}
+
+lipSync vo_9_13_90_3_h
+{
+	description	"You're lookin' mighty dead, freak!"
+	text		"#str_385420"
+}
+
+lipSync vo_9_13_90_4_h
+{
+	description	"Ha, ha!"
+	text		"#str_385421"
+}
+
+lipSync vo_9_13_90_5_h
+{
+	description	"That rocked!"
+	text		"#str_385422"
+}
+
+lipSync vo_9_13_90_6_h
+{
+	description	"Now I gotta scrape you off my boots."
+	text		"#str_385423"
+}
+
+lipSync vo_9_13_90_7_h
+{
+	description	"Ain't war hell? Ha, ha!"
+	text		"#str_385424"
+}
+
+lipSync vo_9_13_90_8_h
+{
+	description	"Is it any wonder I love the Corps?"
+	text		"#str_385425"
+}
+
+lipSync vo_9_14_130_1_h
+{
+	description	"Thanks, buddy."
+	text		"#str_385426"
+}
+
+lipSync vo_9_14_130_2_h
+{
+	description	"Damn, you saved my life!"
+	text		"#str_385427"
+}
+
+lipSync vo_9_14_130_3_h
+{
+	description	"Looks like you handle Strogg better than me. Thanks for helpin' me out."
+	text		"#str_385428"
+}
+
+lipSync vo_9_14_140_1_h
+{
+	description	"I bet he didn't like that at all."
+	text		"#str_385429"
+}
+
+lipSync vo_9_14_140_2_h
+{
+	description	"That was freakin' great!"
+	text		"#str_385430"
+}
+
+lipSync vo_9_14_140_3_h
+{
+	description	"Wow! Nice!"
+	text		"#str_385431"
+}
+
+lipSync vo_9_14_140_4_h
+{
+	description	"Good job!"
+	text		"#str_385432"
+}
+
+lipSync vo_9_14_140_5_h
+{
+	description	"Shit. He ain't gettin' up from that."
+	text		"#str_385433"
+}
+
+lipSync vo_9_14_140_6_h
+{
+	description	"He looks pretty dead to me."
+	text		"#str_385434"
+}
+
+lipSync vo_9_14_140_7_h
+{
+	description	"Not bad! "
+	text		"#str_385435"
+}
+
+lipSync vo_9_14_140_8_h
+{
+	description	"You really busted him up!"
+	text		"#str_385436"
+}
+
+lipSync vo_9_14_150_1_h
+{
+	description	"Always check your line of fire!"
+	text		"#str_385437"
+}
+
+lipSync vo_9_14_150_2_h
+{
+	description	"Watch your freakin' target!"
+	text		"#str_385438"
+}
+
+lipSync vo_9_14_150_3_h
+{
+	description	"You just hit me!"
+	text		"#str_385439"
+}
+
+lipSync vo_9_14_150_4_h
+{
+	description	"Stop shooting! I'm on your side!"
+	text		"#str_385440"
+}
+
+lipSync vo_9_14_150_5_h
+{
+	description	"Hey! Watch the friendly fire!"
+	text		"#str_385441"
+}
+
+lipSync vo_9_14_160_1_h
+{
+	description	"You just fragged a soldier!"
+	text		"#str_385442"
+}
+
+lipSync vo_9_14_160_2_h
+{
+	description	"Calm down, and stop shooting marines!"
+	text		"#str_385443"
+}
+
+lipSync vo_9_14_160_3_h
+{
+	description	"Check your target, Marine!"
+	text		"#str_385444"
+}
+
+lipSync vo_9_14_200_1_h
+{
+	description	"Look out behind you!"
+	text		"#str_385445"
+}
+
+lipSync vo_9_14_200_2_h
+{
+	description	"In back!"
+	text		"#str_385446"
+}
+
+lipSync vo_9_14_200_3_h
+{
+	description	"Strogg are behind you!"
+	text		"#str_385447"
+}
+
+lipSync vo_9_14_210_1_h
+{
+	description	"We got Strogg on the left!"
+	text		"#str_385448"
+}
+
+lipSync vo_9_14_210_2_h
+{
+	description	"They're trying to flank left!"
+	text		"#str_385449"
+}
+
+lipSync vo_9_14_210_3_h
+{
+	description	"They're on your left!"
+	text		"#str_385450"
+}
+
+lipSync vo_9_14_220_1_h
+{
+	description	"They're flanking right!"
+	text		"#str_385451"
+}
+
+lipSync vo_9_14_220_2_h
+{
+	description	"Aim to the right!"
+	text		"#str_385452"
+}
+
+lipSync vo_9_14_230_1_h
+{
+	description	"There's Strogg above us!"
+	text		"#str_385453"
+}
+
+lipSync vo_9_14_230_2_h
+{
+	description	"Look up!"
+	text		"#str_385454"
+}
+
+lipSync vo_9_14_230_3_h
+{
+	description	"Strogg are up there!"
+	text		"#str_385455"
+}
+
+lipSync vo_9_14_240_1_h
+{
+	description	"Bring it, freak!"
+	text		"#str_385456"
+}
+
+lipSync vo_9_14_240_2_h
+{
+	description	"Gimme your best shot!"
+	text		"#str_385457"
+}
+
+lipSync vo_9_14_240_3_h
+{
+	description	"Got a freak right here!"
+	text		"#str_385458"
+}
+
+lipSync vo_9_14_240_4_h
+{
+	description	"What do ya got, squib?"
+	text		"#str_385459"
+}
+
+lipSync vo_9_14_240_5_h
+{
+	description	"You're all mine!"
+	text		"#str_385460"
+}
+
+lipSync vo_9_14_240_6_h
+{
+	description	"I hope you like pain, freak!"
+	text		"#str_385461"
+}
+
+lipSync vo_9_14_290_1_h
+{
+	description	"Remain there, soldier! I've got a medpack!"
+	text		"#str_385469"
+}
+
+lipSync vo_9_14_290_2_h
+{
+	description	"Stay put! I'll fix you up!"
+	text		"#str_385470"
+}
+
+lipSync vo_9_14_290_3_h
+{
+	description	"Marine! Hold up!"
+	text		"#str_385471"
+}
+
+lipSync vo_9_14_300_1_h
+{
+	description	"Corporal Kane, remain there! I'm a medic!"
+	text		"#str_385472"
+}
+
+lipSync vo_9_14_300_2_h
+{
+	description	"I've got a medpack for you, Corporal Kane."
+	text		"#str_385473"
+}
+
+lipSync vo_9_14_300_3_h
+{
+	description	"Stay where you are, Kane. I'll heal you."
+	text		"#str_385474"
+}
+
+lipSync vo_9_14_300_4_h
+{
+	description	"Corporal Kane, don't move. I'll be there with a medpack in a second."
+	text		"#str_385475"
+}
+
+lipSync vo_9_14_30_1_h
+{
+	description	"Can't talk right now."
+	text		"#str_385476"
+}
+
+lipSync vo_9_14_30_2_h
+{
+	description	"Can't you find someone else to annoy?"
+	text		"#str_385477"
+}
+
+lipSync vo_9_14_310_1_h
+{
+	description	"Marine, you gotta remember to duck once in a while."
+	text		"#str_385478"
+}
+
+lipSync vo_9_14_310_2_h
+{
+	description	"Here, this should help."
+	text		"#str_385479"
+}
+
+lipSync vo_9_14_310_3_h
+{
+	description	"One minute and you'll be fine."
+	text		"#str_385480"
+}
+
+lipSync vo_9_14_310_4_h
+{
+	description	"Would you hold still?"
+	text		"#str_385481"
+}
+
+lipSync vo_9_14_310_5_h
+{
+	description	"One medpack, comin' up."
+	text		"#str_385482"
+}
+
+lipSync vo_9_14_320_1_h
+{
+	description	"You're done. Move out Marine."
+	text		"#str_385483"
+}
+
+lipSync vo_9_14_320_2_h
+{
+	description	"Okay, that's it."
+	text		"#str_385484"
+}
+
+lipSync vo_9_14_320_3_h
+{
+	description	"Finished. You're back in the war Marine."
+	text		"#str_385485"
+}
+
+lipSync vo_9_14_320_4_h
+{
+	description	"There you go. See you around."
+	text		"#str_385486"
+}
+
+lipSync vo_9_14_80_1_h
+{
+	description	"Marine down!"
+	text		"#str_385487"
+}
+
+lipSync vo_9_14_80_2_h
+{
+	description	"We've just taken a casualty."
+	text		"#str_385488"
+}
+
+lipSync vo_9_14_80_3_h
+{
+	description	"There's not gonna be many of us left at this rate."
+	text		"#str_385489"
+}
+
+lipSync vo_9_14_80_4_h
+{
+	description	"The bastards fragged one of us!"
+	text		"#str_385490"
+}
+
+lipSync vo_9_14_90_1_h
+{
+	description	"Ha, ha! This is gettin' fun!"
+	text		"#str_385491"
+}
+
+lipSync vo_9_14_90_2_h
+{
+	description	"Eat it, Strogg!"
+	text		"#str_385492"
+}
+
+lipSync vo_9_14_90_3_h
+{
+	description	"Yeah!"
+	text		"#str_385493"
+}
+
+lipSync vo_9_14_90_4_h
+{
+	description	"Ha, ha, ha, haaaaa!"
+	text		"#str_385494"
+}
+
+lipSync vo_9_14_90_5_h
+{
+	description	"Oooorah!"
+	text		"#str_385495"
+}
+
+lipSync vo_9_14_90_6_h
+{
+	description	"A shame you didn't live a little longer."
+	text		"#str_385496"
+}
+
+lipSync vo_9_14_90_7_h
+{
+	description	"Look at you all busted up, freak!"
+	text		"#str_385497"
+}
+
+lipSync vo_9_14_90_8_h
+{
+	description	"Score one for the marines."
+	text		"#str_385498"
+}
+
+lipSync vo_9_15_130_2_h
+{
+	description	"Thanks, Corporal. You're a regular hero."
+	text		"#str_385499"
+}
+
+lipSync vo_9_15_130_3_h
+{
+	description	"That Strogg woulda fragged me if it weren't for you."
+	text		"#str_385500"
+}
+
+lipSync vo_9_15_140_1_h
+{
+	description	"That Strogg didn't know what hit 'em!"
+	text		"#str_385501"
+}
+
+lipSync vo_9_15_140_2_h
+{
+	description	"Nice work!"
+	text		"#str_385502"
+}
+
+lipSync vo_9_15_140_3_h
+{
+	description	"That was great!"
+	text		"#str_385503"
+}
+
+lipSync vo_9_15_140_4_h
+{
+	description	"You're quite a shot!"
+	text		"#str_385504"
+}
+
+lipSync vo_9_15_140_5_h
+{
+	description	"That Strogg's outta commission."
+	text		"#str_385505"
+}
+
+lipSync vo_9_15_140_6_h
+{
+	description	"That was sweet!"
+	text		"#str_385506"
+}
+
+lipSync vo_9_15_140_7_h
+{
+	description	"Great kill!"
+	text		"#str_385507"
+}
+
+lipSync vo_9_15_140_8_h
+{
+	description	"Smoooth!"
+	text		"#str_385508"
+}
+
+lipSync vo_9_15_150_1_h
+{
+	description	"Check your freakin' fire!"
+	text		"#str_385509"
+}
+
+lipSync vo_9_15_150_2_h
+{
+	description	"Damn it! Watch your target!"
+	text		"#str_385510"
+}
+
+lipSync vo_9_15_150_3_h
+{
+	description	"Check your line of fire."
+	text		"#str_385511"
+}
+
+lipSync vo_9_15_150_4_h
+{
+	description	"Knock that shit off!"
+	text		"#str_385512"
+}
+
+lipSync vo_9_15_150_5_h
+{
+	description	"What in hell are you doin'?"
+	text		"#str_385513"
+}
+
+lipSync vo_9_15_160_1_h
+{
+	description	"Stand down! That was a marine!"
+	text		"#str_385514"
+}
+
+lipSync vo_9_15_160_2_h
+{
+	description	"That was a human you iced!"
+	text		"#str_385515"
+}
+
+lipSync vo_9_15_160_3_h
+{
+	description	"You just killed a soldier!"
+	text		"#str_385516"
+}
+
+lipSync vo_9_15_200_1_h
+{
+	description	"Behind you!"
+	text		"#str_385517"
+}
+
+lipSync vo_9_15_200_2_h
+{
+	description	"Look to the back!"
+	text		"#str_385518"
+}
+
+lipSync vo_9_15_200_3_h
+{
+	description	"There's Strogg are behind you!"
+	text		"#str_385519"
+}
+
+lipSync vo_9_15_210_1_h
+{
+	description	"Strogg to the left!"
+	text		"#str_385520"
+}
+
+lipSync vo_9_15_210_2_h
+{
+	description	"Hostiles on the left flank!"
+	text		"#str_385521"
+}
+
+lipSync vo_9_15_210_3_h
+{
+	description	"Weapons to the left!"
+	text		"#str_385522"
+}
+
+lipSync vo_9_15_220_1_h
+{
+	description	"Look right!"
+	text		"#str_385523"
+}
+
+lipSync vo_9_15_220_2_h
+{
+	description	"Hostiles on the right flank!"
+	text		"#str_385524"
+}
+
+lipSync vo_9_15_230_1_h
+{
+	description	"There's Strogg up there!"
+	text		"#str_385525"
+}
+
+lipSync vo_9_15_230_2_h
+{
+	description	"Look up!"
+	text		"#str_385526"
+}
+
+lipSync vo_9_15_230_3_h
+{
+	description	"Strogg are up above!"
+	text		"#str_385527"
+}
+
+lipSync vo_9_15_240_1_h
+{
+	description	"It's go time, freak!"
+	text		"#str_385528"
+}
+
+lipSync vo_9_15_240_2_h
+{
+	description	"Target acquired!"
+	text		"#str_385529"
+}
+
+lipSync vo_9_15_240_3_h
+{
+	description	"Come on, freak!"
+	text		"#str_385530"
+}
+
+lipSync vo_9_15_240_4_h
+{
+	description	"I'm gonna bust you up!"
+	text		"#str_385531"
+}
+
+lipSync vo_9_15_240_5_h
+{
+	description	"You're dead!"
+	text		"#str_385532"
+}
+
+lipSync vo_9_15_240_6_h
+{
+	description	"Got a squib right here!"
+	text		"#str_385533"
+}
+
+lipSync vo_9_15_250_1_h
+{
+	description	"You want something?"
+	text		"#str_385534"
+}
+
+lipSync vo_9_15_290_1_h
+{
+	description	"Stay at your position! I'm a medic!"
+	text		"#str_385542"
+}
+
+lipSync vo_9_15_290_2_h
+{
+	description	"I've got a medpack for you!"
+	text		"#str_385543"
+}
+
+lipSync vo_9_15_290_3_h
+{
+	description	"Don't move, Marine! I'll fix you up!"
+	text		"#str_385544"
+}
+
+lipSync vo_9_15_300_1_h
+{
+	description	"Corporal Kane, I have a medpack for you!"
+	text		"#str_385545"
+}
+
+lipSync vo_9_15_300_2_h
+{
+	description	"I'll heal you, Corporal Kane."
+	text		"#str_385546"
+}
+
+lipSync vo_9_15_300_3_h
+{
+	description	"Stay put, Kane. I'm on my way!"
+	text		"#str_385547"
+}
+
+lipSync vo_9_15_300_4_h
+{
+	description	"Corporal Kane, remain there. I'll be there in a second."
+	text		"#str_385548"
+}
+
+lipSync vo_9_15_30_1_h
+{
+	description	"Sorry, I'm a kinda occupied right now."
+	text		"#str_385549"
+}
+
+lipSync vo_9_15_30_2_h
+{
+	description	"I can't talk right now. I'm busy."
+	text		"#str_385550"
+}
+
+lipSync vo_9_15_30_3_h
+{
+	description	"I wish I could help you, but I can't."
+	text		"#str_385551"
+}
+
+lipSync vo_9_15_310_1_h
+{
+	description	"You're lucky I got here when I did."
+	text		"#str_385552"
+}
+
+lipSync vo_9_15_310_2_h
+{
+	description	"Here's a medpack."
+	text		"#str_385553"
+}
+
+lipSync vo_9_15_310_3_h
+{
+	description	"Just gimme a second."
+	text		"#str_385554"
+}
+
+lipSync vo_9_15_310_5_h
+{
+	description	"This oughta help."
+	text		"#str_385555"
+}
+
+lipSync vo_9_15_320_1_h
+{
+	description	"There. Back into the battle, Marine."
+	text		"#str_385556"
+}
+
+lipSync vo_9_15_320_2_h
+{
+	description	"I'm done."
+	text		"#str_385557"
+}
+
+lipSync vo_9_15_320_3_h
+{
+	description	"There, good as new."
+	text		"#str_385558"
+}
+
+lipSync vo_9_15_320_4_h
+{
+	description	"Enough loungin' around, Marine. Back into the fight!"
+	text		"#str_385559"
+}
+
+lipSync vo_9_15_80_1_h
+{
+	description	"We just lost a Marine!"
+	text		"#str_385560"
+}
+
+lipSync vo_9_15_80_2_h
+{
+	description	"There's a soldier down!"
+	text		"#str_385561"
+}
+
+lipSync vo_9_15_80_3_h
+{
+	description	"Dammit! They fragged a Marine!"
+	text		"#str_385562"
+}
+
+lipSync vo_9_15_80_4_h
+{
+	description	"Man down! Man down!"
+	text		"#str_385563"
+}
+
+lipSync vo_9_15_90_1_h
+{
+	description	"Ha, ha! I liked that!"
+	text		"#str_385564"
+}
+
+lipSync vo_9_15_90_2_h
+{
+	description	"Ha! And they said the Strogg were tough!"
+	text		"#str_385565"
+}
+
+lipSync vo_9_15_90_3_h
+{
+	description	"Ooooyeah!"
+	text		"#str_385566"
+}
+
+lipSync vo_9_15_90_4_h
+{
+	description	"Ha, ha!"
+	text		"#str_385567"
+}
+
+lipSync vo_9_15_90_5_h
+{
+	description	"That freak's dead!"
+	text		"#str_385568"
+}
+
+lipSync vo_9_15_90_6_h
+{
+	description	"Oooorah."
+	text		"#str_385569"
+}
+
+lipSync vo_9_15_90_7_h
+{
+	description	"Gimme another Strogg to shoot!"
+	text		"#str_385570"
+}
+
+lipSync vo_9_15_90_8_h
+{
+	description	"Don't mess with the Marines, Strogg."
+	text		"#str_385571"
+}
+
+lipSync vo_9_16_130_1_h
+{
+	description	"Thanks, Corporal. That was a close one."
+	text		"#str_385572"
+}
+
+lipSync vo_9_16_130_2_h
+{
+	description	"Damn, that Strogg had me dead in his sights."
+	text		"#str_385573"
+}
+
+lipSync vo_9_16_130_3_h
+{
+	description	"Guess I owe you one. Thanks."
+	text		"#str_385574"
+}
+
+lipSync vo_9_16_140_1_h
+{
+	description	"Damn, that was sweet!"
+	text		"#str_385575"
+}
+
+lipSync vo_9_16_140_2_h
+{
+	description	"All right!"
+	text		"#str_385576"
+}
+
+lipSync vo_9_16_140_3_h
+{
+	description	"That Strogg was yours!"
+	text		"#str_385577"
+}
+
+lipSync vo_9_16_140_4_h
+{
+	description	"Couldn't a done better myself!"
+	text		"#str_385578"
+}
+
+lipSync vo_9_16_140_5_h
+{
+	description	"That was freakin' amazing!"
+	text		"#str_385579"
+}
+
+lipSync vo_9_16_140_6_h
+{
+	description	"Ooo, nice!"
+	text		"#str_385580"
+}
+
+lipSync vo_9_16_140_7_h
+{
+	description	"Good one!"
+	text		"#str_385581"
+}
+
+lipSync vo_9_16_140_8_h
+{
+	description	"You're deadly, Marine!"
+	text		"#str_385582"
+}
+
+lipSync vo_9_16_150_1_h
+{
+	description	"Hey! Check your line of fire!"
+	text		"#str_385583"
+}
+
+lipSync vo_9_16_150_2_h
+{
+	description	"Watch your targets!"
+	text		"#str_385584"
+}
+
+lipSync vo_9_16_150_3_h
+{
+	description	"You just shot me!"
+	text		"#str_385585"
+}
+
+lipSync vo_9_16_150_4_h
+{
+	description	"Do I look like a Strogg to you?"
+	text		"#str_385586"
+}
+
+lipSync vo_9_16_150_5_h
+{
+	description	"Whose side are you on?"
+	text		"#str_385587"
+}
+
+lipSync vo_9_16_160_1_h
+{
+	description	"Shit! You iced a Marine!"
+	text		"#str_385588"
+}
+
+lipSync vo_9_16_160_2_h
+{
+	description	"Stop shootin' guys on our side!"
+	text		"#str_385589"
+}
+
+lipSync vo_9_16_160_3_h
+{
+	description	"Dammit! You killed a Marine!"
+	text		"#str_385590"
+}
+
+lipSync vo_9_16_200_1_h
+{
+	description	"Look behind you!"
+	text		"#str_385591"
+}
+
+lipSync vo_9_16_200_2_h
+{
+	description	"There's Strogg in back!"
+	text		"#str_385592"
+}
+
+lipSync vo_9_16_200_3_h
+{
+	description	"There's freaks behind you!"
+	text		"#str_385593"
+}
+
+lipSync vo_9_16_210_1_h
+{
+	description	"Strogg on the left!"
+	text		"#str_385594"
+}
+
+lipSync vo_9_16_210_2_h
+{
+	description	"They're flanking left!"
+	text		"#str_385595"
+}
+
+lipSync vo_9_16_210_3_h
+{
+	description	"Aim left!"
+	text		"#str_385596"
+}
+
+lipSync vo_9_16_220_1_h
+{
+	description	"Look right!"
+	text		"#str_385597"
+}
+
+lipSync vo_9_16_220_2_h
+{
+	description	"To the right!"
+	text		"#str_385598"
+}
+
+lipSync vo_9_16_230_1_h
+{
+	description	"There's Strogg up top!"
+	text		"#str_385599"
+}
+
+lipSync vo_9_16_230_2_h
+{
+	description	"Look up!"
+	text		"#str_385600"
+}
+
+lipSync vo_9_16_230_3_h
+{
+	description	"Strogg up above!"
+	text		"#str_385601"
+}
+
+lipSync vo_9_16_240_1_h
+{
+	description	"C'mon squib."
+	text		"#str_385602"
+}
+
+lipSync vo_9_16_240_2_h
+{
+	description	"Target sighted!"
+	text		"#str_385603"
+}
+
+lipSync vo_9_16_240_3_h
+{
+	description	"Bring it, Strogg!"
+	text		"#str_385604"
+}
+
+lipSync vo_9_16_240_4_h
+{
+	description	"This one's mine!"
+	text		"#str_385605"
+}
+
+lipSync vo_9_16_240_5_h
+{
+	description	"You're dead meat, freak!"
+	text		"#str_385606"
+}
+
+lipSync vo_9_16_240_6_h
+{
+	description	"I got this one!"
+	text		"#str_385607"
+}
+
+lipSync vo_9_16_290_1_h
+{
+	description	"Stay put, Soldier! I'll patch you up."
+	text		"#str_385615"
+}
+
+lipSync vo_9_16_290_2_h
+{
+	description	"Don't move. I'm on my way!"
+	text		"#str_385616"
+}
+
+lipSync vo_9_16_290_3_h
+{
+	description	"Hold up. I've got medpacks!"
+	text		"#str_385617"
+}
+
+lipSync vo_9_16_300_1_h
+{
+	description	"Corporal Kane, hold up! I'm a medic!"
+	text		"#str_385618"
+}
+
+lipSync vo_9_16_300_2_h
+{
+	description	"I've got a medpack for you, Corporal Kane."
+	text		"#str_385619"
+}
+
+lipSync vo_9_16_300_3_h
+{
+	description	"Stay at your position, Kane. I'll heal you!"
+	text		"#str_385620"
+}
+
+lipSync vo_9_16_300_4_h
+{
+	description	"Stay there, Corporal Kane. I'll have you fixed up in no time!"
+	text		"#str_385621"
+}
+
+lipSync vo_9_16_30_1_h
+{
+	description	"I'm a little busy right now."
+	text		"#str_385622"
+}
+
+lipSync vo_9_16_310_1_h
+{
+	description	"This doesn't look so bad."
+	text		"#str_385623"
+}
+
+lipSync vo_9_16_310_2_h
+{
+	description	"Stop movin' around, would ya?"
+	text		"#str_385624"
+}
+
+lipSync vo_9_16_310_3_h
+{
+	description	"Now for a little medpack magic."
+	text		"#str_385625"
+}
+
+lipSync vo_9_16_310_4_h
+{
+	description	"Here you go."
+	text		"#str_385626"
+}
+
+lipSync vo_9_16_310_5_h
+{
+	description	"Now just hold still a minute."
+	text		"#str_385627"
+}
+
+lipSync vo_9_16_320_1_h
+{
+	description	"That's it. Time to kill more Strogg Marine."
+	text		"#str_385628"
+}
+
+lipSync vo_9_16_320_2_h
+{
+	description	"You're finished. Move out soldier."
+	text		"#str_385629"
+}
+
+lipSync vo_9_16_320_3_h
+{
+	description	"You're healed. Back at it, Marine."
+	text		"#str_385630"
+}
+
+lipSync vo_9_16_320_4_h
+{
+	description	"That should do it."
+	text		"#str_385631"
+}
+
+lipSync vo_9_16_80_1_h
+{
+	description	"Man down!"
+	text		"#str_385632"
+}
+
+lipSync vo_9_16_80_2_h
+{
+	description	"We've got a Marine down!"
+	text		"#str_385633"
+}
+
+lipSync vo_9_16_80_3_h
+{
+	description	"We're taking casualties!"
+	text		"#str_385634"
+}
+
+lipSync vo_9_16_80_4_h
+{
+	description	"They got a Marine!"
+	text		"#str_385635"
+}
+
+lipSync vo_9_16_90_1_h
+{
+	description	"That was all mine!"
+	text		"#str_385636"
+}
+
+lipSync vo_9_16_90_2_h
+{
+	description	"Scratch one freak!"
+	text		"#str_385637"
+}
+
+lipSync vo_9_16_90_3_h
+{
+	description	"Gotcha!"
+	text		"#str_385638"
+}
+
+lipSync vo_9_16_90_4_h
+{
+	description	"Yesss!"
+	text		"#str_385639"
+}
+
+lipSync vo_9_16_90_5_h
+{
+	description	"Eat it!"
+	text		"#str_385640"
+}
+
+lipSync vo_9_16_90_6_h
+{
+	description	"This is gettin' fun!"
+	text		"#str_385641"
+}
+
+lipSync vo_9_16_90_7_h
+{
+	description	"Squib's down!"
+	text		"#str_385642"
+}
+
+lipSync vo_9_16_90_8_h
+{
+	description	"Ha! That was easy!"
+	text		"#str_385643"
+}
+
+lipSync vo_9_17_130_1_h
+{
+	description	"Whew, I almost bought it that time."
+	text		"#str_385644"
+}
+
+lipSync vo_9_17_130_2_h
+{
+	description	"Hey, thanks for the assist."
+	text		"#str_385645"
+}
+
+lipSync vo_9_17_130_3_h
+{
+	description	"I thought I was dead. Thanks."
+	text		"#str_385646"
+}
+
+lipSync vo_9_17_140_1_h
+{
+	description	"That was pretty damn nice!"
+	text		"#str_385647"
+}
+
+lipSync vo_9_17_140_2_h
+{
+	description	"Not bad."
+	text		"#str_385648"
+}
+
+lipSync vo_9_17_140_3_h
+{
+	description	"You sure showed that Strogg!"
+	text		"#str_385649"
+}
+
+lipSync vo_9_17_140_4_h
+{
+	description	"Hey, that was sweet!"
+	text		"#str_385650"
+}
+
+lipSync vo_9_17_140_5_h
+{
+	description	"That was freakin' great!"
+	text		"#str_385651"
+}
+
+lipSync vo_9_17_140_6_h
+{
+	description	"You got 'em, Marine!"
+	text		"#str_385652"
+}
+
+lipSync vo_9_17_140_7_h
+{
+	description	"Great shot!"
+	text		"#str_385653"
+}
+
+lipSync vo_9_17_140_8_h
+{
+	description	"Nice one, Soldier!"
+	text		"#str_385654"
+}
+
+lipSync vo_9_17_150_1_h
+{
+	description	"Watch your damn line of fire!"
+	text		"#str_385655"
+}
+
+lipSync vo_9_17_150_2_h
+{
+	description	"Hey! I'm not your target!"
+	text		"#str_385656"
+}
+
+lipSync vo_9_17_150_3_h
+{
+	description	"What the hell are you doin'?"
+	text		"#str_385657"
+}
+
+lipSync vo_9_17_150_4_h
+{
+	description	"Stop shooting me!"
+	text		"#str_385658"
+}
+
+lipSync vo_9_17_150_5_h
+{
+	description	"Why the hell are you shootin' at me?"
+	text		"#str_385659"
+}
+
+lipSync vo_9_17_160_1_h
+{
+	description	"Dammit! You iced a soldier!"
+	text		"#str_385660"
+}
+
+lipSync vo_9_17_160_2_h
+{
+	description	"Shoot the Strogg, not our guys!"
+	text		"#str_385661"
+}
+
+lipSync vo_9_17_160_3_h
+{
+	description	"You just fragged a Marine!"
+	text		"#str_385662"
+}
+
+lipSync vo_9_17_200_1_h
+{
+	description	"Behind you!"
+	text		"#str_385663"
+}
+
+lipSync vo_9_17_200_2_h
+{
+	description	"The Strogg are in back!"
+	text		"#str_385664"
+}
+
+lipSync vo_9_17_200_3_h
+{
+	description	"You got company behind you!"
+	text		"#str_385665"
+}
+
+lipSync vo_9_17_210_1_h
+{
+	description	"They're on the left flank!"
+	text		"#str_385666"
+}
+
+lipSync vo_9_17_210_2_h
+{
+	description	"We got Strogg to the left!"
+	text		"#str_385667"
+}
+
+lipSync vo_9_17_210_3_h
+{
+	description	"Look left!"
+	text		"#str_385668"
+}
+
+lipSync vo_9_17_220_1_h
+{
+	description	"Look to right!"
+	text		"#str_385669"
+}
+
+lipSync vo_9_17_220_2_h
+{
+	description	"On the right flank!"
+	text		"#str_385670"
+}
+
+lipSync vo_9_17_230_1_h
+{
+	description	"Strogg up high!"
+	text		"#str_385671"
+}
+
+lipSync vo_9_17_230_2_h
+{
+	description	"Look up there!"
+	text		"#str_385672"
+}
+
+lipSync vo_9_17_230_3_h
+{
+	description	"Freak's above us!"
+	text		"#str_385673"
+}
+
+lipSync vo_9_17_240_1_h
+{
+	description	"It's game time, freak!"
+	text		"#str_385674"
+}
+
+lipSync vo_9_17_240_2_h
+{
+	description	"Target acquired!"
+	text		"#str_385675"
+}
+
+lipSync vo_9_17_240_3_h
+{
+	description	"This freak's mine!"
+	text		"#str_385676"
+}
+
+lipSync vo_9_17_240_4_h
+{
+	description	"Got a Strogg in my sights!"
+	text		"#str_385677"
+}
+
+lipSync vo_9_17_240_5_h
+{
+	description	"Die, squib!"
+	text		"#str_385678"
+}
+
+lipSync vo_9_17_240_6_h
+{
+	description	"Stand back, this one's mine!"
+	text		"#str_385679"
+}
+
+lipSync vo_9_17_290_1_h
+{
+	description	"I'm on my way, Marine!"
+	text		"#str_385687"
+}
+
+lipSync vo_9_17_290_2_h
+{
+	description	"Stay down! I'm a medic!"
+	text		"#str_385688"
+}
+
+lipSync vo_9_17_290_3_h
+{
+	description	"Remain there. I'll fix you up!"
+	text		"#str_385689"
+}
+
+lipSync vo_9_17_300_1_h
+{
+	description	"Corporal Kane, remain there! I'll heal you!"
+	text		"#str_385690"
+}
+
+lipSync vo_9_17_300_2_h
+{
+	description	"Wait there, Kane. I'm a medic!"
+	text		"#str_385691"
+}
+
+lipSync vo_9_17_300_3_h
+{
+	description	"Don't move Corporal Kane. I've got a medpack for you!"
+	text		"#str_385692"
+}
+
+lipSync vo_9_17_300_4_h
+{
+	description	"I'm on my way, Corporal Kane!"
+	text		"#str_385693"
+}
+
+lipSync vo_9_17_30_1_h
+{
+	description	"I've got no time for talkin'."
+	text		"#str_385694"
+}
+
+lipSync vo_9_17_30_2_h
+{
+	description	"Don't you have something else to do?"
+	text		"#str_385695"
+}
+
+lipSync vo_9_17_310_1_h
+{
+	description	"Here ya go."
+	text		"#str_385696"
+}
+
+lipSync vo_9_17_310_2_h
+{
+	description	"You've gotta stay out of the line of fire, Marine."
+	text		"#str_385697"
+}
+
+lipSync vo_9_17_310_3_h
+{
+	description	"Here's a medpack."
+	text		"#str_385698"
+}
+
+lipSync vo_9_17_310_4_h
+{
+	description	"Okay, now don't move."
+	text		"#str_385699"
+}
+
+lipSync vo_9_17_310_5_h
+{
+	description	"This won't take long."
+	text		"#str_385700"
+}
+
+lipSync vo_9_17_320_1_h
+{
+	description	"Okay, I'm done. Go frag some squibs."
+	text		"#str_385701"
+}
+
+lipSync vo_9_17_320_2_h
+{
+	description	"That's it. See you around."
+	text		"#str_385702"
+}
+
+lipSync vo_9_17_320_3_h
+{
+	description	"I'm done, Marine. Remember to keep low."
+	text		"#str_385703"
+}
+
+lipSync vo_9_17_320_4_h
+{
+	description	"That's as much as I can do. Watch yourself, Marine."
+	text		"#str_385704"
+}
+
+lipSync vo_9_17_360_1_h
+{
+	description	"Kane, wait. Your armors damaged."
+	text		"#str_385705"
+}
+
+lipSync vo_9_17_360_2_h
+{
+	description	"Corporal Kane. Wait and Ill repair your armor"
+	text		"#str_385706"
+}
+
+lipSync vo_9_17_360_3_h
+{
+	description	"I can fix your armor, Kane."
+	text		"#str_385707"
+}
+
+lipSync vo_9_17_370_1_h
+{
+	description	"Ill have you patched up in no time."
+	text		"#str_385708"
+}
+
+lipSync vo_9_17_370_2_h
+{
+	description	"This wont take long."
+	text		"#str_385709"
+}
+
+lipSync vo_9_17_370_3_h
+{
+	description	"Just a few seconds and youll right back into the fight."
+	text		"#str_385710"
+}
+
+lipSync vo_9_17_380_1_h
+{
+	description	"Youre good to go, Marine."
+	text		"#str_385711"
+}
+
+lipSync vo_9_17_380_2_h
+{
+	description	"Thats all I can do. Good luck."
+	text		"#str_385712"
+}
+
+lipSync vo_9_17_380_3_h
+{
+	description	"There. Finished. Now try to be more careful."
+	text		"#str_385713"
+}
+
+lipSync vo_9_17_80_1_h
+{
+	description	"We got a Marine down!"
+	text		"#str_385714"
+}
+
+lipSync vo_9_17_80_2_h
+{
+	description	"Dammit! They fragged another Marine!"
+	text		"#str_385715"
+}
+
+lipSync vo_9_17_80_3_h
+{
+	description	"We got a casualty!"
+	text		"#str_385716"
+}
+
+lipSync vo_9_17_80_4_h
+{
+	description	"There's a Marine down!"
+	text		"#str_385717"
+}
+
+lipSync vo_9_17_90_1_h
+{
+	description	"That Squib is out of commission."
+	text		"#str_385718"
+}
+
+lipSync vo_9_17_90_2_h
+{
+	description	"Ooooorah!"
+	text		"#str_385719"
+}
+
+lipSync vo_9_17_90_3_h
+{
+	description	"Feel the burn!"
+	text		"#str_385720"
+}
+
+lipSync vo_9_17_90_4_h
+{
+	description	"Target destroyed!"
+	text		"#str_385721"
+}
+
+lipSync vo_9_17_90_5_h
+{
+	description	"Enjoy hell, freak."
+	text		"#str_385722"
+}
+
+lipSync vo_9_17_90_6_h
+{
+	description	"Fear me, Strogg!"
+	text		"#str_385723"
+}
+
+lipSync vo_9_17_90_7_h
+{
+	description	"One less freak in this world."
+	text		"#str_385724"
+}
+
+lipSync vo_9_17_90_8_h
+{
+	description	"Ha, ha, haaaa!"
+	text		"#str_385725"
+}

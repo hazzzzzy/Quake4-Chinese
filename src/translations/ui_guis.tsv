@@ -1,0 +1,1099 @@
+﻿id	en	zh	context	status
+#str_200000	NEW GAME	新游戏		done
+#str_200001	LOAD GAME	读取存档		done
+#str_200002	MULTIPLAYER	多人游戏		review
+#str_200003	SAVE GAME	保存游戏		done
+#str_200004	QUIT CURRENT GAME	退出当前游戏		review
+#str_200005	RETURN TO GAME	返回游戏		review
+#str_200006	DISCONNECT	断开连接		review
+#str_200007	SETTINGS - CONTROLS	设置 - 控制		review
+#str_200008	SETTINGS - GAME OPTIONS	设置 - 游戏选项		review
+#str_200009	SETTINGS	设置		done
+#str_200010	MODS	模组		review
+#str_200011	UPDATES	更新		review
+#str_200012	CREDITS	制作人员名单		done
+#str_200013	EXIT	退出		done
+#str_200014	PRIVATE	新兵		review
+#str_200015	CORPORAL	士官		review
+#str_200016	LIEUTENANT	中尉		review
+#str_200017	GENERAL	将军		review
+#str_200018	BACK	返回		review
+#str_200019	CORPORAL - You can hit a moving target...usually	士官（Corporal）——你能打中移动目标……通常如此		review
+#str_200020	START GAME	开始游戏		review
+#str_200021	DELETE GAME	删除存档		review
+#str_200022	INSTANT ACTION	快速游戏		review
+#str_200023	GAME BROWSER	游戏浏览器		review
+#str_200024	FRIENDS LIST	好友列表		review
+#str_200025	JOIN IP ADDRESS	通过 IP 加入		review
+#str_200026	CREATE SERVER	创建服务器		review
+#str_200027	MULTIPLAYER - GAME BROWSER	多人游戏 - 游戏浏览器		review
+#str_200028	REFRESH LIST	刷新列表		review
+#str_200029	GET NEW LIST	获取新列表		review
+#str_200030	FILTER OPTIONS	筛选选项		review
+#str_200031	JOIN SERVER	加入服务器		review
+#str_200032	SOURCE:	来源：		review
+#str_200033	INTERNET	互联网		review
+#str_200034	LAN	局域网		review
+#str_200035	FAVORITES	收藏夹		review
+#str_200036	SERVER NAME	服务器名称		review
+#str_200037	PING	延迟		review
+#str_200038	PLAYERS	玩家		review
+#str_200039	GAMETYPE	游戏类型		review
+#str_200040	MAP	地图		review
+#str_200041	FAVORITE	收藏		review
+#str_200042	Gametype	游戏类型		review
+#str_200043	Any;Deathmatch;Tourney;Team DeathMatch;Capture The Flag;Arena Capture The Flag;DeadZone	任意;死亡竞赛;锦标赛;团队死亡竞赛;夺旗;竞技场夺旗;死亡地带		review
+#str_200044	Max Ping	最大延迟		review
+#str_200045	Password	密码		review
+#str_200046	Max Players	最大玩家数		review
+#str_200047	Status	状态		review
+#str_200048	CLOSE FILTER OPTIONS	关闭筛选选项		review
+#str_200049	MULTIPLAYER - CREATE SERVER	多人游戏 - 创建服务器		review
+#str_200050	MAP SELECTION	地图选择		review
+#str_200051	SERVER OPTIONS	服务器选项		review
+#str_200052	Server Name	服务器名称		review
+#str_200053	Dedicated	专用服务器		review
+#str_200054	No;Internet;LAN	否;互联网;局域网		review
+#str_200056	Internet;LAN	互联网;局域网		review
+#str_200058	Team Damage	团队伤害		review
+#str_200059	No;Yes	否;是		review
+#str_200060	Frag Limit	击杀上限		review
+#str_200061	Time Limit	时间限制		review
+#str_200062	Do Warmup	启用热身		review
+#str_200063	Yes;No	是;否		review
+#str_200064	Allow Spectators	允许观战		review
+#str_200065	ADVANCED OPTIONS	高级选项		review
+#str_200066	ADVANCED SERVER OPTIONS	高级服务器选项		review
+#str_200067	Use password	使用密码		review
+#str_200068	Set password	设置密码		review
+#str_200069	Remote console password	远程控制台密码		review
+#str_200070	Reload engine on map change	换图时重新加载引擎		review
+#str_200071	Allow server side mods	允许服务器端模组		review
+#str_200072	Map cycle script file	地图轮换脚本文件		review
+#str_200073	Pure Server	纯净服务器		review
+#str_200074	Server Upstream Rate	服务器上行速率		review
+#str_200075	CLOSE ADVANCED OPTIONS	关闭高级选项		review
+#str_200076	MULTIPLAYER - SETTINGS	多人游戏 - 设置		review
+#str_200077	DSL/Cable;T1/Lan;ISDN	DSL/Cable;T1/Lan;ISDN		review
+#str_200078	Name	名称		review
+#str_200079	Clan Tag	战队标签		review
+#str_200080	Model	模型		review
+#str_200081	Data Rate	数据速率		review
+#str_200082	Set CD Key	设置 CD Key		review
+#str_200083	CONTROLS	控制		review
+#str_200084	GAME OPTIONS	游戏选项		review
+#str_200085	SYSTEM	系统		review
+#str_200086	LOAD DEFAULTS	恢复默认		review
+#str_200087	ACTION	动作		review
+#str_200088	KEY ASSIGNMENT	按键分配		review
+#str_200090	MOVEMENT	移动		review
+#str_200091	WEAPONS	武器		review
+#str_200092	ATTACK/LOOK	攻击/视角		review
+#str_200093	OTHER	其他		review
+#str_200094	Move Forward	前进		review
+#str_200095	Backpedal	后退		review
+#str_200096	Move Left	左移		review
+#str_200097	Move Right	右移		review
+#str_200098	Jump	跳跃		review
+#str_200099	Crouch	蹲下		review
+#str_200100	Turn Left	左转		review
+#str_200101	Turn Right	右转		review
+#str_200102	Strafe	侧移		review
+#str_200103	Walk	行走		review
+#str_200104	Blaster/Gauntlet	爆能手枪/战斗手套		review
+#str_200105	Shotgun	霰弹枪		review
+#str_200106	Machinegun	机枪		review
+#str_200107	Hyperblaster	速射爆能枪		review
+#str_200108	Grenade Launcher	榴弹发射器		review
+#str_200109	Nailgun	钉枪		review
+#str_200110	Rocket Launcher	火箭发射器		review
+#str_200111	Railgun	轨道炮		review
+#str_200112	Lightning Gun	闪电枪		review
+#str_200113	Dark Matter Gun	暗物质炮		review
+#str_200114	Attack	攻击		review
+#str_200115	Prev. Weapon	上一武器		review
+#str_200116	Next Weapon	下一武器		review
+#str_200117	Reload	装填		review
+#str_200118	Look Up	向上看		review
+#str_200119	Look Down	向下看		review
+#str_200120	Mouse Look	鼠标视角		review
+#str_200121	Center View	视角居中		review
+#str_200122	Zoom/Weap. Special	缩放/武器特殊功能		review
+#str_200123	Quick Save	快速保存		review
+#str_200124	Quick Load	快速读取		review
+#str_200125	Screenshot	截图		review
+#str_200126	Chat	聊天		review
+#str_200127	Team Chat	团队聊天		review
+#str_200128	Spectate	观战		review
+#str_200129	Vote Yes	投赞成票		review
+#str_200130	Vote No	投反对票		review
+#str_200131	Objectives/Scores	任务目标/得分		review
+#str_200132	View MP Statistics 	查看多人统计		review
+#str_200133	Free Look	自由视角		review
+#str_200134	Auto Weapon Reload	自动装填		review
+#str_200135	Auto Weapon Switch	自动切换武器		review
+#str_200136	Show Decals	显示贴花		review
+#str_200137	Show Hud	显示 HUD		review
+#str_200138	Show Gun Model	显示枪械模型		review
+#str_200139	Invert Mouse	鼠标反转		review
+#str_200140	Smooth Mouse	鼠标平滑		review
+#str_200141	Mouse Sensitivity	鼠标灵敏度		review
+#str_200142	VIDEO SETTINGS	视频设置		review
+#str_200143	Video Quality	视频质量		review
+#str_200144	no;yes	否;是		review
+#str_200145	Screen Size	屏幕尺寸		review
+#str_200146	'640x480';'800x600';'1024x768';'1152x864';'1280x1024';'1600x1200'	'640x480';'800x600';'1024x768';'1152x864';'1280x1024';'1600x1200'		review
+#str_200147	Fullscreen	全屏		review
+#str_200148	Brightness	亮度		review
+#str_200149	AUTO DETECT SETTINGS	自动检测设置		review
+#str_200150	ADVANCED SETTINGS	高级设置		review
+#str_200151	AUDIO SETTINGS	音频设置		review
+#str_200152	Surround Speakers	环绕音箱		review
+#str_200153	Reverse Channels	声道反转		review
+#str_200154	Master Volume	主音量		review
+#str_200155	Settings will take effect the next time you start Quake4	设置将在下次启动 Quake4 时生效		review
+#str_200156	This will restore all controls, game options and system settings to default. Are you sure?	这将把所有控制、游戏选项和系统设置恢复为默认值。确定吗？		review
+#str_200157	YES	是		review
+#str_200158	NO	否		review
+#str_200159	High quality special effects	高质量特效		review
+#str_200160	Enable shadows	启用阴影		review
+#str_200161	Enable specular	启用高光		review
+#str_200162	Enable bump maps	启用凹凸贴图		review
+#str_200163	Vertical sync	垂直同步		review
+#str_200164	Antialiasing	抗锯齿		review
+#str_200165	'Off';'2x';'4x';'8x';'16x'	'关';'2x';'4x';'8x';'16x'		review
+#str_200166	MODIFICATIONS	模组		review
+#str_200167	LOAD MOD	加载模组		review
+#str_200168	CANCEL	取消		review
+#str_200169	EXIT GAME	退出游戏		review
+#str_200170	Are you sure you want to exit Quake4?	确定要退出 Quake4 吗？		review
+#str_200171	CONNECT	连接		review
+#str_200172	- NOT CURRENTLY FUNCTIONAL -	- 目前不可用 -		review
+#str_200173	Are you sure you want to disconnect from this multiplayer server?	确定要断开与此多人游戏服务器的连接吗？		review
+#str_200174	Are you sure you want to quit your current game?	确定要退出当前游戏吗？		review
+#str_200175	SETTINGS - SYSTEM	设置 - 系统		review
+#str_200176	RECOMMENDED QUALITY SELECTED	已选择推荐质量		review
+#str_200177	Please wait...	请稍候……		review
+#str_200178	Abort	中止		review
+#str_200179	128 kbits;256 kbits;384 kbits;512 kbits;768 kbits;LAN	128 kbits;256 kbits;384 kbits;512 kbits;768 kbits;局域网		review
+#str_200180	your ip address:	你的 IP 地址：		review
+#str_200181				todo
+#str_200182	FIND PLAYER/CLAN	查找玩家/战队		review
+#str_200183	PRIVATE - Try not to shoot yourself in the foot	新兵（Private）——尽量别打中自己的脚		review
+#str_200184	LIEUTENANT - Shoot first, ask questions later	中尉（Lieutenant）——先开枪，后提问		review
+#str_200185	GENERAL - An unstoppable death machine	将军（General）——势不可挡的死亡机器		review
+#str_200186	JOIN TEAM	加入队伍		review
+#str_200187	JOIN GAME	加入游戏		review
+#str_200188	MAIN MENU	主菜单		review
+#str_200189	VOTE	投票		review
+#str_200190	SERVER INFO	服务器信息		review
+#str_200191	ADMIN	管理		review
+#str_200192	AUTO JOIN	自动加入		review
+#str_200193	JOIN MARINE	加入陆战队		review
+#str_200194	JOIN STROGG	加入 Strogg		review
+#str_200195	SPECTATE	观战		review
+#str_200196	CHAT HISTORY	聊天记录		review
+#str_200197	MARINES	陆战队		review
+#str_200198	SCORE	得分		review
+#str_200199	STROGG	Strogg		review
+#str_200200	SPECTATOR	观战者		review
+#str_200201	KILLS	击杀		review
+#str_200202	DEATHS	死亡		review
+#str_200203	ACCURACY	命中率		review
+#str_200204	AWARDS	奖章		review
+#str_200207	Kick player	踢出玩家		review
+#str_200208	Restart map	重启地图		review
+#str_200209	Map	地图		review
+#str_200210	Gametype	游戏类型		review
+#str_200211	Time Limit	时间限制		review
+#str_200212	Auto Balance Teams	自动平衡队伍		review
+#str_200213	Allow Spectators	允许观战		review
+#str_200214	Tourney Round Limit	锦标赛回合上限		review
+#str_200215	Capture Limit	夺旗上限		review
+#str_200216	No Action;Restart	无操作;重启		review
+#str_200217	DM;Tourney;Team DM;CTF;Arena CTF;DeadZone	死亡竞赛;锦标赛;团队死亡竞赛;夺旗;竞技场夺旗;死亡地带		review
+#str_200218	CALL VOTE	发起投票		review
+#str_200219	Name	名称		review
+#str_200220	Clan Tag	战队标签		review
+#str_200221	Model	模型		review
+#str_200222	Data Rate	数据速率		review
+#str_200223	CD Key	CD Key		review
+#str_200224	CONFIGURE CONTROLS	配置控制		review
+#str_200225	SET GAME OPTIONS	设置游戏选项		review
+#str_200226	ADJUST SYSTEM SETTINGS	调整系统设置		review
+#str_200228	SERVER	服务器		review
+#str_200229	CONSOLE	控制台		review
+#str_200230	Kick Player	踢出玩家		review
+#str_200231	Ban Player	封禁玩家		review
+#str_200232	Force Team Switch	强制换队		review
+#str_200233	View Ban List	查看封禁列表		review
+#str_200234	Restart Map	重启地图		review
+#str_200235	Capture Limit	夺旗上限		review
+#str_200236	Time Limit	时间限制		review
+#str_200237	Round Limit	回合上限		review
+#str_200239	Allow Spectators	允许观战		review
+#str_200240	Auto Balance Teams	自动平衡队伍		review
+#str_200241	APPLY CHANGES	应用更改		review
+#str_200242	NAME	名称		review
+#str_200243	DATE	日期		review
+#str_200244	TIME	时间		review
+#str_200245	Are you sure you want to delete this savegame?	确定要删除此存档吗？		review
+#str_200246	Disabled;Enabled	禁用;启用		review
+#str_200247	PunkBuster	PunkBuster		review
+#str_200248	ADD FRIEND	添加好友		review
+#str_200249	REMOVE FRIEND	删除好友		review
+#str_200250	MUTE PLAYER	静音玩家		review
+#str_200251	UNMUTE PLAYER	取消静音		review
+#str_200252	OVERWRITE SAVE?	覆盖存档？		review
+#str_200253	Are you sure you want to overwrite the following saved game?	确定要覆盖以下存档吗？		review
+#str_200254	SEARCH FOR:	搜索：		review
+#str_200255	PLAYER	玩家		review
+#str_200256	CLAN	战队		review
+#str_200257	SEARCH	搜索		review
+#str_200258	MULTIPLAYER - FRIENDS LIST	多人游戏 - 好友列表		review
+#str_200260	SERVER INFORMATION	服务器信息		review
+#str_200261	Medium Quality	中等质量		review
+#str_200262	High Quality	高质量		review
+#str_200263	Low Quality	低质量		review
+#str_200264	DETECT SETTINGS	检测设置		review
+#str_200265	This will automatically detect optimal settings for your system. Are you sure?	这将自动为你的系统检测最佳设置。确定吗？		review
+#str_200266	WARNING	警告		review
+#str_200267	Running Quake4 in Ultra Quality utilizes over 500 Megabytes of texture memory. Running in this mode is not recommended. Are you sure you want to proceed?	以极高质量运行 Quake4 会占用超过 500 MB 纹理内存，不建议使用此模式。确定要继续吗？		review
+#str_200268	Ultra Quality	极高质量		review
+#str_200269	Press X to view standings	按 X 查看排名		review
+#str_200270	Transmitting...	传输中……		review
+#str_200271	OBJECTIVE FAILED:	任务目标失败：		review
+#str_200272	incoming	传入		review
+#str_200273	transmission	通讯		review
+#str_200274	>>NEW OBJECTIVE	>>新任务目标		review
+#str_200275	SMC MILCOMM 45B-43556-BGX7J54	SMC 军用通讯 45B-43556-BGX7J54		review
+#str_200276	>>OBJECTIVE COMPLETE	>>任务目标完成		review
+#str_200277	Interactive	可交互		review
+#str_200278	EXIT LEVEL	撤离		用户拍板撤离 2026-07-18
+#str_200279	Mission Failed	任务失败		review
+#str_200280	STROGG NET 45B-43556-BGX7J54	Strogg 网络 45B-43556-BGX7J54		review
+#str_200281	SPECTATORS	观战者		review
+#str_200282	SUMMARY	总结		review
+#str_200283	STATISTICS	统计		review
+#str_200284	SCOREBOARD	计分板		review
+#str_200285	TOURNAMENT BRACKETS	锦标赛对阵表		review
+#str_200286	Preliminaries	预赛		review
+#str_200287	Quarter Finals	四分之一决赛		review
+#str_200288	Semi-Finals	半决赛		review
+#str_200289	Finals	决赛		review
+#str_200290	-VS-	-VS-		review
+#str_200291	>>MISSION OBJECTIVES	>>任务目标		review
+#str_200292	ADD TO FAVORITES	添加到收藏夹		review
+#str_200293	REMOVE FAVORITE	移除收藏		review
+#str_200294	Show All;Show Only Favorites	显示全部;仅显示收藏		review
+#str_200295	Favorites	收藏夹		review
+#str_200296	Weapon Default; Custom	武器默认; 自定义		review
+#str_200297	Crosshair:	准星：		review
+#str_200298	Set Crosshair:	设置准星：		review
+#str_200299	Crosshair Color:	准星颜色：		review
+#str_200306	Show All; Hide Full; Hide Empty; Hide Full and Empty	显示全部; 隐藏满员; 隐藏空服; 隐藏满员和空服		review
+#str_200307	Crosshair	准星		review
+#str_200308	Set Crosshair	设置准星		review
+#str_200309	Crosshair Color	准星颜色		review
+#str_200310	Tourney Brackets	锦标赛对阵表		review
+#str_200311	Salute	敬礼		review
+#str_200312	Cheer	欢呼		review
+#str_200313	Taunt	嘲讽		review
+#str_200314	Grab	抓取		review
+#str_200315	Flashlight	手电筒		review
+#str_200316	Vote called:\nF1 (YES) F2 (NO)	已发起投票：\nF1（赞成）F2（反对）		review
+#str_200317	ENTER RCON PASSWORD	输入 RCON 密码		review
+#str_200318	ACCEPT	接受		review
+#str_200319	SEND	发送		review
+#str_200320	RESTART	重新开始		review
+#str_200321	Restart from last Autosave.	从上一个自动存档重新开始。		review
+#str_200322	QUIT	退出 Quake 4		done
+#str_200323	Exit game.	退出游戏。		review
+#str_200324	WEAPON ACCURACY 	武器命中率		review
+#str_200325	SMC INFO DISPLAY SYSTEM 80-4342	SMC 信息显示系统 80-4342		review
+#str_200326	call	呼叫		review
+#str_200327	access	访问		review
+#str_200328	restricted	受限		review
+#str_200329	SMC	SMC		review
+#str_200330	keypad	键盘		review
+#str_200331	access granted	已授权		review
+#str_200332	X> 834.32	X> 834.32		review
+#str_200333	X> 527.64	X> 527.64		review
+#str_200334	X> 698.30	X> 698.30		review
+#str_200335	X> 932.78	X> 932.78		review
+#str_200336	X> 404.26	X> 404.26		review
+#str_200337	X> 368.45	X> 368.45		review
+#str_200338	Y> 602.57	Y> 602.57		review
+#str_200339	Y> 257.46	Y> 257.46		review
+#str_200340	Y> 968.03	Y> 968.03		review
+#str_200341	Y> 392.87	Y> 392.87		review
+#str_200342	Y> 440.62	Y> 440.62		review
+#str_200343	Y> 638.54	Y> 638.54		review
+#str_200344	Z> 438.60	Z> 438.60		review
+#str_200345	Z> 257.46	Z> 257.46		review
+#str_200346	Z> 968.03	Z> 968.03		review
+#str_200347	Z> 392.87	Z> 392.87		review
+#str_200348	Z> 440.62	Z> 440.62		review
+#str_200349	Z> 638.54	Z> 638.54		review
+#str_200350	W> 34.32	W> 34.32		review
+#str_200351	W> 52.64	W> 52.64		review
+#str_200352	W> 98.30	W> 98.30		review
+#str_200353	W> 92.78	W> 92.78		review
+#str_200354	W> 44.26	W> 44.26		review
+#str_200355	W> 38.45	W> 38.45		review
+#str_200356	R> 8.6	R> 8.6		review
+#str_200357	R> 7.4	R> 7.4		review
+#str_200358	R> 9.0	R> 9.0		review
+#str_200359	R> 2.8	R> 2.8		review
+#str_200360	R> 4.6	R> 4.6		review
+#str_200361	R> 6.5	R> 6.5		review
+#str_200362	access locked	门禁锁定		review
+#str_200363	open seal	开启密封门		review
+#str_200364	close seal	关闭密封门		review
+#str_200365	door access	门禁		review
+#str_200366	- processing -	- 处理中 -		review
+#str_200367	> locked <	> 已锁定 <		review
+#str_200368	SECURITY	安保		review
+#str_200369	ALARM	警报		review
+#str_200370	warning	警告		review
+#str_200371	do not enter	禁止进入		review
+#str_200372	high voltage	高压		review
+#str_200373	//sector report header	//区段报告标头		review
+#str_200374	sub.sector	子区段		review
+#str_200375	security lockdown	安保封锁		review
+#str_200376	intruder alert	入侵者警报		review
+#str_200377	transfer	转移		关卡切换语境，2026-07-18 随 exit 一并修正
+#str_200378	successful	成功		review
+#str_200379	exit	撤离		用户拍板 2026-07-18
+#str_200380	OBJECTIVES	任务目标		review
+#str_200381	RESUME	继续		review
+#str_200382	lift system	升降梯系统		review
+#str_200383	pause	暂停		review
+#str_200384	call lift	呼叫升降梯		review
+#str_200385	pause lift	暂停升降梯		review
+#str_200386	disable security	解除安保		review
+#str_200387	admin	管理员		review
+#str_200388	system admin	系统管理员		review
+#str_200389	enzyme acid tank a	酶酸罐 A		review
+#str_200390	enzyme acid tank b	酶酸罐 B		review
+#str_200391	left ventricle	左心室		review
+#str_200392	right ventricle	右心室		review
+#str_200393	bpm	bpm		review
+#str_200394	cfm	cfm		review
+#str_200395	Bio-chemical fluidic transfer station 3	生化流体传输站 3		review
+#str_200396	sinoatrial node	窦房结		review
+#str_200397	sa	sa		review
+#str_200398	atrioventicular node	房室结		review
+#str_200399	av	av		review
+#str_200400	online	在线		review
+#str_200401	enzyme transfer	酶传输		review
+#str_200402	offline	离线		review
+#str_200405	VALVE OPEN	阀门开启		review
+#str_200406	acid pump	酸液泵		review
+#str_200407	engage	启动		review
+#str_200408	barrel	储桶		review
+#str_200409	> active <	> 已激活 <		review
+#str_200410	acid dispersal	酸液喷洒		review
+#str_200411	voltage	电压		review
+#str_200412	control	控制		review
+#str_200413	v34.5	v34.5		review
+#str_200414	v59.6	v59.6		review
+#str_200415	-warning-	-警告-		review
+#str_200416	-overcharged-	-过载-		review
+#str_200417	status	状态		review
+#str_200418	injector unit	注射单元		review
+#str_200419	operational	运行正常		review
+#str_200420	malfunction	故障		review
+#str_200421	reboot primary needle processor	重启主针头处理器		review
+#str_200422	controls	控制		review
+#str_200423	reboot	重启		review
+#str_200424	stabilization	稳定		review
+#str_200425	regulator	调节器		review
+#str_200426	auto targeting mechanism	自动瞄准机构		review
+#str_200427	on injector unit 01	位于注射单元 01		review
+#str_200428	malfunctioning. reboot	发生故障。请重启		review
+#str_200429	main processor.	主处理器。		review
+#str_200430	- fluid levels nominal	- 液位正常		review
+#str_200431	- regulator system open	- 调节系统开启		review
+#str_200432	- servo status online	- 伺服状态在线		review
+#str_200433	all systems nominal.	所有系统正常。		review
+#str_200434	initializing	初始化中		review
+#str_200435	initializing.	初始化中.		review
+#str_200436	initializing..	初始化中..		review
+#str_200437	initializing...	初始化中...		review
+#str_200438	VECTOR	矢量		review
+#str_200439	APPROACH	接近		review
+#str_200440	>> END TRANSMISSION <<	>> 传输结束 <<		review
+#str_200441	RECONNAISSANCE BRIEFING <<	侦察简报 <<		review
+#str_200442	>>CLASSIFIED<<	>>机密<<		review
+#str_200443	NEXUS HUB 34B-J9	Nexus 枢纽 34B-J9		review
+#str_200444	CONTROL SCHEMATIC	控制示意图		review
+#str_200445	lat	纬度		review
+#str_200446	long	经度		review
+#str_200447	INSERTION	投放		review
+#str_200448	POINT BRAVO	Bravo 点		review
+#str_200449	POINT DELTA	Delta 点		review
+#str_200450	POINT GAMMA	Gamma 点		review
+#str_200451	POINT EPSILON	Epsilon 点		review
+#str_200452	DETONATION	起爆		review
+#str_200453	ZONE	区域		review
+#str_200454	nexus	Nexus		review
+#str_200455	processor	处理器		review
+#str_200456	primary shield 	主护盾		review
+#str_200457	secondary shield  	副护盾		review
+#str_200458	junction:	交汇点：		review
+#str_200459	doggus crater  	Doggus 陨石坑		review
+#str_200460	elev - 2483	海拔 - 2483		review
+#str_200461	tram substation  	电车支站		review
+#str_200462	nexus core	Nexus 核心		review
+#str_200463	facilities	设施		review
+#str_200464	data	数据		review
+#str_200465	storage	存储		review
+#str_200466	processing	处理		review
+#str_200467	centers	中心		review
+#str_200468	networking	网络		review
+#str_200469	sectors	区段		review
+#str_200470	SCAN ARM CONTROL	扫描臂控制		review
+#str_200471	HIBERNATION CHAMBER ONE	一号休眠舱		review
+#str_200472	HIBERNATION CHAMBER TWO	二号休眠舱		review
+#str_200473	scanning	扫描中		review
+#str_200474	neurocyte	神经细胞		review
+#str_200475	implanted	已植入		review
+#str_200476	bridge controls	桥梁控制		review
+#str_200477	activate	激活		review
+#str_200478	bridge	桥梁		review
+#str_200479	floor	楼层		review
+#str_200480	lift halted for repairs on lvl 33	升降梯因维修停于 33 层		review
+#str_200481	lift status	升降梯状态		review
+#str_200482	640bg-3r-ty-b5cfd	640bg-3r-ty-b5cfd		review
+#str_200483	deactivate	停用		review
+#str_200484	shield	护盾		review
+#str_200485	inactive	未激活		review
+#str_200486	teleporter	传送器		review
+#str_200487	active	已激活		review
+#str_200488	reconstitute left brain	重构左脑		review
+#str_200489	reconstitute right brain	重构右脑		review
+#str_200490	lower	降下		review
+#str_200491	overfull	过满		review
+#str_200492	abdomen capacity	腹腔容量		review
+#str_200493	bio-rythmic waveform	生物节律波形		review
+#str_200494	>> initiate feeding <<	>> 开始喂食 <<		review
+#str_200495	>> feeding sequence <<	>> 喂食序列 <<		review
+#str_200496	> processor <\nsystem error	> 处理器 <\n系统错误		review
+#str_200497	stomach contents at:	胃内容物达：		review
+#str_200498	safety mechanisms prevent overfeeding	安全机制防止过度喂食		review
+#str_200499	of primary stroyent processor.	主 Stroyent 处理器。		review
+#str_200500	override?	强制执行？		review
+#str_200501	feeding status	喂食状态		review
+#str_200502	nominal	正常		review
+#str_200503	processing liquid	液体处理中		review
+#str_200504	putrefaction	腐败		review
+#str_200505	internal	内部		review
+#str_200506	capacity	容量		review
+#str_200507	adjust input materials	调整输入材料		review
+#str_200508	lr	lr		review
+#str_200509	vk-3	vk-3		review
+#str_200510	n-4	n-4		review
+#str_200511	raw stroyent input	Stroyent 原料输入		review
+#str_200512	auxilliary	辅助		review
+#str_200513	tank capacity	储罐容量		review
+#str_200514	output	输出		review
+#str_200515	low intensity fire trial	低强度火力试验		review
+#str_200516	test subject	实验体		review
+#str_200517	halt trial	中止试验		review
+#str_200518	disconnected	已断开		review
+#str_200519	plate feed system	板材供给系统		review
+#str_200520	subsystem	子系统		review
+#str_200521	distro.43b	distro.43b		review
+#str_200522	relay acc.	中继访问		review
+#str_200523	status:operational	状态：运行正常		review
+#str_200524	> system offline <	> 系统离线 <		review
+#str_200525	system reset	系统重置		review
+#str_200526	barrel source depleted	储桶来源已耗尽		review
+#str_200527	>> initializing startup procedures	>> 正在初始化启动程序		review
+#str_200528	>> system check - error	>> 系统检查 - 错误		review
+#str_200529	>> barrel process 1 - offline	>> 储桶流程 1 - 离线		review
+#str_200530	>> barrel process 2 - offline	>> 储桶流程 2 - 离线		review
+#str_200531	>> primary source 4gt	>> 主来源 4gt		review
+#str_200532	>> status - operational	>> 状态 - 运行正常		review
+#str_200533	>> secondary source x5b	>> 副来源 x5b		review
+#str_200534	activate barrel process	激活储桶流程		review
+#str_200535	> sorting process active <	> 分拣流程运行中 <		review
+#str_200536	stroyent filling control 34-k	Stroyent 灌装控制 34-k		review
+#str_200537	holding cells	拘禁室		review
+#str_200538	cell 1	1 号室		review
+#str_200539	cell 3	3 号室		review
+#str_200540	cell 2	2 号室		review
+#str_200541	cell 4	4 号室		review
+#str_200542	logistics	后勤		review
+#str_200543	transport	运输		review
+#str_200544	ext.spec	外部规格		review
+#str_200545	assign	分配		review
+#str_200546	repair bots	维修机器人		review
+#str_200547	station 04	04 号站		review
+#str_200548	automated repair hub	自动维修枢纽		review
+#str_200549	b58n2-x2-45-tw	b58n2-x2-45-tw		review
+#str_200550	in transit	运输中		review
+#str_200551	open door	开门		review
+#str_200552	open hangar	打开机库		review
+#str_200553	reactivate	重新激活		review
+#str_200554	core connect module	核心连接模块		review
+#str_200555	tsd transfer system	TSD 传输系统		review
+#str_200556	torso storage device	躯干存储装置		review
+#str_200557	zoom	缩放		review
+#str_200558	tram switching station 004	电车调度站 004		review
+#str_200559	station 004	004 号站		review
+#str_200560	 automated repair hub	自动维修枢纽		review
+#str_200561	rail 87b	轨道 87b		review
+#str_200562	call tram	呼叫电车		review
+#str_200563	tram in route to station	电车正驶向本站		review
+#str_200564	expand	展开		review
+#str_200565	shutdown grid	关闭电网		review
+#str_200566	scanning .	扫描中 .		review
+#str_200567	scanning . .	扫描中 . .		review
+#str_200568	scanning . . .	扫描中 . . .		review
+#str_200569	scanning . . . .	扫描中 . . . .		review
+#str_200570	scanning . . . . .	扫描中 . . . . .		review
+#str_200571	toggle bridge	切换桥梁		review
+#str_200572	deploying bridge	正在展开桥梁		review
+#str_200573	retracting bridge	正在收回桥梁		review
+#str_200574	food services	餐饮服务		review
+#str_200575	mess hall menu:	食堂菜单：		review
+#str_200576	select date	选择日期		review
+#str_200577	breakfast	早餐		review
+#str_200578	lunch	午餐		review
+#str_200579	dinner	晚餐		review
+#str_200580	sim eggs\nbiscuits & gravy\nrehydrated fruit\nhash browns\noatmeal\nprotein bar\npowersauce\nbacon loaf	仿真蛋\n肉汁软饼\n复水水果\n薯饼\n燕麦粥\n蛋白棒\n能量酱\n培根肉糕		review
+#str_200581	vat burgers\npseudo soy logs\nfreedom fries\ncorn\nfish cylinders\nbean paste\ntaco sandwich\nfreezie pops	培养缸汉堡\n仿豆制卷\n自由薯条\n玉米\n鱼肉柱\n豆泥\n塔可三明治\n冰棍		review
+#str_200582	vat loaf surprise\npotato casserole\npasta\nchicken slop\nfresh beets\npizza\nsoup\nfried salad\ncupcakes 	惊喜培养缸肉糕\n焗土豆\n意面\n鸡肉糊\n新鲜甜菜\n披萨\n汤\n油炸沙拉\n纸杯蛋糕		review
+#str_200583	munitions status	弹药状态		review
+#str_200584	ssp manual	SSP 手册		review
+#str_200585	learn more about mcc standard safety procedures	了解更多 MCC 标准安全规程		review
+#str_200586	keep fingers away from 	请勿将手指靠近		review
+#str_200587	moving ammunition belts	运转中的弹药传送带		review
+#str_200588	help limit infectious disease	协助遏制传染病		review
+#str_200589	report symptoms immediately 	出现症状请立即报告		review
+#str_200590	reply	回复		review
+#str_200591	community bbs	社区 BBS		review
+#str_200592	post	发帖		review
+#str_200593	vat burgers and vat loaf on the same day?	培养缸汉堡和培养缸肉糕居然在同一天？		review
+#str_200594	(stroggcrusher) 4.22 10:21	(stroggcrusher) 4.22 10:21		review
+#str_200595	RE: vat burgers	回复：培养缸汉堡		review
+#str_200596	(kentor) 4.22 10:28	(kentor) 4.22 10:28		review
+#str_200597	makes me glad i don't have latrine duty	真庆幸我没被派去扫厕所		review
+#str_200598	(the HC) 4.22 11:34	(the HC) 4.22 11:34		review
+#str_200599	(larson) 4.22 11:07	(larson) 4.22 11:07		review
+#str_200600	LOL -N/T	笑死 -N/T		review
+#str_200601	shut up, i've seen you go for seconds -N/T	闭嘴吧，我可见过你去添第二份 -N/T		review
+#str_200602	vat burgers are nutritionaly balanced	培养缸汉堡的营养很均衡		review
+#str_200603	(chef summers) 4.22 11:36	(chef summers) 4.22 11:36		review
+#str_200604	100% daily value of sawdust	含每日所需 100% 的锯末		review
+#str_200605	(carl) 4.22 11:47	(carl) 4.22 11:47		review
+#str_200606	heh, nutritionaly balanced to suck	呵，难吃得也很均衡		review
+#str_200607	very funny -N/T	真好笑 -N/T		review
+#str_200608	(chef summers) 4.22 11:50\t	(chef summers) 4.22 11:50\t		review
+#str_200609	(chef summers) 4.22 11:51	(chef summers) 4.22 11:51		review
+#str_200610	how about not sucking?	那你倒是做得好吃点啊？		review
+#str_200611	(carl) 4.22 14:20	(carl) 4.22 14:20		review
+#str_200612	Carl, report to my office.	Carl，到我办公室报到。		review
+#str_200613	(LT Ranka) 4.22 14:23	(LT Ranka) 4.22 14:23		review
+#str_200614	if i could eat vatburgers everyday i would	要是能天天吃培养缸汉堡我肯定天天吃		review
+#str_200615	(dynerman) 4.22 16:30	(dynerman) 4.22 16:30		review
+#str_200616	addressing recent abuses of the community bbs.	关于近期社区 BBS 滥用行为的处理。		review
+#str_200617	(LT Ranka) 4.22 14:42	（Ranka 中尉）4.22 14:42		review
+#str_200618	thank - you -N/T	谢谢 -无正文		review
+#str_200619	(chef summers) 4.22 14:50	（厨师 Summers）4.22 14:50		review
+#str_200620	OK, taking suggestions	好的，正在征集建议		review
+#str_200621	tech panel	技术面板		review
+#str_200622	station 1           station 2	站点 1           站点 2		review
+#str_200623	progress	进度		review
+#str_200624	search	搜索		review
+#str_200625	tools	工具		review
+#str_200626	file	文件		review
+#str_200627	config	配置		review
+#str_200628	processing request	正在处理请求		review
+#str_200629	file admin	文件管理		review
+#str_200630	rec event schedule:	娱乐活动安排：		review
+#str_200631	april 2245	2245 年 4 月		review
+#str_200632	april 22nd	4 月 22 日		review
+#str_200633	2030 MOVIE NIGHT: blood beast 5: the deadening	2030 电影之夜：血兽 5：死寂		review
+#str_200634	Join your fellow marines to watch the cult classic considered by many to be the best of the worst in the Blood Beast octology. With special effects unable to scare your grandma, and a story with plot holes big enough to drive a hovertank through, Blood Beast 5: the Deadening needs to be seen to be believed.	与战友们一起观看这部邪典经典之作——它被许多人誉为《血兽》八部曲中「最烂里的最佳」。特效吓不倒你奶奶，剧情漏洞大到能开过一辆悬浮坦克，《血兽 5：死寂》不看不信。		review
+#str_200635	2100 PROBALL FINALS (QUAD 3)	2100 Proball 决赛（QUAD 3）		review
+#str_200636	Come down to watch as the 482nd Airborne team battles the 379th Infantry team for Proball supremacy and the right to enter the final round robin. Your commanding officers would like to take this opportunity to remind you to watch this event.	快来观看第 482 空降队对阵第 379 步兵队，争夺 Proball 霸主地位与晋级最终循环赛的资格。各位指挥官借此机会提醒你，务必观看本场比赛。		review
+#str_200637	frequency	频率		review
+#str_200638	channels	频道		review
+#str_200639	encrypt	加密		review
+#str_200640	options	选项		review
+#str_200641	comm channel-	通讯频道-		review
+#str_200642	ECHO.431.1v	ECHO.431.1v		review
+#str_200643	substation charlie re-supply depot 877 SMC code C887.51.43	Charlie 分站 补给站 877 SMC 代码 C887.51.43		review
+#str_200644	smc codes	SMC 代码		review
+#str_200645	mail	邮件		review
+#str_200646	pcapaso.smcmail.wwx	pcapaso.smcmail.wwx		review
+#str_200647	inbox	收件箱		review
+#str_200648	compose	写邮件		review
+#str_200649	sent	已发送		review
+#str_200650	junk	垃圾邮件		review
+#str_200651	log in as new user	以新用户身份登录		review
+#str_200652	spelling	拼写检查		review
+#str_200653	cancel	取消		review
+#str_200654	submit for smc approval	提交 SMC 审批		review
+#str_200655	logged in:	已登录：		review
+#str_200656	to	收件人		review
+#str_200657	cc	抄送		review
+#str_200658	subject	主题		review
+#str_200659	kcapaso.tccmailhost.wwv	kcapaso.tccmailhost.wwv		review
+#str_200660	makes it sound like we'll be heading into hostile territory soon. I don't think the censors will let me tell you anything more than that. I know you worry, but don't. Rhino squad is the toughest fighting force in the SMC.\n\nAnyway, I'm rambling. Thanks for your last message. I miss you and your home cooking! I just wish you were in charge of meals here (no offense Summers). It's vat loaf again tonight..... 	听起来我们很快就要开进敌占区了。我想审查员不会让我透露更多。我知道你担心，但别担心。Rhino 小队是 SMC 里最能打的部队。\n\n总之，我扯远了。谢谢你上次的来信。我想你，也想念你做的家常菜！真希望这里的伙食归你管（Summers 别介意）。今晚又是培养缸肉饼……		review
+#str_200661	sx457.dxc	sx457.dxc		review
+#str_200662	directory	目录		review
+#str_200663	this system file is locked. obtain authorization by using the biometric thumbprint scanner.	此系统文件已锁定。请使用生物指纹扫描仪获取授权。		review
+#str_200664	scan	扫描		review
+#str_200665	dxc auxilliary dxc files	dxc 辅助 dxc 文件		review
+#str_200666	sx455.dxc sx456.dxc sx457.dxc sx458.dxc sx459.dxc sx460.dxc sx461.dxc sx462.dxc sx463.dxc	sx455.dxc sx456.dxc sx457.dxc sx458.dxc sx459.dxc sx460.dxc sx461.dxc sx462.dxc sx463.dxc		review
+#str_200667	temp overwrite temp priority dxc exec	临时覆写 临时优先 dxc 执行		review
+#str_200668	articles	文章		review
+#str_200669	clips	短片		review
+#str_200670	index	索引		review
+#str_200671	iconography	符号图集		review
+#str_200672	strogg glyphs	Strogg 符文		review
+#str_200673	xeno linguistics	异族语言学		review
+#str_200674	analysis	分析		review
+#str_200675	kwong.smcmail.wwx	kwong.smcmail.wwx		review
+#str_200676	delete	删除		review
+#str_200677	from    subject               recieved	发件人    主题               接收时间		review
+#str_200678	ssmith eholmes ssmith wwillis eholmes aranka ssmith mcase ssmith wwillis mcase staylor	ssmith eholmes ssmith wwillis eholmes aranka ssmith mcase ssmith wwillis mcase staylor		review
+#str_200679	broken code (sorry)       RE: my underlings suck    problems on d deck engineering sys crash  RE: failures in life     RE: so pathetic          data loss in terminal f4 RE: damn jokers          can't get it working   false alarm                RE: rock bottom          RE: why me lord?	代码出错（抱歉）       回复：我的手下真差劲    D 层出问题 工程系统崩溃  回复：人生的失败     回复：太可悲了          f4 终端数据丢失 回复：该死的蠢货          搞不定   虚惊一场                回复：跌到谷底          回复：主啊为何偏偏是我？		review
+#str_200680	tactical ops	战术行动		review
+#str_200681	mushroom squad	蘑菇小队		review
+#str_200682	badger squad	獾小队		review
+#str_200683	snake squad	蛇小队		review
+#str_200684	hill 257	257 高地		review
+#str_200685	intelligence report: sector 672c	情报报告：672c 区		review
+#str_200686	stroggos	Stroggos		review
+#str_200687	sector 672c	672c 区		review
+#str_200688	verified 04/21/2245 16:53 by LT Collins 401st reconnaissance wing	已核实 04/21/2245 16:53 核实人 Collins 中尉 第 401 侦察联队		review
+#str_200689	Praesent lorem nunc, tincidunt eget porta et interdum eget, ante. Vestibulum vestibulum dui ac ante. Donec et neque sodales augue interdum commodo. 	Praesent lorem nunc, tincidunt eget porta et interdum eget, ante. Vestibulum vestibulum dui ac ante. Donec et neque sodales augue interdum commodo. 		review
+#str_200690	In a libero. Aliquam vitae mauris eget lacus mattis porttitor. Integer nisl. Aenean at ligula ac augue ullamcorper facilisis. In lacus dolor luctus non, venenatis a, vestibulum rhoncus sem. Cras lorem. Maecenas in quam eget felis scelerisque accumsan. In molestie dapibus risus. 	In a libero. Aliquam vitae mauris eget lacus mattis porttitor. Integer nisl. Aenean at ligula ac augue ullamcorper facilisis. In lacus dolor luctus non, venenatis a, vestibulum rhoncus sem. Cras lorem. Maecenas in quam eget felis scelerisque accumsan. In molestie dapibus risus. 		review
+#str_200691	vidcomm channel	视讯通讯频道		review
+#str_200692	archive	存档		review
+#str_200693	filters	筛选器		review
+#str_200694	feeds	信号源		review
+#str_200695	bravo 502.2n	bravo 502.2n		review
+#str_200696	archived	已存档		review
+#str_200697	footage	录像		review
+#str_200698	live	直播		review
+#str_200699	feed	信号源		review
+#str_200700	mute	静音		review
+#str_200701	terrain overview <<	地形概览 <<		review
+#str_200702	GRID 65X 43Y	网格 65X 43Y		review
+#str_200703	warthog squad	疣猪小队		review
+#str_200704	kodiak squad	科迪亚克小队		review
+#str_200705	logout	登出		review
+#str_200706	wwx.smc.m_prompt//	wwx.smc.m_prompt//		review
+#str_200707	medical	医疗		review
+#str_200708	analyzing genetic data	正在分析基因数据		review
+#str_200709	reset	重置		review
+#str_200710	settings	设置		review
+#str_200711	codons	密码子		review
+#str_200712	cga ttc gac cgc gcc tac ggt acg ggg gac cgt aca cgg tag gtt gct act cgc cac ttg cct aga gcc acg ggt ata tag ttg aac acg	cga ttc gac cgc gcc tac ggt acg ggg gac cgt aca cgg tag gtt gct act cgc cac ttg cct aga gcc acg ggt ata tag ttg aac acg		review
+#str_200713	medlabs	医疗实验室		review
+#str_200714	Subject 0012.01a was brought in by Bravo team coming back from a recon mission around the Strogg Putrification facility. subject appeared to be a marine modified by an invasive Strogg reconstruction method. DNA anaylasis revealed that subject 0012.01a was marine Corporal Shane Huxley of Rhino squad.	对象 0012.01a 由 Bravo 小队从 Strogg 腐化设施周边侦察任务返回时带回。该对象看似是一名经 Strogg 侵入式重构手段改造的陆战队员。DNA 分析显示，对象 0012.01a 为 Rhino 小队的陆战队员 Shane Huxley 下士。		review
+#str_200715	menu	菜单		review
+#str_200716	studies	研究		review
+#str_200717	0012.01a	0012.01a		review
+#str_200718	Cell structure in Strogg altered bodies remains relatively unchanged. 	Strogg 改造体的细胞结构基本保持不变。		review
+#str_200719	search database	搜索数据库		review
+#str_200720	med scans	医疗扫描		review
+#str_200721	SUBJECT 7749.1	对象 7749.1		review
+#str_200722	Skeletal structure in Strogg grunts appears alien in nature. The Strogg conversion process seems to have impaired bodily function to an extent that the subject is injected with an array of drugs for short bursts of berzerker rage. Most often found solo, guarding key areas of Strogg infrastructure.	Strogg grunt（步兵）的骨骼结构呈现异族特征。Strogg 转化过程似乎已损害其身体机能，以致需向对象注射多种药物以短暂激发狂暴状态。多单独出现，守卫 Strogg 基础设施的关键区域。		review
+#str_200723	SUBJECT 7749.2	对象 7749.2		review
+#str_200724	The basic strogg grunt includes bipedal humanoid species adapted for strogg needs. Integral arm blaster powered by fusion assures nonstop firepower. Agile and reasonably smart - the workhorse of the strogg army. Higher brain functions controlled by unknown link, while motor functions are enhanced by advanced servos and synthetic muscle groups.	基础型 Strogg 步兵是为满足 Strogg 需求而改造的双足类人物种。融合供能的内置臂载爆能枪确保火力不间断。敏捷且颇具智能——堪称 Strogg 军队的主力。其高级脑功能受未知链接控制，运动功能则由先进伺服机构与合成肌群强化。		review
+#str_200725	SUBJECT 0455.8	对象 0455.8		review
+#str_200726	Subject shows abnormal deterioration of nerve cells around the hippocampus and somatosensory cortex. SMC command issued a study concluding that exposure to hazardous waste in Strogg chemical facilities results in long term neurological dysfunction.	对象海马体与躯体感觉皮层周围的神经细胞出现异常退化。SMC 指挥部发布的一项研究得出结论：暴露于 Strogg 化学设施的有害废料中会导致长期神经功能障碍。		review
+#str_200727	sgt r. haloway	R. Haloway 中士		review
+#str_200728	records	记录		review
+#str_200729	cardiac monitor	心脏监护仪		review
+#str_200730	hr	心率		review
+#str_200731	art	动脉压		review
+#str_200732	sao2	血氧		review
+#str_200733	qrs qt qtc(h)qqtd    pq	qrs qt qtc(h)qqtd    pq		review
+#str_200734	80ms 362ms 358ms 24ms 156ms	80ms 362ms 358ms 24ms 156ms		review
+#str_200735	SUBJECT 1302.9	对象 1302.9		review
+#str_200736	>>uss madison	>>USS Madison 号		review
+#str_200737	geosyncronous orbit	地球同步轨道		review
+#str_200738	>>uss iowa	>>USS Iowa 号		review
+#str_200739	descending 30k	正在下降 30k		review
+#str_200740	tracking data	追踪数据		review
+#str_200741	1. DATA	1. 数据		review
+#str_200742	2. ARCHIVE	2. 存档		review
+#str_200743	3. SYSTEM	3. 系统		review
+#str_200744	engineering report	工程报告		review
+#str_200745	decrypting message	正在解密消息		review
+#str_200746	mode	模式		review
+#str_200747	select	选择		review
+#str_200748	1. REPORT	1. 报告		review
+#str_200749	2. STATUS	2. 状态		review
+#str_200750	3. DATA	3. 数据		review
+#str_200751	4. ARCHIVE	4. 存档		review
+#str_200752	5. SYSTEM	5. 系统		review
+#str_200753	page	页		review
+#str_200754	smc schedule	SMC 日程		review
+#str_200755	0400 : rhino squad briefing\n0800 : general assembly\n1000 : medical team status\n1200 : tertiary generator offline\n1430 : vidcomm hq briefing\n1545 : turret 4 repair - tech team 3\n1730 : alpha squadron briefing\n1800 : strogg field report\n1935 : badger squad sitrep\n2030 : warthog squad briefing\n2100 : proball finals - quad 3\n2245 : assault prep - fighter wing b\n2300 : repair, refuel scouts 13-48\n2400 : final daily system check	0400：Rhino 小队简报\n0800：全体集合\n1000：医疗队状态\n1200：三号发电机离线\n1430：视讯通讯总部简报\n1545：4 号炮塔维修 - 技术组 3\n1730：Alpha 中队简报\n1800：Strogg 战地报告\n1935：獾小队战况报告\n2030：疣猪小队简报\n2100：Proball 决赛 - QUAD 3\n2245：突击准备 - B 战斗机联队\n2300：维修、加油 侦察机 13-48\n2400：每日最终系统检查		review
+#str_200756	mess hall rations	食堂配餐		review
+#str_200757	BREAKFAST\npancakes, eggs, sausages\nLUNCH\nchicken slop, rice, roast beef sandwich\nDINNER\nroast turkey, stuffing, beans, potato salad	早餐\n薄煎饼、鸡蛋、香肠\n午餐\n鸡肉糊、米饭、烤牛肉三明治\n晚餐\n烤火鸡、火鸡馅、豆子、土豆沙拉		review
+#str_200758	LT Jameson\n2LT Masters	Jameson 中尉\nMasters 少尉		review
+#str_200759	c.o.'s on duty	值班指挥官		review
+#str_200760	info panel	信息面板		review
+#str_200761	3. ARCHIVE	3. 存档		review
+#str_200762	2. SMC CODE	2. SMC 代码		review
+#str_200763	1. FREQUENCY	1. 频率		review
+#str_200764	comm panel	通讯面板		review
+#str_200765	CHANNELS	频道		review
+#str_200766	ENCRYPTION	加密		review
+#str_200767	OPTIONS	选项		review
+#str_200768	: system offline :	：系统离线：		review
+#str_200769	connect	连接		review
+#str_200770	lt. biessman	Biessman 中尉		review
+#str_200771	vidcomm panel	视讯通讯面板		review
+#str_200772	> established <	> 已建立 <		review
+#str_200773	marine hq	陆战队总部		review
+#str_200774	level	级别		review
+#str_200775	-online-	-在线-		review
+#str_200776	-offline-	-离线-		review
+#str_200777	systems are	系统		review
+#str_200778	now offline	现已离线		review
+#str_200779	system	系统		review
+#str_200780	systems	系统		review
+#str_200781	2q	2q		review
+#str_200782	3y	3y		review
+#str_200783	6k	6k		review
+#str_200784	data storage 4br3	数据存储 4br3		review
+#str_200785	640bg-3r-ty-b5bg-54	640bg-3r-ty-b5bg-54		review
+#str_200786	access b4	访问 b4		review
+#str_200787	sys.aspect	sys.aspect		review
+#str_200788	processor standby	处理器待机		review
+#str_200789	cycle 4	周期 4		review
+#str_200790	7894-sdds-4	7894-sdds-4		review
+#str_200791	array vector	阵列向量		review
+#str_200792	sig variance	信号方差		review
+#str_200793	repair bot	维修机器人		review
+#str_200794	783894-sdfds-4	783894-sdfds-4		review
+#str_200795	systems status	系统状态		review
+#str_200796	1 7 3 8 9 5 2 6 4	1 7 3 8 9 5 2 6 4		review
+#str_200797	6 2 9 0	6 2 9 0		review
+#str_200798	3 7 5 9	3 7 5 9		review
+#str_200799	640bg-3r-tybg-4	640bg-3r-tybg-4		review
+#str_200800	640bg5	640bg5		review
+#str_200801	acid tank	酸液罐		review
+#str_200802	barrel transfer	桶体传输		review
+#str_200803	gear system 34	齿轮系统 34		review
+#str_200804	rpm	转速		review
+#str_200805	levels	液位		review
+#str_200806	system stalled	系统停滞		review
+#str_200807	barrel system	桶体系统		review
+#str_200808	power	电力		review
+#str_200809	sys.def	sys.def		review
+#str_200810	sorting process monitor	分拣流程监控		review
+#str_200811	system offline	系统离线		review
+#str_200812	fluid monitor	流体监控		review
+#str_200813	specimen transportation	样本运输		review
+#str_200814	>active<	>激活<		review
+#str_200815	examining...	检查中……		review
+#str_200816	sp status:	样本状态：		review
+#str_200817	viable e.m.	有效 e.m.		review
+#str_200818	transport suspended	运输已暂停		review
+#str_200819	conveyor status	传送带状态		review
+#str_200820	conv.sys	conv.sys		review
+#str_200821	dispersal	分流		review
+#str_200822	conveyor offline	传送带离线		review
+#str_200823	>system active<	>系统激活<		review
+#str_200824	rmf	rmf		review
+#str_200825	cell.xsfr	cell.xsfr		review
+#str_200826	status.op	status.op		review
+#str_200827	>transport failure<	>运输故障<		review
+#str_200828	barrel transport	桶体运输		review
+#str_200829	system error	系统错误		review
+#str_200830	stroyent flow	Stroyent 流量		review
+#str_200831	flowrate	流速		review
+#str_200832	console	控制台		review
+#str_200833	sys.chk	sys.chk		review
+#str_200834	3a	3a		review
+#str_200835	5x	5x		review
+#str_200836	2k	2k		review
+#str_200837	6c	6c		review
+#str_200838	4n	4n		review
+#str_200839	network traffic	网络流量		review
+#str_200840	pattern recog	模式识别		review
+#str_200841	kc4-723-d5bnmq-34xt	kc4-723-d5bnmq-34xt		review
+#str_200842	>scanning<	>扫描中<		review
+#str_200843	signature data match	特征数据匹配		review
+#str_200844	storage grid	存储网格		review
+#str_200845	gh67-dfn-34b-67fg	gh67-dfn-34b-67fg		review
+#str_200846	scanning initiated	扫描已启动		review
+#str_200847	storage grading 4-b	存储分级 4-b		review
+#str_200848	writing...	写入中……		review
+#str_200849	process complete	处理完成		review
+#str_200850	sys access	系统访问		review
+#str_200851	data input	数据输入		review
+#str_200852	pwr	电源		review
+#str_200853	system trace	系统追踪		review
+#str_200854	wave analysis	波形分析		review
+#str_200855	rst	rst		review
+#str_200856	tetra	Tetra		review
+#str_200857	enter command:	输入命令：		review
+#str_200858	> monitoring oscillates <	> 监测振荡 <		review
+#str_200859	stage 3 dissolution	第 3 阶段溶解		review
+#str_200860	anomaly scan	异常扫描		review
+#str_200861	integrity qualified	完整性合格		review
+#str_200862	waveform analysis	波形分析		review
+#str_200863	station 84b-x3v4-kj	站点 84b-x3v4-kj		review
+#str_200864	> accessing memory <	> 正在访问内存 <		review
+#str_200865	buffer cleared	缓冲区已清除		review
+#str_200866	process initializing	进程初始化中		review
+#str_200867	data sys	数据系统		review
+#str_200868	640bg-3r-ty-b5	640bg-3r-ty-b5		review
+#str_200869	//station identification system	//站点识别系统		review
+#str_200870	tram	电车		review
+#str_200871	station	站点		review
+#str_200872	fueling	加注燃料		review
+#str_200873	hub	枢纽		review
+#str_200874	construction	施工		review
+#str_200875	site 37-f	场地 37-f		review
+#str_200876	repair	维修		review
+#str_200877	tram power grid	电车电网		review
+#str_200878	84bm-03xd	84bm-03xd		review
+#str_200879	tram schematics	电车示意图		review
+#str_200880	power flux	电力波动		review
+#str_200881	heat factor	热量系数		review
+#str_200882	tram hub	电车枢纽		review
+#str_200883	terminal diagram	终端示意图		review
+#str_200884	r7	r7		review
+#str_200885	platform	站台		review
+#str_200886	6b	6b		review
+#str_200887	process	处理		review
+#str_200888	st-2	st-2		review
+#str_200889	track	轨道		review
+#str_200890	GOD:	GOD：		review
+#str_200891	> incoming missile threat <	> 来袭导弹威胁 <		review
+#str_200892	weapons	武器		review
+#str_200893	150m	150m		review
+#str_200894	MCG-435-X63KJ-32	MCG-435-X63KJ-32		review
+#str_200895	SYSTEM STATUS	系统状态		review
+#str_200896	86-xgb	86-xgb		review
+#str_200897	toxic	有毒		review
+#str_200898	hazard	危险		review
+#str_200899	shields	护盾		review
+#str_200900	low	低		review
+#str_200901	armor	护甲		review
+#str_200902	HAZARDOUS ENVIRONMENT	危险环境		review
+#str_200903	EJECTION SYSTEM LOCKED	弹射系统已锁定		review
+#str_200904	-ENVIRONMENT SAFE-	-环境安全-		review
+#str_200905	EJECTION SYSTEM UNLOCKED	弹射系统已解锁		review
+#str_200906	VOTE YES	投赞成票		review
+#str_200907	VOTE NO	投反对票		review
+#str_200908	Game Saved...	游戏已保存……		review
+#str_200909	[ Press JUMP to exit ] 	[ 按跳跃键退出 ]		review
+#str_200910	[ NEXT/PREVIOUS WEAPON keys cycle weapons ] 	[ 用下一个/上一个武器键切换武器 ]		review
+#str_200911	ARMOR	护甲		review
+#str_200912	SHIELDS	护盾		review
+#str_200913	[ Vehicle Locked ] 	[ 载具已锁定 ]		review
+#str_200914	Load a saved game.	读取存档。		review
+#str_200915	Quit to the main menu.	退出至主菜单。		review
+#str_200916	[ Press ESC to return to the game ]	[ 按 ESC 返回游戏 ]		review
+#str_200917	MARINE	陆战队员		review
+#str_200918	pwr sys	电力系统		review
+#str_200919	Toggle Waiting Room	切换等候室		review
+#str_200920	System Default;Stereo;Headphones;Dolby Surround;SRS;Discrete 4.0;Discrete 5.1;Discrete 6.1;Discrete 7.1;Discrete 8.1	系统默认;立体声;耳机;杜比环绕;SRS;分离式 4.0;分离式 5.1;分离式 6.1;分离式 7.1;分离式 8.1		review
+#str_200921	PLAYER BAN LIST	玩家封禁列表		review
+#str_200922	REMOVE BAN	解除封禁		review
+#str_200923	CLOSE	关闭		review
+#str_200924	GUID	GUID		review
+#str_200925	SAVE NAME	存档名称		review
+#str_200926	LOCATION	位置		review
+#str_200927	CURRENT MAP	当前地图		review
+#str_200928	SERVER SETTINGS	服务器设置		review
+#str_200929	DM;Tourney;Team DM;CTF;Arena CTF;DeadZone	死亡竞赛;锦标赛;团队死亡竞赛;夺旗;竞技场夺旗;DeadZone		review
+#str_200930	Select a key binding and hit ESCAPE to clear key assignment.	选中按键绑定后按 ESC 键即可清除该键位分配。		review
+#str_200931	PUNKBUSTER ENABLED	已启用 PUNKBUSTER		review
+#str_200932	FAVORITE SERVER	收藏服务器		review
+#str_200933	PASSWORD ENABLED	已启用密码		review
+#str_200934	DEDICATED SERVER	专用服务器		review
+#str_200935	No current mission objectives.	当前没有任务目标。		review
+#str_200936	ENTER	进入		review
+#str_200937	- CLICK TO CONTINUE -	- 点击继续 -		review
+#str_200938	LOADING	载入中……		done
+#str_200939	>>MACHINEGUN INITIALIZED...	>>机枪已初始化……		review
+#str_200940	>>MAIN CANNON INITIALIZED...	>>主炮已初始化……		review
+#str_200941	>>ROCKET PODS INITIALIZED...	>>火箭巢已初始化……		review
+#str_200942	>>MACHINEGUNS INITIALIZED...	>>机枪已初始化……		review
+#str_200943	ROUND 1 >	第 1 回合 >		review
+#str_200944	ROUND 2 >	第 2 回合 >		review
+#str_200945	ROUND 3 >	第 3 回合 >		review
+#str_200946	ROUND 4 >	第 4 回合 >		review
+#str_200947	Server Type	服务器类型		review
+#str_200948	VIEW LOCAL SERVER BAN LIST	查看本地服务器封禁列表		review
+#str_200949	Blaster	爆能手枪		review
+#str_200950	Gauntlet	战斗手套		review
+#str_200951	CLEAR SORTING	清除排序		review
+#str_200952	EMPTY	空		review
+#str_200953	Tournament Pre-Game...	锦标赛赛前准备……		review
+#str_200954	diagram	示意图		review
+#str_200955	DATA ARRAY	数据阵列		review
+#str_200956	ALT. ACCESS	备用通道		review
+#str_200957	MAINTENANCE	维护		review
+#str_200958	VERIFICATION	验证		review
+#str_200959	Voice Chat	语音聊天		review
+#str_200960	stroyent	stroyent		review
+#str_200961	health	生命值		review
+#str_200962	DEPLETED	已耗尽		review
+#str_200963	track maintenance 7xj	轨道维护 7xj		review
+#str_200964	OFFLINE	离线		review
+#str_200965	NOMINAL	正常		review
+#str_200966	Blaster (SP)/Gauntlet (MP)	爆能手枪（单人）/战斗手套（多人）		review
+#str_200967	Weapon stay	武器常驻		review
+#str_200968	Waiting Room List	等候室列表		review
+#str_200969	mcc	mcc		review
+#str_200970	Default;OpenAL	默认;OpenAL		review
+#str_200971	Sound System	声音系统		review
+#str_200972	EAX ADVANCED HD	EAX ADVANCED HD		review
+#str_200973	'Standard (4:3)';'Widescreen (16:9)';'Widescreen (16:10)'	'标准 (4:3)';'宽屏 (16:9)';'宽屏 (16:10)'		review
+#str_200974	Aspect Ratio	宽高比		review
+#str_200975	Ready Mode	准备模式		review
+#str_200976	WINS	胜场		review
+#str_200977	Voice Chat	语音聊天		review
+#str_200978	WEAPON HEAT	武器热量		review
+#str_200979	This will require a restart.	此项更改需要重启游戏。		review
+#str_200980	// LOCKED //	// 已锁定 //		review
+#str_200981	Rail Color	轨道炮颜色		review
+#str_200982	You cannot save over an autosave.	无法覆盖自动存档。		review
+#str_200983	You need to restart Quake for these settings to take effect.	这些设置需要重启 Quake 才能生效。		review
+#str_200984	CONTINUE	继续		review
+#str_200985	Excellent	出色		review
+#str_200986	Impressive	精准		review
+#str_200987	Humiliation	羞辱		review
+#str_200988	Combo Kill	组合击杀		review
+#str_200989	Rampage	狂暴		review
+#str_200990	Capture	夺旗		review
+#str_200991	Assist	助攻		review
+#str_200992	Defense	防守		review
+#str_200993	Killing two players in two seconds or less.	在两秒内击杀两名玩家。		review
+#str_200994	Hitting two players consecutively with the railgun.	用轨道炮连续命中两名玩家。		review
+#str_200995	Awarded for killing a player with a gauntlet.	用战斗手套击杀玩家时获得。		review
+#str_200996	A Rocket hit followed by a Railgun killshot within three seconds.	火箭命中后三秒内再用轨道炮完成击杀。		review
+#str_200997	Three gib kills in five seconds or less.	在五秒内完成三次碎尸击杀。		review
+#str_200998	Awarded to a player who captures the flag in CTF/Arena CTF.	在夺旗/竞技场夺旗模式中夺旗成功时获得。		review
+#str_200999	Assisting a flag capture by carrying or returning a flag.	通过携带或送回旗帜协助完成夺旗。		review
+#str_201000	Awarded for defending your flag or flag carrier.	守护己方旗帜或持旗队友时获得。		review
+#str_201001	Ambient Volume	环境音量		review
+#str_201002	Advanced Audio	高级音频		review
+#str_201003	Close Advanced Audio	关闭高级音频		review
+#str_201004	ADVANCED AUDIO SETTINGS	高级音频设置		review
+#str_201005	Sound Device	声音设备		review
+#str_201006	Music Volume	音乐音量		review
+#str_201007	Min Players	最少玩家数		review
+#str_201008	Auto Balance	自动平衡		review
+#str_201009	Toggle Ready Status	切换准备状态		review
+#str_201010	Crosshair Size:	准星大小：		review
+#str_201011	STATUS	状态		review
+#str_201012	MARINE TEAM WINS	陆战队获胜		review
+#str_201013	STROGG TEAM WINS	Strogg 队获胜		review
+#str_201014	MARINE TEAM LOSES	陆战队落败		review
+#str_201015	STROGG TEAM LOSES	Strogg 队落败		review
+#str_201016	VOICE CHAT SETTINGS	语音聊天设置		review
+#str_201017	Send Voice	发送语音		review
+#str_201018	Receive Voice	接收语音		review
+#str_201019	Receive Volume	接收音量		review
+#str_201020	Voice Echo	语音回显		review
+#str_201021	Allow Voice Chat	允许语音聊天		review
+#str_201022	Small; Medium; Default; Large; Extra Large	小; 中; 默认; 大; 特大		review
+#str_201023	Please wait for sound system to initialize...	请等待声音系统完成初始化……		review
+#str_201024	Warning: using OpenAL without having the latest drivers may cause sound and performance issues, including game lock up.  Please update your sound drivers before running the game in OpenAL.	警告：未安装最新声卡驱动就使用 OpenAL 可能导致声音和性能问题，甚至游戏锁死。请先更新声卡驱动，再以 OpenAL 模式运行游戏。		review
+#str_201025	Allow Voting	允许投票		review
+#str_201026	Voice Chat Settings	语音聊天设置		review
+#str_201027	Mic Level	麦克风电平		review
+#str_201028	Warning: OpenAL sound system required for voice chat.	警告：语音聊天需要 OpenAL 声音系统。		review
+#str_201029	Volume	音量		review
+#str_201030	Mic Input Volume	麦克风输入音量		review
+#str_201031	AN ID SOFTWARE GAME	id Software 游戏作品		review
+#str_201032	DEVELOPED BY	开发商		review
+#str_201033	RAVEN SOFTWARE	RAVEN SOFTWARE		review
+#str_201034	PUBLISHED BY	发行商		review
+#str_201035	ACTIVISION	ACTIVISION		review
+#str_201036	PRESENTS	出品		review
+#str_201037	Warning: Your sound card does not support OpenAL.	警告：您的声卡不支持 OpenAL。		review
+#str_201038	VOICE CONFIG	语音配置		review
+#str_201039				todo
+#str_201040	'640x480';'800x600';'1024x768';'1152x864';'1280x1024';'1600x1200';'2048x1536'	'640x480';'800x600';'1024x768';'1152x864';'1280x1024';'1600x1200';'2048x1536'		review
+#str_201041	'640x360';'800x450';'852x480';'1024x576';'1280x720';'1280x768';'1600x900';'1920x1080'	'640x360';'800x450';'852x480';'1024x576';'1280x720';'1280x768';'1600x900';'1920x1080'		review
+#str_201042	'640x400';'800x500';'1024x640';'1280x800';'1440x900';'1600x1000';'1680x1050';'1920x1200'	'640x400';'800x500';'1024x640';'1280x800';'1440x900';'1600x1000';'1680x1050';'1920x1200'		review
+#str_201043				todo
+#str_201044	Shuffle Teams	打乱队伍		review
+#str_202000				todo
+#str_202001				todo
+#str_202002				todo
+#str_202003				todo
+#str_202004				todo
+#str_202005				todo
+#str_202006				todo
+#str_202007				todo
+#str_202008				todo
+#str_202009				todo
+#str_202010				todo
+#str_202011				todo
+#str_202012				todo
+#str_202013				todo
+#str_202014				todo
+#str_202015				todo
+#str_202016				todo
+#str_202017				todo
+#str_202018				todo
+#str_202019				todo
+#str_202020				todo
+#str_202021				todo
+#str_202022				todo
+#str_202023				todo
+#str_202024				todo
+#str_202025				todo
+#str_202026				todo
+#str_202027				todo
+#str_202028				todo
+#str_202029				todo
+#str_202030				todo
+#str_202031				todo
+#str_202032				todo
+#str_202033				todo
+#str_202034				todo
+#str_202035				todo
+#str_202036				todo
+#str_202037				todo
+#str_202038	Changes must be applied for settings to take effect. This may take up to several minutes.	必须应用更改后设置才会生效，此过程最多可能需要几分钟。		review
+#str_202039	The Marine team has too many players!	陆战队人数过多！		review
+#str_202040	You are already on the Marine team!	你已经在陆战队了！		review
+#str_202041	The Strogg team has too many players!	Strogg 队人数过多！		review
+#str_202042	You are already on the Strogg team!	你已经在 Strogg 队了！		review
+#str_202043	Multiple CPU/Core Optimization	多 CPU/核心优化		review
+#str_222000	Allow Buying	允许购买		review
+#str_222001	Napalm Gun	凝固汽油炮		review
+#str_222002	Credits:	点数：		review
+#str_222003	Weapons	武器		review
+#str_222004	Armor / Ammo	护甲 / 弹药		review
+#str_222005	Team Powerups	团队强化道具		review
+#str_222006	PURCHASE EQUIPMENT	购买装备		review
+#str_222007	Ammo Refill	弹药补充		review
+#str_222008	Light Armor	轻型护甲		review
+#str_222009	Heavy Armor	重型护甲		review
+#str_222010	Ammo Regeneration	弹药再生		review
+#str_222011	Health Regeneration	生命再生		review
+#str_222012	Doubler	伤害加倍		review
+#str_222013	Control Time	控制时间		review
+#str_222014	Buy Menu	购买菜单		review
+#str_223000	Simple Items	简化物品		review
+#str_223001	Handicap	让分		review
+#str_223002	Force ambient light	强制环境光		review
+#str_223003	Ambient brightness	环境光亮度		review
+#str_223004	Q4TV - Spectator Television	Q4TV - 观战转播		review
+#str_223005	MOD:	MOD：		review
+#str_223006	Force Pro Skins	强制职业皮肤		review
+#str_223007	Gun Position	武器位置		review
+#str_223008	Right;Centered;Lower Right	右侧;居中;右下		review
+#str_223009	Enable detailed sky	启用精细天空		review

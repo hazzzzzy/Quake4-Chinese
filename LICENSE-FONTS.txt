@@ -1,0 +1,27 @@
+The Chinese font bitmaps distributed with this project (all files under
+    dist/savedata/q4base/fonts/chinese/*.tga
+    dist/savedata/q4base/fonts/chinese/*.fontdat
+except any file prefixed with `strogg_` which is generated at install
+time from the player's own copy of Quake 4) are derived from
+
+    Source Han Sans SC — Medium
+    Copyright 2014-2021 Adobe (https://github.com/adobe-fonts/source-han-sans)
+    with Reserved Font Name 'Source' and 'Han Sans'.
+
+Source Han Sans is licensed under the SIL Open Font License, Version 1.1.
+The full text of the license is available at:
+
+    https://scripts.sil.org/OFL
+
+or in the upstream repository:
+
+    https://github.com/adobe-fonts/source-han-sans/blob/release/LICENSE.txt
+
+By using or redistributing these bitmap files, you agree to the terms
+of the SIL Open Font License 1.1.
+
+Note: this project also ships an original TTF is not included here.
+Only the derived .tga image atlases and .fontdat glyph metric tables
+(rendered by src/tools/export_font.py from the original OTF at build
+time) are included in the dist/ tree. To rebuild from source, place
+SourceHanSansSC-Medium.otf under assets/fonts/ and run export_font.py.
