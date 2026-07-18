@@ -22,6 +22,18 @@ DST = r"D:\data\idTech4Apx\savedata\q4base\guis\hud.gui"
 # 2026-07-17 自研字体导出器（export_font.py）上线后：新字库基线与英文原版
 # 差 ≤1px（chain24 Δ=+1），HUD 数字不再被裁，数字窗口的 y-7/h+7 补偿全部撤销，
 # 只保留无线电两行的修正。
+# 可交互 bracket_text 字号加大（多行匹配保证唯一定位）——2026-07-18 用户反馈
+# "可交互面板文字显示不全"根因：textscale .25 走 marine_24 useScale 0.5，屏幕
+# 字号仅约 20px；原版 INTERACTIVE 视觉大字。textscale .4 让 CJK 视觉与原版接近。
+EDITS_MULTILINE = [
+    # SRC=hud_pak021_stock.gui 是 CRLF；用 \r\n 匹配
+    (
+        'text\t"#str_200277"\r\n\t\t\tfont\t"fonts/marine"\r\n\t\t\ttextalign\t1\r\n\t\t\tforecolor\t0.686,0.870,0.564,"brackets::alpha"\r\n\t\t\ttextscale\t.25',
+        'text\t"#str_200277"\r\n\t\t\tfont\t"fonts/marine"\r\n\t\t\ttextalign\t1\r\n\t\t\tforecolor\t0.686,0.870,0.564,"brackets::alpha"\r\n\t\t\ttextscale\t.4',
+        1,
+    ),
+]
+
 EDITS = [
     # 无线电"传入/通讯"两行（marine 12pt，useScale=0.8，行高 12px）
     # y 拉开防重叠；x 右移出波形图标（图标 rect 513,7,41,25，右缘 554）
@@ -37,31 +49,33 @@ EDITS = [
     # 直接改译文会误伤主菜单。改成引用 str_200379（关卡语境的 exit，v1.0.5
     # 已翻"撤离"）。仅 hud.gui 里 p_exit_level.p_exit_text 一处引用。
     ('text\t"#str_200013"', 'text\t"#str_200379"',    1),   # p_exit_text
-    # HUD 大数字底裁修复（2026-07-18 用户反馈"生命值数字被吞 10%"）
-    # v1.0.6 让 chain_24 ASCII 加 drop=2 → 数字位图 h 从 19→21，位图底端 y=455
-    # 卡在原 rect(y=429, h=26) 底 455 边界，视觉底 10% 被裁。h 26→29 (+3 名义 px
-    # 留 1 px 冗余)；y 与 windowDef 结构不变，存档兼容。
-    ("rect\t44,429,49,26",  "rect\t44,429,49,29",  1),   # ammo_amount   SP 弹药
-    ("rect\t82,429,49,26",  "rect\t82,429,49,29",  1),   # ammo_amount_nc SP 无夹弹药
-    ("rect\t256,429,52,26", "rect\t256,429,52,29", 1),   # health_amount SP 血量（用户反馈）
-    ("rect\t392,429,52,26", "rect\t392,429,52,29", 1),   # armor_amount  SP 护甲
-    ("rect\t81,429,50,26",  "rect\t81,429,50,29",  1),   # ammo_amount_mp
-    ("rect\t258,429,50,26", "rect\t258,429,50,29", 1),   # health_amount_mp
-    ("rect\t394,429,50,26", "rect\t394,429,50,29", 1),   # armor_amount_mp
+    # 无线电背景条 radio_backbar rect 缩窄贴合中文（2026-07-18 用户反馈"传入
+    # 通讯 4 字比原版 INCOMING TRANSMISSION 20 字短很多，背景条右侧留白"）。
+    # 原 rect(520,5,113,28) 覆盖英文长度；中文 2 字/行 x=557 宽 69，缩窄背景
+    # 到 x=556 宽 72（贴合 t_radio1/2 文本 rect 各留 3px 边距）。
+    ("rect\t520,5,113,28",  "rect\t556,5,72,28",      1),   # radio_backbar
+    # quicksave_msg 位置下移避开准星区 bracket_text（2026-07-18 用户反馈"可
+    # 交互被游戏已保存遮挡"）。y 64→110 移到屏幕上方 1/4 位置，让"游戏已保存"
+    # 与常见玩家瞄准高度（屏幕中央 y=240）之间保留净空。
+    ("rect\t0,64,640,20",   "rect\t0,110,640,20",     1),   # quicksave_msg
+    # HUD 大数字底裁修复已随 v1.0.9 chain 家族原版数字方案撤销：chain 家族现在
+    # 基础段用原版 fontdat/tga，数字度量与原版 100% 一致，rect(h=26) 已够，
+    # 不再需要 h+3 补丁。参见 export_font.py 里 use_original_base 分支。
 ]
 
 with open(SRC, "rb") as f:
     data = f.read().decode("utf-8", errors="strict")
 
 ok = True
-for old, new, expect in EDITS:
+for old, new, expect in EDITS + EDITS_MULTILINE:
     n = data.count(old)
     if n != expect:
-        print(f"FAIL: '{old}' 出现 {n} 次（期望 {expect}）")
+        print(f"FAIL: '{old[:60]}...' 出现 {n} 次（期望 {expect}）")
         ok = False
         continue
     data = data.replace(old, new)
-    print(f"OK  : {old!r} -> {new!r} x{expect}")
+    tag = old[:50].replace("\n", "\\n").replace("\t", "\\t")
+    print(f"OK  : {tag}... -> ... x{expect}")
 
 if not ok:
     sys.exit(1)

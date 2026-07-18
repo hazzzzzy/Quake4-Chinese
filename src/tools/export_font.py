@@ -236,6 +236,12 @@ def export(fam, size, chars):
     font = ImageFont.truetype(ttf, size * SS, index=idx)  # 按超采样倍率加载
     eng_dat = (ENG_CACHE / f"{fam}_{size}.fontdat").read_bytes()
     assert len(eng_dat) == 256 * 36 + 20, f"英文 fontdat 尺寸异常 {fam}_{size}"
+    # 原版数字方案（2026-07-18 用户建议"游戏中的数字沿用原版"）：chain 家族全部
+    # 用于纯数字 HUD（player_ammo/health/armor/totalammo/powerupN_time），无中英
+    # 混排——基础段直接用原版 fontdat + 原版 tga，数字视觉恢复原版风格（Strogg
+    # 装饰字体感），彻底解决 ASCII drop 让位图 h 变大导致 rect 卡边被裁的问题。
+    # 宽表（CJK）仍保持思源黑体（chain 用不到 CJK 但保留以防脚本注入中文）。
+    use_original_base = (fam == "chain")
 
     # 字体 cmap（子集字体缺字直接跳过，引擎回退 '?'）
     try:
@@ -265,32 +271,43 @@ def export(fam, size, chars):
     ascii_drop = drop
 
     # ---- 基础段（0..255 同字体自渲染，独立单页）----
-    bp = BASE_PAGE[size]
-    base_img = Image.new("L", (bp, bp), 0)
-    base_rec = [(0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0)] * 256  # w,h,xskip,top,s,t,s2,t2
-    cx = cy = row_h = 0
-    # 只渲染 ASCII：引擎存在按字节绘制的老路径（启动屏等），Latin-1 高位
-    # 字形会把 UTF-8 字节显形成乱码（2026-07-17 用户反馈），高位留空=隐形
-    for i in range(32, 127):
-        ch = chr(i)
-        if cmap is not None and i not in cmap:
-            continue
-        bmp, w, h, top, xskip = rasterize(font, ch, ascii_drop)
-        if bmp is None:
-            if xskip > 1:
-                base_rec[i] = (0, 0, xskip, 0, 0.0, 0.0, 0.0, 0.0)
-            continue
-        bw, bh = bmp.size  # 2x 像素尺寸（图集占位/UV 用）
-        if cx + bw + PAD > bp:
-            cx = 0
-            cy += row_h + PAD
-            row_h = 0
-        if cy + bh + PAD > bp:
-            break  # 基础页满（不应发生）
-        base_img.paste(bmp, (cx, cy))
-        base_rec[i] = (w, h, xskip, top, cx / bp, cy / bp, (cx + bw) / bp, (cy + bh) / bp)
-        cx += bw + PAD
-        row_h = max(row_h, bh)
+    if use_original_base:
+        # 原版基础段：直接解析 eng_dat 的 256 条记录（每条 9float=36B），
+        # 跳过自渲染、稍后拷贝原版 tga 而不是保存 base_img
+        base_rec = []
+        for i in range(256):
+            r = struct.unpack_from("<9f", eng_dat, i * 36)
+            # (imageWidth, imageHeight, xSkip, pitch, top, s, t, s2, t2)
+            base_rec.append((int(r[0]), int(r[1]), int(r[2]), int(r[4]),
+                             r[5], r[6], r[7], r[8]))
+        base_img = None
+    else:
+        bp = BASE_PAGE[size]
+        base_img = Image.new("L", (bp, bp), 0)
+        base_rec = [(0, 0, 0, 0, 0.0, 0.0, 0.0, 0.0)] * 256  # w,h,xskip,top,s,t,s2,t2
+        cx = cy = row_h = 0
+        # 只渲染 ASCII：引擎存在按字节绘制的老路径（启动屏等），Latin-1 高位
+        # 字形会把 UTF-8 字节显形成乱码（2026-07-17 用户反馈），高位留空=隐形
+        for i in range(32, 127):
+            ch = chr(i)
+            if cmap is not None and i not in cmap:
+                continue
+            bmp, w, h, top, xskip = rasterize(font, ch, ascii_drop)
+            if bmp is None:
+                if xskip > 1:
+                    base_rec[i] = (0, 0, xskip, 0, 0.0, 0.0, 0.0, 0.0)
+                continue
+            bw, bh = bmp.size  # 2x 像素尺寸（图集占位/UV 用）
+            if cx + bw + PAD > bp:
+                cx = 0
+                cy += row_h + PAD
+                row_h = 0
+            if cy + bh + PAD > bp:
+                break  # 基础页满（不应发生）
+            base_img.paste(bmp, (cx, cy))
+            base_rec[i] = (w, h, xskip, top, cx / bp, cy / bp, (cx + bw) / bp, (cy + bh) / bp)
+            cx += bw + PAD
+            row_h = max(row_h, bh)
 
     # ---- 宽表（>=256）----
     pages = []
@@ -325,11 +342,15 @@ def export(fam, size, chars):
     # ---- 写 fontdat ----
     base_tops = [r[3] for r in base_rec]
     buf = io.BytesIO()
-    for (w, h, xskip, top, s, t, s2, t2) in base_rec:
-        buf.write(struct.pack("<9f", w, h, xskip, w, top, s, t, s2, t2))
-    max_xskip = max(r[2] for r in base_rec)
-    buf.write(struct.pack("<5f", size, max_xskip, max(base_tops),
-                          max_xskip - max(base_tops), 0.0))
+    if use_original_base:
+        # 原版基础段直接拷 256×36 + 5float 头共 9236 字节（度量/UV/头一律用原版）
+        buf.write(eng_dat[:256 * 36 + 20])
+    else:
+        for (w, h, xskip, top, s, t, s2, t2) in base_rec:
+            buf.write(struct.pack("<9f", w, h, xskip, w, top, s, t, s2, t2))
+        max_xskip = max(r[2] for r in base_rec)
+        buf.write(struct.pack("<5f", size, max_xskip, max(base_tops),
+                              max_xskip - max(base_tops), 0.0))
     buf.write(struct.pack("<IIiii", MAGIC, VERSION, len(pages), PAGE, PAGE))
     max_code = max(r[0] for r in records)
     num_idx = max_code + 1
@@ -357,7 +378,12 @@ def export(fam, size, chars):
         stale.unlink()
     (OUT_DIR / f"{fam}_{size}.fontdat").write_bytes(data)
     tgas = [f"{fam}_{size}.tga"]
-    write_tga(base_img, OUT_DIR / tgas[0])              # 基础段单页（同字体）
+    if use_original_base:
+        # 拷原版基础段 tga（pak001 里）—— 数字/字母保持原版视觉
+        with zipfile.ZipFile(Q4BASE / "pak001.pk4") as zf:
+            (OUT_DIR / tgas[0]).write_bytes(zf.read(f"fonts/english/{fam}_{size}.tga"))
+    else:
+        write_tga(base_img, OUT_DIR / tgas[0])          # 基础段单页（自渲染）
     for i, page in enumerate(pages):
         tgas.append(f"{fam}_{i + 1}_{size}.tga")
         write_tga(page, OUT_DIR / tgas[-1])
@@ -461,7 +487,10 @@ def main():
                 for tga in passthrough_original(fam, size, full):  # 全档全量：装饰窗任意字号
                     mtr.append(font_decl(tga, tga))
             continue
-        cfam = canon.setdefault(key, fam)
+        # chain 家族独立 canonical（不与其他 UI 家族共享贴图）：基础段用原版
+        # HUD 数字视觉（use_original_base 分支），需要独立 tga 页
+        canon_key = ("chain_solo",) if fam == "chain" else key
+        cfam = canon.setdefault(canon_key, fam)
         for size in SIZES:
             if fam == cfam:
                 written[(cfam, size)] = export(fam, size, ui if size == 48 else full)

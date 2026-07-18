@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.0.9 — 2026-07-18
+
+### 字体：数字沿用原版视觉
+
+- `chain` 家族独立 canonical，**基础段 fontdat + tga 直接用原版 pak021**（数字/字母恢复原版 Strogg 装饰视觉）
+- 用户观察 hud.gui 里 chain 字体**全部用于纯数字**（`player_ammo` / `player_health` / `player_armor` / `player_totalammo` / `powerupN_time`），无中英混排 → 换回原版零副作用
+- 副作用回滚：撤销 v1.0.7 的 HUD 数字 rect h+3 补丁（`ammo_amount` / `health_amount` / `armor_amount` 及 MP 版共 7 处）——原版数字与 rect 天然兼容
+- CJK 宽表仍保持思源黑体 Medium（chain 用不到中文但保留以防脚本注入）
+- dist 磁盘 +60MB（chain 独立宽表页无法与 marine 共享）
+
+### hud.gui 三处新补丁
+
+- 无线电背景条 `radio_backbar` rect(520,5,113,28)→(556,5,72,28) 缩窄贴合中文 4 字（原版按英文 20 字设计留白严重）
+- 可交互提示 `bracket_text` textscale .25→.4 让准星旁"可交互"视觉与原版 INTERACTIVE 相近
+- `quicksave_msg` rect y 64→110 下移避开准星区域 bracket_text 重叠
+
 ## v1.0.8 — 2026-07-18
 
 ### hud.gui 补丁扩展
