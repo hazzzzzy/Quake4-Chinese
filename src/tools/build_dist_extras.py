@@ -56,6 +56,25 @@ MEDLAB_EDITS = {
 }
 
 
+def patch_mainmenu_gui(data: bytes) -> bytes:
+    """mainmenu.gui 三个按钮 rect y+4 修复（2026-07-18 用户反馈"自动检测设置/
+    高级设置/高级音频设置 这三个按钮偏高"）：文字 rect y=231/262/366 → 235/266/370，
+    让 CJK 视觉与容器中线对齐（容器 rect h=25，文字 rect h=18 原贴容器顶）。
+
+    按 bytes 处理：原版 mainmenu.gui 含非 UTF-8 字符（® 0xAE）；rect 数值全 ASCII。
+    菜单 gui 不参与存档序列化，与 hud.gui r4 存档兼容约束无关。
+    """
+    edits = [
+        (b"rect\t262,231,328,18", b"rect\t262,235,328,18"),  # set_sys_t_auto
+        (b"rect\t262,262,328,18", b"rect\t262,266,328,18"),  # set_sys_t_adv
+        (b"rect\t262,366,328,18", b"rect\t262,370,328,18"),  # set_sys_t_b9
+    ]
+    for old, new in edits:
+        assert data.count(old) == 1, f"mainmenu.gui 找不到唯一匹配：{old!r}"
+        data = data.replace(old, new)
+    return data
+
+
 def patch_hud_gui(text: str) -> str:
     """无线电两行 rect 补丁：右移出波形图标 + 拉开两行防重叠。
 
@@ -183,6 +202,13 @@ def main() -> int:
     print("[2/4] 补丁 hud.gui（pak021 → guis/hud.gui，无线电两行 rect 数值）...", flush=True)
     extract_and_patch(pak021, "guis/hud.gui",
                       patch_hud_gui, out / "guis" / "hud.gui")
+
+    print("[2b] 补丁 mainmenu.gui（pak021 → guis/mainmenu.gui，设置页 3 按钮 rect y+4）...", flush=True)
+    with zipfile.ZipFile(pak021) as zf:
+        mm = zf.read("guis/mainmenu.gui")
+    mm_out = out / "guis" / "mainmenu.gui"
+    mm_out.parent.mkdir(parents=True, exist_ok=True)
+    mm_out.write_bytes(patch_mainmenu_gui(mm))
 
     print("[3/4] 补丁 med1_textchange.gui（pak001 → 神经细胞植入转译动画中文化）...", flush=True)
     extract_and_patch(pak001, "guis/maps/medlabs/med1_textchange.gui",
