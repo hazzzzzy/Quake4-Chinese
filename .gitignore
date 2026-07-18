@@ -28,6 +28,7 @@ dist/savedata/q4base/fonts/chinese/strogg_*.fontdat
 dist/savedata/q4base/fonts/chinese/strogg_*.tga
 dist/savedata/q4base/guis/hud.gui
 dist/savedata/q4base/guis/mainmenu.gui
+dist/savedata/q4base/guis/wristcomm.gui
 dist/savedata/q4base/guis/maps/
 dist/savedata/q4base/zzz_vo_chinese_alias.pk4
 dist/savedata/savegames/

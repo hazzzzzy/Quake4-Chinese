@@ -263,8 +263,8 @@
 #str_200269	Press X to view standings	按 X 查看排名		review
 #str_200270	Transmitting...	传输中……		review
 #str_200271	OBJECTIVE FAILED:	任务目标失败：		review
-#str_200272	incoming	传入		review
-#str_200273	transmission	通讯		review
+#str_200272	incoming	传入通讯		无线电两行合一行 2026-07-18
+#str_200273	transmission	通讯		hud.gui 里 t_radio2 rect 移出屏幕不显示 2026-07-18
 #str_200274	>>NEW OBJECTIVE	>>新任务目标		review
 #str_200275	SMC MILCOMM 45B-43556-BGX7J54	SMC 军用通讯 45B-43556-BGX7J54		review
 #str_200276	>>OBJECTIVE COMPLETE	>>任务目标完成		review

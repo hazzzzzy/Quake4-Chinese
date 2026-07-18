@@ -268,6 +268,12 @@ def main() -> int:
     mm_out.parent.mkdir(parents=True, exist_ok=True)
     mm_out.write_bytes(patch_mainmenu_gui(mm))
 
+    print("[2c] 补丁 wristcomm.gui（pak001 → guis/wristcomm.gui，quicksave_msg y=64→110）...", flush=True)
+    with zipfile.ZipFile(pak001) as zf:
+        wc = zf.read("guis/wristcomm.gui")
+    wc = wc.replace(b"rect\t0,64,640,20", b"rect\t0,110,640,20", 1)
+    (out / "guis" / "wristcomm.gui").write_bytes(wc)
+
     print("[3/4] 补丁 med1_textchange.gui（pak001 → 神经细胞植入转译动画中文化）...", flush=True)
     extract_and_patch(pak001, "guis/maps/medlabs/med1_textchange.gui",
                       patch_medlab_gui,

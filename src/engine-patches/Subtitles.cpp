@@ -23,11 +23,10 @@ static const float SUB_PVS_NEAR_DIST = 240.0f;
 static const float SUB_BOTTOM	= 410.0f;	// 面板底边（原 428）
 static const float SUB_ROW_H	= 13.0f;	// 行高
 static const float SUB_PAD		= 4.0f;		// 上下留白
-// 字幕字体 CJK drop=2（fonts/chinese/lowpixel_24 顶部烘 2 名义 px 透明行）
-// 让位图在文本 rect 里的墨迹相对 rect 顶偏低、相对 rect 底偏高 → 在面板里
-// 视觉整体偏上（多行 1.6 虚拟 px ≈ 3.6 屏幕像素）。此偏移下移 1 虚拟 px
-// 让墨迹中线接近面板中线（2026-07-18 用户反馈"字幕貌似没有处于背景的垂直中央"）。
-static const float SUB_ROW_ADJ	= 1.0f;
+// 字幕在面板里的额外 y 偏移（视觉居中微调）：v1.0.7 曾用 1.0 补偿 CJK drop 偏顶，
+// 但 v1.0.9 用户反馈"字幕相较背景偏下" → 撤回为 0（chain 独立 canonical 后 lowpixel
+// 与 marine 同源 chain=marine（marine 现在是 canonical），drop 度量与之前不同）。
+static const float SUB_ROW_ADJ	= 0.0f;
 static const int   FADE_IN_MS	= 150;
 static const int   FADE_OUT_MS	= 300;
 

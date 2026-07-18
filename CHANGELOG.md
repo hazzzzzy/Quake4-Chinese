@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.0.10 — 2026-07-18
+
+### DLL 侧
+
+- 字幕面板 `SUB_ROW_ADJ` 1.0 → 0.0：v1.0.7 的 +1 虚拟 px 让字幕相对面板偏下，撤回恢复居中
+
+### wristcomm.gui 新补丁（新版权敏感物）
+
+- `quicksave_msg` rect y=64→110 与 hud.gui 保持一致
+- 根因：v1.0.9 改了 hud.gui 的 y=110 避开准星区，但 objectiveSystem（=wristcomm.gui）里也定义了 quicksave_msg y=64——两处不再重叠导致"游戏已保存"出现两处
+- 加入 postinstall 版权敏感物补齐流程
+
+### hud.gui 无线电改为单行
+
+- `str_200272` "incoming" → **"传入通讯"**（原 "传入"），`str_200273` "transmission" 保留但 t_radio2 rect 移出屏幕不显示
+- `t_radio1` rect(557,4,69,13) → (556,12,72,14)：垂直居中于背景条 y=5-33
+- `t_radio2` rect(557,17,69,13) → (556,999,72,14)：移出屏幕，等效隐藏但保留 windowDef 结构存档兼容
+
 ## v1.0.9 — 2026-07-18
 
 ### 字体：数字沿用原版视觉
