@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.0.7 — 2026-07-18
+
+### DLL 侧
+
+- 字幕说话人前缀分隔符改为全角冒号：`"广播: xxx"` → `"广播：xxx"`（去掉半角冒号+空格，改中文标点）
+- 字幕面板墨迹垂直居中：`SUB_ROW_ADJ = 1.0` 补偿 CJK drop 让墨迹中线接近面板中线（原偏顶 ~2 屏幕像素）
+
+### hud.gui 补丁扩展
+
+- 切枪武器名 `ws_name` rect y 42→48（用户反馈"向下移一点"；下移 6 虚拟 px ≈ 7 屏幕像素，避开图标 y=20-46 重叠）
+- HUD 大数字 rect h 26→29（+3 名义 px，修 v1.0.6 后 ASCII drop=2 让数字位图底端 y=455 卡 rect 底边被裁 10% 的问题）
+  - 覆盖 `ammo_amount` / `ammo_amount_nc` / `health_amount` / `armor_amount` 及 MP 版 7 处
+
+### mainmenu.gui 补丁（新增补齐物）
+
+- 设置页 3 按钮 rect y+4：`set_sys_t_auto` (自动检测设置) / `set_sys_t_adv` (高级设置) / `set_sys_t_b9` (高级音频设置)
+- CJK 视觉与容器 rect 中线对齐（容器 h=25、文字 rect h=18 原贴容器顶）
+- 加入 postinstall 版权敏感物补齐流程
+
 ## v1.0.6 — 2026-07-18
 
 ### 字体基线（中英混排视觉对齐）

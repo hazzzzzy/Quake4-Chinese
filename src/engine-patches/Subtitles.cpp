@@ -23,6 +23,11 @@ static const float SUB_PVS_NEAR_DIST = 240.0f;
 static const float SUB_BOTTOM	= 410.0f;	// 面板底边（原 428）
 static const float SUB_ROW_H	= 13.0f;	// 行高
 static const float SUB_PAD		= 4.0f;		// 上下留白
+// 字幕字体 CJK drop=2（fonts/chinese/lowpixel_24 顶部烘 2 名义 px 透明行）
+// 让位图在文本 rect 里的墨迹相对 rect 顶偏低、相对 rect 底偏高 → 在面板里
+// 视觉整体偏上（多行 1.6 虚拟 px ≈ 3.6 屏幕像素）。此偏移下移 1 虚拟 px
+// 让墨迹中线接近面板中线（2026-07-18 用户反馈"字幕貌似没有处于背景的垂直中央"）。
+static const float SUB_ROW_ADJ	= 1.0f;
 static const int   FADE_IN_MS	= 150;
 static const int   FADE_OUT_MS	= 300;
 
@@ -301,7 +306,10 @@ void rvSubtitles::Add( const char *speaker, const char *text, int durationMs ) {
 
 	idStr full;
 	if ( speaker && speaker[0] && speaker[0] != '#' ) {
-		full = va( "%s: %s", speaker, clean.c_str() );
+		// 2026-07-18 用户要求：说话人与内容之间用全角中文冒号，不留空格
+		// （原半角冒号 + 空格视觉突兀）。UTF-8 转义 \xEF\xBC\x9A = U+FF1A "："
+		// MSVC 窄字符字面量按系统码页编译，必须写转义否则等价 GBK 字节序列。
+		full = va( "%s\xEF\xBC\x9A%s", speaker, clean.c_str() );
 	} else {
 		full = clean;
 	}
@@ -558,8 +566,8 @@ void rvSubtitles::Draw( void ) {
 			}
 			// 行锚定面板底部：旧行过期删除时剩余行保持原位（只有背景板平滑收缩），
 			// 面板生长期间取 max(静止位, 顶部滑入位) 保留新行从下方顶入的平滑效果
-			float restY = SUB_BOTTOM - SUB_PAD - ( numLines - i ) * SUB_ROW_H;
-			float slideY = panelTop + SUB_PAD + i * SUB_ROW_H;
+			float restY = SUB_BOTTOM - SUB_PAD - ( numLines - i ) * SUB_ROW_H + SUB_ROW_ADJ;
+			float slideY = panelTop + SUB_PAD + i * SUB_ROW_H + SUB_ROW_ADJ;
 			float rowY = ( restY > slideY ) ? restY : slideY;
 			gui->SetStateString( va( "subText%d", i ), lines[i].text.c_str() );
 			gui->SetStateFloat( va( "subTxtA%d", i ), a * 0.97f );

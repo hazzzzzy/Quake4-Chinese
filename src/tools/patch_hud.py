@@ -32,6 +32,17 @@ EDITS = [
     # 墨迹中线 y=49、rect 中线 y=62 → 视觉偏上 13 虚拟 px（≈15 屏幕像素）；
     # y 42→48 下移 6 虚拟 px（≈7 屏幕像素），并避开 ws_weapon0-10 图标 y=20-46 的重叠。
     ("rect\t0,42,640,40",   "rect\t0,48,640,40",   1),   # ws_name
+    # HUD 大数字底裁修复（2026-07-18 用户反馈"生命值数字被吞 10%"）
+    # v1.0.6 让 chain_24 ASCII 加 drop=2 → 数字位图 h 从 19→21，位图底端 y=455
+    # 卡在原 rect(y=429, h=26) 底 455 边界，视觉底 10% 被裁。h 26→29 (+3 名义 px
+    # 留 1 px 冗余)；y 与 windowDef 结构不变，存档兼容。
+    ("rect\t44,429,49,26",  "rect\t44,429,49,29",  1),   # ammo_amount   SP 弹药
+    ("rect\t82,429,49,26",  "rect\t82,429,49,29",  1),   # ammo_amount_nc SP 无夹弹药
+    ("rect\t256,429,52,26", "rect\t256,429,52,29", 1),   # health_amount SP 血量（用户反馈）
+    ("rect\t392,429,52,26", "rect\t392,429,52,29", 1),   # armor_amount  SP 护甲
+    ("rect\t81,429,50,26",  "rect\t81,429,50,29",  1),   # ammo_amount_mp
+    ("rect\t258,429,50,26", "rect\t258,429,50,29", 1),   # health_amount_mp
+    ("rect\t394,429,50,26", "rect\t394,429,50,29", 1),   # armor_amount_mp
 ]
 
 with open(SRC, "rb") as f:

@@ -85,6 +85,14 @@ def patch_hud_gui(text: str) -> str:
         ("rect\t545,6,81,12",  "rect\t557,4,69,13"),   # t_radio1
         ("rect\t545,13,81,12", "rect\t557,17,69,13"),  # t_radio2
         ("rect\t0,42,640,40",  "rect\t0,48,640,40"),   # ws_name 切枪武器名下移
+        # HUD 大数字底裁修复（chain_24 ASCII drop=2 后位图底端卡 rect 底边）
+        ("rect\t44,429,49,26",  "rect\t44,429,49,29"),   # ammo_amount
+        ("rect\t82,429,49,26",  "rect\t82,429,49,29"),   # ammo_amount_nc
+        ("rect\t256,429,52,26", "rect\t256,429,52,29"),  # health_amount
+        ("rect\t392,429,52,26", "rect\t392,429,52,29"),  # armor_amount
+        ("rect\t81,429,50,26",  "rect\t81,429,50,29"),   # ammo_amount_mp
+        ("rect\t258,429,50,26", "rect\t258,429,50,29"),  # health_amount_mp
+        ("rect\t394,429,50,26", "rect\t394,429,50,29"),  # armor_amount_mp
     ]
     for old, new in edits:
         assert text.count(old) == 1, f"hud.gui 找不到唯一匹配：{old!r}"
