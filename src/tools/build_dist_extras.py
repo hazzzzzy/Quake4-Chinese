@@ -57,9 +57,12 @@ MEDLAB_EDITS = {
 
 
 def patch_mainmenu_gui(data: bytes) -> bytes:
-    """mainmenu.gui 三个按钮 rect y+4 修复（2026-07-18 用户反馈"自动检测设置/
-    高级设置/高级音频设置 这三个按钮偏高"）：文字 rect y=231/262/366 → 235/266/370，
-    让 CJK 视觉与容器中线对齐（容器 rect h=25，文字 rect h=18 原贴容器顶）。
+    """mainmenu.gui 补丁：三按钮 rect y+4 + credits 段职位汉化（2026-07-18）。
+
+    - 设置页 set_sys_t_auto/adv/b9 三按钮文字 rect y+4 让 CJK 视觉与容器中线对齐
+    - credits 段（line 8543-17150）内 text 字段直接是英文硬编码不走 #str_id，
+      共 36 条职位翻译（用完整 text 引号包裹匹配避免 "Motion Capture" 误伤
+      "Motion Capture Lead" 等超集）；人名/工作室名不译
 
     按 bytes 处理：原版 mainmenu.gui 含非 UTF-8 字符（® 0xAE）；rect 数值全 ASCII。
     菜单 gui 不参与存档序列化，与 hud.gui r4 存档兼容约束无关。
@@ -72,6 +75,51 @@ def patch_mainmenu_gui(data: bytes) -> bytes:
     for old, new in edits:
         assert data.count(old) == 1, f"mainmenu.gui 找不到唯一匹配：{old!r}"
         data = data.replace(old, new)
+
+    # credits 段职位汉化（长串在前避免子串误伤；例 Motion Capture Lead 先于 Motion Capture）
+    credits_edits = [
+        ("Additional Internal Quality Assurance", "追加内部品保"),
+        ("Voice Over Recording, Editing and Post", "配音录制、剪辑与后期"),
+        ("Fred Hooper - Assistant Art Lead", "Fred Hooper - 副美术组长"),
+        ("Michael Pleva - Assistant Animation Lead", "Michael Pleva - 副动画组长"),
+        ("Squirrel Eiserloh - Ritual code", "Squirrel Eiserloh - Ritual 代码"),
+        ("Director of Product Development", "产品开发总监"),
+        ("Casting and Voice Direction", "选角与配音指导"),
+        ("Dan Hay - Cinematic Consultant", "Dan Hay - 过场顾问"),
+        ("Theme for Quake4 Composed by", "Quake 4 主题曲作曲"),
+        ("Theme for Quake4 Produced by", "Quake 4 主题曲制作"),
+        ("Todd Rose - Ritual levels", "Todd Rose - Ritual 关卡"),
+        ("Eric Fowler - Ritual code", "Eric Fowler - Ritual 代码"),
+        ("Additional Motion Capture", "追加动作捕捉"),
+        ("Internal Quality Assurance", "内部品保"),
+        ("QUAKE II Xbox Programming", "QUAKE II Xbox 编程"),
+        ("Carlo Vogelsang - Creative", "Carlo Vogelsang - 创意"),
+        ("Additional Programming", "追加编程"),
+        ("Production Coordinator", "制作协调"),
+        ("Motion Capture Lead", "动作捕捉组长"),
+        ("Art/Animation Lead", "美术/动画组长"),
+        ("Additional Animation", "追加动画"),
+        ("Executive Producer", "执行制作人"),
+        ("Associate Producer", "副制作人"),
+        ("Bidwell, Announcer", "Bidwell（播音员）"),
+        ("Computer, Pilot VO", "电脑/飞行员配音"),
+        ("Programming Leads", "编程组长"),
+        ("Studio Head", "工作室负责人"),
+        ("Line Producer", "现场制作人"),
+        ("Motion Capture", "动作捕捉"),
+        ("Additional Art", "追加美术"),
+        ("Special Thanks", "特别鸣谢"),
+        ("Level Design", "关卡设计"),
+        ("Sound Design", "音效设计"),
+        ("Design Lead", "设计组长"),
+        ("Audio Leads", "音频组长"),
+        ("Project Lead", "项目主管"),
+    ]
+    for en, zh in credits_edits:
+        old_b = f'text\t"{en}"'.encode("ascii")
+        new_b = f'text\t"{zh}"'.encode("utf-8")
+        if old_b in data:
+            data = data.replace(old_b, new_b)
     return data
 
 
@@ -85,6 +133,8 @@ def patch_hud_gui(text: str) -> str:
         ("rect\t545,6,81,12",  "rect\t557,4,69,13"),   # t_radio1
         ("rect\t545,13,81,12", "rect\t557,17,69,13"),  # t_radio2
         ("rect\t0,42,640,40",  "rect\t0,48,640,40"),   # ws_name 切枪武器名下移
+        # 关卡末尾大门 EXIT 标签重定向 str_200013 -> str_200379 (撤离，避免误伤主菜单)
+        ('text\t"#str_200013"', 'text\t"#str_200379"'),  # p_exit_text
         # HUD 大数字底裁修复（chain_24 ASCII drop=2 后位图底端卡 rect 底边）
         ("rect\t44,429,49,26",  "rect\t44,429,49,29"),   # ammo_amount
         ("rect\t82,429,49,26",  "rect\t82,429,49,29"),   # ammo_amount_nc

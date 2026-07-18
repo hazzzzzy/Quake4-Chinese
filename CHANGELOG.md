@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.8 — 2026-07-18
+
+### hud.gui 补丁扩展
+
+- 关卡末尾大门"EXIT"红色标签重定向：`p_exit_text` 引用从 `#str_200013`（EXIT→退出，主菜单退出按钮共用）改为 `#str_200379`（exit→撤离，关卡语境）。用户反馈"翻译为退出了，应该是撤离"
+
+### mainmenu.gui 补丁扩展
+
+- 制作人员名单职位汉化：credits 段（line 8543-17150）内 36 条硬编码职位（原不走 #str_id）翻译，共替换 78 次。例：`Executive Producer` → `执行制作人`、`Programming Leads` → `编程组长`、`Level Design` → `关卡设计`、`Special Thanks` → `特别鸣谢` 等
+- 含人名的兼任标题保留人名：`Fred Hooper - Assistant Art Lead` → `Fred Hooper - 副美术组长`
+- 人名（Kevin Long 等约 100 个）与工作室名（Splash Damage / Womb Music / id Software）不译
+
 ## v1.0.7 — 2026-07-18
 
 ### DLL 侧
