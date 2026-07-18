@@ -27,6 +27,11 @@ EDITS = [
     # y 拉开防重叠；x 右移出波形图标（图标 rect 513,7,41,25，右缘 554）
     ("rect\t545,6,81,12",   "rect\t557,4,69,13",   1),   # t_radio1
     ("rect\t545,13,81,12",  "rect\t557,17,69,13",  1),   # t_radio2
+    # 切枪武器名 ws_name（用户 2026-07-18 反馈"向下移一点"）
+    # 原 rect(0,42,640,40) + textscale 0.25 走 marine_24（gui_smallFontLimit=0），
+    # 墨迹中线 y=49、rect 中线 y=62 → 视觉偏上 13 虚拟 px（≈15 屏幕像素）；
+    # y 42→48 下移 6 虚拟 px（≈7 屏幕像素），并避开 ws_weapon0-10 图标 y=20-46 的重叠。
+    ("rect\t0,42,640,40",   "rect\t0,48,640,40",   1),   # ws_name
 ]
 
 with open(SRC, "rb") as f:

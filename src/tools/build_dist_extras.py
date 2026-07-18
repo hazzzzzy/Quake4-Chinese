@@ -65,6 +65,7 @@ def patch_hud_gui(text: str) -> str:
     edits = [
         ("rect\t545,6,81,12",  "rect\t557,4,69,13"),   # t_radio1
         ("rect\t545,13,81,12", "rect\t557,17,69,13"),  # t_radio2
+        ("rect\t0,42,640,40",  "rect\t0,48,640,40"),   # ws_name 切枪武器名下移
     ]
     for old, new in edits:
         assert text.count(old) == 1, f"hud.gui 找不到唯一匹配：{old!r}"
