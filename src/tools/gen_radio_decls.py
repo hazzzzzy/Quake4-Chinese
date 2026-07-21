@@ -11,8 +11,8 @@ decl 名与原版不冲突（生成对象就是"原版没有"的名单）；decl
 """
 from pathlib import Path
 
-TSV = Path(r"D:\data\quake4-cn\translations\radio_chatter.tsv")
-OUT = Path(r"D:\data\idTech4Apx\savedata\q4base\lipsync\zz_chinese_radio.lipsync")
+TSV = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations\radio_chatter.tsv")
+OUT = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\lipsync\zz_chinese_radio.lipsync")
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 lines = TSV.read_text(encoding="utf-8-sig").splitlines()

@@ -3,7 +3,7 @@
 import re
 from pathlib import Path
 
-p = Path(r"D:\data\quake4-cn\translations\dialogue_lips.tsv")
+p = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations\dialogue_lips.tsv")
 lines = p.read_text(encoding="utf-8-sig").splitlines()
 
 fixes = 0

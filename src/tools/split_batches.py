@@ -2,7 +2,7 @@
 """把 UI 翻译总表切成翻译批次（每批约 300 条）。"""
 from pathlib import Path
 
-TRANS = Path(r"D:\data\quake4-cn\translations")
+TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
 IN = TRANS / "batches" / "in"
 IN.mkdir(parents=True, exist_ok=True)
 (TRANS / "batches" / "out").mkdir(parents=True, exist_ok=True)

@@ -9,8 +9,8 @@
 """
 from pathlib import Path
 
-TRANS = Path(r"D:\data\quake4-cn\translations")
-OUT = Path(r"D:\data\idTech4Apx\savedata\q4base\strings")
+TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
+OUT = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\strings")
 OUT.mkdir(parents=True, exist_ok=True)
 
 TABLES = {

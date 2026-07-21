@@ -15,8 +15,8 @@ pak001 底稿的覆盖使所有原版结构存档 100% 读档崩溃）。
 """
 import sys
 
-SRC = r"D:\data\quake4-cn\assets\hud_pak021_stock.gui"
-DST = r"D:\data\idTech4Apx\savedata\q4base\guis\hud.gui"
+SRC = r"D:\PROJECT\quake4-translate-subtitle\assets\hud_pak021_stock.gui"
+DST = r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\guis\hud.gui"
 
 # (旧串, 新串, 期望出现次数)
 # 2026-07-17 自研字体导出器（export_font.py）上线后：新字库基线与英文原版
@@ -26,6 +26,13 @@ DST = r"D:\data\idTech4Apx\savedata\q4base\guis\hud.gui"
 # "可交互面板文字显示不全"根因：textscale .25 走 marine_24 useScale 0.5，屏幕
 # 字号仅约 20px；原版 INTERACTIVE 视觉大字。textscale .4 让 CJK 视觉与原版接近。
 EDITS_MULTILINE = [
+    # 无线电标题使用单行中文，位于波形图标右侧的可用区域内；文本斜切角度
+    # 与背景条一致，并在该区域水平、垂直居中，字号接近铺满可用区域。
+    (
+        'windowDef t_radio1\r\n\t\t{\r\n\t\t\trect\t545,6,81,12\r\n\t\t\tvisible\t1\r\n\t\t\tforecolor\t1,1,1,1\r\n\t\t\ttext\t"#str_200272"\r\n\t\t\ttextscale\t0.2',
+        'windowDef t_radio1\r\n\t\t{\r\n\t\t\trect\t552,3,72,22\r\n\t\t\tshear\t0,-.22\r\n\t\t\ttextalign\t1\r\n\t\t\tvisible\t1\r\n\t\t\tforecolor\t1,1,1,1\r\n\t\t\ttext\t"#str_200272"\r\n\t\t\ttextscale\t0.45',
+        1,
+    ),
     # SRC=hud_pak021_stock.gui 是 CRLF；用 \r\n 匹配
     (
         'text\t"#str_200277"\r\n\t\t\tfont\t"fonts/marine"\r\n\t\t\ttextalign\t1\r\n\t\t\tforecolor\t0.686,0.870,0.564,"brackets::alpha"\r\n\t\t\ttextscale\t.25',
@@ -36,10 +43,9 @@ EDITS_MULTILINE = [
 
 EDITS = [
     # 无线电改一行显示（2026-07-18 用户反馈"能否将无线电变为一行而不是两行"）：
-    # str_200272 已改"传入通讯"（合并两词），t_radio1 rect 垂直居中于背景条
-    # (背景 y=5-33)，t_radio2 rect y 移出屏幕（999）不显示。x 右移出波形图标
-    # （图标 rect 513,7,41,25，右缘 554）。
-    ("rect\t545,6,81,12",   "rect\t556,12,72,14",  1),   # t_radio1 单行居中
+    # str_200272 已改"传入通讯"（合并两词），t_radio1 的实际字形在背景条
+    # (y=5-33) 内垂直居中，t_radio2 rect y 移出屏幕（999）不显示。x 右移出
+    # 波形图标（图标 rect 513,7,41,25，右缘 554）。
     ("rect\t545,13,81,12",  "rect\t556,999,72,14", 1),   # t_radio2 移出屏幕不显示
     # 切枪武器名 ws_name（用户 2026-07-18 反馈"向下移一点"）
     # 原 rect(0,42,640,40) + textscale 0.25 走 marine_24（gui_smallFontLimit=0），
@@ -51,11 +57,6 @@ EDITS = [
     # 直接改译文会误伤主菜单。改成引用 str_200379（关卡语境的 exit，v1.0.5
     # 已翻"撤离"）。仅 hud.gui 里 p_exit_level.p_exit_text 一处引用。
     ('text\t"#str_200013"', 'text\t"#str_200379"',    1),   # p_exit_text
-    # 无线电背景条 radio_backbar rect 缩窄贴合中文（2026-07-18 用户反馈"传入
-    # 通讯 4 字比原版 INCOMING TRANSMISSION 20 字短很多，背景条右侧留白"）。
-    # 原 rect(520,5,113,28) 覆盖英文长度；中文 2 字/行 x=557 宽 69，缩窄背景
-    # 到 x=556 宽 72（贴合 t_radio1/2 文本 rect 各留 3px 边距）。
-    ("rect\t520,5,113,28",  "rect\t556,5,72,28",      1),   # radio_backbar
     # quicksave_msg 位置下移避开准星区 bracket_text（2026-07-18 用户反馈"可
     # 交互被游戏已保存遮挡"）。y 64→110 移到屏幕上方 1/4 位置，让"游戏已保存"
     # 与常见玩家瞄准高度（屏幕中央 y=240）之间保留净空。

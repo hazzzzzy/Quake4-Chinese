@@ -357,7 +357,7 @@
 #str_200369	ALARM	警报		review
 #str_200370	warning	警告		review
 #str_200371	do not enter	禁止进入		review
-#str_200372	high voltage	高压		review
+#str_200372	high voltage	高压危险		review
 #str_200373	//sector report header	//区段报告标头		review
 #str_200374	sub.sector	子区段		review
 #str_200375	security lockdown	安保封锁		review
@@ -533,7 +533,7 @@
 #str_200547	station 04	04 号站		review
 #str_200548	automated repair hub	自动维修枢纽		review
 #str_200549	b58n2-x2-45-tw	b58n2-x2-45-tw		review
-#str_200550	in transit	运输中		review
+#str_200550	in transit	运行中		review
 #str_200551	open door	开门		review
 #str_200552	open hangar	打开机库		review
 #str_200553	reactivate	重新激活		review
@@ -762,7 +762,7 @@
 #str_200776	-offline-	-离线-		review
 #str_200777	systems are	系统		review
 #str_200778	now offline	现已离线		review
-#str_200779	system	系统		review
+#str_200779	system	系统状态		review
 #str_200780	systems	系统		review
 #str_200781	2q	2q		review
 #str_200782	3y	3y		review
@@ -872,7 +872,7 @@
 #str_200886	6b	6b		review
 #str_200887	process	处理		review
 #str_200888	st-2	st-2		review
-#str_200889	track	轨道		review
+#str_200889	track	轨道状态		review
 #str_200890	GOD:	GOD：		review
 #str_200891	> incoming missile threat <	> 来袭导弹威胁 <		review
 #str_200892	weapons	武器		review
@@ -943,8 +943,8 @@
 #str_200957	MAINTENANCE	维护		review
 #str_200958	VERIFICATION	验证		review
 #str_200959	Voice Chat	语音聊天		review
-#str_200960	stroyent	stroyent		review
-#str_200961	health	生命值		review
+#str_200960	stroyent	Stroyent		review
+#str_200961	health	生命		review
 #str_200962	DEPLETED	已耗尽		review
 #str_200963	track maintenance 7xj	轨道维护 7xj		review
 #str_200964	OFFLINE	离线		review
@@ -1097,3 +1097,4 @@
 #str_223007	Gun Position	武器位置		review
 #str_223008	Right;Centered;Lower Right	右侧;居中;右下		review
 #str_223009	Enable detailed sky	启用精细天空		review
+#str_390000	electrical warning	电气警告		review

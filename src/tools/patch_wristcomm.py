@@ -17,8 +17,8 @@ import sys
 import zipfile
 from pathlib import Path
 
-SRC_PAK = Path(r"D:\data\Quake 4\q4base\pak001.pk4")
-DST = Path(r"D:\data\idTech4Apx\savedata\q4base\guis\wristcomm.gui")
+SRC_PAK = Path(r"D:\Quake 4\q4base\pak001.pk4")
+DST = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\guis\wristcomm.gui")
 
 EDITS = [
     (b"rect\t0,64,640,20", b"rect\t0,110,640,20"),  # quicksave_msg y=64 -> y=110

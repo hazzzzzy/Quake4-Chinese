@@ -10,10 +10,9 @@
 本导出器的对策：
 - bearing 烘进位图（位图含左侧留白列，宽 = bearing + ink）；
 - xSkip = 真实 advance（四舍五入）；
-- 基础段（ASCII/Latin-1）同一 TTF 自渲染（bearing 烘焙 + 真 advance），
-  单页贴图写为 fonts/chinese/<家族>_<字号>.tga（引擎硬编码该名字为基础段
-  材质）——中英文同字体，混排高度一致（曾试过拼接原版英文段，原版
-  marine 是小型大写风格，与中文混排参差不齐，用户否决）；
+- 基础段（ASCII/Latin-1）通常由同一 TTF 自渲染（bearing 烘焙 + 真
+  advance）；纯数字 HUD 使用的 chain 和 r_strogg 则保留原版基础段，中文
+  宽字表仍用思源黑体；
 - 标点修形：U+2014 —— 拉伸至满格宽（两个连排不断线）、U+2014/U+2026
   垂直居中到 CJK 视觉中线（雅黑原生贴底线，中文排版难看）；
 - 宽表只收 charcode >= 256（引擎 GLYPH_END=255 以下永远走基础段）；
@@ -53,11 +52,11 @@ from PIL import Image, ImageDraw, ImageFont
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-Q4BASE = Path(r"D:\data\Quake 4\q4base")
-OUT_DIR = Path(r"D:\data\idTech4Apx\savedata\q4base\fonts\chinese")
-MTR_PATH = Path(r"D:\data\idTech4Apx\savedata\q4base\materials\zzz_chinese_font_alias.mtr")
-TRANS = Path(r"D:\data\quake4-cn\translations")
-ENG_CACHE = Path(r"D:\data\quake4-cn\assets\english_fonts")
+Q4BASE = Path(r"D:\Quake 4\q4base")
+OUT_DIR = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\fonts\chinese")
+MTR_PATH = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\materials\zzz_chinese_font_alias.mtr")
+TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
+ENG_CACHE = Path(r"D:\PROJECT\quake4-translate-subtitle\assets\english_fonts")
 
 MAGIC = 0x69647466
 VERSION = 0x00010001
@@ -76,12 +75,12 @@ ASPECT = 0.75
 # 字体沿革：msyhbd 粗体 12 号粘连（否）→ msyh 常规（r4 基线）→
 # 2026-07-17 实机 A/B（雅黑/思源Md/HarmonyOS Md/MiSans Md，tmp\font_ab_compare.png）
 # 用户拍板思源黑体 Medium：字幕小字厚实清晰、OFL 开源可随补丁分发
-UI_TTF = r"D:\data\quake4-cn\assets\fonts\SourceHanSansSC-Medium.otf"
+UI_TTF = r"D:\PROJECT\quake4-translate-subtitle\assets\fonts\SourceHanSansSC-Medium.otf"
 # ORIGINAL = 直通原版外星字形（2026-07-17 用户拍板）：strogg 家族恢复 pak001
 # 原版符号字体（改造前终端"看不懂"氛围），并合成宽表把 CJK 稳定伪随机映射到
 # 原版符号——混用 str（外星装饰窗+可读窗共用一条译文，24/27 个）的中文在装饰
-# 窗自动"外星化"，无需回退译文或解耦 gui。r_strogg（改造后可读侧）与 UI 四套
-# 同用思源黑体 Medium（用户要求全体思源，弃用 zh_glow_norm 荧黑）。
+# 窗自动"外星化"，无需回退译文或解耦 gui。r_strogg（改造后可读侧）的 CJK
+# 宽字表使用思源黑体 Medium，ASCII/数字基础段保留原版 r_strogg 字形。
 ORIGINAL = ("<original>", -1)
 FAMILIES = {
     # 家族: (ttf 路径, ttc 索引)；ORIGINAL=直通原版
@@ -236,12 +235,9 @@ def export(fam, size, chars):
     font = ImageFont.truetype(ttf, size * SS, index=idx)  # 按超采样倍率加载
     eng_dat = (ENG_CACHE / f"{fam}_{size}.fontdat").read_bytes()
     assert len(eng_dat) == 256 * 36 + 20, f"英文 fontdat 尺寸异常 {fam}_{size}"
-    # 原版数字方案（2026-07-18 用户建议"游戏中的数字沿用原版"）：chain 家族全部
-    # 用于纯数字 HUD（player_ammo/health/armor/totalammo/powerupN_time），无中英
-    # 混排——基础段直接用原版 fontdat + 原版 tga，数字视觉恢复原版风格（Strogg
-    # 装饰字体感），彻底解决 ASCII drop 让位图 h 变大导致 rect 卡边被裁的问题。
-    # 宽表（CJK）仍保持思源黑体（chain 用不到 CJK 但保留以防脚本注入中文）。
-    use_original_base = (fam == "chain")
+    # 原版数字方案：普通 HUD 的 chain 和改造后 HUD 的 r_strogg 都用于纯数字
+    # 状态值，基础段直接使用各自的原版 fontdat + tga；宽表仍保留思源中文。
+    use_original_base = fam in ("chain", "r_strogg")
 
     # 字体 cmap（子集字体缺字直接跳过，引擎回退 '?'）
     try:
@@ -253,8 +249,11 @@ def export(fam, size, chars):
         cmap = None
     usable = [c for c in chars if cmap is None or ord(c) in cmap]
 
-    # CJK 视觉下沉量（名义 px）：12→1、24→2、48→4
-    drop = max(1, round(size / 12))
+    # CJK 视觉下沉量（名义 px）：普通家族 12→1、24→2、48→4。r_strogg
+    # 用在不可交互的 Strogg 面板时原版窗口基线更低，使用一半下沉量
+    # 12→0、24→1、48→2，避免第三行压住面板下边线。
+    drop = round(size / 24) if fam == "r_strogg" \
+        else max(1, round(size / 12))
     # CJK 视觉中线参考（'中'），用于 ——/…… 垂直居中（名义度量，同 drop）
     bmp_ref, _, h_ref, top_ref, _ = rasterize(font, "中", drop)
     ref_center = (top_ref - h_ref / 2.0) if bmp_ref is not None else None
@@ -487,9 +486,10 @@ def main():
                 for tga in passthrough_original(fam, size, full):  # 全档全量：装饰窗任意字号
                     mtr.append(font_decl(tga, tga))
             continue
-        # chain 家族独立 canonical（不与其他 UI 家族共享贴图）：基础段用原版
-        # HUD 数字视觉（use_original_base 分支），需要独立 tga 页
-        canon_key = ("chain_solo",) if fam == "chain" else key
+        # chain/r_strogg 独立 canonical：两者的 ASCII/数字基础段分别使用原版
+        # 字形，CJK 宽字表仍按思源黑体生成，不能与其他家族整份 fontdat 互拷。
+        canon_key = (f"{fam}_solo",) \
+            if fam in ("chain", "r_strogg") else key
         cfam = canon.setdefault(canon_key, fam)
         for size in SIZES:
             if fam == cfam:

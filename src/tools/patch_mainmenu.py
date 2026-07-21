@@ -19,8 +19,8 @@ import sys
 import zipfile
 from pathlib import Path
 
-SRC_PAK = Path(r"D:\data\Quake 4\q4base\pak021.pk4")
-DST = Path(r"D:\data\idTech4Apx\savedata\q4base\guis\mainmenu.gui")
+SRC_PAK = Path(r"D:\Quake 4\q4base\pak021.pk4")
+DST = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\guis\mainmenu.gui")
 
 # (旧串, 新串, 期望出现次数)
 # 三个按钮的 t_ 文字层 rect y+4，容器与角标 corner 不动（角标在按钮右侧，不与文字重叠）

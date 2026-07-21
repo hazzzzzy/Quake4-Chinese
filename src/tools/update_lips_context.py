@@ -8,8 +8,8 @@ import zipfile
 from collections import defaultdict
 from pathlib import Path
 
-Q4BASE = Path(r"D:\data\Quake 4\q4base")
-TRANS = Path(r"D:\data\quake4-cn\translations")
+Q4BASE = Path(r"D:\Quake 4\q4base")
+TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
 
 SND_RE = re.compile(r'sound\s+(\S+)\s*\{([^}]*)\}', re.S)
 DESC_RE = re.compile(r'description\s+"((?:[^"\\]|\\.)*)"')
