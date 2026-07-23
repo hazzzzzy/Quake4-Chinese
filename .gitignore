@@ -44,9 +44,9 @@ dist/savedata/**/qconsole*.log
 dist/savedata/**/Quake4Config.cfg
 dist/savedata/**/screenshots/
 
-# Screenshots （效果图人工挑选进 screenshots/，不自动入库）
-tests/
-tests/**/*.tga
+# Screenshots （根目录效果图人工挑选进 screenshots/，不自动入库）
+/tests/
+/tests/**/*.tga
 tmp/**/*.tga
 
 # 引擎运行时截图（TGA 输出到 savepath\screenshots\）
