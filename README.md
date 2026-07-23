@@ -1,3 +1,5 @@
+[简体中文](README.md) | [English](README_EN.md)
+
 # Quake 4 简体中文汉化
 
 一份完整的 Quake 4（2005）简体中文汉化补丁：全部界面/菜单/剧情对白翻译、原版本没有的**语音字幕**（含无线电通讯与 PA 广播）、思源黑体中文字体、Strogg 外星文与神经细胞植入后可读文的完整中文化。
@@ -25,7 +27,7 @@
 - Quake 4 原版游戏数据，**已升级到 1.4.2 补丁**
   - Steam 版自带 1.4.2，无需处理
   - 光盘/下载版：`q4base` 里必须有 `pak021.pk4` 与 `pak022.pk4`；没有就先装官方 1.4.2 补丁
-- Python 3.9 或更新版本（**首次安装时的一次性依赖**，用于生成版权敏感物；[安装指引](#安装-python-3)）
+- 使用图形安装器无需另装 Python；仅维护者使用 `postinstall.cmd` 便携流程时需要 Python 3.9 或更新版本
 - 显示器分辨率建议 16:9（默认字体按 16:9 校准；4:3 / 21:9 需重导字体，见 [wiki](#非-169-分辨率)）
 
 ---
@@ -105,7 +107,7 @@ cd Quake4-Translate-Subtitle\dist
 # 编辑 src\tools\export_font.py，把 ASPECT 改成 (4/3)/(你的屏宽/屏高)
 # 例：21:9 (2560x1080) → ASPECT = (4/3)/(2560/1080) = 0.5625
 python src\tools\export_font.py
-# 产物会覆盖 D:\data\idTech4Apx\savedata\q4base\fonts\chinese\；
+# 产物会覆盖工程根 savedata\q4base\fonts\chinese\；
 # 拷到 dist\savedata\q4base\fonts\chinese\ 即可
 ```
 
