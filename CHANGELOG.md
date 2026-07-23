@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.1.1 — 2026-07-23
+
+### 单文件安装器
+
+- 将公开可分发的 `dist/engine` 与 `dist/savedata` 完整嵌入 PyInstaller 单文件 EXE
+- 冻结运行时从 `_MEIPASS/payload` 读取内置资产，不再依赖下载目录旁的 `engine/savedata`
+- Release 新增可直接运行的版本化安装器 `Quake4-Chinese-Installer-v1.1.1.exe`
+- `SHA256SUMS.txt` 同时覆盖 EXE 与便携 ZIP，GitHub Actions Artifact 也上传两种格式
+
 ## v1.1.0 — 2026-07-23
 
 ### 图形安装与存档

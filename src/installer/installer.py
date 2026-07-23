@@ -49,6 +49,7 @@ APP_NAME = "Quake 4 简体中文汉化安装器"
 INSTALL_DIRECTORY_NAME = "Quake4-Chinese"
 LAUNCHER_NAME = "Quake4中文启动器.exe"
 BUNDLED_LAUNCHER_NAME = "Q4CNLauncher.exe"
+BUNDLED_PAYLOAD_DIRECTORY_NAME = "payload"
 SHORTCUT_NAME = "Quake 4 简体中文汉化.lnk"
 REQUIRED_PAKS = ("pak001.pk4", "pak014.pk4", "pak021.pk4", "zpak_english.pk4")
 CREATE_NO_WINDOW = 0x08000000
@@ -89,7 +90,7 @@ class CallbackWriter(io.TextIOBase):
 
 def application_directory() -> Path:
     if getattr(sys, "frozen", False):
-        return Path(sys.executable).resolve().parent
+        return Path(getattr(sys, "_MEIPASS")) / BUNDLED_PAYLOAD_DIRECTORY_NAME
     return Path(__file__).resolve().parents[2] / "dist"
 
 

@@ -27,4 +27,6 @@ Quake 4\
 & .\src\installer\build.ps1
 ```
 
-构建脚本先编译原生启动器，再将启动器和现场生成工具打入图形安装器。最终文件写入 `dist\Quake4-Chinese-Installer.exe`。
+构建脚本先编译原生启动器，再将启动器、现场生成工具以及 `dist\engine`、`dist\savedata` 中的公开 payload 打入单文件图形安装器。冻结运行时从 `_MEIPASS\payload` 读取这些资产，因此最终 EXE 可以脱离 ZIP 和同级资源目录独立运行。
+
+最终文件写入 `dist\Quake4-Chinese-Installer.exe`。运行 `src\tools\package_release.ps1` 时会复制成带版本号的 Release 资产。

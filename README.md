@@ -36,7 +36,9 @@
 
 ### 1. 下载
 
-克隆或下载 [releases](https://github.com/hazzzzzy/Quake4-Translate-Subtitle/releases) 里最新的 `Quake4-Translate-Subtitle-vX.Y.Z.zip` 并解压。
+从 [Releases](https://github.com/hazzzzzy/Quake4-Translate-Subtitle/releases) 下载最新的 `Quake4-Chinese-Installer-vX.Y.Z.exe`。这是内含引擎和汉化公开资产的单文件安装器，下载后可直接运行，无需再下载或解压 ZIP。
+
+`Quake4-Translate-Subtitle-vX.Y.Z.zip` 保留为完整便携包，供维护者和需要手动部署的用户使用。
 
 如果你没有 Release 包也可以直接：
 
@@ -49,7 +51,7 @@ cd Quake4-Translate-Subtitle\dist
 
 ### 2. 首次安装
 
-1. 双击 `dist\Quake4-Chinese-Installer.exe`。
+1. 双击下载的 `Quake4-Chinese-Installer-vX.Y.Z.exe`。
 2. 确认自动识别的 Quake 4 1.4.2 游戏目录，或点“浏览”自行选择。
 3. 按需勾选“创建桌面快捷方式”，然后点“安装汉化”。安装器会从玩家自己的 `pak001.pk4 / pak014.pk4 / pak021.pk4 / zpak_english*.pk4` 现场生成不随汉化分发的运行资产：
    - Strogg 外星文字体（原版）
@@ -196,9 +198,9 @@ python src/tools/export_font.py
 
 ### 自动验证与打包
 
-- push 到 `main`会运行测试、上游补丁校验、安装器构建和分发审计，并上传 ZIP Artifact。
-- push `v*`标签会在验证通过后创建 GitHub Release。
-- 本地可运行 `src\tools\package_release.ps1 -Version dev`生成同结构 ZIP。
+- push 到 `main`会运行测试、上游补丁校验、安装器构建和分发审计，并上传单文件 EXE、ZIP 与校验文件 Artifact。
+- push `v*`标签会在验证通过后创建 GitHub Release，同时提供可直接运行的版本化 EXE 和便携 ZIP。
+- 本地可运行 `src\tools\package_release.ps1 -Version dev`生成同结构 EXE、ZIP 与校验文件。
 
 ---
 

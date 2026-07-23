@@ -7,6 +7,7 @@ param(
 $ErrorActionPreference = "Stop"
 $source = $PSScriptRoot
 $repository = (Resolve-Path (Join-Path $source "..\..")).Path
+$distribution = Join-Path $repository "dist"
 $build = Join-Path $repository "tmp\build-installer-native"
 $package = Join-Path $repository "tmp\package-installer"
 $pyiWork = Join-Path $repository "tmp\pyinstaller-work"
@@ -121,6 +122,19 @@ if (-not (Test-Path -LiteralPath $launcher)) {
     throw "Launcher output was not found: $launcher"
 }
 
+$payloadEngine = Join-Path $distribution "engine"
+$payloadSavedata = Join-Path $distribution "savedata"
+$payloadRequired = @(
+    (Join-Path $payloadEngine "Quake4.exe"),
+    (Join-Path $payloadEngine "q4game.dll"),
+    (Join-Path $payloadSavedata "q4base\strings\chinese_guis.lang")
+)
+foreach ($path in $payloadRequired) {
+    if (-not (Test-Path -LiteralPath $path -PathType Leaf)) {
+        throw "Missing installer payload: $path"
+    }
+}
+
 & $python -m PyInstaller `
     --noconfirm `
     --clean `
@@ -134,6 +148,8 @@ if (-not (Test-Path -LiteralPath $launcher)) {
     --paths (Join-Path $repository "src\tools") `
     --hidden-import build_dist_extras `
     --add-binary "$launcher;." `
+    --add-data "$payloadEngine;payload\engine" `
+    --add-data "$payloadSavedata;payload\savedata" `
     (Join-Path $source "installer.py")
 if ($LASTEXITCODE -ne 0) {
     throw "Installer build failed with exit code $LASTEXITCODE"
@@ -141,6 +157,13 @@ if ($LASTEXITCODE -ne 0) {
 
 $installer = Join-Path $package "Quake4-Chinese-Installer.exe"
 $destination = Join-Path $repository "dist\Quake4-Chinese-Installer.exe"
+& $python (Join-Path $source "verify_bundle.py") `
+    --installer $installer `
+    --engine $payloadEngine `
+    --savedata $payloadSavedata
+if ($LASTEXITCODE -ne 0) {
+    throw "Installer payload verification failed with exit code $LASTEXITCODE"
+}
 Copy-Item -LiteralPath $installer -Destination $destination -Force
 Write-Output "Launcher: $launcher"
 Write-Output "Installer: $destination"

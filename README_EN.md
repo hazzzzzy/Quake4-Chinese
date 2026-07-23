@@ -30,8 +30,8 @@ The graphical installer is self-contained and does not require a separate Python
 
 ## Installation
 
-1. Download the latest `Quake4-Translate-Subtitle-vX.Y.Z.zip` from [Releases](https://github.com/hazzzzzy/Quake4-Translate-Subtitle/releases) and extract it.
-2. Run `Quake4-Chinese-Installer.exe`.
+1. Download the latest `Quake4-Chinese-Installer-vX.Y.Z.exe` from [Releases](https://github.com/hazzzzzy/Quake4-Translate-Subtitle/releases). It is a standalone installer containing the public engine and localization payload, so the portable ZIP is not required.
+2. Run the downloaded installer.
 3. Confirm the detected Quake 4 directory or select it manually.
 4. Optionally enable the desktop shortcut, then start the installation.
 5. Launch the game with `Quake4中文启动器.exe` in the original game directory or through the desktop shortcut.
@@ -44,6 +44,8 @@ During installation, the program derives several runtime assets from the player'
 - An English-voice path alias package used by the Chinese language mode
 
 These derived assets are not distributed by this repository.
+
+The versioned ZIP remains available as a complete portable package for maintainers and manual deployments.
 
 ## Installed Layout
 
@@ -97,7 +99,7 @@ Build the Windows installer:
 & .\src\installer\build.ps1 -Configuration Release
 ```
 
-Create the same distribution archive used by GitHub Actions:
+Create the same standalone installer, portable archive, and checksum assets used by GitHub Actions:
 
 ```powershell
 & .\src\tools\package_release.ps1 -Version dev
@@ -113,9 +115,9 @@ See [src/engine-patches/README.md](src/engine-patches/README.md) for the full pr
 
 ## Automated Releases
 
-- Pushes to `main` run validation and upload a workflow artifact.
+- Pushes to `main` run validation and upload the standalone EXE, portable ZIP, and checksums as workflow artifacts.
 - Tags matching `v*` run the same validation and publish a GitHub Release.
-- Release assets include the versioned ZIP and `SHA256SUMS.txt`.
+- Release assets include the versioned standalone installer, portable ZIP, and `SHA256SUMS.txt`.
 
 ## Licensing
 

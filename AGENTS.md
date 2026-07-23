@@ -146,7 +146,7 @@ idTech4Apx/quake4/q4game.dll.official
 
 ## 自动打包
 
-- push 到 `main`后，GitHub Actions 运行 Python 检查、安装器测试、上游补丁校验、安装器构建和分发审计，并上传 ZIP Artifact。
+- push 到 `main`后，GitHub Actions 运行 Python 检查、安装器测试、上游补丁校验、安装器构建和分发审计，并上传自包含 EXE、便携 ZIP 与校验文件 Artifact。
 - push `v*`标签时，在相同验证通过后创建 GitHub Release。
 - 本地等价打包入口是 `src/tools/package_release.ps1`。
 - 分发包不得包含运行时从正版 pak 提取的 Strogg 图集、GUI、语音别名、存档、日志或截图。

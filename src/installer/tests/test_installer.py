@@ -54,6 +54,18 @@ def make_wide_fontdat(size, codes):
 
 
 class InstallerTests(unittest.TestCase):
+    def test_frozen_application_directory_uses_bundled_payload(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            bundle = Path(temporary)
+            executable = bundle / "Quake4-Chinese-Installer.exe"
+            with mock.patch.object(installer.sys, "frozen", True, create=True), \
+                 mock.patch.object(installer.sys, "_MEIPASS", str(bundle), create=True), \
+                 mock.patch.object(installer.sys, "executable", str(executable)):
+                self.assertEqual(
+                    installer.application_directory(),
+                    bundle / "payload",
+                )
+
     def test_strogg_fonts_are_extracted_from_complete_pak(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

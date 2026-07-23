@@ -43,9 +43,11 @@ if ($forbidden) {
 
 $safeVersion = [regex]::Replace($Version, "[^0-9A-Za-z._-]", "-")
 $packageName = "Quake4-Translate-Subtitle-$safeVersion"
+$installerName = "Quake4-Chinese-Installer-$safeVersion.exe"
 $stageParent = Join-Path $repository "tmp\package-release"
 $stage = Join-Path $stageParent $packageName
 $zip = Join-Path $OutputDirectory "$packageName.zip"
+$installer = Join-Path $OutputDirectory $installerName
 $checksums = Join-Path $OutputDirectory "SHA256SUMS.txt"
 
 if (Test-Path -LiteralPath $stageParent) {
@@ -53,6 +55,9 @@ if (Test-Path -LiteralPath $stageParent) {
 }
 if (Test-Path -LiteralPath $zip) {
     Remove-Item -LiteralPath $zip -Force
+}
+if (Test-Path -LiteralPath $installer) {
+    Remove-Item -LiteralPath $installer -Force
 }
 New-Item -ItemType Directory -Path $stage -Force | Out-Null
 New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
@@ -64,11 +69,16 @@ foreach ($name in @("LICENSE", "LICENSE-FONTS.txt", "CHANGELOG.md")) {
     Copy-Item -LiteralPath (Join-Path $repository $name) -Destination $stage -Force
 }
 
+Copy-Item -LiteralPath (Join-Path $distribution "Quake4-Chinese-Installer.exe") `
+    -Destination $installer -Force
 Compress-Archive -LiteralPath $stage -DestinationPath $zip -CompressionLevel Optimal
-$hash = (Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash
-"$hash  $([System.IO.Path]::GetFileName($zip))" |
-    Set-Content -LiteralPath $checksums -Encoding ASCII
+$checksumLines = foreach ($path in @($installer, $zip)) {
+    $hash = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash
+    "$hash  $([System.IO.Path]::GetFileName($path))"
+}
+$checksumLines | Set-Content -LiteralPath $checksums -Encoding ASCII
 
+Write-Output "Installer: $installer"
 Write-Output "Package: $zip"
 Write-Output "Checksums: $checksums"
-Write-Output "SHA256: $hash"
+$checksumLines | ForEach-Object { Write-Output "SHA256: $_" }
