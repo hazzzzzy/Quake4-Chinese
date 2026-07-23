@@ -2,7 +2,8 @@
 """小队名改为全中文译名（用户 2026-07-16 拍板）。"""
 from pathlib import Path
 
-TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
+REPOSITORY = Path(__file__).resolve().parents[2]
+TRANS = REPOSITORY / "src" / "translations"
 
 SQUADS = {
     "Rhino": "犀牛", "Scorpion": "天蝎", "Badger": "猛獾", "Condor": "神鹰",

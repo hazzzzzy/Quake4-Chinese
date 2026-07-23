@@ -1,0 +1,6 @@
+﻿fonttools==4.63.0
+capstone==5.0.9
+numpy==2.5.1
+pefile==2024.8.26
+pillow==12.3.0
+pyinstaller==6.21.0

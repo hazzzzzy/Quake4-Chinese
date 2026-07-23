@@ -278,11 +278,11 @@ gap = { keys from map/def "lipsync_*" }  -  { all .lipsync decl names }
 - 英文模式 → `sound/vo_english/`
 - 中文模式 → `sound/vo_chinese/`
 
-原版 pak001 里只有 `sound/vo_english/*`，中文模式找 `vo_chinese` 落空即静音。
+原版 `zpak_english*.pk4` 里只有 `sound/vo_english/*`，中文模式查找 `vo_chinese` 时会静音。
 
 ### 解法：语音路径别名 pk4
 
-生成 `zzz_vo_chinese_alias.pk4`，把 pak001 里 `sound/vo_english/*` 全部改路径为 `sound/vo_chinese/*`（英文原声），放 `savedata\q4base\`。**不复制音频到别处**，只在 zip 内改路径（`ZipInfo` 重命名 + 保留原压缩数据）。3406 个音频，64.7MB。
+生成 `zzz_vo_chinese_alias.pk4`，按顺序合并 `zpak_english*.pk4`，把其中 `sound/vo_english/*` 改路径为 `sound/vo_chinese/*`（英文原声），放入 `savedata\q4base\`。后续补丁包中的同名条目覆盖基础包。当前共 3406 个音频，约 64.7MB。
 
 ### 分发注意
 
@@ -418,10 +418,10 @@ quit                                ; 结束会话
 | 资产 | 版权归属 | 处理 |
 |---|---|---|
 | 原版 `q4game.dll`（`q4game.dll.official`） | Raven | 不发；玩家已有 |
-| 原版 `strogg_*.{fontdat,tga}`（外星文字体直通） | Raven | 玩家运行 postinstall 从 pak021 现场提取 |
+| 原版 `strogg_*.{fontdat,tga}` 与 `r_strogg_*.tga` 基础页 | Raven | 玩家运行安装器或 postinstall 从 pak001 现场提取并生成宽表 |
 | 原版 `hud.gui`（我们只改 2 处 rect） | Raven | 玩家运行 postinstall 从 pak021 提取 + apply patch |
 | 原版 `med1_textchange.gui`（我们只改 35 处 text/rect） | Raven | 玩家运行 postinstall 从 pak001 提取 + apply patch |
-| `zzz_vo_chinese_alias.pk4`（英文原声路径别名） | Raven | 玩家运行 postinstall 从 pak001 现场生成 |
+| `zzz_vo_chinese_alias.pk4`（英文原声路径别名） | Raven | 玩家运行安装器或 postinstall 从 `zpak_english*.pk4` 现场生成 |
 
 ### 可以进汉化补丁的资产
 
@@ -433,7 +433,7 @@ quit                                ; 结束会话
 
 ### 「一次性 postinstall」模式
 
-设计 `postinstall.cmd` + `build_dist_extras.py` 让玩家首次安装时**从自己合法拥有的原版数据现场生成**版权敏感物，写入 `savedata` 树。既不"分发原版素材"，也不"重复复制音频"（`ZipInfo` 重命名保留原压缩数据）。
+图形安装器以及 `postinstall.cmd` 都会调用 `build_dist_extras.py`，让玩家首次安装时从自己持有的原版数据现场生成版权敏感物并写入独立 `savedata` 树；公开包中不携带这些生成结果。
 
 ---
 

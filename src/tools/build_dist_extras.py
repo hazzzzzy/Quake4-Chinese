@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""从玩家自己的原版 Quake 4（pak001.pk4 + pak014.pk4 + pak021.pk4）现场补齐版权敏感物：
+"""从玩家自己的原版 Quake 4 数据现场补齐版权敏感物：
 
-  1. fonts/chinese/strogg_{12,24,48}.{fontdat,tga}     — 原版外星文字体直通
+  1. fonts/chinese/strogg_* 与 r_strogg 基础页          — 从 pak001 提取并生成宽表
   2. guis/hud.gui                                       — HUD 中文排版补丁
   3. guis/hud_strogg.gui + wristcomm_strogg.gui          — 改造后 HUD 中文排版
   4. guis/common/strogg/health_station*.gui               — 生命补给器文本
@@ -24,9 +24,17 @@ import argparse
 import io
 import os
 import shutil
+import struct
 import sys
 import zipfile
 from pathlib import Path
+from typing import Callable
+
+
+FONTDAT_BASE_SIZE = 256 * 36 + 20
+FONTDAT_MAGIC = 0x69647466
+FONTDAT_VERSION = 0x00010001
+R_STROGG_DROP_DELTA = {12: 1, 24: 1, 48: 2}
 
 
 # ---- med1_textchange.gui 补丁：按 windowDef 名字定位，避免行号/上下文歧义 ----
@@ -237,9 +245,9 @@ def patch_window_property(text: str, window: str, prop: str,
 def patch_health_station_strogg_gui(text: str) -> str:
     """改造前补给器保留原英文词长，并校正三行 Strogg 文字基线。"""
     rect_edits = [
-        ("r_text1", "272,90,347,48", "272,87,347,48"),
-        ("r_text2", "272,130,347,48", "272,127,347,48"),
-        ("r_text3", "272,170,347,48", "272,167,347,48"),
+        ("r_text1", "272,90,347,48", "272,85,347,48"),
+        ("r_text2", "272,130,347,48", "272,125,347,48"),
+        ("r_text3", "272,170,347,48", "272,165,347,48"),
     ]
     for window_name, old_rect, new_rect in rect_edits:
         text = patch_window_property(
@@ -264,9 +272,9 @@ def patch_exitlevel_gui(text: str) -> str:
 
 
 def patch_sys_offline_gui(text: str) -> str:
-    """把“系统状态 / 现已离线”放回原可读文本区域的视觉中心。"""
+    """把“系统 / 现已离线”放回原可读文本区域的视觉中心。"""
     text = patch_window_property(
-        text, "system_r", "rect", "186,169,275,63", "239,169,222,63")
+        text, "system_r", "rect", "186,169,275,63", "276,169,222,63")
     text = patch_window_property(
         text, "offline_r", "rect", "121,223,403,87", "202,223,322,87")
     return patch_window_property(
@@ -274,9 +282,9 @@ def patch_sys_offline_gui(text: str) -> str:
 
 
 def patch_static4_gui(text: str) -> str:
-    """居中 static4 的“系统状态 / 现已离线”可读分支。"""
+    """居中 static4 的“系统 / 现已离线”可读分支。"""
     text = patch_window_property(
-        text, "system_r", "rect", "169,302,305,77", "227,302,247,77")
+        text, "system_r", "rect", "169,302,305,77", "276,302,247,77")
     text = patch_window_property(
         text, "offline_r", "rect", "78,347,489,102", "206,355,361,102")
     text = patch_window_property(
@@ -296,7 +304,7 @@ def patch_directional_offline_gui(text: str) -> str:
 
 
 def patch_warn_electrical_gui(text: str) -> str:
-    """居中电气警告的两个交替状态，并让“高压危险”保持可读字号。"""
+    """让电气警告的两个交替窗口显示相同文案和位置。"""
     text = patch_window_property(
         text, "warning", "rect", "104,329,431,73", "218,332,317,73")
     text = patch_window_property(
@@ -304,7 +312,9 @@ def patch_warn_electrical_gui(text: str) -> str:
     text = patch_window_property(
         text, "warning", "textscale", "1.6", "1.4")
     text = patch_window_property(
-        text, "highvoltage", "rect", "58,341,515,54", "213,332,360,54")
+        text, "highvoltage", "rect", "58,341,515,54", "218,332,317,73")
+    text = patch_window_property(
+        text, "highvoltage", "text", '"#str_200372"', '"#str_390000"')
     return patch_window_property(
         text, "highvoltage", "textscale", "1.2", "1.4")
 
@@ -381,38 +391,223 @@ def write_utf8(dst: Path, text: str) -> None:
     dst.write_bytes(text.encode("utf-8"))
 
 
-def extract_strogg_fonts(pak021: Path, out_fonts: Path) -> None:
-    """从 pak021 提取 fonts/english/strogg_{12,24,48}.{fontdat,tga}，
-    改名为 fonts/chinese/strogg_* 放入 savedata（松散文件）。"""
-    with zipfile.ZipFile(pak021) as zf:
-        for name in zf.namelist():
-            if name.startswith("fonts/english/strogg_") and \
-               name.endswith((".fontdat", ".tga")):
-                data = zf.read(name)
-                dst = out_fonts / Path(name).name
-                dst.parent.mkdir(parents=True, exist_ok=True)
-                dst.write_bytes(data)
+def parse_wide_fontdat(data: bytes) -> tuple[int, tuple[int, ...], int, int]:
+    """返回宽表页高、索引表、字形数和第一条字形记录偏移。"""
+    if len(data) < FONTDAT_BASE_SIZE + 24:
+        raise RuntimeError("中文参考 fontdat 缺少宽字符扩展段")
+    magic, version, _num_files, _width, height = struct.unpack_from(
+        "<IIiii", data, FONTDAT_BASE_SIZE)
+    if magic != FONTDAT_MAGIC or version != FONTDAT_VERSION:
+        raise RuntimeError("中文参考 fontdat 的宽字符扩展头异常")
+    offset = FONTDAT_BASE_SIZE + 20
+    num_indexes = struct.unpack_from("<i", data, offset)[0]
+    offset += 4
+    indexes_size = num_indexes * 4
+    if num_indexes <= 0 or offset + indexes_size + 4 > len(data):
+        raise RuntimeError("中文参考 fontdat 的索引表异常")
+    indexes = struct.unpack_from(f"<{num_indexes}i", data, offset)
+    offset += indexes_size
+    num_glyphs = struct.unpack_from("<i", data, offset)[0]
+    offset += 4
+    if num_glyphs < 0 or offset + num_glyphs * 68 > len(data):
+        raise RuntimeError("中文参考 fontdat 的字形表异常")
+    return height, indexes, num_glyphs, offset
 
 
-def build_vo_alias_pk4(pak001: Path, out_pk4: Path) -> int:
-    """把 pak001 里 sound/vo_english/*.* 全部改路径为 sound/vo_chinese/*.* 打进新 pk4。
+def extend_strogg_fontdat(original: bytes, codes: list[int], size: int) -> bytes:
+    """在原版 Strogg 基础段后追加把中文稳定映射为外星符号的宽表。"""
+    if len(original) != FONTDAT_BASE_SIZE:
+        raise RuntimeError(f"原版 strogg_{size}.fontdat 尺寸异常")
+    pool = []
+    for code in (*range(97, 123), *range(65, 91), *range(48, 58)):
+        record = struct.unpack_from("<9f", original, code * 36)
+        if record[0] > 0 and record[1] > 0:
+            pool.append(record)
+    if not pool:
+        raise RuntimeError(f"原版 strogg_{size}.fontdat 没有可用符号")
 
-    使用 zipfile 的 ZipInfo 保留原压缩方法（stored/deflate）+ 原压缩数据流复制，
-    避免解压→重压的耗时（约 3-5 分钟 vs 秒级）。
+    codes = sorted(set(codes))
+    if not codes:
+        raise RuntimeError("中文参考 fontdat 没有宽字符")
+    output = io.BytesIO()
+    output.write(original)
+    output.write(struct.pack(
+        "<IIiii", FONTDAT_MAGIC, FONTDAT_VERSION, 1, 0, 0))
+    num_indexes = codes[-1] + 1
+    output.write(struct.pack("<i", num_indexes))
+    indexes = [-1] * num_indexes
+    for glyph_index, code in enumerate(codes):
+        indexes[code] = glyph_index
+    output.write(struct.pack(f"<{num_indexes}i", *indexes))
+    output.write(struct.pack("<i", len(codes)))
+    shader = f"{size}.tga".encode("ascii").ljust(32, b"\x00")
+    for code in codes:
+        output.write(struct.pack("<9f", *pool[(code * 2654435761) % len(pool)]))
+        output.write(shader)
+    return output.getvalue()
+
+
+def build_readable_strogg_fontdat(
+    original: bytes,
+    chinese_reference: bytes,
+    size: int,
+) -> bytes:
+    """组合原版 r_strogg 基础段与可复用 marine 图集的中文宽表。"""
+    if len(original) != FONTDAT_BASE_SIZE:
+        raise RuntimeError(f"原版 r_strogg_{size}.fontdat 尺寸异常")
+    result = bytearray(original + chinese_reference[FONTDAT_BASE_SIZE:])
+    page_height, _indexes, num_glyphs, glyph_offset = parse_wide_fontdat(result)
+    if page_height <= 0:
+        raise RuntimeError(f"r_strogg_{size} 中文参考图集高度异常")
+    drop_delta = R_STROGG_DROP_DELTA[size]
+    for index in range(num_glyphs):
+        offset = glyph_offset + index * 68
+        values = list(struct.unpack_from("<9f", result, offset))
+        if values[0] > 0 and values[1] >= drop_delta:
+            values[1] -= drop_delta
+            values[6] += drop_delta * 2 / page_height
+            struct.pack_into("<9f", result, offset, *values)
+    return bytes(result)
+
+
+def patch_readable_strogg_materials(material_path: Path) -> None:
+    """r_strogg 基础页使用现场提取的原版贴图，宽表页继续复用 marine。"""
+    text = material_path.read_text(encoding="utf-8")
+    for size in (12, 24, 48):
+        header = f"fonts/chinese/r_strogg_{size}.tga"
+        old = (
+            f'{header}\n{{\n\t{{\n\t\tblend blend\n\t\tcolored\n'
+            f'\t\tmap "fonts/chinese/marine_{size}.tga"'
+        )
+        new = old.replace(
+            f'map "fonts/chinese/marine_{size}.tga"',
+            f'map "fonts/chinese/r_strogg_{size}.tga"',
+        )
+        old_count = text.count(old)
+        new_count = text.count(new)
+        if old_count == 1 and new_count == 0:
+            text = text.replace(old, new)
+        elif old_count == 0 and new_count == 1:
+            continue
+        else:
+            raise RuntimeError(f"字体材质中 {header} 的基础页别名匹配数异常")
+    material_path.write_text(text, encoding="utf-8")
+
+
+def extract_strogg_fonts(pak001: Path, out_fonts: Path) -> None:
+    """现场生成装饰 Strogg 与改造后可读 Strogg 字体。"""
+    expected = {
+        f"fonts/english/{family}_{size}.{extension}"
+        for family in ("strogg", "r_strogg")
+        for size in (12, 24, 48)
+        for extension in ("fontdat", "tga")
+    }
+    with zipfile.ZipFile(pak001) as zf:
+        available = set(zf.namelist())
+        missing = sorted(expected - available)
+        if missing:
+            raise RuntimeError(
+                f"{pak001.name} 缺少 Strogg 字体文件：" + "、".join(missing)
+            )
+        marine_references = {
+            size: (out_fonts / f"marine_{size}.fontdat").read_bytes()
+            for size in (12, 24, 48)
+        }
+        readable_references = {
+            size: (out_fonts / f"r_strogg_{size}.fontdat").read_bytes()
+            for size in (12, 24, 48)
+        }
+        _height, indexes, _glyphs, _offset = parse_wide_fontdat(
+            marine_references[12])
+        full_codes = [
+            code for code, glyph_index in enumerate(indexes)
+            if glyph_index >= 0
+        ]
+        full_codes.append(0xFFFD)
+        for size in (12, 24, 48):
+            _height, marine_indexes, _glyphs, _offset = parse_wide_fontdat(
+                marine_references[size])
+            _height, readable_indexes, _glyphs, _offset = parse_wide_fontdat(
+                readable_references[size])
+            missing_codes = [
+                code for code, glyph_index in enumerate(readable_indexes)
+                if glyph_index >= 0 and (
+                    code >= len(marine_indexes) or marine_indexes[code] < 0)
+            ]
+            if missing_codes:
+                preview = "、".join(
+                    f"U+{code:04X}" for code in missing_codes[:8])
+                raise RuntimeError(
+                    f"marine_{size}.fontdat 缺少 r_strogg 字符：{preview}")
+        out_fonts.mkdir(parents=True, exist_ok=True)
+        for size in (12, 24, 48):
+            strogg_base = zf.read(f"fonts/english/strogg_{size}.fontdat")
+            (out_fonts / f"strogg_{size}.fontdat").write_bytes(
+                extend_strogg_fontdat(strogg_base, full_codes, size))
+            (out_fonts / f"strogg_{size}.tga").write_bytes(
+                zf.read(f"fonts/english/strogg_{size}.tga"))
+
+            readable_base = zf.read(f"fonts/english/r_strogg_{size}.fontdat")
+            (out_fonts / f"r_strogg_{size}.fontdat").write_bytes(
+                build_readable_strogg_fontdat(
+                    readable_base, marine_references[size], size))
+            (out_fonts / f"r_strogg_{size}.tga").write_bytes(
+                zf.read(f"fonts/english/r_strogg_{size}.tga"))
+
+
+def build_vo_alias_pk4(
+    voice_paks: list[Path],
+    out_pk4: Path,
+    progress: Callable[[int, int], None] | None = None,
+) -> int:
+    """把英文语音改为中文语言路径并合并到一个 pk4。
+
+    按文件名顺序合并 zpak_english*.pk4；后续补丁包中的同名条目覆盖基础包。
     """
-    count = 0
-    with zipfile.ZipFile(pak001) as src, \
-         zipfile.ZipFile(out_pk4, "w", zipfile.ZIP_DEFLATED) as dst:
-        for info in src.infolist():
-            if info.filename.startswith("sound/vo_english/") and not info.is_dir():
-                data = src.read(info)  # 解压→重压（65MB 的音频不用 stored 也可接受）
-                new_info = zipfile.ZipInfo(
-                    info.filename.replace("sound/vo_english/", "sound/vo_chinese/", 1))
-                new_info.compress_type = info.compress_type
-                new_info.date_time = info.date_time
-                dst.writestr(new_info, data)
-                count += 1
-    return count
+    entries: dict[
+        str,
+        tuple[Path, str, int, tuple[int, int, int, int, int, int], int],
+    ] = {}
+    for voice_pak in voice_paks:
+        with zipfile.ZipFile(voice_pak) as src:
+            for info in src.infolist():
+                if not info.filename.startswith("sound/vo_english/") or info.is_dir():
+                    continue
+                target = info.filename.replace(
+                    "sound/vo_english/", "sound/vo_chinese/", 1)
+                entries[target] = (
+                    voice_pak,
+                    info.filename,
+                    info.compress_type,
+                    info.date_time,
+                    info.file_size,
+                )
+
+    if not entries:
+        raise RuntimeError("zpak_english*.pk4 中没有找到英文语音文件")
+
+    sources: dict[Path, zipfile.ZipFile] = {}
+    total_bytes = sum(source_info[4] for source_info in entries.values())
+    completed_bytes = 0
+    reported_percent = -1
+    try:
+        with zipfile.ZipFile(out_pk4, "w", zipfile.ZIP_DEFLATED) as dst:
+            for target, source_info in entries.items():
+                source_path, source_name, compress_type, date_time, file_size = source_info
+                source = sources.setdefault(source_path, zipfile.ZipFile(source_path))
+                new_info = zipfile.ZipInfo(target)
+                new_info.compress_type = compress_type
+                new_info.date_time = date_time
+                dst.writestr(new_info, source.read(source_name))
+                completed_bytes += file_size
+                percent = completed_bytes * 100 // max(total_bytes, 1)
+                if progress is not None and percent != reported_percent:
+                    progress(completed_bytes, total_bytes)
+                    reported_percent = percent
+    finally:
+        for source in sources.values():
+            source.close()
+    return len(entries)
 
 
 def extract_and_patch(pak: Path, entry: str, patch_fn, out_file: Path) -> None:
@@ -421,17 +616,14 @@ def extract_and_patch(pak: Path, entry: str, patch_fn, out_file: Path) -> None:
     write_utf8(out_file, patch_fn(raw))
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description="补齐 Quake 4 汉化版权敏感资产")
-    ap.add_argument("--game-dir", required=True,
-                    help="原版 Quake 4 安装目录（包含 q4base 子目录）")
-    ap.add_argument("--out", required=True,
-                    help="补齐物输出根（一般 = dist\\savedata\\q4base）")
-    ap.add_argument("--skip-vo", action="store_true",
-                    help="跳过语音别名 pk4（调试用；正常玩家务必生成）")
-    args = ap.parse_args()
-
-    game_dir = Path(args.game_dir)
+def build_assets(
+    game_dir: Path,
+    out: Path,
+    skip_vo: bool = False,
+    progress: Callable[[float, str], None] | None = None,
+) -> int:
+    """从玩家的原版 pak 现场生成不可随补丁分发的运行资产。"""
+    game_dir = Path(game_dir)
     q4base = game_dir / "q4base"
     pak001 = q4base / "pak001.pk4"
     pak014 = q4base / "pak014.pk4"
@@ -442,15 +634,33 @@ def main() -> int:
             print("请检查 --game-dir 是否指向 Quake 4 安装目录 (1.4.2 补丁必需)。")
             return 1
 
-    out = Path(args.out)
-    out.mkdir(parents=True, exist_ok=True)
+    voice_paks = sorted(q4base.glob("zpak_english*.pk4"))
+    if not skip_vo and not (q4base / "zpak_english.pk4").is_file():
+        print(f"[错误] 找不到 {q4base / 'zpak_english.pk4'}", file=sys.stderr)
+        print("请确认已安装 Quake 4 英文语音数据。", file=sys.stderr)
+        return 1
 
-    print("[1/4] 提取 Strogg 外星文字体（pak021 → fonts/chinese/strogg_*）...", flush=True)
-    extract_strogg_fonts(pak021, out / "fonts" / "chinese")
+    out = Path(out)
+    out.mkdir(parents=True, exist_ok=True)
+    small_step = 0
+    small_step_total = 17
+
+    def advance(message: str) -> None:
+        nonlocal small_step
+        small_step += 1
+        if progress is not None:
+            progress(0.2 * small_step / small_step_total, message)
+
+    print("[1/4] 提取 Strogg 外星文字体（pak001 → fonts/chinese/strogg_*）...", flush=True)
+    extract_strogg_fonts(pak001, out / "fonts" / "chinese")
+    patch_readable_strogg_materials(
+        out / "materials" / "zzz_chinese_font_alias.mtr")
+    advance("已提取 Strogg 字体")
 
     print("[2/4] 补丁 hud.gui（pak021 → guis/hud.gui，中文排版）...", flush=True)
     extract_and_patch(pak021, "guis/hud.gui",
                       patch_hud_gui, out / "guis" / "hud.gui")
+    advance("已生成 HUD")
 
     print("[2b] 补丁 mainmenu.gui（pak021 → guis/mainmenu.gui，设置页 3 按钮 rect y+4）...", flush=True)
     with zipfile.ZipFile(pak021) as zf:
@@ -458,12 +668,16 @@ def main() -> int:
     mm_out = out / "guis" / "mainmenu.gui"
     mm_out.parent.mkdir(parents=True, exist_ok=True)
     mm_out.write_bytes(patch_mainmenu_gui(mm))
+    advance("已生成主菜单")
 
     print("[2c] 补丁 wristcomm.gui（pak001 → guis/wristcomm.gui，quicksave_msg y=64→110）...", flush=True)
     with zipfile.ZipFile(pak001) as zf:
         wc = zf.read("guis/wristcomm.gui")
-    wc = wc.replace(b"rect\t0,64,640,20", b"rect\t0,110,640,20", 1)
+    old = b"rect\t0,64,640,20"
+    assert wc.count(old) == 1, "wristcomm.gui 找不到唯一的 quicksave_msg"
+    wc = wc.replace(old, b"rect\t0,110,640,20")
     (out / "guis" / "wristcomm.gui").write_bytes(wc)
+    advance("已生成腕表界面")
 
     print("[2d] 补丁改造后 HUD 与腕表...", flush=True)
     extract_and_patch(pak014, "guis/hud_strogg.gui",
@@ -475,31 +689,37 @@ def main() -> int:
         "wristcomm_strogg.gui 找不到唯一的 quicksave_msg"
     wc_strogg = wc_strogg.replace(old, b"rect\t0,110,640,20")
     (out / "guis" / "wristcomm_strogg.gui").write_bytes(wc_strogg)
+    advance("已生成改造后 HUD")
 
     print("[2e] 补丁 health_station.gui（Stroyent 生命补给站）...", flush=True)
     extract_and_patch(pak001, "guis/common/strogg/health_station.gui",
                       patch_health_station_gui,
                       out / "guis" / "common" / "strogg" / "health_station.gui")
+    advance("已生成生命补给器界面")
 
     print("[2f] 补丁 health_station_s.gui（改造前完整 Strogg 字母）...", flush=True)
     extract_and_patch(pak001, "guis/common/strogg/health_station_s.gui",
                       patch_health_station_strogg_gui,
                       out / "guis" / "common" / "strogg" / "health_station_s.gui")
+    advance("已生成改造前生命补给器界面")
 
     print("[2g] 补丁 exitlevel.gui（改造前 EXIT 纵向居中）...", flush=True)
     extract_and_patch(pak001, "guis/common/exitlevel.gui",
                       patch_exitlevel_gui,
                       out / "guis" / "common" / "exitlevel.gui")
+    advance("已生成撤离界面")
 
     print("[3/4] 补丁 med1_textchange.gui（pak001 → 神经细胞植入转译动画中文化）...", flush=True)
     extract_and_patch(pak001, "guis/maps/medlabs/med1_textchange.gui",
                       patch_medlab_gui,
                       out / "guis" / "maps" / "medlabs" / "med1_textchange.gui")
+    advance("已生成转译动画")
 
     print("[3b] 补丁 activate_lift.gui（pak001 → Strogg 文字对齐）...", flush=True)
     extract_and_patch(pak001, "guis/movers/strogg/activate_lift.gui",
                       patch_lift_gui,
                       out / "guis" / "movers" / "strogg" / "activate_lift.gui")
+    advance("已生成电梯面板")
 
     lift_variants = [
         (pak014, "activate_lift_blue.gui"),
@@ -511,6 +731,7 @@ def main() -> int:
         extract_and_patch(pak, f"guis/movers/strogg/{name}",
                           patch_lift_gui,
                           out / "guis" / "movers" / "strogg" / name)
+        advance(f"已生成 {name}")
 
     status_panels = [
         ("guis/monitors/strogg/sys_offline.gui", patch_sys_offline_gui),
@@ -523,18 +744,37 @@ def main() -> int:
     for entry, patch_fn in status_panels:
         print(f"[3d] 补丁 {entry}（四字状态居中）...", flush=True)
         extract_and_patch(pak001, entry, patch_fn, out / entry)
+        advance(f"已生成 {Path(entry).name}")
 
-    if args.skip_vo:
+    if skip_vo:
         print("[4/4] 已跳过语音别名 pk4（--skip-vo）")
     else:
         pk4 = out / "zzz_vo_chinese_alias.pk4"
-        print(f"[4/4] 生成中文语音路径别名 pk4（pak001 vo_english → vo_chinese, {pk4.name}，约需 1-3 分钟）...", flush=True)
-        n = build_vo_alias_pk4(pak001, pk4)
+        print(f"[4/4] 生成中文语音路径别名 pk4（zpak_english*.pk4 → vo_chinese, {pk4.name}，约需 1-3 分钟）...", flush=True)
+        def voice_progress(done: int, total: int) -> None:
+            if progress is not None:
+                progress(0.2 + 0.8 * done / max(total, 1), "正在生成语音别名")
+
+        n = build_vo_alias_pk4(voice_paks, pk4, voice_progress)
         print(f"      OK：{n} 个音频文件已别名到 sound/vo_chinese/")
 
     print()
-    print("全部补齐物已就位；现在可以双击「启动汉化版.cmd」进游戏了。")
+    print("全部补齐物已就位。")
+    if progress is not None:
+        progress(1.0, "补齐资源生成完成")
     return 0
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="补齐 Quake 4 汉化版权敏感资产")
+    ap.add_argument("--game-dir", required=True,
+                    help="原版 Quake 4 安装目录（包含 q4base 子目录）")
+    ap.add_argument("--out", required=True,
+                    help="补齐物输出根（一般 = dist\\savedata\\q4base）")
+    ap.add_argument("--skip-vo", action="store_true",
+                    help="跳过语音别名 pk4（调试用；正常玩家务必生成）")
+    args = ap.parse_args()
+    return build_assets(Path(args.game_dir), Path(args.out), args.skip_vo)
 
 
 if __name__ == "__main__":

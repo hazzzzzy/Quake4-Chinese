@@ -1,0 +1,120 @@
+name: Validate and package
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: package-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        shell: powershell
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Validate Python sources
+        shell: powershell
+        run: |
+          $pythonFiles = @(Get-ChildItem -LiteralPath src -Recurse -Filter "*.py" -File | ForEach-Object { $_.FullName })
+          if ($pythonFiles.Count -eq 0) { throw "No Python source files found" }
+          python -m py_compile $pythonFiles
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Push-Location src/installer
+          try {
+              python -m unittest discover -s tests -v
+              if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          } finally {
+              Pop-Location
+          }
+
+      - name: Validate engine patch against upstream tag
+        shell: powershell
+        run: |
+          $engine = Join-Path $env:RUNNER_TEMP "diii4a-patch-check"
+          git clone --filter=blob:none --no-checkout --depth 1 --branch v1.1.0harmattan70 `
+              https://github.com/glKarin/com.n0n3m4.diii4a.git $engine
+          git -C $engine sparse-checkout init --no-cone
+          @(
+              "/Q3E/src/main/jni/doom3/neo/CMakeLists.txt",
+              "/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp",
+              "/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp",
+              "/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp",
+              "/Q3E/src/main/jni/doom3/neo/quake4/Player.cpp",
+              "/Q3E/src/main/jni/doom3/neo/quake4/Player.h",
+              "/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp",
+              "/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp"
+          ) | Set-Content -LiteralPath (Join-Path $engine ".git\info\sparse-checkout") -Encoding ASCII
+          git -C $engine checkout
+          git -C $engine apply --check "$env:GITHUB_WORKSPACE\src\engine-patches\0001-quake4-cn-runtime.patch"
+
+      - name: Build installer
+        shell: powershell
+        run: |
+          $python = (Get-Command python.exe).Source
+          .\src\installer\build.ps1 -Configuration Release -Python $python
+
+      - name: Select package version
+        shell: powershell
+        run: |
+          if ($env:GITHUB_REF_TYPE -eq "tag") {
+              $version = $env:GITHUB_REF_NAME
+          } else {
+              $version = $env:GITHUB_SHA.Substring(0, 7)
+          }
+          "PACKAGE_VERSION=$version" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+      - name: Package distribution
+        shell: powershell
+        run: .\src\tools\package_release.ps1 -Version $env:PACKAGE_VERSION
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Quake4-Translate-Subtitle-${{ env.PACKAGE_VERSION }}
+          path: |
+            artifacts/*.zip
+            artifacts/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Publish tagged release
+        if: github.ref_type == 'tag'
+        shell: powershell
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $archives = @(Get-ChildItem -LiteralPath artifacts -Filter "*.zip" -File)
+          if ($archives.Count -ne 1) {
+              throw "Expected exactly one release archive, found $($archives.Count)"
+          }
+          $checksums = (Resolve-Path -LiteralPath "artifacts\SHA256SUMS.txt").Path
+          gh release create $env:GITHUB_REF_NAME `
+              $archives[0].FullName `
+              $checksums `
+              --repo $env:GITHUB_REPOSITORY `
+              --title $env:GITHUB_REF_NAME `
+              --generate-notes

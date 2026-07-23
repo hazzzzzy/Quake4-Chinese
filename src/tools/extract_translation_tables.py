@@ -16,8 +16,9 @@ import zipfile
 from collections import defaultdict
 from pathlib import Path
 
+REPOSITORY = Path(__file__).resolve().parents[2]
 Q4BASE = Path(r"D:\Quake 4\q4base")
-TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
+TRANS = REPOSITORY / "src" / "translations"
 TRANS.mkdir(parents=True, exist_ok=True)
 
 LINE_RE = re.compile(r'^(\s*)"(#str_\d+)"(\s+)"(.*)"(\s*)$')

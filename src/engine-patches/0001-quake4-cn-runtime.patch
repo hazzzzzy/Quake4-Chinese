@@ -1,5 +1,5 @@
 diff --git a/Q3E/src/main/jni/doom3/neo/CMakeLists.txt b/Q3E/src/main/jni/doom3/neo/CMakeLists.txt
-index dadf7c489..40e43dceb 100644
+index dadf7c48..40e43dce 100644
 --- a/Q3E/src/main/jni/doom3/neo/CMakeLists.txt
 +++ b/Q3E/src/main/jni/doom3/neo/CMakeLists.txt
 @@ -391,6 +391,10 @@ include_directories(${OPENAL_INCLUDE_DIR})]]
@@ -30,7 +30,7 @@ index dadf7c489..40e43dceb 100644
  		Game_Log.cpp
  		Healing_Station.cpp
 diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp
-index fbb6731ab..3e70a73c7 100644
+index fbb6731a..3e70a73c 100644
 --- a/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp
 +++ b/Q3E/src/main/jni/doom3/neo/quake4/Game_local.cpp
 @@ -1,6 +1,8 @@
@@ -54,7 +54,7 @@ index fbb6731ab..3e70a73c7 100644
  }
  
 diff --git a/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp b/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp
-index 2854fcf06..a3bd62c3e 100644
+index 2854fcf0..a3bd62c3 100644
 --- a/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp
 +++ b/Q3E/src/main/jni/doom3/neo/quake4/LipSync.cpp
 @@ -1,7 +1,8 @@
@@ -84,7 +84,7 @@ index 2854fcf06..a3bd62c3e 100644
  		// Start the default emotion
  		anim = "emotion_";
 diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp
-index 5c4464026..02958f6cf 100644
+index 5c446402..02958f6c 100644
 --- a/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp
 +++ b/Q3E/src/main/jni/doom3/neo/quake4/Misc.cpp
 @@ -1,4 +1,4 @@
@@ -119,8 +119,130 @@ index 5c4464026..02958f6cf 100644
  	}
  
  	if ( player && player->GetHud() ) {
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Player.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Player.cpp
+index f755e134..9ac08cb2 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/Player.cpp
++++ b/Q3E/src/main/jni/doom3/neo/quake4/Player.cpp
+@@ -1,4 +1,4 @@
+-// RAVEN BEGIN
++﻿// RAVEN BEGIN
+ // bdube: note that this file is no longer merged with Doom3 updates
+ //
+ // MERGE_DATE 09/30/2004
+@@ -7,6 +7,7 @@
+ #pragma hdrstop
+ 
+ #include "Game_local.h"
++#include "../ui/Window.h"
+ 
+ #include "ai/AI.h"
+ #include "ai/AI_Manager.h"
+@@ -21,8 +22,6 @@
+ // RAVEN BEGIN
+ // nrausch: support for turning the weapon change ui on and off
+ #ifdef _XENON
+-#include "../ui/Window.h"
+-
+ // nrausch: support for direct button input
+ #include "../sys/xenon/xen_input.h"
+ #endif
+@@ -30,6 +29,19 @@
+ #ifdef _MOD_VIEW_BODY
+ #include "ViewBody.cpp"
+ #endif
++
++static void ClearSaveMessageGui( idUserInterface *gui ) {
++	if ( !gui || !gui->GetDesktop() ) {
++		return;
++	}
++
++	idWinVar *visible = gui->GetDesktop()->GetWinVarByName( "quicksave_msg::visible", true );
++	if ( visible ) {
++		visible->Set( "0" );
++		visible->SetEval( false );
++	}
++}
++
+ #ifdef _QUAKE4 //karin: allow fire when focus NPC
+ static idCVar harm_g_allowFireWhenFocusNPC( "harm_g_allowFireWhenFocusNPC", "0", CVAR_GAME | CVAR_BOOL | CVAR_ARCHIVE, "allow fire when focus NPC" );
+ #endif
+@@ -2457,10 +2469,14 @@ void idPlayer::Restore( idRestoreGame *savefile ) {
+ 	weaponViewModel.Restore( savefile );	
+ 	weaponWorldModel.Restore( savefile );	
+ 
+- 	savefile->ReadUserInterface( hud, &spawnArgs );	
++	savefile->ReadUserInterface( hud, &spawnArgs );
+ 	assert( !mphud );									// Don't save MP stuff
+ 	savefile->ReadUserInterface( objectiveSystem, &spawnArgs );
+ 	savefile->ReadUserInterface( cinematicHud, &spawnArgs );
++	// "游戏已保存"是瞬时提示，不应随 GUI 状态从旧存档恢复；否则它没有
++	// 对应的 SaveMessage 计时起点，现有 watchdog 无法将其清除。
++	ClearSaveMessageGui( hud );
++	ClearSaveMessageGui( objectiveSystem );
+ 	savefile->ReadBool( objectiveSystemOpen );
+ 
+ #ifdef _XENON
+@@ -9449,6 +9465,7 @@ Called every tic for each player
+ ==============
+ */
+ void idPlayer::Think( void ) {
++	SaveMessageWatchdog();
+ #ifdef _MOD_FULL_BODY_AWARENESS
+ 	if(!harm_pm_fullBodyAwareness.GetBool() || pm_thirdPerson.GetBool() || IsInVehicle() || zoomed || focusUI)
+ 	{
+@@ -13821,6 +13838,12 @@ void idPlayer::SetHudOverlay( idUserInterface* overlay, int duration ) {
+ idPlayer::SaveMessage
+ =====================
+ */
++// 2026-07-18 用户反馈"游戏已保存有时不消失"：hud.gui 里 onNamedEvent saveMessage
++// 设 quicksave_msg::visible=1 + onTime 3000 ms 自清；但游戏 pause/loading 期间
++// gui 时间线可能被跳过 → onTime 不触发 → 提示卡住。DLL 侧记录最近触发时刻，
++// Think 里 4 秒后强制清 gui state 兜底。
++static int g_saveMessageStartMs = 0;
++
+ void idPlayer::SaveMessage( void ) {
+ #ifndef _XENON
+ 	if ( GetHud( ) ) {
+@@ -13830,6 +13853,18 @@ void idPlayer::SaveMessage( void ) {
+ 	if ( objectiveSystem ) {
+ 		objectiveSystem->HandleNamedEvent( "saveMessage" );
+ 	}
++	g_saveMessageStartMs = gameLocal.time;
++#endif
++}
++
++// 强制清 quicksave_msg 兜底（Think 每帧调用）
++void idPlayer::SaveMessageWatchdog( void ) {
++#ifndef _XENON
++	if ( g_saveMessageStartMs && gameLocal.time - g_saveMessageStartMs > 4000 ) {
++		ClearSaveMessageGui( GetHud() );
++		ClearSaveMessageGui( objectiveSystem );
++		g_saveMessageStartMs = 0;
++	}
+ #endif
+ }
+ 
+diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Player.h b/Q3E/src/main/jni/doom3/neo/quake4/Player.h
+index 31d63795..0230ad9f 100644
+--- a/Q3E/src/main/jni/doom3/neo/quake4/Player.h
++++ b/Q3E/src/main/jni/doom3/neo/quake4/Player.h
+@@ -1,4 +1,4 @@
+-// RAVEN BEGIN
++﻿// RAVEN BEGIN
+ // bdube: note that this file is no longer merged with Doom3 updates
+ //
+ // MERGE_DATE 07/07/2004
+@@ -799,6 +799,8 @@ public:
+ 
+ 	// mekberg: wrap saveMessages
+ 	void					SaveMessage( void );
++	// 2026-07-18 用户反馈 quicksave_msg 有时不消失：Think 里每帧调用兜底强制清
++	void					SaveMessageWatchdog( void );
+ 
+ 	// mekberg: set pm_ cvars
+ 	void					SetPMCVars( void );
 diff --git a/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp b/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp
-index 5c9d2262c..051cc1010 100644
+index 5c9d2262..051cc101 100644
 --- a/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp
 +++ b/Q3E/src/main/jni/doom3/neo/quake4/Sound.cpp
 @@ -1,8 +1,9 @@
@@ -161,7 +283,7 @@ index 5c9d2262c..051cc1010 100644
  	} else {
  		StopSound( SND_CHANNEL_ANY, true );
 diff --git a/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp b/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp
-index 8fce0d71e..fc0d2cccd 100644
+index 8fce0d71..fc0d2ccc 100644
 --- a/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp
 +++ b/Q3E/src/main/jni/doom3/neo/quake4/ai/AI.cpp
 @@ -1,4 +1,4 @@

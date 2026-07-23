@@ -52,11 +52,12 @@ from PIL import Image, ImageDraw, ImageFont
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
+REPOSITORY = Path(__file__).resolve().parents[2]
 Q4BASE = Path(r"D:\Quake 4\q4base")
-OUT_DIR = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\fonts\chinese")
-MTR_PATH = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\materials\zzz_chinese_font_alias.mtr")
-TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
-ENG_CACHE = Path(r"D:\PROJECT\quake4-translate-subtitle\assets\english_fonts")
+OUT_DIR = REPOSITORY / "savedata" / "q4base" / "fonts" / "chinese"
+MTR_PATH = REPOSITORY / "savedata" / "q4base" / "materials" / "zzz_chinese_font_alias.mtr"
+TRANS = REPOSITORY / "src" / "translations"
+ENG_CACHE = REPOSITORY / "assets" / "english_fonts"
 
 MAGIC = 0x69647466
 VERSION = 0x00010001

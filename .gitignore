@@ -23,6 +23,14 @@ tmp_*.tsv
 tmp_*.json
 *.tsbuildinfo
 
+# Local development workspace
+/assets/
+/diii4a/
+/idTech4Apx/
+/savedata/
+/启动汉化版.cmd
+/artifacts/
+
 # Runtime artifacts (玩家运行 postinstall 生成，不入库)
 dist/savedata/q4base/fonts/chinese/strogg_*.fontdat
 dist/savedata/q4base/fonts/chinese/strogg_*.tga

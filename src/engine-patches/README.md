@@ -6,7 +6,7 @@
 
 | 文件 | 说明 |
 |---|---|
-| `0001-quake4-cn-runtime.patch` | 6 个文件差量（`CMakeLists.txt` / `Game_local.cpp` / `LipSync.cpp` / `Misc.cpp` / `Sound.cpp` / `ai/AI.cpp`） |
+| `0001-quake4-cn-runtime.patch` | 8 个文件差量（含字幕挂钩及 `Player.cpp/.h` 保存提示修复） |
 | `Subtitles.h` | 字幕系统头（`rvSubtitles` 单例、门控、断行接口） |
 | `Subtitles.cpp` | 字幕系统实现（挂钩点、可听性门控、fontdat 度量断行、面板绘制） |
 
@@ -19,11 +19,11 @@ cd com.n0n3m4.diii4a
 git checkout v1.1.0harmattan70
 
 # 2. 应用差量
-git apply /path/to/Quake4-Chinese/src/engine-patches/0001-quake4-cn-runtime.patch
+git apply /path/to/Quake4-Translate-Subtitle/src/engine-patches/0001-quake4-cn-runtime.patch
 
 # 3. 拷贝新增文件
-cp /path/to/Quake4-Chinese/src/engine-patches/Subtitles.h    Q3E/src/main/jni/doom3/neo/quake4/
-cp /path/to/Quake4-Chinese/src/engine-patches/Subtitles.cpp  Q3E/src/main/jni/doom3/neo/quake4/
+cp /path/to/Quake4-Translate-Subtitle/src/engine-patches/Subtitles.h    Q3E/src/main/jni/doom3/neo/quake4/
+cp /path/to/Quake4-Translate-Subtitle/src/engine-patches/Subtitles.cpp  Q3E/src/main/jni/doom3/neo/quake4/
 
 # 4. 构建 q4game.dll（VS2022 + 自带 CMake）
 cd Q3E/src/main/jni/doom3/neo
@@ -40,6 +40,7 @@ cmake --build build --config Release --target q4game
 | `Game_local.cpp` | `rvSubtitles::Get()` 单例挂到 `idGameLocal::RunFrame` 绘制回调 |
 | `LipSync.cpp` | `StartLipSyncing` 时 `rvSubtitles::AddFromEntity` 推入字幕 |
 | `Misc.cpp` | `idFuncRadioChatter::Event_Activate` 挂 `FindLipSync(snd_radiochatter, false)` 补无线电字幕 |
+| `Player.cpp/.h` | 清理随旧存档恢复或超时未关闭的“游戏已保存”瞬时提示 |
 | `Sound.cpp` | `idSound::DoSound(play)` 按 shader 名找 lipsync decl，走 speaker/PA 字幕（fallbackSpeaker 参数区分来源前缀） |
 | `ai/AI.cpp` | `idAI::Speak` else 分支对无头模型 NPC 补挂 lipsync 注入 |
 

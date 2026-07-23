@@ -4,6 +4,8 @@
 
 基于 [idTech4A++](https://github.com/glKarin/com.n0n3m4.diii4a) 开源引擎（GPL），运行时不修改玩家的原版游戏目录。
 
+仓库以 `Quake4-Translate-Subtitle` 为统一名称；后续英文模式只补充英文字幕，保留原版英文界面和字体。
+
 ---
 
 ## 特性
@@ -32,38 +34,34 @@
 
 ### 1. 下载
 
-克隆或下载 [releases](https://github.com/hazzzzzy/Quake4-Chinese/releases) 里最新的 `Quake4-CN-vX.Y.Z.zip`，解压到**纯英文路径**（例如 `D:\Quake4-CN`）。
+克隆或下载 [releases](https://github.com/hazzzzzy/Quake4-Translate-Subtitle/releases) 里最新的 `Quake4-Translate-Subtitle-vX.Y.Z.zip` 并解压。
 
 如果你没有 Release 包也可以直接：
 
 ```bash
-git clone https://github.com/hazzzzzy/Quake4-Chinese.git
-cd Quake4-Chinese\dist
+git clone https://github.com/hazzzzzy/Quake4-Translate-Subtitle.git
+cd Quake4-Translate-Subtitle\dist
 ```
 
-`dist/` 目录就是可运行的汉化根目录。
+`dist/` 目录包含图形安装器及其汉化资源。
 
 ### 2. 首次安装
 
-1. 用记事本打开 `dist\启动汉化版.cmd`，把第一行 `GAME_DIR` 改成你的 Quake 4 安装目录（就是包含 `q4base` 子文件夹的那个）。示例：
-
-   ```bat
-   set GAME_DIR=C:\Program Files (x86)\Steam\steamapps\common\Quake 4
-   ```
-
-   如果分辨率不是 1920x1080，也在下面两行改 `W` 与 `H`。
-
-2. **双击 `dist\postinstall.cmd`**（只需运行**一次**）。这一步从你自己的 `pak001.pk4 / pak021.pk4` 里现场生成 4 类不能随汉化分发的版权敏感物：
+1. 双击 `dist\Quake4-Chinese-Installer.exe`。
+2. 确认自动识别的 Quake 4 1.4.2 游戏目录，或点“浏览”自行选择。
+3. 按需勾选“创建桌面快捷方式”，然后点“安装汉化”。安装器会从玩家自己的 `pak001.pk4 / pak014.pk4 / pak021.pk4 / zpak_english*.pk4` 现场生成不随汉化分发的运行资产：
    - Strogg 外星文字体（原版）
    - HUD 无线电两行 rect 数值补丁
    - 神经细胞植入转译动画（中文化）
    - 中文语音路径别名 pk4（英文原声）
 
-   耗时约 1–3 分钟。不修改你的原版游戏目录。
+   耗时约 1–3 分钟。原版 EXE 和原版 `q4base` 文件保持原样。
 
 ### 3. 启动
 
-双击 `dist\启动汉化版.cmd` 进游戏。
+双击游戏目录中的 `Quake4中文启动器.exe`，或使用安装时创建的桌面快捷方式。
+
+需要便携目录的维护者仍可使用 `dist\postinstall.cmd` 和 `dist\启动汉化版.cmd` 手动部署。
 
 ---
 
@@ -71,15 +69,17 @@ cd Quake4-Chinese\dist
 
 ### 存档
 
-- 存档保存在 `dist\savedata\savegames\`，与原版游戏目录完全隔离
-- 删除整个 `dist` 目录 = 彻底卸载，不留残留
+- 图形安装模式的存档位于 `<游戏目录>\Quake4-Chinese\savedata\q4base\savegames\`
+- 原版与汉化版使用不同的 `fs_savepath`，两套存档可以同时保留
+- 安装器的“存档管理”会分别显示两套存档的数量和最近更新时间，可打开目录或备份到 `<游戏目录>\Quake4-Chinese\save-backups\`
+- 便携模式的存档仍位于 `dist\savedata\q4base\savegames\`
 
 ### 常见问题
 
 | 现象 | 处理 |
 |---|---|
 | 提示 `pak021.pk4 missing` | 你的 Quake 4 不是 1.4.2 版本，先装官方 1.4.2 补丁；Steam 版本无此问题 |
-| Strogg 终端全是问号 | 没跑过 `postinstall.cmd`（缺 strogg 字体），跑一次即可 |
+| Strogg 终端全是问号 | 重新运行图形安装器；便携模式则重新运行 `postinstall.cmd` |
 | NPC 说话没字幕 | 该角色在原版可能无对应 lipsync decl；本汉化已补 668 条 AI decl，如仍缺失请提 issue 附上 `savedata\q4base\qconsole.log` |
 | 崩溃 | `savedata\q4base\qconsole.log` 有崩溃前的所有日志，附 issue 里 |
 | HUD 数字被顶部截掉 | 用户的自定义 gui 覆盖或旧字体残留：删掉 `savedata\q4base\fonts\chinese\`+`guis\hud.gui` 后重跑 postinstall |
@@ -114,7 +114,7 @@ python src\tools\export_font.py
 ## 项目结构
 
 ```
-Quake4-Chinese/
+Quake4-Translate-Subtitle/
 ├── README.md              — 本文
 ├── LICENSE                — GPL-3.0（主要许可）
 ├── LICENSE-FONTS.txt      — 思源黑体 SIL OFL 1.1
@@ -123,6 +123,7 @@ Quake4-Chinese/
 │   ├── glossary.md               — 术语表（专名/军衔/武器/小队名定稿）
 │   └── localization-guide.md     — 汉化制作流程指南（方法论）
 ├── dist/                  — 可运行汉化根目录
+│   ├── Quake4-Chinese-Installer.exe — 图形安装器
 │   ├── engine/            — idTech4A++ 引擎 + 自研 q4game.dll
 │   ├── savedata/q4base/   — 松散覆盖资产
 │   │   ├── fonts/chinese/       — 思源黑体自渲染 UI 家族字体
@@ -142,8 +143,9 @@ Quake4-Chinese/
     │   ├── gen_radio_decls.py        无线电 lipsync decl 生成
     │   ├── build_dist_extras.py      postinstall 后台主体
     │   └── ...
+    ├── installer/               — 图形安装器与原生启动器源码
     └── engine-patches/          — diii4a 引擎侧改动
-        ├── 0001-quake4-cn-runtime.patch    — 6 个文件差量
+        ├── 0001-quake4-cn-runtime.patch    — 8 个文件差量
         ├── Subtitles.h                     — 字幕系统头
         └── Subtitles.cpp                   — 字幕系统实现
 ```
@@ -168,7 +170,7 @@ python src/tools/build_lang.py
 python src/tools/export_font.py
 ```
 
-产出在 `D:\data\idTech4Apx\savedata\q4base\fonts\chinese\`（可改 `OUT_DIR`）。
+产出在工程根 `savedata\q4base\fonts\chinese\`。
 
 ### 重编 q4game.dll
 
@@ -183,12 +185,18 @@ python src/tools/export_font.py
 2. 应用本仓库补丁：
 
    ```bash
-   git apply /path/to/Quake4-Chinese/src/engine-patches/0001-quake4-cn-runtime.patch
-   cp /path/to/Quake4-Chinese/src/engine-patches/Subtitles.{h,cpp} \
+   git apply /path/to/Quake4-Translate-Subtitle/src/engine-patches/0001-quake4-cn-runtime.patch
+   cp /path/to/Quake4-Translate-Subtitle/src/engine-patches/Subtitles.{h,cpp} \
       Q3E/src/main/jni/doom3/neo/quake4/
    ```
 
 3. 用 CMake + VS2022 生成 `q4game.dll`（`-DCORE=OFF -DBASE=OFF -DRAVEN=OFF -DQUAKE4=ON`）；参见 `src/engine-patches/README.md`。
+
+### 自动验证与打包
+
+- push 到 `main`会运行测试、上游补丁校验、安装器构建和分发审计，并上传 ZIP Artifact。
+- push `v*`标签会在验证通过后创建 GitHub Release。
+- 本地可运行 `src\tools\package_release.ps1 -Version dev`生成同结构 ZIP。
 
 ---
 

@@ -13,7 +13,8 @@ import re
 import sys
 from pathlib import Path
 
-TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
+REPOSITORY = Path(__file__).resolve().parents[2]
+TRANS = REPOSITORY / "src" / "translations"
 IN = TRANS / "batches" / "in"
 OUT = TRANS / "batches" / "out"
 

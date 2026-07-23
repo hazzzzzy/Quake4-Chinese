@@ -9,8 +9,9 @@
 """
 from pathlib import Path
 
-TRANS = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations")
-OUT = Path(r"D:\PROJECT\quake4-translate-subtitle\savedata\q4base\strings")
+REPOSITORY = Path(__file__).resolve().parents[2]
+TRANS = REPOSITORY / "src" / "translations"
+OUT = REPOSITORY / "savedata" / "q4base" / "strings"
 OUT.mkdir(parents=True, exist_ok=True)
 
 TABLES = {
@@ -55,7 +56,7 @@ for tsv, lang in TABLES.items():
                 out.append(f'\t"{sid}"\t"{text}"')
     out.append("}")
     p = OUT / lang
-    p.write_text("\r\n".join(out) + "\r\n", encoding="utf-8-sig")
+    p.write_text("\n".join(out) + "\n", encoding="utf-8-sig")
     print(f"{lang}: {n} 条（中文 {n_zh}，回退英文 {n - n_zh}）")
     total += n
     total_zh += n_zh

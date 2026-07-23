@@ -3,7 +3,8 @@
 import re
 from pathlib import Path
 
-p = Path(r"D:\PROJECT\quake4-translate-subtitle\Quake4-Chinese\src\translations\dialogue_lips.tsv")
+REPOSITORY = Path(__file__).resolve().parents[2]
+p = REPOSITORY / "src" / "translations" / "dialogue_lips.tsv"
 lines = p.read_text(encoding="utf-8-sig").splitlines()
 
 fixes = 0
